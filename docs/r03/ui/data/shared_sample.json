@@ -1,0 +1,158 @@
+{
+  "bubbles": [
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        186.92790222168,
+        313.034790039062
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        292.533020019531,
+        119.863296508789
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        658.943664550781,
+        197.232971191406
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        287.533233642578,
+        261.006164550781
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 3,
+      "position": [
+        313.829559326172,
+        501.04931640625
+      ],
+      "radius": 14.1961524227066
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        479.743133544922,
+        531.907592773438
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        420.10400390625,
+        537.93408203125
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        199.051849365234,
+        548.40185546875
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        148.437713623047,
+        512.72216796875
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        193.865753173828,
+        415.154327392578
+      ],
+      "radius": 12.0
+    },
+    {
+      "absorb_left": 0.0,
+      "launch_left": 0.0,
+      "level": 1,
+      "position": [
+        337.697235107422,
+        444.902435302734
+      ],
+      "radius": 12.0
+    }
+  ],
+  "charge": 17.5000000000001,
+  "fish": {
+    "action": "idle",
+    "cd_one": 3.74999999999985,
+    "cd_two": 7.75000000000004,
+    "class": "Node2D",
+    "health": 110.0,
+    "max_health": 120.0,
+    "position": [
+      351.847290039062,
+      361.429840087891
+    ],
+    "title": "BUBBLE FISH",
+    "visible": true
+  },
+  "roster": [
+    2,
+    3
+  ],
+  "seed": 3103,
+  "sheep": {
+    "action": "idle",
+    "cd_one": 1.74999999999996,
+    "cd_two": 4.74999999999989,
+    "class": "Node2D",
+    "health": 120.0,
+    "max_health": 120.0,
+    "position": [
+      416.43896484375,
+      438.879150390625
+    ],
+    "title": "ELECTRIC SHEEP",
+    "visible": true
+  },
+  "simulation_time": 5.25833333333338,
+  "source": "actual headless fixed-step simulation, not live gameplay screenshot",
+  "wool_active": true,
+  "wool_position": [
+    416.43896484375,
+    70.9616775512695
+  ],
+  "zapping": true,
+  "baseline_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "godot_version": "4.6.3.stable.official"
+}

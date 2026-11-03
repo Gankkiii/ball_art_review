@@ -1,0 +1,155 @@
+{
+  "id": "bubble_fish",
+  "name": "泡泡鱼",
+  "cycle": "R03",
+  "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 流线叉尾",
+      "image": "variant_a.png",
+      "display": "a_display.png",
+      "motion": "a_states.gif",
+      "description": "横向鱼身、背鳍、分叉尾与前端小口；用身体呼气而非武器射击。 配色：浅青蓝身体、浅薄荷高光、深蓝鳍面、珊瑚叉尾。 材质意向：柔软半光泽水玩具意向，实心色块高光；并非本体半透明泡泡。 表情：前侧小眼和轻开的吐泡口，视线清楚朝前。 候选性格感：灵动、轻松、爱吐泡；不新增主动操作或连招。",
+      "palette": "浅青蓝身体、浅薄荷高光、深蓝鳍面、珊瑚叉尾。",
+      "material": "柔软半光泽水玩具意向，实心色块高光；并非本体半透明泡泡。",
+      "expression": "前侧小眼和轻开的吐泡口，视线清楚朝前。",
+      "personality": "候选性格感：灵动、轻松、爱吐泡；不新增主动操作或连招。",
+      "pros": [
+        "方向清晰；与真实吐泡事件容易关联"
+      ],
+      "cons": [
+        "身体和八向泡泡都偏圆，需靠尾鳍/实心轮廓区分"
+      ],
+      "status": "unselected concept candidate"
+    },
+    {
+      "id": "b",
+      "title": "B 方身管口",
+      "image": "variant_b.png",
+      "display": "b_display.png",
+      "motion": "b_states.gif",
+      "description": "短方身、平直尾和突出嘴管，体表斑块；方形剪影与圆泡强区分。 配色：金黄方身、暖橙边面、珊瑚斑块和尾、浅青嘴管。 材质意向：圆角积木玩具的块面意向，不表示防御装甲；突出部分仍是生物嘴。 表情：小眼与平直嘴管显得专注、略木讷。 候选性格感：憨直、执着、稳稳吐泡；不是固定物种或背景设定。",
+      "palette": "金黄方身、暖橙边面、珊瑚斑块和尾、浅青嘴管。",
+      "material": "圆角积木玩具的块面意向，不表示防御装甲；突出部分仍是生物嘴。",
+      "expression": "小眼与平直嘴管显得专注、略木讷。",
+      "personality": "候选性格感：憨直、执着、稳稳吐泡；不是固定物种或背景设定。",
+      "pros": [
+        "小尺寸下与泡泡区别更强；轮廓有辨识度"
+      ],
+      "cons": [
+        "嘴管容易被误读成枪；必须作为生物嘴部，不新增射程/弹丸"
+      ],
+      "status": "unselected concept candidate"
+    }
+  ],
+  "comparison": "comparison.png",
+  "animation": "motion_compare.gif",
+  "recommendation": "推荐A流线叉尾，鱼身份更直接；若最重视鱼与泡泡区分可选B方身管口。造型、泡泡描边和音色可以独立组合。",
+  "questions": [
+    "本体选A流线叉尾还是B方身管口？B突出部分仅嘴，不是鱼枪。",
+    "融合泡泡选单层加粗边缘还是双层内部光纹？一级仍应轻薄，不能给一级画成造成伤害的爆炸。",
+    "八向泡泡更强调八个分离小泡，还是短促八向出现光点？音色选A清亮水泡还是B温润低泡，保持吸附和命中可区分。",
+    "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "待机",
+      "image": "states/a_0.png",
+      "alternative_image": "states/b_0.png",
+      "animation": "motion_compare.gif",
+      "event": "idle",
+      "description": "独立鱼体，没有枪杖。"
+    },
+    {
+      "id": "level1",
+      "title": "1级吐泡",
+      "image": "states/a_1.png",
+      "alternative_image": "states/b_1.png",
+      "animation": "motion_compare.gif",
+      "event": "level1",
+      "description": "每1.1秒产生1级；1级接触敌人消失但无伤害。"
+    },
+    {
+      "id": "fusion",
+      "title": "融合",
+      "image": "states/a_2.png",
+      "alternative_image": "states/b_2.png",
+      "animation": "motion_compare.gif",
+      "event": "fusion",
+      "description": "同主泡泡等级相加，>=2才造成level×8伤害；合成示意不是额外生成两个命中。"
+    },
+    {
+      "id": "eight",
+      "title": "八向吐泡",
+      "image": "states/a_3.png",
+      "alternative_image": "states/b_3.png",
+      "animation": "motion_compare.gif",
+      "event": "eight",
+      "description": "图内确有八个1级小泡；0.8秒后恢复慢漂，非爆炸AOE。"
+    },
+    {
+      "id": "vacuum",
+      "title": "吸附泡泡",
+      "image": "states/vacuum.png",
+      "animation": "",
+      "event": "VACUUM_BUBBLE",
+      "description": "朝敌人当时方向发射的吸附泡泡；吸引自己的泡泡，持续2.5秒、105范围。仅静态语义示意，箭头和泡泡位置不是实际世界距离，四格GIF不含此独立图。"
+    },
+    {
+      "id": "hit_feedback",
+      "title": "受击反馈两方向",
+      "image": "states/hit_feedback.png",
+      "animation": "",
+      "event": "actual_HP_loss",
+      "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+    },
+    {
+      "id": "movement",
+      "title": "移动朝向示意",
+      "image": "states/movement_direction.png",
+      "animation": "",
+      "event": "existing_velocity_direction",
+      "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "name": "1级与融合泡泡",
+      "image": "objects/bubble_levels.png",
+      "description": "左侧1级薄环，右侧融合双层纹理候选。数字等级无上限，封顶的是尺寸；这些图不是完整等级资产。"
+    }
+  ],
+  "information": [
+    "等级/是否融合比体积更重要；尺寸达到上限仍可继续增长等级。",
+    "吸附泡泡需要独立状态，目标是吸自己的泡泡；示意不改变105吸附范围或2.5秒。",
+    "GIF是四状态编排，不是从待机到融合必然执行的技能连招。"
+  ],
+  "source_facts": {
+    "document": "SETTING.md",
+    "repository": "Gankkiii/balls",
+    "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+  },
+  "audio_questions": {
+    "options": [
+      "清亮水泡",
+      "温润低泡"
+    ],
+    "source": "../../audio/review.json",
+    "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+  },
+  "validation": {
+    "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+    "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+    "human_listening": "NOT_RUN",
+    "in_game": "NOT_RUN",
+    "device": "NOT_RUN"
+  },
+  "missing": [
+    "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+    "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+    "未做真实战斗、设备显示或扬声器听感验证。"
+  ]
+}

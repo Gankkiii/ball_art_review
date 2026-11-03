@@ -1,0 +1,1695 @@
+{
+  "scope": "R03 public review only; no integration package",
+  "files": [
+    {
+      "path": "r03/PUBLIC_SCOPE.md",
+      "bytes": 1328,
+      "sha256": "c34659a3114a19a405bd195c01051480ce126fe2d1807463afb89e8e66fc0984"
+    },
+    {
+      "path": "r03/app.js",
+      "bytes": 15467,
+      "sha256": "4c78f23507914370a03a8bfb8fe80c328b07c5cf9a72a790a5fe67a585e4549d"
+    },
+    {
+      "path": "r03/audio/bubble_fish_A.wav",
+      "bytes": 199724,
+      "sha256": "e7bc35235f140fd166240f2193e04285d3c4132874bf1362725c47db5d8e5768"
+    },
+    {
+      "path": "r03/audio/bubble_fish_B.wav",
+      "bytes": 199724,
+      "sha256": "a51d9b5fc90bb80da0fe6720528aa51b1ba531acdc87ed8040c73b3078bbb1f6"
+    },
+    {
+      "path": "r03/audio/cactus_A.wav",
+      "bytes": 162284,
+      "sha256": "a86257ded74074a2e583aad88cff567f42e358a9f8dbde3687c7bdc171215ea0"
+    },
+    {
+      "path": "r03/audio/cactus_B.wav",
+      "bytes": 162284,
+      "sha256": "74cacf26d30353656482e1ef5ee29760544ef1ded286cf4a5fab0e07d9e929ec"
+    },
+    {
+      "path": "r03/audio/chicken_A.wav",
+      "bytes": 190124,
+      "sha256": "d013e005158197db975f0abb8f05d8427b438bab8b6a062b4118ccac9e30e272"
+    },
+    {
+      "path": "r03/audio/chicken_B.wav",
+      "bytes": 190124,
+      "sha256": "5ad4749293a853f038052e0193e207c42890c189cd023c59895b5e5e0a472916"
+    },
+    {
+      "path": "r03/audio/crow_A.wav",
+      "bytes": 225644,
+      "sha256": "a31a54fcfcd45737a6f2c640d95e89548458fe5a4e58e8f469714a6c8961fb9d"
+    },
+    {
+      "path": "r03/audio/crow_B.wav",
+      "bytes": 225644,
+      "sha256": "d129d5af4109c596a714705e000931c715fe084b16470d1fd2e79ba278073b79"
+    },
+    {
+      "path": "r03/audio/electric_sheep_A.wav",
+      "bytes": 198764,
+      "sha256": "4910def0c7a1cd59c59336a95a4702544f51b7db03c13462bf09a3a96b100e1f"
+    },
+    {
+      "path": "r03/audio/electric_sheep_B.wav",
+      "bytes": 198764,
+      "sha256": "56d8994905712a458ecbd07ee657e4cb66d8889d193a1f99b2ad9cb19dd3846a"
+    },
+    {
+      "path": "r03/audio/magnet_crab_A.wav",
+      "bytes": 173804,
+      "sha256": "9a75870d9933bb2f11804c74de3d8af9967788eb919c416716a31904c8289bb4"
+    },
+    {
+      "path": "r03/audio/magnet_crab_B.wav",
+      "bytes": 173804,
+      "sha256": "6d22776e2b864b43f9cc8872df76e06b7c52118af21f2e5c6a3e6e7af3e50abb"
+    },
+    {
+      "path": "r03/audio/puffer_A.wav",
+      "bytes": 212204,
+      "sha256": "a6aee842f27bde0c14d940e8f4d52b26a56073298cef122fec2efb08a39dbe32"
+    },
+    {
+      "path": "r03/audio/puffer_B.wav",
+      "bytes": 212204,
+      "sha256": "e4505515984b849166258485650d27831d48965883878b7d32c512d50165aa7b"
+    },
+    {
+      "path": "r03/audio/review.json",
+      "bytes": 30559,
+      "sha256": "ce2efc62c7e2d98d87ad557da323dfa127464c5cc2f80d4f216b91f7b57b9111"
+    },
+    {
+      "path": "r03/audio/shell_turtle_A.wav",
+      "bytes": 189164,
+      "sha256": "c0778c455bd835719599e8cf7ccbc67b904340dbc78b6a6598ef8f2b1be68240"
+    },
+    {
+      "path": "r03/audio/shell_turtle_B.wav",
+      "bytes": 189164,
+      "sha256": "dfce85cb5943c1e0a2b1c30233e2443546fe2596053ca94d6aa7067469b08fff"
+    },
+    {
+      "path": "r03/audio/validation.json",
+      "bytes": 2328,
+      "sha256": "0b43e9087c994f7e837e63125c31a25e1d5c9281bd1174cc048cd6c7ee88d094"
+    },
+    {
+      "path": "r03/characters/bubble_fish/SETTING.md",
+      "bytes": 3840,
+      "sha256": "5ea0bd0c013fc5cd00dac0c25d0584f9f32ae13a7aa1fce768b2baa5fd30c094"
+    },
+    {
+      "path": "r03/characters/bubble_fish/a_display.png",
+      "bytes": 6299,
+      "sha256": "dafdef09932831b9d100a4b4e5a58eef63fd0d7ea5dc373bbdf2e4a9d3883f2e"
+    },
+    {
+      "path": "r03/characters/bubble_fish/a_states.gif",
+      "bytes": 14559,
+      "sha256": "2285b289310d84107be0ba884b5d5b025cdedfd429555ad6f32176342b8ad33c"
+    },
+    {
+      "path": "r03/characters/bubble_fish/b_display.png",
+      "bytes": 5213,
+      "sha256": "d5310948a19882a832cbd18a9211ad6402b949b2e353a4d46c87d1a1c0d1dc42"
+    },
+    {
+      "path": "r03/characters/bubble_fish/b_states.gif",
+      "bytes": 14470,
+      "sha256": "408e64c5ce2fd646dea5eda9a4fa505c1570bb3874076c8d6f5cf60cfe4347ae"
+    },
+    {
+      "path": "r03/characters/bubble_fish/comparison.png",
+      "bytes": 28729,
+      "sha256": "05c45dbfe5ff10902448ea22cb3a7e520e001e04562ed261cc726efb9a032ebf"
+    },
+    {
+      "path": "r03/characters/bubble_fish/motion_compare.gif",
+      "bytes": 27242,
+      "sha256": "bb395d0777fed9892902ffaabdc01cf4bb7a3db631e50b2913453636083e71e5"
+    },
+    {
+      "path": "r03/characters/bubble_fish/objects/bubble_levels.png",
+      "bytes": 372,
+      "sha256": "5eb819d9ef727d108afaf80f3ad54d16c6abdc8d27db730e4e81a5ad121dd1b7"
+    },
+    {
+      "path": "r03/characters/bubble_fish/objects/bubble_levels.svg",
+      "bytes": 4269,
+      "sha256": "719b2cc4477302093bd650c5f89572e4820ca9e387baa27b2e619f1344fd7d32"
+    },
+    {
+      "path": "r03/characters/bubble_fish/review.json",
+      "bytes": 7546,
+      "sha256": "c3bf7c0de02600adc5cfc720270cc799d3b226444f4b4a661c7706a1c8703115"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_0.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_0.svg",
+      "bytes": 7174,
+      "sha256": "f119e9f543216e8b5283c1bf18475f8ebc3706a60efae11662e842db57b80062"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_1.png",
+      "bytes": 693,
+      "sha256": "dbce828f712fedd095c54521d08fe23bf50da416f1286173f9900da81fc05644"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_1.svg",
+      "bytes": 7915,
+      "sha256": "36c7a703375d559072d2d7e9e8b08982e69decdff5da2e22855cf5da51cdaabb"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_2.png",
+      "bytes": 784,
+      "sha256": "9583077ec8b8518fd5117f29ddf5656ca10cbc958a3754a94d9c9bf2988dba2d"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_2.svg",
+      "bytes": 9818,
+      "sha256": "35fb7d3e6be9042673be4edfd2eb4892a40d2fe4894c1b5a9292aeb10c39a9aa"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_3.png",
+      "bytes": 921,
+      "sha256": "f677d02f46240ca136c8a2d05f855e57d9a6b6c78c0e8a23f73bffeba21babd8"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/a_3.svg",
+      "bytes": 11076,
+      "sha256": "34662390fe9ddd21e92b8ce3cc63b05c17fdfd604f6d3fa02d185b219393005f"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_0.png",
+      "bytes": 590,
+      "sha256": "1eb4ed2901b3f5cc1ed31cb94294b7774a0049e9ae46b53cc1fd7b44c0ce408b"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_0.svg",
+      "bytes": 7871,
+      "sha256": "51f75d20a4975bcc9a7bc24639a7c076ba1cb105254d7eb9174b90e1e31af737"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_1.png",
+      "bytes": 644,
+      "sha256": "8f84d36ee0cafb93a61320ef32bf45920cf73672fb970a3166d4cff39f86f8af"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_1.svg",
+      "bytes": 8612,
+      "sha256": "8859e744bd1c4648346d674a76c41cc6b7637f679995138c7b9401589eb038f0"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_2.png",
+      "bytes": 817,
+      "sha256": "5695aa672e1320d4d4a67cd1fc44e97d2f2498461aec011275873bae12fc5091"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_2.svg",
+      "bytes": 11422,
+      "sha256": "e2d9e68b1bffbf70623acd785c1a5893845056b90affdc3c72de8663596e9c52"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_3.png",
+      "bytes": 887,
+      "sha256": "2eca02194690adb6ff1fc1e6673667b07a07e41aac2a06f3008a9877408ffe53"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/b_3.svg",
+      "bytes": 11773,
+      "sha256": "665755ca1eb1e2f800aa2ac66d96d09164bada175aa70ad1e14bee8e5e853298"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/hit_blink.png",
+      "bytes": 627,
+      "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/hit_blink.svg",
+      "bytes": 6890,
+      "sha256": "1c3619e238a959fc75d0629ea0f10c9ef765f6f2d4106439b3bb3c0a2e4bde10"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/hit_feedback.png",
+      "bytes": 17841,
+      "sha256": "41140cbbb3db22810e83c0a87d3e4c616c8bdf0a4c557d0d5a9564152a6931e7"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/hit_spark.png",
+      "bytes": 722,
+      "sha256": "dd7d8af1b34cb42e5a93178862d500f2c26dddba68aa433638cf8d14dc369287"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/hit_spark.svg",
+      "bytes": 7744,
+      "sha256": "5ea274022b405d7f482dd46290295b6667c656ecf183ec2ab643341bfe4a7dfc"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/movement_direction.png",
+      "bytes": 701,
+      "sha256": "fea8af6ae936abed67e7b238fe0ea0fcf66384ae6ad17ec1a470fcab8a939dfa"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/movement_direction.svg",
+      "bytes": 7516,
+      "sha256": "96275927973aa0d80526df96bdca9058b682183971b5e1755912d6e1368f98cb"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/vacuum.png",
+      "bytes": 828,
+      "sha256": "fc81fcdd0fd37d2f7ceebec9610e22b4a3b2cbc04046002fc07171c0d6319457"
+    },
+    {
+      "path": "r03/characters/bubble_fish/states/vacuum.svg",
+      "bytes": 9711,
+      "sha256": "655d5019d001a084f62a182e5da7d446b560589f633474af3b2eb6a6c5ea742f"
+    },
+    {
+      "path": "r03/characters/bubble_fish/variant_a.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "r03/characters/bubble_fish/variant_a.svg",
+      "bytes": 7174,
+      "sha256": "f119e9f543216e8b5283c1bf18475f8ebc3706a60efae11662e842db57b80062"
+    },
+    {
+      "path": "r03/characters/bubble_fish/variant_b.png",
+      "bytes": 590,
+      "sha256": "1eb4ed2901b3f5cc1ed31cb94294b7774a0049e9ae46b53cc1fd7b44c0ce408b"
+    },
+    {
+      "path": "r03/characters/bubble_fish/variant_b.svg",
+      "bytes": 7871,
+      "sha256": "51f75d20a4975bcc9a7bc24639a7c076ba1cb105254d7eb9174b90e1e31af737"
+    },
+    {
+      "path": "r03/characters/cactus/SETTING.md",
+      "bytes": 3123,
+      "sha256": "a4885a1f73fb5c4ed563beb7a458fecdcdec7e202418cab0e5aaddb6e9c4568e"
+    },
+    {
+      "path": "r03/characters/cactus/comparison.png",
+      "bytes": 29000,
+      "sha256": "a7a26982ad6f11e990ac2f75ccfdadb555d65874c95ff907d07e0230f5a5102e"
+    },
+    {
+      "path": "r03/characters/cactus/hurt_1.gif",
+      "bytes": 52354,
+      "sha256": "c775739f895138083c21897eb083f71796b26ee8aadc62022efc71e0fba26b52"
+    },
+    {
+      "path": "r03/characters/cactus/hurt_1_cover.png",
+      "bytes": 16630,
+      "sha256": "e12b4a3ca8c4a9a315ada4f7f4d489c7dc5d0cf4b5e1c7e8dc9ce4746a3d8007"
+    },
+    {
+      "path": "r03/characters/cactus/hurt_2.gif",
+      "bytes": 59321,
+      "sha256": "00d2045baf1014784a782951ce8939a75a4080b711791af3db64f54ad34058c4"
+    },
+    {
+      "path": "r03/characters/cactus/hurt_2_cover.png",
+      "bytes": 15890,
+      "sha256": "6a280de02e3ba83e976a90dd6a9fbbca5574c1bca04b302a1e0fbe2db0bcf124"
+    },
+    {
+      "path": "r03/characters/cactus/motion_1.gif",
+      "bytes": 107400,
+      "sha256": "32d360b296b09ee2e5b38be246ea597c5ef2acc6d0a3aea81f72d3eb958a9b2b"
+    },
+    {
+      "path": "r03/characters/cactus/motion_1_cover.png",
+      "bytes": 15233,
+      "sha256": "ee9c246bb7deed5c22917eede88abeb419f42b714da2b8fe00a4d279cf208543"
+    },
+    {
+      "path": "r03/characters/cactus/motion_2.gif",
+      "bytes": 52278,
+      "sha256": "a7fbe4a8da90b97d59580f083e4bff7a90ff9912629954eee9fefea8cf083375"
+    },
+    {
+      "path": "r03/characters/cactus/motion_2_cover.png",
+      "bytes": 15797,
+      "sha256": "b55da42b53014207a66c51a8c7bd6c7b86dea44bda22f06561bfeab686df4ae8"
+    },
+    {
+      "path": "r03/characters/cactus/object_thorn.png",
+      "bytes": 408,
+      "sha256": "f4cf6ca03ad2b67adb045a757fd8fbd90e8914997c7d3a2d4249eb079963c935"
+    },
+    {
+      "path": "r03/characters/cactus/object_thorn.svg",
+      "bytes": 284,
+      "sha256": "b3589d81343f52381875c99c74e897b5eaef9c97b1fc922e52ad5c5e78d39b63"
+    },
+    {
+      "path": "r03/characters/cactus/review.json",
+      "bytes": 8104,
+      "sha256": "2a6b23fcee664d22e899e19a341329157dedb3b31782ca3609f2d7b2da60b3e8"
+    },
+    {
+      "path": "r03/characters/cactus/state_idle.png",
+      "bytes": 7654,
+      "sha256": "24ddc56518d8c9cb9c6aca45658a3a5b7f4431b250f26d0d450d6dd57a70177e"
+    },
+    {
+      "path": "r03/characters/cactus/state_regrow.png",
+      "bytes": 9058,
+      "sha256": "4ed721d4edca3d0db33f95b39c53ef67c3eb17ecc2077c10cad34df9d749428d"
+    },
+    {
+      "path": "r03/characters/cactus/state_thorns.png",
+      "bytes": 8367,
+      "sha256": "fc5bc2c1b889e210e6e77d026d394aed7258d005edc066b95e55c8ed07ac972f"
+    },
+    {
+      "path": "r03/characters/cactus/variant_a.png",
+      "bytes": 8793,
+      "sha256": "e00039ea1076dca98d6d71c5e6e3a6c2340769c9a09255046945b20bd2b4cbca"
+    },
+    {
+      "path": "r03/characters/cactus/variant_a_sprite.png",
+      "bytes": 778,
+      "sha256": "d63227c133f3948e05bef7f090729bc11be287476f053b3424d5acef5aabb910"
+    },
+    {
+      "path": "r03/characters/cactus/variant_a_sprite.svg",
+      "bytes": 1613,
+      "sha256": "40f03a969ac8ab30f9b5b8028960f8033409071a5a57c06a73e6a55042ffc480"
+    },
+    {
+      "path": "r03/characters/cactus/variant_b.png",
+      "bytes": 9461,
+      "sha256": "2849f90b5a056ff0c61e8528a250fca1a70e36ff9498221b7a1929407f96cf73"
+    },
+    {
+      "path": "r03/characters/cactus/variant_b_sprite.png",
+      "bytes": 789,
+      "sha256": "11195b874c97add460f447165ea471a84177654134306c6386a49786e6b37480"
+    },
+    {
+      "path": "r03/characters/cactus/variant_b_sprite.svg",
+      "bytes": 1738,
+      "sha256": "3dab5cc675b343db0240f7378796697e86a83c69b407606f0831ddf8078a349f"
+    },
+    {
+      "path": "r03/characters/chicken/SETTING.md",
+      "bytes": 3862,
+      "sha256": "069a2c1650c847747b8ee36cc5a80263d7059845a4ce0769975e2a08daad74a7"
+    },
+    {
+      "path": "r03/characters/chicken/a_display.png",
+      "bytes": 5387,
+      "sha256": "457562c7b7aaa049678c4ddfce4e9b01939df9348c4ff7259637bde9c05f961f"
+    },
+    {
+      "path": "r03/characters/chicken/a_states.gif",
+      "bytes": 13327,
+      "sha256": "dc4ae136f86df352df9d9d795445001dae0c3127397491035eba394c13683804"
+    },
+    {
+      "path": "r03/characters/chicken/b_display.png",
+      "bytes": 5653,
+      "sha256": "b40063ad0a695fa3a3a79e9849e85494125385958315696b03dde03999989062"
+    },
+    {
+      "path": "r03/characters/chicken/b_states.gif",
+      "bytes": 14228,
+      "sha256": "4351711b7443e1217d0a45baccd8cccf1998625af5e4dd912f0951ac89490f83"
+    },
+    {
+      "path": "r03/characters/chicken/comparison.png",
+      "bytes": 29992,
+      "sha256": "a51db1aebe4ab7ce1631f836ecdcb75880d5bd49508e347bcfbd5b648fa5901c"
+    },
+    {
+      "path": "r03/characters/chicken/motion_compare.gif",
+      "bytes": 25898,
+      "sha256": "4067d235b6eb706eeeff95ef664651882fcf0c7bed21b09cecfcd57cdd33740a"
+    },
+    {
+      "path": "r03/characters/chicken/objects/armed_big_egg.png",
+      "bytes": 494,
+      "sha256": "c045d2639097af07d15b258e92f7ecf8656e98045bda24f317fba32f809fd79b"
+    },
+    {
+      "path": "r03/characters/chicken/objects/armed_big_egg.svg",
+      "bytes": 5090,
+      "sha256": "2aa94accb4d81975867a7e1bcb63833864d06d583a639deb527f95c15e4926be"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_a.png",
+      "bytes": 383,
+      "sha256": "92c0ce50255861bb206e9f1d79e08db015e387adfcb0bd74b012919b41607386"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_a.svg",
+      "bytes": 3720,
+      "sha256": "1232531490a7fd3d546237da0211b5606d7acc7a91aaccf2776445cd957314e0"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_b.png",
+      "bytes": 391,
+      "sha256": "0a1f3deb3955401f78eaf7af003f9bf77404c0b7afca3a0c17a180d1800692df"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_b.svg",
+      "bytes": 3608,
+      "sha256": "658a21a471e0470a800ea8b7b79d97120abf942b5a6a63f93779a999c43e1bca"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_patterns.png",
+      "bytes": 458,
+      "sha256": "9f2e91ca63654676ef1e353c2ad65a04c7ae33660e15ecf45819077625b329c4"
+    },
+    {
+      "path": "r03/characters/chicken/objects/egg_patterns.svg",
+      "bytes": 6152,
+      "sha256": "f10fd78f724a7dc5073448167bc82835f8368309fd3643b9138e900471216bf2"
+    },
+    {
+      "path": "r03/characters/chicken/review.json",
+      "bytes": 7576,
+      "sha256": "172440666ccebee5f7c62f9b8dab761181d84e636f4d1540c8b1625cadf0f2a5"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_0.png",
+      "bytes": 735,
+      "sha256": "25cc9ed1316d77b50a53fadc65d8fd87d72428fa93d55c8b444ac87546f98d85"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_0.svg",
+      "bytes": 10257,
+      "sha256": "284a48ac8b08815a7eda0dbe481f196fed29840beda9ba400828e11d09f76f66"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_1.png",
+      "bytes": 755,
+      "sha256": "05247e77c4a7aa4b03383c7da3a7765fcd705d3360d330212c3d6ee79bedeba7"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_1.svg",
+      "bytes": 10369,
+      "sha256": "59a8735487a0fff1692cd32075266627a54c7f872f6bcf1cdc8f0ba87e965769"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_2.png",
+      "bytes": 762,
+      "sha256": "22c18446a58d47d47caccf498bdf9c828542840dd741a72aed7d84b42f7b314a"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_2.svg",
+      "bytes": 11398,
+      "sha256": "0b73c61c3d9c290554f0edd4e788cbd13119e1325e75c7962aa769cab70c180e"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_3.png",
+      "bytes": 883,
+      "sha256": "c3ffa8801060d93a2cf626a64538e789697ed7f3a8f2b11327183515c75bf90a"
+    },
+    {
+      "path": "r03/characters/chicken/states/a_3.svg",
+      "bytes": 12514,
+      "sha256": "c95a08c716e8bff90e197670eb432d2d94d7fc606e64ed60bd70677c6edfc0b2"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_0.png",
+      "bytes": 761,
+      "sha256": "abbc1e8866cf52c70e06b867af4eee16caa6791ca04ca4262196b86574b849a4"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_0.svg",
+      "bytes": 9688,
+      "sha256": "3c5292c90c99e889826a843759c00bf12b96991a804dc5f7adc40e760994e943"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_1.png",
+      "bytes": 780,
+      "sha256": "9e37618ebc254c934288394757b8a519a8f4ce9f92577862edead70c84c119ec"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_1.svg",
+      "bytes": 9800,
+      "sha256": "04a0444c938d15b1137498b5400f0fa14297ef8a966e5093238cfc82c02311e0"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_2.png",
+      "bytes": 854,
+      "sha256": "e5f573a346501d01f385da8174c8af87b1bd98d5413272325c5cae7f3007cc2e"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_2.svg",
+      "bytes": 12429,
+      "sha256": "060379a4d2698a26a2db37d86693f3d3b6427ff717db560eb1ba5d56ac5a0553"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_3.png",
+      "bytes": 936,
+      "sha256": "73b046576469ba3b127bfb897fd04a3b37e9844ad5d02f98ab2f1027ca686440"
+    },
+    {
+      "path": "r03/characters/chicken/states/b_3.svg",
+      "bytes": 13467,
+      "sha256": "cd195c0c87d941d2c634a3a8760955807e1e4c5a82d2e759b18d0f6cc25cea4e"
+    },
+    {
+      "path": "r03/characters/chicken/states/hit_blink.png",
+      "bytes": 724,
+      "sha256": "48ab964697d92fa4098f5e67cc59f8224908f4ad26b3867c08b2484f38d40c24"
+    },
+    {
+      "path": "r03/characters/chicken/states/hit_blink.svg",
+      "bytes": 10031,
+      "sha256": "8e8ecd00cc662631d1721026989b84292abf5b87aba6cffa3ad95b83ca56743e"
+    },
+    {
+      "path": "r03/characters/chicken/states/hit_feedback.png",
+      "bytes": 17904,
+      "sha256": "e08663617b1cf257f27affb0b3d6d313aee75d01bed0b5d67197ec8c02a3ae21"
+    },
+    {
+      "path": "r03/characters/chicken/states/hit_spark.png",
+      "bytes": 806,
+      "sha256": "a4b5c717e3a57a2e3f53a798e4b14809e0301b525942d7ec8a0cf1f1b98c02f0"
+    },
+    {
+      "path": "r03/characters/chicken/states/hit_spark.svg",
+      "bytes": 10713,
+      "sha256": "7152fa10bbdf5985aef6d83173bd61108c7f037dc82adee292cbfeb02f707e49"
+    },
+    {
+      "path": "r03/characters/chicken/states/movement_direction.png",
+      "bytes": 795,
+      "sha256": "86237876fc378ac026c094ec0307c33b0bb665c3271c50b6ed642f3efd4d042d"
+    },
+    {
+      "path": "r03/characters/chicken/states/movement_direction.svg",
+      "bytes": 10599,
+      "sha256": "27de9ec36d5b276b5dafc50d2fbbdd6673ced223303b175968220ecc9a2eb006"
+    },
+    {
+      "path": "r03/characters/chicken/variant_a.png",
+      "bytes": 735,
+      "sha256": "25cc9ed1316d77b50a53fadc65d8fd87d72428fa93d55c8b444ac87546f98d85"
+    },
+    {
+      "path": "r03/characters/chicken/variant_a.svg",
+      "bytes": 10257,
+      "sha256": "284a48ac8b08815a7eda0dbe481f196fed29840beda9ba400828e11d09f76f66"
+    },
+    {
+      "path": "r03/characters/chicken/variant_b.png",
+      "bytes": 761,
+      "sha256": "abbc1e8866cf52c70e06b867af4eee16caa6791ca04ca4262196b86574b849a4"
+    },
+    {
+      "path": "r03/characters/chicken/variant_b.svg",
+      "bytes": 9688,
+      "sha256": "3c5292c90c99e889826a843759c00bf12b96991a804dc5f7adc40e760994e943"
+    },
+    {
+      "path": "r03/characters/crow/SETTING.md",
+      "bytes": 3666,
+      "sha256": "6ab1f643462f30ef4b03a85cf5428dfd0cea9e57b5c2eb5c220ab262efc4cdcb"
+    },
+    {
+      "path": "r03/characters/crow/comparison.png",
+      "bytes": 31643,
+      "sha256": "1ee0876e545fdf21c92345e23cd2b45492304667152c7557f5ae49227bdac73a"
+    },
+    {
+      "path": "r03/characters/crow/hurt_1.gif",
+      "bytes": 48602,
+      "sha256": "1951b928dd2aab719a95c89ea4a966fe82fb9eb02b4b12b77feaec8f3e40cc66"
+    },
+    {
+      "path": "r03/characters/crow/hurt_1_cover.png",
+      "bytes": 16586,
+      "sha256": "e70847a94c313c019501cafac7ff17a846efbed7da074852bd3e0cd189f99089"
+    },
+    {
+      "path": "r03/characters/crow/hurt_2.gif",
+      "bytes": 55899,
+      "sha256": "ccc575487e39dc6f4218b40739869782b9f15aae1250e900582affdd916b4922"
+    },
+    {
+      "path": "r03/characters/crow/hurt_2_cover.png",
+      "bytes": 15802,
+      "sha256": "067ba93397743ff38c420722670b69ba8e89961d85d4eba404e7d47a9083bf2c"
+    },
+    {
+      "path": "r03/characters/crow/motion_1.gif",
+      "bytes": 95890,
+      "sha256": "74efc9f0fbc10eae39661a666b660719ea8fcfbacd213bc9c0bbf66ee898ec0a"
+    },
+    {
+      "path": "r03/characters/crow/motion_1_cover.png",
+      "bytes": 15375,
+      "sha256": "3badd52f327db09e853a7454a939aa543695d17208825b343dbe85b873036ab7"
+    },
+    {
+      "path": "r03/characters/crow/motion_2.gif",
+      "bytes": 96131,
+      "sha256": "f36c20a5844da0c92452d4f656cbf82c4a69559dd8ed3ef07509f602307b576b"
+    },
+    {
+      "path": "r03/characters/crow/motion_2_cover.png",
+      "bytes": 16326,
+      "sha256": "91a074ee1e1154dddb7d328cdb0e9c6a1e377142046e43fc43f4ef40434f55b6"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy.png",
+      "bytes": 546,
+      "sha256": "14c82bb6d54303a3fe2d6dc038610bb4785b06c73b9ee30bccbba2cc2d451deb"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy.svg",
+      "bytes": 1068,
+      "sha256": "7021c2c9c968991fbf4a7b1ec8f16285474350e7b3d15dd9fe3fb59629cacba0"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy_b.png",
+      "bytes": 568,
+      "sha256": "ddd9f452c3496f0c953686943ff23cd85b78ccd3fcd94a44634e41bde338e3de"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy_b.svg",
+      "bytes": 1211,
+      "sha256": "fe04288403665222a17b04bed33bc664981ff006b3741bfcf0d56dfc82418f29"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy_damaged.png",
+      "bytes": 605,
+      "sha256": "c853098307d6245fd90bc99223beae2d4e5502647ed04ecc0eaaed8684039184"
+    },
+    {
+      "path": "r03/characters/crow/object_dummy_damaged.svg",
+      "bytes": 1159,
+      "sha256": "22ae9ab1da451880b10872ba7def349681ce0fd1c0b09ec2f3db6e591fc44c2e"
+    },
+    {
+      "path": "r03/characters/crow/object_feather.png",
+      "bytes": 529,
+      "sha256": "0c88cb7366f034c99733b8cee552c98ac376e57d09cc2443e65fdabc7f26adbf"
+    },
+    {
+      "path": "r03/characters/crow/object_feather.svg",
+      "bytes": 351,
+      "sha256": "4ac7cf9c55ad8f3d281a18bcb6eaa76b3d04da503f3cfaedf474d091c9d9e489"
+    },
+    {
+      "path": "r03/characters/crow/review.json",
+      "bytes": 8918,
+      "sha256": "73aed4f6e60809e77b3347c8c0f91804a93f95137d6d8da022d96b3db66dfbeb"
+    },
+    {
+      "path": "r03/characters/crow/state_feather.png",
+      "bytes": 8653,
+      "sha256": "8e2e7e1fdaf1161ea071b912a5f4a28a463002a148300b2843a85cdfa022caf1"
+    },
+    {
+      "path": "r03/characters/crow/state_idle.png",
+      "bytes": 10199,
+      "sha256": "063bc420cc2da4e9997d03fcc6c26216092303943461b859d4099d3909a70c16"
+    },
+    {
+      "path": "r03/characters/crow/state_repair.png",
+      "bytes": 15465,
+      "sha256": "e4ca13d01e517d5d52369a48442a9d1b021aae5aef8245d40f61fd0ff2085610"
+    },
+    {
+      "path": "r03/characters/crow/variant_a.png",
+      "bytes": 10796,
+      "sha256": "3b5ea528af05459775a4e97db52e188698729e0e490628c91c86d2a8b2f82cb5"
+    },
+    {
+      "path": "r03/characters/crow/variant_a_sprite.png",
+      "bytes": 704,
+      "sha256": "7bdb2f13ae88e158bcdbe856ce928b346fa811c5e1e7dea922894081d8dc68ce"
+    },
+    {
+      "path": "r03/characters/crow/variant_a_sprite.svg",
+      "bytes": 1040,
+      "sha256": "f50a5addc8840863c4c3ce65146c9ca7cfa4d9baffeb9fb56a85a1b6a87e75cb"
+    },
+    {
+      "path": "r03/characters/crow/variant_b.png",
+      "bytes": 11061,
+      "sha256": "1cd014eeedda62e40c3e0f2c635970b7c5abbf5d21827c3fcbf84c5742a75de2"
+    },
+    {
+      "path": "r03/characters/crow/variant_b_sprite.png",
+      "bytes": 691,
+      "sha256": "21a2ef82ab7e38dc01d19c4328482e07cc9d9d2356969e6d9e0fff1c0173fa16"
+    },
+    {
+      "path": "r03/characters/crow/variant_b_sprite.svg",
+      "bytes": 1355,
+      "sha256": "08c9dcd8176d88abb5066207c3e57d9f514181b971c537826926b67bb0b08a75"
+    },
+    {
+      "path": "r03/characters/electric_sheep/SETTING.md",
+      "bytes": 4010,
+      "sha256": "551911bde04a09a9c861b46648bdf34d0c55783933e6ad29e66191bfe40bbacd"
+    },
+    {
+      "path": "r03/characters/electric_sheep/a_display.png",
+      "bytes": 4804,
+      "sha256": "f8fd15ba8c1e555d7e3ffdc8898694074da8118289717787e6f4bd792a875b9a"
+    },
+    {
+      "path": "r03/characters/electric_sheep/a_states.gif",
+      "bytes": 12024,
+      "sha256": "3b5bee744ed82a9660144142bb2a548f65871e8a4175e6d0a6f13ae684c63f6d"
+    },
+    {
+      "path": "r03/characters/electric_sheep/b_display.png",
+      "bytes": 5255,
+      "sha256": "b46cda2fee42fd25b92714e814e21dc087cac327fccdc3b47508bcda5cb7a28e"
+    },
+    {
+      "path": "r03/characters/electric_sheep/b_states.gif",
+      "bytes": 12270,
+      "sha256": "8b298082481e1a55c15017070d284c1d65a017c206684857cfb3ab587939c422"
+    },
+    {
+      "path": "r03/characters/electric_sheep/comparison.png",
+      "bytes": 28414,
+      "sha256": "98f0beec21b048de505d5da00b7e7924b46d20e5c711cd186f4c9ef9871eae9b"
+    },
+    {
+      "path": "r03/characters/electric_sheep/motion_compare.gif",
+      "bytes": 22825,
+      "sha256": "ef86c46e2779e8cb17e12ad272cdd7363ba2404f8d070492a309b0e5dfb12132"
+    },
+    {
+      "path": "r03/characters/electric_sheep/objects/wool_folded.png",
+      "bytes": 417,
+      "sha256": "3c9ecd0f99f6ba3582f0eaecc7ddecc26c54eb68cadd3349a62205d6c38e1fd2"
+    },
+    {
+      "path": "r03/characters/electric_sheep/objects/wool_folded.svg",
+      "bytes": 5943,
+      "sha256": "3c50793464c374b3cc60b28d853dcd3fd70edafe54277ea476d95932bfbd3968"
+    },
+    {
+      "path": "r03/characters/electric_sheep/objects/wool_patch.png",
+      "bytes": 469,
+      "sha256": "de80cb95123a00e708ba72e54ec50933609cd3bb0d40fa724432a4073c33b358"
+    },
+    {
+      "path": "r03/characters/electric_sheep/objects/wool_patch.svg",
+      "bytes": 5938,
+      "sha256": "a27d35f0a8ebef5e9dcab16de46ca45d473cfbbb1f4c25b3a254147f73a7006e"
+    },
+    {
+      "path": "r03/characters/electric_sheep/review.json",
+      "bytes": 7283,
+      "sha256": "ae281279812faaf989a20679631f04bd91b36e8b9289108ce3128cba6fe88369"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_0.png",
+      "bytes": 639,
+      "sha256": "61fd906c29efe874335838c6f153430de3d3b280a2000ee5c562105d6404ef31"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_0.svg",
+      "bytes": 9223,
+      "sha256": "b8c32e817757178c3cbbf9913bf38d639d83dbf5689bc9e6dff5bb9ffbf041c9"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_1.png",
+      "bytes": 729,
+      "sha256": "35f4cd505f6df4821a6459c000799a23d3e1229d525cc8cd68048f49deeb5dd0"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_1.svg",
+      "bytes": 10469,
+      "sha256": "f155a717fbb50be547e91d0ca52c8325844f17da550199ecb9b7a1f40372c2a9"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_2.png",
+      "bytes": 742,
+      "sha256": "25d9773799884fb01a70028cfe6e28c40701c2cb50e4c880bddc4d8fa9c07c4e"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_2.svg",
+      "bytes": 10970,
+      "sha256": "c72959078f87351bf3b3e09458924426c6298f7423347b17eb63ac453bcd7f9e"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_3.png",
+      "bytes": 798,
+      "sha256": "7d42a126363f3cca47988a89e408ef5e74c3d6070f7aa75a71e9a37f87feb303"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/a_3.svg",
+      "bytes": 11381,
+      "sha256": "d1169bef733144cc53809ab6b3964b82ed69daa6b43530742edd3ce643af728a"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_0.png",
+      "bytes": 603,
+      "sha256": "bff8f989a63ff4917834ce18c06f8c424131e2da7af6a0ca59fa804895c23bcd"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_0.svg",
+      "bytes": 9965,
+      "sha256": "6a69279107f3bd014e685cb1bbe760730fa0f8fae9ee62abc3a9197c966f5078"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_1.png",
+      "bytes": 692,
+      "sha256": "618d3437b3bd79ca99b95f912ad24dd6c8c12df6d11bc5067632aae2dd491274"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_1.svg",
+      "bytes": 10702,
+      "sha256": "ab92650f510c400c3ae6e3fbb76e652b477c53a2342ae6b36b4cf6475b552a23"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_2.png",
+      "bytes": 767,
+      "sha256": "66a8fe8c0a872026891c04efea4ce97d80533da6f392242ff2de6b6249c936c0"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_2.svg",
+      "bytes": 11879,
+      "sha256": "4eb7509db5e6f2ede0b0d7e7dddb8bc0aa9849d5b428be0ac3419f9b9a636299"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_3.png",
+      "bytes": 738,
+      "sha256": "501168036679581fa5787ccfaef8a631ebce49718372da58edd5947094828440"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/b_3.svg",
+      "bytes": 11329,
+      "sha256": "7d089d751b8251fe8c6953a3fde40daddd545e59dfe5a95fea2775d9e49510ba"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/hit_blink.png",
+      "bytes": 628,
+      "sha256": "fe188dd8886e6a6c8e183c1e403b8778ae563ecdf00824a3e2a17d4717f64a8d"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/hit_blink.svg",
+      "bytes": 8826,
+      "sha256": "768f95c185e84eeabfd0904d324920f18049398bb223e2622c7fcd51ffbae72c"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/hit_feedback.png",
+      "bytes": 17843,
+      "sha256": "d19224ad9eed0ad1b20874562a10df665fe7a422f4d2f7c445dff9d39eea562c"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/hit_spark.png",
+      "bytes": 741,
+      "sha256": "4f344b55f9cd880e395f229fd536294f784729c6d92cf8a19053802fd7090b80"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/hit_spark.svg",
+      "bytes": 9906,
+      "sha256": "0b6380f3e93a6217ee6ca3783eddb51070b16908a1c32fe778f5a3e99cf61169"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/movement_direction.png",
+      "bytes": 697,
+      "sha256": "391d3d12d863b594671101c465255f3869b6f731bdfdf3654d99abed80cc2866"
+    },
+    {
+      "path": "r03/characters/electric_sheep/states/movement_direction.svg",
+      "bytes": 9565,
+      "sha256": "a9711079d3e5fbf929af019fe0a3955cdd4dfae79406c7e8bb362a323ac0eda1"
+    },
+    {
+      "path": "r03/characters/electric_sheep/variant_a.png",
+      "bytes": 639,
+      "sha256": "61fd906c29efe874335838c6f153430de3d3b280a2000ee5c562105d6404ef31"
+    },
+    {
+      "path": "r03/characters/electric_sheep/variant_a.svg",
+      "bytes": 9223,
+      "sha256": "b8c32e817757178c3cbbf9913bf38d639d83dbf5689bc9e6dff5bb9ffbf041c9"
+    },
+    {
+      "path": "r03/characters/electric_sheep/variant_b.png",
+      "bytes": 603,
+      "sha256": "bff8f989a63ff4917834ce18c06f8c424131e2da7af6a0ca59fa804895c23bcd"
+    },
+    {
+      "path": "r03/characters/electric_sheep/variant_b.svg",
+      "bytes": 9965,
+      "sha256": "6a69279107f3bd014e685cb1bbe760730fa0f8fae9ee62abc3a9197c966f5078"
+    },
+    {
+      "path": "r03/characters/magnet_crab/SETTING.md",
+      "bytes": 3433,
+      "sha256": "c64d7de8ec6ac6f38e4a0029cc04946d83fa3e7f38dcd5507ea79145a0aad2db"
+    },
+    {
+      "path": "r03/characters/magnet_crab/comparison.png",
+      "bytes": 31847,
+      "sha256": "8f3b2521f75abd8b1c87b704b03ec5f374e8d6be812afebb3e68b529db9db7a4"
+    },
+    {
+      "path": "r03/characters/magnet_crab/hurt_1.gif",
+      "bytes": 53250,
+      "sha256": "ed50561af25f507c3ad58424b40075c3e395ac753058a44ddb402a5b216c4633"
+    },
+    {
+      "path": "r03/characters/magnet_crab/hurt_1_cover.png",
+      "bytes": 16695,
+      "sha256": "173f1cf5944ef2fac414402ecd0cb821d082d662bc991e4799ae84a1f047d6cd"
+    },
+    {
+      "path": "r03/characters/magnet_crab/hurt_2.gif",
+      "bytes": 60237,
+      "sha256": "a3c23f7c725a5e3d212e958f89b6ca4158f17d6c70e9396fbf23d7dfe6894b4d"
+    },
+    {
+      "path": "r03/characters/magnet_crab/hurt_2_cover.png",
+      "bytes": 15836,
+      "sha256": "01e09800fcb409d110f5dd7ec3e68739d692c2a54583665024fb56c8655d7f05"
+    },
+    {
+      "path": "r03/characters/magnet_crab/motion_1.gif",
+      "bytes": 86315,
+      "sha256": "7ec8f80a06cf3e9a083c20f2b055b30149327abede5bc449764cfc661cd63688"
+    },
+    {
+      "path": "r03/characters/magnet_crab/motion_1_cover.png",
+      "bytes": 13660,
+      "sha256": "1cb83d4773fe3680c26e04e01b7503c0bd88210201a7860afb2e7867db487d30"
+    },
+    {
+      "path": "r03/characters/magnet_crab/motion_2.gif",
+      "bytes": 88713,
+      "sha256": "e94067c4b0f4f1f3f5d508ebb2fb514d0240149624199adda945c894b9fc1476"
+    },
+    {
+      "path": "r03/characters/magnet_crab/motion_2_cover.png",
+      "bytes": 14721,
+      "sha256": "8aea9bae15410d4b7442bdb54890839f7a3087ffd251a47def8cd37e5bc89997"
+    },
+    {
+      "path": "r03/characters/magnet_crab/object_nail_moving.png",
+      "bytes": 502,
+      "sha256": "c5a2a1e6472ecea56d2ca87753b6065f6a4d7a1712ac99d30a179e809295d261"
+    },
+    {
+      "path": "r03/characters/magnet_crab/object_nail_moving.svg",
+      "bytes": 397,
+      "sha256": "b5d4e4db6bc0b56baba9f45431719188888f14c982c659de2179062b1f858522"
+    },
+    {
+      "path": "r03/characters/magnet_crab/object_nail_rest.png",
+      "bytes": 500,
+      "sha256": "3274faa67c3faffc257f4995eecc85c466f909384b89aa666292e82cc025b2bb"
+    },
+    {
+      "path": "r03/characters/magnet_crab/object_nail_rest.svg",
+      "bytes": 397,
+      "sha256": "a8b53e35a265414c5b900e9cd10f8f79e940a0f5deecc76428e9506c42e33ee8"
+    },
+    {
+      "path": "r03/characters/magnet_crab/review.json",
+      "bytes": 8478,
+      "sha256": "447614f943cf4d550a1f5f71f60086bb296fa3be58c43b4c51feb21c7e7094d4"
+    },
+    {
+      "path": "r03/characters/magnet_crab/state_idle.png",
+      "bytes": 8877,
+      "sha256": "b4540d44d9c89d6b584ba48b8eb08acbe86704eae49f1365a3c0fe024cfe71a4"
+    },
+    {
+      "path": "r03/characters/magnet_crab/state_moving.png",
+      "bytes": 9831,
+      "sha256": "90e011657001eaa6ebfe54d57072a1ee1481b58d007c6f37873ded1eb299c783"
+    },
+    {
+      "path": "r03/characters/magnet_crab/state_ready.png",
+      "bytes": 9512,
+      "sha256": "ece75383c4361b80c1bfcc84d533eb493a54002427c58b60a9a7f9e88ace13c6"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_a.png",
+      "bytes": 9405,
+      "sha256": "0007a829e41bc83e2098800d4643c69bf4195805abe9af60a47256a6262bcab4"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_a_sprite.png",
+      "bytes": 681,
+      "sha256": "3db728b98a4425548a867ec89941cad5614fffe3412beee1b66e504653ea99a5"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_a_sprite.svg",
+      "bytes": 2406,
+      "sha256": "0ac3f2b99b2803f9b40ae45d003336c71003bef0f5a294221c9d12f4a5093e16"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_b.png",
+      "bytes": 10239,
+      "sha256": "2f1b849341a0b7b00dd82826272c7ae42e36ba4dd75c483d36e734c27e999bd4"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_b_sprite.png",
+      "bytes": 788,
+      "sha256": "26dd53561264742721b70eaa728411a473dd3b796b769d29d319870294edfa98"
+    },
+    {
+      "path": "r03/characters/magnet_crab/variant_b_sprite.svg",
+      "bytes": 2821,
+      "sha256": "a3a2a4df4f27bb0b2bc846e413bf7082801d65c8cfe0c27bba119a533560374f"
+    },
+    {
+      "path": "r03/characters/puffer/SETTING.md",
+      "bytes": 4111,
+      "sha256": "cb95da3ef675a93a468f1f109130aec31e4473afd135a03736e561407b12ce69"
+    },
+    {
+      "path": "r03/characters/puffer/a_display.png",
+      "bytes": 6934,
+      "sha256": "4e84f218717f1e394a0d58bbaff14ae4e0643184ebf43645cd94b7773e2348e5"
+    },
+    {
+      "path": "r03/characters/puffer/a_states.gif",
+      "bytes": 14544,
+      "sha256": "8395c364a9d6cce7c38c25bbacd854c2f8593ebd2531eb337a9c847728a17be3"
+    },
+    {
+      "path": "r03/characters/puffer/b_display.png",
+      "bytes": 7323,
+      "sha256": "8753435e7870cbd4b855607d93864ff96102c9c4f5470691cc04c8af92337f4d"
+    },
+    {
+      "path": "r03/characters/puffer/b_states.gif",
+      "bytes": 15615,
+      "sha256": "28748520171337f2413a5ff906e50b8e522b8501ba81c8dc4c33506f63707aa4"
+    },
+    {
+      "path": "r03/characters/puffer/comparison.png",
+      "bytes": 29028,
+      "sha256": "f8c04c586a00480a54b57e72536744f79f85800105b255688d819796c8a214e6"
+    },
+    {
+      "path": "r03/characters/puffer/motion_compare.gif",
+      "bytes": 28629,
+      "sha256": "d17f2f6bd9756c2a2b6144a74cfbc52967bdcdce5d97210ea2c33b6903ff81d6"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_a.png",
+      "bytes": 229,
+      "sha256": "3eaedd00320de8989244fc97a9975229a2d2cc263a9cfd36afb5910be2b06fe3"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_a.svg",
+      "bytes": 1477,
+      "sha256": "898e2cdeba6ec3b1dc902173d8d907395be6896188158b5ba2c18aeaea1a6e8f"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_and_burst.png",
+      "bytes": 886,
+      "sha256": "9725a6fc287e0968c0c5e2714d6a53bb8f8f0096c432af433ca1ab3e11128731"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_and_burst.svg",
+      "bytes": 13277,
+      "sha256": "4e4158f85eddcd9569ad40a580d69bdc2b3880b2ef20166530e4e702c398d8b0"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_b.png",
+      "bytes": 320,
+      "sha256": "4b80d1f172f6811ae164cd0507bd6711f9c47513d7eafbca9f677192c417c926"
+    },
+    {
+      "path": "r03/characters/puffer/objects/absorb_b.svg",
+      "bytes": 1931,
+      "sha256": "68146e409212021e446dc07e4fb244b0ee611110c2c2b664a90fd1fcbc11ca7e"
+    },
+    {
+      "path": "r03/characters/puffer/review.json",
+      "bytes": 7874,
+      "sha256": "ffb89009e1749495504247604f3ac4a6a98c4e375ff846ca44fbdd60d595cffb"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_0.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_0.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_1.png",
+      "bytes": 584,
+      "sha256": "430ee5b8c66521606b6a6b0db8b8d0d3cc1e1df7abf07377532a8efd028ce8a2"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_1.svg",
+      "bytes": 8170,
+      "sha256": "0a7a55243a639a8d7879cf31fae1b3ce2e64ffa397e844f71715c5a9ee0b16a3"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_2.png",
+      "bytes": 720,
+      "sha256": "45aaa884a2ab032961658c108bd7e2e9f317d4695ce3d790579c0952cd582fc1"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_2.svg",
+      "bytes": 10026,
+      "sha256": "f735232f1c0ea602b445aad625d6ded4571276102ee6b5068ccc0bbac868feca"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_3.png",
+      "bytes": 755,
+      "sha256": "8d2a266860bd48b8fe6e06ded3fa1c93480b433b4f3848d4bda655583f9484e5"
+    },
+    {
+      "path": "r03/characters/puffer/states/a_3.svg",
+      "bytes": 11416,
+      "sha256": "dd7966cd848b5cd4152ff08038ac27ff8cbae2bfa4c7912834e738c8b7d54a75"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_0.png",
+      "bytes": 586,
+      "sha256": "85caaec966566a917d27881977f343ef1b957ed4f83cb2a3eb81d9c24d1fdfda"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_0.svg",
+      "bytes": 6959,
+      "sha256": "3cd80b327c2bbfeb3040e376e1d1cb185c7839408da7c759133cf0fae35b3699"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_1.png",
+      "bytes": 688,
+      "sha256": "6beb81a83adc474c53ac8b49073a1f054f8c08aaaec47ab194f8d753ac163c32"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_1.svg",
+      "bytes": 11233,
+      "sha256": "7cc16276006d0ecbf6a0c41f7735c7f59480e824dc4cbb0a0e84d5a53bfd0c74"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_2.png",
+      "bytes": 825,
+      "sha256": "c91c32cc4d73518bc166d052094fd89de5b1d1d56db8222d22a3cbcf5a58a141"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_2.svg",
+      "bytes": 13613,
+      "sha256": "dbbe65cd7df0ffba0e390777628d9b08ad63d7488b0a991710a7228c156308c3"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_3.png",
+      "bytes": 853,
+      "sha256": "e2affb541c599afaa0f4218f41bcdc7a7fba3d712ec8c8a474acdf70906444a8"
+    },
+    {
+      "path": "r03/characters/puffer/states/b_3.svg",
+      "bytes": 17204,
+      "sha256": "a3349a255cc636b6117d44a37a8b9b7c09cd7d60558cb8e06222cfeaa0ee8e32"
+    },
+    {
+      "path": "r03/characters/puffer/states/hit_blink.png",
+      "bytes": 489,
+      "sha256": "451f09015d568539b450e6608a448350df1f5cda9a9a8b2709af0aaa5931fb5b"
+    },
+    {
+      "path": "r03/characters/puffer/states/hit_blink.svg",
+      "bytes": 5548,
+      "sha256": "70cff777422ab69d2d3714fa493870f205d610a4710febc8c6ad53749cce89a2"
+    },
+    {
+      "path": "r03/characters/puffer/states/hit_feedback.png",
+      "bytes": 17639,
+      "sha256": "57492f4e92081c0619bc2d1de8ac7a92709701ec2bb7fdb91f4c50261331c0f5"
+    },
+    {
+      "path": "r03/characters/puffer/states/hit_spark.png",
+      "bytes": 603,
+      "sha256": "569b0240d3dffdf9b7e8892bebdafbce269d25635742d9788e960525b9e28e7d"
+    },
+    {
+      "path": "r03/characters/puffer/states/hit_spark.svg",
+      "bytes": 6629,
+      "sha256": "17fab3ed0a4d6585f59d11d7579346897aaba3cced72dad162a4780852f6cd7d"
+    },
+    {
+      "path": "r03/characters/puffer/states/immune_absorb.png",
+      "bytes": 806,
+      "sha256": "5b657fd976029d590d2ffac62ef01e7f554bda31d18913a7983c55781ef8fd0a"
+    },
+    {
+      "path": "r03/characters/puffer/states/immune_absorb.svg",
+      "bytes": 10535,
+      "sha256": "33a2499ddcbbcfe18bd1e60ee268d81795dea245b5bf54cb4323b26f8903130f"
+    },
+    {
+      "path": "r03/characters/puffer/states/movement_direction.png",
+      "bytes": 573,
+      "sha256": "3032c6c189797bed9196e1a918524a7ffadd9a1ca7098f9a40a59aeeb086bff7"
+    },
+    {
+      "path": "r03/characters/puffer/states/movement_direction.svg",
+      "bytes": 6458,
+      "sha256": "77c3cb4d8d489512a9880270848b2b6bde3b5c244506d3ba39e9563770ec3bff"
+    },
+    {
+      "path": "r03/characters/puffer/variant_a.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "r03/characters/puffer/variant_a.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "r03/characters/puffer/variant_b.png",
+      "bytes": 586,
+      "sha256": "85caaec966566a917d27881977f343ef1b957ed4f83cb2a3eb81d9c24d1fdfda"
+    },
+    {
+      "path": "r03/characters/puffer/variant_b.svg",
+      "bytes": 6959,
+      "sha256": "3cd80b327c2bbfeb3040e376e1d1cb185c7839408da7c759133cf0fae35b3699"
+    },
+    {
+      "path": "r03/characters/shell_turtle/SETTING.md",
+      "bytes": 3570,
+      "sha256": "bd704f5d12dcae622aa42b18666bdd31361d816f7fdebc196ac7cc9fd7b1a1df"
+    },
+    {
+      "path": "r03/characters/shell_turtle/comparison.png",
+      "bytes": 36940,
+      "sha256": "0e168fadf47f5f0fd35f577ae4c92a63db7535a2b71417d2d5d444a8708a2306"
+    },
+    {
+      "path": "r03/characters/shell_turtle/hurt_1.gif",
+      "bytes": 47177,
+      "sha256": "e6c768bfaf87756628426a3c64fadd6c27ce64cfeb005e5ae615570c58c4e2fd"
+    },
+    {
+      "path": "r03/characters/shell_turtle/hurt_1_cover.png",
+      "bytes": 15551,
+      "sha256": "b7200bc30e7508d1b2bdb4ce7ea59dc2a9150a2a17d4af20c0fd2076bf58fc40"
+    },
+    {
+      "path": "r03/characters/shell_turtle/hurt_2.gif",
+      "bytes": 54055,
+      "sha256": "88241225b28a130701d20c7fba409e82f3c6645a8840c50f83748769caeae997"
+    },
+    {
+      "path": "r03/characters/shell_turtle/hurt_2_cover.png",
+      "bytes": 14772,
+      "sha256": "72ecbe2c7789ca34b639d217f6d3f65f1428af18a778a588224e90107272bb61"
+    },
+    {
+      "path": "r03/characters/shell_turtle/motion_1.gif",
+      "bytes": 100835,
+      "sha256": "4c9763db5f70612af5fb3c91e4767a7c8d8b279edc125ff0879921eeff94fd89"
+    },
+    {
+      "path": "r03/characters/shell_turtle/motion_1_cover.png",
+      "bytes": 14371,
+      "sha256": "cc0411ae9e151896a55b73ebcceb92fceb5923f5f2614836bbe56efe3dac3b11"
+    },
+    {
+      "path": "r03/characters/shell_turtle/motion_2.gif",
+      "bytes": 101618,
+      "sha256": "62b95d35117ea6adcf844d81403c53d4662af68a690435f3a4397f6048d481dd"
+    },
+    {
+      "path": "r03/characters/shell_turtle/motion_2_cover.png",
+      "bytes": 15054,
+      "sha256": "495b967ca7c5aadc9c29d7f7b049de86273db6de3c719498ec1906d7c47b555b"
+    },
+    {
+      "path": "r03/characters/shell_turtle/object_shell.png",
+      "bytes": 588,
+      "sha256": "55464c8c5cd374b396e547efbeea9d495e6585d4948eb27ddb3052e2279171f0"
+    },
+    {
+      "path": "r03/characters/shell_turtle/object_shell.svg",
+      "bytes": 804,
+      "sha256": "ef8b6d5a0b9ec9a1a9e0801ef5409d0ca58bf44f4e1e46aa58ec74fc50adbc5b"
+    },
+    {
+      "path": "r03/characters/shell_turtle/object_shell_b.png",
+      "bytes": 508,
+      "sha256": "49c8d45440a8ba7aa2618d8bd43fa4b2137baf54707541337e2111704a4c90c4"
+    },
+    {
+      "path": "r03/characters/shell_turtle/object_shell_b.svg",
+      "bytes": 576,
+      "sha256": "865d1ab37d10f849fa2380f76a2bc729a0c0f9a90cb534d082b01f14af9735b2"
+    },
+    {
+      "path": "r03/characters/shell_turtle/review.json",
+      "bytes": 8655,
+      "sha256": "61972ec2f79693760a9031572e8d4494fec3cd595dbc612942c498f27588c644"
+    },
+    {
+      "path": "r03/characters/shell_turtle/state_hidden.png",
+      "bytes": 8923,
+      "sha256": "c1ea83a9bd73d47c0ebc6920094b949f9727583d3a3ebfcbba36d121f09aae65"
+    },
+    {
+      "path": "r03/characters/shell_turtle/state_idle.png",
+      "bytes": 10509,
+      "sha256": "327331398acafd1f676d651147245cc0bd935c4375ccaa7332b22f6c39620f38"
+    },
+    {
+      "path": "r03/characters/shell_turtle/state_seek.png",
+      "bytes": 11112,
+      "sha256": "7ae38b595db3329cf2a5444fcefaec88bd24f9d326ec1ff149a79685d225d872"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_a.png",
+      "bytes": 16646,
+      "sha256": "c14a64fc71187a7c4685bd92eb7ee52d0f61be9c1a5770a553b975197e59dc39"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_a_sprite.png",
+      "bytes": 570,
+      "sha256": "cd1304b21975c8d5f795d1d94a983f7a81797b58f02c9874720e8ebc6d520186"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_a_sprite.svg",
+      "bytes": 1208,
+      "sha256": "d8da019dcc0a03308ffbab92d90682d9d9f27d837361963eee4ff968e6cbaaf2"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_b.png",
+      "bytes": 16384,
+      "sha256": "dcccfde5d1c7c239c47842b61403a44e043e531342756a8b058ef8fb58ea98a3"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_b_sprite.png",
+      "bytes": 585,
+      "sha256": "68c22d28e7a9701b0c2cd0fc81181598f48fba50835c5efd7a94e76d7775b460"
+    },
+    {
+      "path": "r03/characters/shell_turtle/variant_b_sprite.svg",
+      "bytes": 1334,
+      "sha256": "757879831acfa99ab58bbc18baacd026ad5253e388bfae334a6f22ec7b1cf8ad"
+    },
+    {
+      "path": "r03/facts/bubble_fish.md",
+      "bytes": 2119,
+      "sha256": "ca6b31b625fc68e19aa475ca3d4643d4bbd0b3d61d7ab16826143615a0c0f231"
+    },
+    {
+      "path": "r03/facts/cactus.md",
+      "bytes": 2009,
+      "sha256": "cb425b5d5662e89802d820a585de373810120d40ddbe19e0bab77ce5ef73f47a"
+    },
+    {
+      "path": "r03/facts/chicken.md",
+      "bytes": 2150,
+      "sha256": "300f3f2bcc645033674e7fd4b2cc62cae4b4a3c49ae05295ef4fbe575688d573"
+    },
+    {
+      "path": "r03/facts/crow.md",
+      "bytes": 2311,
+      "sha256": "734340b4b134798135e949933cb6d813dd7557f2ac189312025d58de6e4165be"
+    },
+    {
+      "path": "r03/facts/electric_sheep.md",
+      "bytes": 2286,
+      "sha256": "1533a1e5a5fed89e8564778ac5ee9ca92231554503aa5ecc3e83b6bb67eee346"
+    },
+    {
+      "path": "r03/facts/facts.json",
+      "bytes": 15786,
+      "sha256": "161d7f5414f40f38eed5b2dbc254c69e4e1df5f88b1d9268c54df0a699b0684c"
+    },
+    {
+      "path": "r03/facts/magnet_crab.md",
+      "bytes": 2265,
+      "sha256": "eade44c86cdf225a9fe96676853d8d6b4a0c6b7bde62f350396922d0a3e7fb38"
+    },
+    {
+      "path": "r03/facts/puffer.md",
+      "bytes": 2196,
+      "sha256": "2b0aae9f3111bb4107d0291a948779b0e4a173e713b6ee2f56a55f5ef7a70a0c"
+    },
+    {
+      "path": "r03/facts/shell_turtle.md",
+      "bytes": 2414,
+      "sha256": "39f8c0dbcd9f4347a92225259659218022a239e2d1f3a0647074089dddd520e3"
+    },
+    {
+      "path": "r03/qa/REPORT.md",
+      "bytes": 5840,
+      "sha256": "4bf4fcb97c62ed44b793a72207d87b60a861cc83372b04d4032540074839edb7"
+    },
+    {
+      "path": "r03/qa/audio-checks.json",
+      "bytes": 7553,
+      "sha256": "2a0877817eceaed55c4d610bfc3092d5b51e62b7e21a64bfe65ee5cee1296ee3"
+    },
+    {
+      "path": "r03/qa/browser-audio-checks.json",
+      "bytes": 3086,
+      "sha256": "666da8a36f71772648e2ed31e3d791fe5c19808268cc6a15244004d9af8b6624"
+    },
+    {
+      "path": "r03/qa/browser-corrective-checks.json",
+      "bytes": 17797,
+      "sha256": "fc608af9c68800488aa3fe6a2a15d9a7b727483a0cd9a6969ea9b26a61f44225"
+    },
+    {
+      "path": "r03/qa/image-checks.json",
+      "bytes": 62756,
+      "sha256": "2d28260a3667cccc5229a02c894e626b0f77251817f99c16c86e743f9c347017"
+    },
+    {
+      "path": "r03/qa/viewport-1280.png",
+      "bytes": 128515,
+      "sha256": "4dbaa6144ec79db98cdcbb7cfa6a9bef4d43332be6f21f99213a2c2be104f290"
+    },
+    {
+      "path": "r03/qa/viewport-360.png",
+      "bytes": 72668,
+      "sha256": "41e5ae1e3fa58a258739283d3589a7ca704799af78da4cd0c5f27884b598bffb"
+    },
+    {
+      "path": "r03/qa/viewport-390.png",
+      "bytes": 78574,
+      "sha256": "116470285e3c16b8ecfc4fe54f67f49ca5fb78a5628ff81689b60f94cf3fefa7"
+    },
+    {
+      "path": "r03/qa/viewport-768.png",
+      "bytes": 128380,
+      "sha256": "83c6293779fe6c9acce697b73dc5353568f6f5cc84bff418656d17d7b70a4906"
+    },
+    {
+      "path": "r03/review-data.json",
+      "bytes": 147099,
+      "sha256": "a39ec4fb749f6bed4d8a5a64d3c0d4712b0664277c1646cc9b6a7e7d6708a1dd"
+    },
+    {
+      "path": "r03/style.css",
+      "bytes": 8916,
+      "sha256": "af4bb0e77da00238a51c4cc15d9ac36123008c6a79186a50d7785634d201a830"
+    },
+    {
+      "path": "r03/ui/README.md",
+      "bytes": 4816,
+      "sha256": "9ed385e9ef68e3f24ec343463f973e78f0bd6513ff15c2bef2edcfd3ff28bfd5"
+    },
+    {
+      "path": "r03/ui/assets/arena_floor.png",
+      "bytes": 5009,
+      "sha256": "9d74c35390008ca72504ac70efaaab41f5bb4a7dea72116ae638b66c3ca05083"
+    },
+    {
+      "path": "r03/ui/assets/arena_wood_frame.png",
+      "bytes": 3665,
+      "sha256": "78c38e792d4f93bb8a698a55caf490982cfbb072be6045ad76b826d7dbb29023"
+    },
+    {
+      "path": "r03/ui/assets/bubble_fish_a.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "r03/ui/assets/crow_a.png",
+      "bytes": 704,
+      "sha256": "7bdb2f13ae88e158bcdbe856ce928b346fa811c5e1e7dea922894081d8dc68ce"
+    },
+    {
+      "path": "r03/ui/assets/electric_sheep_a.png",
+      "bytes": 639,
+      "sha256": "61fd906c29efe874335838c6f153430de3d3b280a2000ee5c562105d6404ef31"
+    },
+    {
+      "path": "r03/ui/assets/icon_heart.png",
+      "bytes": 263,
+      "sha256": "78bf22369e00964047e2f4eaecbe51fc6286e4adf8c1d95bbb7ed74a2b922614"
+    },
+    {
+      "path": "r03/ui/assets/icon_info.png",
+      "bytes": 179,
+      "sha256": "a2645f92cec19aebae52ab855c6d073f83f49029bb5dda9b8e7abd4b18ef9608"
+    },
+    {
+      "path": "r03/ui/assets/icon_new_seed.png",
+      "bytes": 228,
+      "sha256": "8f4c17ca963e3fc170aa0230a9fa1eb04f8081f61035e6c51b08707d4d64ed5f"
+    },
+    {
+      "path": "r03/ui/assets/icon_pause.png",
+      "bytes": 177,
+      "sha256": "dbacb0bbd98c9934fc0a90feea124230e74762e42ab74b83fd6b67efeae15fb3"
+    },
+    {
+      "path": "r03/ui/assets/icon_replay.png",
+      "bytes": 301,
+      "sha256": "f800720391c8609bac633833331ce9d18d33500e8ca9529d8d59e198aeb43bfd"
+    },
+    {
+      "path": "r03/ui/assets/icon_roster.png",
+      "bytes": 183,
+      "sha256": "72d399ec4db214d1ac8688509e7f8ddcf935164b633cc82e4ad9d4e61e534603"
+    },
+    {
+      "path": "r03/ui/assets/icon_sound_on.png",
+      "bytes": 374,
+      "sha256": "a08a0249856965de329500da8f4ebe476f3807b20849454542cb7f951c1688a2"
+    },
+    {
+      "path": "r03/ui/assets/icon_speed.png",
+      "bytes": 374,
+      "sha256": "150145dca3d9cdaaf1769dd9a0ae7be1c21f93bf3006f8f082b0c3032e1dce3d"
+    },
+    {
+      "path": "r03/ui/assets/object_dummy.png",
+      "bytes": 546,
+      "sha256": "14c82bb6d54303a3fe2d6dc038610bb4785b06c73b9ee30bccbba2cc2d451deb"
+    },
+    {
+      "path": "r03/ui/assets/object_shell.png",
+      "bytes": 588,
+      "sha256": "55464c8c5cd374b396e547efbeea9d495e6585d4948eb27ddb3052e2279171f0"
+    },
+    {
+      "path": "r03/ui/assets/screen_surround.png",
+      "bytes": 5170,
+      "sha256": "c26b48661469acca1d40381c5e5387b3f487a5f843987858ed525b068d35703b"
+    },
+    {
+      "path": "r03/ui/assets/shell_turtle_a.png",
+      "bytes": 570,
+      "sha256": "cd1304b21975c8d5f795d1d94a983f7a81797b58f02c9874720e8ebc6d520186"
+    },
+    {
+      "path": "r03/ui/data/asset_sources.json",
+      "bytes": 4122,
+      "sha256": "204f7d34b643cb786603df0b70ed0cc36115e757fc02bb941ec0c699d53d3b82"
+    },
+    {
+      "path": "r03/ui/data/shared_sample.json",
+      "bytes": 3058,
+      "sha256": "f36085e6f921c9909cb601542c34c3950eb01f8daaa6fea7c0609a029db3a88a"
+    },
+    {
+      "path": "r03/ui/data/stress_sample.json",
+      "bytes": 1374,
+      "sha256": "1078683a601fd9fdcaadd0a546baba13f828fec11eede1ba663332ef401fb3b5"
+    },
+    {
+      "path": "r03/ui/images/a_primary.png",
+      "bytes": 53660,
+      "sha256": "d9c923062daa7c884036370c58749178965017bf6643d6901500ed65db6f5e14"
+    },
+    {
+      "path": "r03/ui/images/a_primary.svg",
+      "bytes": 40642,
+      "sha256": "0ded01f013fbe300e7986b03ff4c9f83d7a6b369c55d8b7560dd780bba724ee4"
+    },
+    {
+      "path": "r03/ui/images/a_stress.png",
+      "bytes": 40943,
+      "sha256": "a3d2ecd4417077642edad46cd944db00fcdfee5c7626b78048605fc7aac5b2d1"
+    },
+    {
+      "path": "r03/ui/images/a_stress.svg",
+      "bytes": 40797,
+      "sha256": "87c0078bd9197ff5b4ce8d0f3e7aa0605819ebba5d57c1299ec58d1743761073"
+    },
+    {
+      "path": "r03/ui/images/b_primary.png",
+      "bytes": 49841,
+      "sha256": "b3077e0d0f2eec5349db9ed269e5544051e21eb094dcc7b3a9d00fe1f7d8cd2e"
+    },
+    {
+      "path": "r03/ui/images/b_primary.svg",
+      "bytes": 40249,
+      "sha256": "11fbe644325bbd7f1265281fd81537a7e3214f1a2ecf1b6e13825ad40761d290"
+    },
+    {
+      "path": "r03/ui/images/b_stress.png",
+      "bytes": 36424,
+      "sha256": "424b33092bff75a7998ca5f28c7ca074ba8057c9ed6c3dea53793390f0d98a1f"
+    },
+    {
+      "path": "r03/ui/images/b_stress.svg",
+      "bytes": 40179,
+      "sha256": "e7e3f41c2445faacab831dfd9566661639ce11e6e7b255792eae5527484c7efe"
+    },
+    {
+      "path": "r03/ui/images/c_primary.png",
+      "bytes": 52463,
+      "sha256": "da702e80774e030a9e3f8f54af9d933cecaab7a83031e48b7f4db8d442932ed8"
+    },
+    {
+      "path": "r03/ui/images/c_primary.svg",
+      "bytes": 39103,
+      "sha256": "1d455c43693d24274c2417ea0da31bfad0df4f38360b3a4c0132064a6507b57e"
+    },
+    {
+      "path": "r03/ui/images/c_stress.png",
+      "bytes": 39020,
+      "sha256": "11940109d775db6784c747c7a6290c9050fa8ef0d444080d1049369de4eecb8a"
+    },
+    {
+      "path": "r03/ui/images/c_stress.svg",
+      "bytes": 39038,
+      "sha256": "64941886a8bf43666b60da29cf512b38b3ddec182c82b3b6f06fe368e3285e80"
+    },
+    {
+      "path": "r03/ui/images/comparison_overview.png",
+      "bytes": 84226,
+      "sha256": "cfc39b40374794dd28ec25e9801f4e38c27c957331d9c0269ec5c794f164aec4"
+    },
+    {
+      "path": "r03/ui/review.json",
+      "bytes": 22313,
+      "sha256": "1c2da3251cde4357de1b0e37200f87e93709383676c9bcd66a9d0c0dd8651450"
+    },
+    {
+      "path": "r03/ui/validation.json",
+      "bytes": 4290,
+      "sha256": "4fff14edcab877fb9141bb1429920eb7ba4ea2395fa4883098966784516e076d"
+    }
+  ]
+}

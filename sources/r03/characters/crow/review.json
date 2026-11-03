@@ -1,0 +1,224 @@
+{
+  "id": "crow",
+  "name": "乌鸦",
+  "status": "R03 review candidates; none selected; not integration assets",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 瘦长折翼侧影",
+      "image": "variant_a.png",
+      "source_image": "variant_a_sprite.png",
+      "source_svg": "variant_a_sprite.svg",
+      "description": "瘦长侧身、折翼和长金喙，淡紫身体配深紫哑光羽片、浅青羽缘与浅腹部。单侧黑眼和收拢姿态偏谨慎沉着；这是候选视觉气质，不编造角色身世或飞羽攻击。",
+      "pros": [
+        "乌鸦与稻草人对照清楚",
+        "储羽标记不易和武器混淆"
+      ],
+      "cons": [
+        "单翼侧影需检查左右翻转"
+      ]
+    },
+    {
+      "id": "b",
+      "title": "B 宽身披翼轮廓",
+      "image": "variant_b.png",
+      "source_image": "variant_b_sprite.png",
+      "source_svg": "variant_b_sprite.svg",
+      "description": "宽身、两侧披翼和短粗金喙，深紫羽片包住淡紫胸腹，额顶小羽角强化体块；直视小黑眼更显机敏倔强。披翼只表达蓬松羽质与轮廓，不能被当成护盾或无敌状态。",
+      "pros": [
+        "大轮廓更适合小尺寸",
+        "拼布草人易显示受损/修复"
+      ],
+      "cons": [
+        "披翼需避免看成护盾/无敌状态"
+      ]
+    }
+  ],
+  "recommendation": "推荐A：瘦长侧影与木草人关系更清楚，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+  "questions": [
+    "选择瘦长折翼还是宽身披翼？",
+    "换位用两端局部环，还是不连线的短羽光？羽毛不得成为远程攻击。",
+    "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "本体与受伤稻草人",
+      "image": "state_idle.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "idle"
+    },
+    {
+      "id": "feather",
+      "title": "储羽准备",
+      "image": "state_feather.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "feather"
+    },
+    {
+      "id": "repair",
+      "title": "近身修复概念",
+      "image": "state_repair.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "repair"
+    },
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "mobility",
+      "title": "移动／站桩方向",
+      "image": "state_idle.png",
+      "description": "本体按原运动；换位是合法条件下瞬换，不画飞行法术或远程羽攻击。",
+      "event": "existing_position_and_velocity"
+    }
+  ],
+  "motion": [
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "id": "dummy",
+      "name": "独立稻草人",
+      "image": "object_dummy.png",
+      "source_svg": "object_dummy.svg",
+      "description": "最多2个，固定60HP，承伤实际值反到敌方英雄，不主动攻击。"
+    },
+    {
+      "id": "dummy_damaged",
+      "name": "受伤稻草人",
+      "image": "object_dummy_damaged.png",
+      "source_svg": "object_dummy_damaged.svg",
+      "description": "存活且受伤时才能由乌鸦碰触消耗羽毛补25HP。"
+    },
+    {
+      "id": "feather",
+      "name": "储存羽毛",
+      "image": "object_feather.png",
+      "source_svg": "object_feather.svg",
+      "description": "状态道具；不是羽毛弹、法杖或远程伤害技能。"
+    },
+    {
+      "id": "dummy_b",
+      "name": "B方向配套稻草人",
+      "image": "object_dummy_b.png",
+      "source_svg": "object_dummy_b.svg",
+      "description": "B候选的物件轮廓，不改变实际物体规则。"
+    }
+  ],
+  "information": [
+    "稻草人最多2个，固定站位",
+    "与首个稻草人换位置须两边合法",
+    "带羽碰自己受伤稻草人补25HP，消耗羽毛"
+  ],
+  "validation": [
+    "已根据独立代码事实稿核对角色/物件语义",
+    "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+    "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+  ],
+  "missing": [
+    "完整换位/受损/修复游戏动画尚未接入",
+    "新稻草人外形和储羽图标仍待用户选择",
+    "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+  ],
+  "source_facts": "../../facts/crow.md",
+  "setting_document": "SETTING.md",
+  "source_facts_sha256": "734340b4b134798135e949933cb6d813dd7557f2ac189312025d58de6e4165be",
+  "source_code": "../../sources/build_last_four_review.py",
+  "technical": {
+    "native_size": [
+      96,
+      96
+    ],
+    "logical_grid": [
+      48,
+      48
+    ],
+    "sampling": "nearest",
+    "format": "RGBA PNG and editable SVG; review GIF",
+    "orientation": "candidate facing right; mirroring not game-validated",
+    "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+    "scope": "Review webpage only; no integration package/game changes"
+  },
+  "provenance": {
+    "new_original_creation": true,
+    "external_image_inputs": false,
+    "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+    "license_note": "Original task graphics for project review, not claim of exclusivity"
+  },
+  "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。"
+}

@@ -1,0 +1,105 @@
+{
+  "files": 16,
+  "decode_pass": 16,
+  "decode_fail": 0,
+  "human_listening": "NOT_RUN",
+  "phone_speaker": "NOT_RUN",
+  "checks": [
+    {
+      "file": "puffer_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "puffer_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "chicken_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "chicken_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "bubble_fish_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "bubble_fish_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "electric_sheep_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "electric_sheep_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "magnet_crab_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "magnet_crab_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "cactus_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "cactus_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "shell_turtle_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "shell_turtle_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "crow_A.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    },
+    {
+      "file": "crow_B.wav",
+      "decoded": true,
+      "clipped_samples": 0,
+      "peak_linear": 0.7000030518509476
+    }
+  ]
+}

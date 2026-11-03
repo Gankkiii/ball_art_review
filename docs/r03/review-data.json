@@ -1,0 +1,3432 @@
+{
+  "version": "R03-eight-character-review-1",
+  "baseline": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "characters": [
+    {
+      "id": "puffer",
+      "name": "充气球",
+      "cycle": "R03",
+      "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 软刺气团",
+          "image": "r03/characters/puffer/a_display.png",
+          "display": "r03/characters/puffer/a_display.png",
+          "motion": "r03/characters/puffer/a_states.gif",
+          "description": "圆润气团、短软凸点与小圆口；充满时保持圆形体积变化。不是已经确定的河豚物种。 配色：薄荷绿主体、浅薄荷高光、深青阴影、蓝灰轮廓。 材质意向：软乳胶气团的玩具材质意向；短凸点为柔软轮廓，不代表毒刺。 表情：点状双眼与小张口，脸集中在圆体中央。 候选性格感：好奇、轻弹、略呆萌；不是已定背景或行为规则。",
+          "palette": "薄荷绿主体、浅薄荷高光、深青阴影、蓝灰轮廓。",
+          "material": "软乳胶气团的玩具材质意向；短凸点为柔软轮廓，不代表毒刺。",
+          "expression": "点状双眼与小张口，脸集中在圆体中央。",
+          "personality": "候选性格感：好奇、轻弹、略呆萌；不是已定背景或行为规则。",
+          "pros": [
+            "小尺寸识别快；充气前后对比直接",
+            "与鸭兔轮廓区分明显，无手持武器"
+          ],
+          "cons": [
+            "圆身在密集碰撞中容易与泡泡混淆，需保留实心身体和脸"
+          ],
+          "status": "unselected concept candidate"
+        },
+        {
+          "id": "b",
+          "title": "B 折瓣气囊",
+          "image": "r03/characters/puffer/b_display.png",
+          "display": "r03/characters/puffer/b_display.png",
+          "motion": "r03/characters/puffer/b_states.gif",
+          "description": "高菱形、折瓣体块和纵向分区；膨胀表现为折瓣展开，而非只换色。 配色：金黄主体、珊瑚折瓣、奶油细高光、蓝灰轮廓。 材质意向：折叠气囊的玩具材质意向，用纵向分面表现撑开；不表示机械护甲。 表情：细点眼配较扁的横口，脸与折瓣形成紧绷对比。 候选性格感：紧张、憋气、倔强；不改变吸收或放气机制。",
+          "palette": "金黄主体、珊瑚折瓣、奶油细高光、蓝灰轮廓。",
+          "material": "折叠气囊的玩具材质意向，用纵向分面表现撑开；不表示机械护甲。",
+          "expression": "细点眼配较扁的横口，脸与折瓣形成紧绷对比。",
+          "personality": "候选性格感：紧张、憋气、倔强；不改变吸收或放气机制。",
+          "pros": [
+            "折瓣可表达气量变化；轮廓比圆泡更独特"
+          ],
+          "cons": [
+            "小尺寸下体块分区容易丢失；不能画成新护甲或新增蓄气器官规则"
+          ],
+          "status": "unselected concept candidate"
+        }
+      ],
+      "comparison": "r03/characters/puffer/comparison.png",
+      "animation": "r03/characters/puffer/motion_compare.gif",
+      "recommendation": "推荐A软刺气团：气量膨胀更直观。B适合希望与圆形泡泡强区分的方向；均未选定。",
+      "questions": [
+        "造型选A圆软气团还是B折瓣气囊？Puffer物种外观尚未确定，不默认它一定是河豚。",
+        "免伤表现选A完整细环还是B分段罩？二者都应可与放气状态叠加，不能表示碰撞体或新增护盾值。",
+        "放气动画更偏圆团挤压回弹还是折瓣逐段回缩？音色选A轻弹乳胶还是B低声气囊，可与造型独立组合。",
+        "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "原形",
+          "image": "r03/characters/puffer/states/a_0.png",
+          "alternative_image": "r03/characters/puffer/states/b_0.png",
+          "animation": "r03/characters/puffer/motion_compare.gif",
+          "event": "idle",
+          "description": "action idle；普通接触无额外伤害。"
+        },
+        {
+          "id": "inflate",
+          "title": "充气",
+          "image": "r03/characters/puffer/states/a_1.png",
+          "alternative_image": "r03/characters/puffer/states/b_1.png",
+          "animation": "r03/characters/puffer/motion_compare.gif",
+          "event": "inflate",
+          "description": "仅外观半径随gas变化，物理radius保持24。"
+        },
+        {
+          "id": "immune",
+          "title": "免伤吸收",
+          "image": "r03/characters/puffer/states/a_2.png",
+          "alternative_image": "r03/characters/puffer/states/b_2.png",
+          "animation": "r03/characters/puffer/motion_compare.gif",
+          "event": "immune",
+          "description": "只读immune_left；受击伤害×1.8转气，视觉不另加毒刺伤害。"
+        },
+        {
+          "id": "burst",
+          "title": "放气碰撞",
+          "image": "r03/characters/puffer/states/a_3.png",
+          "alternative_image": "r03/characters/puffer/states/b_3.png",
+          "animation": "r03/characters/puffer/motion_compare.gif",
+          "event": "burst",
+          "description": "真实burst状态才有36接触伤害；角色共享0.35计时器，不能按每目标重复结算。"
+        },
+        {
+          "id": "hit_feedback",
+          "title": "受击反馈两方向",
+          "image": "r03/characters/puffer/states/hit_feedback.png",
+          "animation": "",
+          "event": "actual_HP_loss",
+          "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+        },
+        {
+          "id": "movement",
+          "title": "移动朝向示意",
+          "image": "r03/characters/puffer/states/movement_direction.png",
+          "animation": "",
+          "event": "existing_velocity_direction",
+          "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+        },
+        {
+          "id": "immune_absorb",
+          "title": "免伤时的受击吸收",
+          "image": "r03/characters/puffer/states/immune_absorb.png",
+          "animation": "",
+          "event": "hit_while_immune_left_positive",
+          "description": "immune_left>0时用蓝色吸收反馈并转气，不播放普通HP下降反馈；即使action已转burst，免伤仍可能继续。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "name": "A免伤细环",
+          "image": "r03/characters/puffer/objects/absorb_a.png",
+          "description": "连续单环候选，不定义碰撞或伤害范围。"
+        },
+        {
+          "name": "B免伤分段罩",
+          "image": "r03/characters/puffer/objects/absorb_b.png",
+          "description": "结构分段而非新增护盾层数。"
+        },
+        {
+          "name": "免伤与放气共存",
+          "image": "r03/characters/puffer/objects/absorb_and_burst.png",
+          "description": "immune_left可在start_burst后仍>0；这幅是并存示例，不意味着所有burst都有免伤。"
+        }
+      ],
+      "information": [
+        "必须分清gas和immune_left；可以同时膨胀、放气、免伤。",
+        "视觉最大2倍不是攻击范围扩大；参考动作GIF没有真实碰撞数据。",
+        "无手持武器；气体、免伤环和尾迹是身体/状态表现，不是气弹。"
+      ],
+      "source_facts": {
+        "document": "SETTING.md",
+        "repository": "Gankkiii/balls",
+        "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+      },
+      "audio_questions": {
+        "options": [
+          "轻弹乳胶",
+          "低声气囊"
+        ],
+        "source": "../../audio/review.json",
+        "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+      },
+      "validation": {
+        "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+        "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+        "human_listening": "NOT_RUN",
+        "in_game": "NOT_RUN",
+        "device": "NOT_RUN"
+      },
+      "missing": [
+        "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+        "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+        "未做真实战斗、设备显示或扬声器听感验证。"
+      ],
+      "fact": {
+        "id": "puffer",
+        "name_zh": "充气角色",
+        "class_name": "Puffer",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/puffer.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "气量0..100，充气速率40/模拟秒；满气进入放气，放气耗25/秒。",
+          "INFLATE原地站桩，CD6；ABSORB免伤2.5秒，受击伤害×1.8转气，CD9。两技能同时就绪优先ABSORB。",
+          "放气速度基于入段基础速率×2.5；放气碰撞敌对身体造成36，本体共享impact_cooldown接触伤害冷却0.35秒（跨多敌对物件共用，不是每目标独立计时）。普通身体碰撞不额外伤害。",
+          "视觉半径radius×(1+gas/100)，最大2倍；物理radius保持24。"
+        ],
+        "objects": [
+          "自身气体/吸收环/放气尾迹；无手持武器代码"
+        ],
+        "state_data": [
+          "gas",
+          "immune_left",
+          "impact_cooldown",
+          "action: idle/inflate/immune/burst",
+          "cd_one/cd_two"
+        ],
+        "limits_and_conflicts": [
+          "不能把视觉膨胀变成碰撞体扩大；不能新增毒刺/毒伤/气弹。",
+          "类名Puffer与刺状旧代码外观不等于用户已批准河豚物种；本轮造型仅候选。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/puffer.md",
+      "setting_url": "r03/characters/puffer/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 轻弹乳胶",
+          "file": "r03/audio/puffer_A.wav",
+          "event": "气体充入 → 受击吸收 → 放气喷流 → 放气有效碰撞",
+          "description": "A更轻巧、B更饱满；都不用爆炸声冒充气体或新增气弹。",
+          "events": [
+            {
+              "event": "气体充入",
+              "start_s": 0.0,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "受击吸收",
+              "start_s": 0.64,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气喷流",
+              "start_s": 1.06,
+              "duration_s": 0.48,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气有效碰撞",
+              "start_s": 1.76,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.21,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a6aee842f27bde0c14d940e8f4d52b26a56073298cef122fec2efb08a39dbe32",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 低声气囊",
+          "file": "r03/audio/puffer_B.wav",
+          "event": "气体充入 → 受击吸收 → 放气喷流 → 放气有效碰撞",
+          "description": "A更轻巧、B更饱满；都不用爆炸声冒充气体或新增气弹。",
+          "events": [
+            {
+              "event": "气体充入",
+              "start_s": 0.0,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "受击吸收",
+              "start_s": 0.64,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气喷流",
+              "start_s": 1.06,
+              "duration_s": 0.48,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气有效碰撞",
+              "start_s": 1.76,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.21,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "e4505515984b849166258485650d27831d48965883878b7d32c512d50165aa7b",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议先试听A的弹性气体方向，B可用于更厚的吸收/放气；此为设计意图，听感待用户判断。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "motion_compare": "r03/characters/puffer/motion_compare.gif"
+    },
+    {
+      "id": "chicken",
+      "name": "炸弹母鸡",
+      "cycle": "R03",
+      "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 圆身红冠",
+          "image": "r03/characters/chicken/a_display.png",
+          "display": "r03/characters/chicken/a_display.png",
+          "motion": "r03/characters/chicken/a_states.gif",
+          "description": "低重心圆身、短尾、圆冠、短脚；强调蹲蛋的压低体态。 配色：金黄圆身、奶油头胸、暖橙翼区、珊瑚圆冠。 材质意向：哑光搪胶与软羽块面的玩具意向；大色块便于像素尺寸读取。 表情：小眼前视、短喙、圆冠压低，脸与圆身连成低重心轮廓。 候选性格感：憨厚但容易慌张，蹲蛋喜剧感强；非新增角色背景。",
+          "palette": "金黄圆身、奶油头胸、暖橙翼区、珊瑚圆冠。",
+          "material": "哑光搪胶与软羽块面的玩具意向；大色块便于像素尺寸读取。",
+          "expression": "小眼前视、短喙、圆冠压低，脸与圆身连成低重心轮廓。",
+          "personality": "候选性格感：憨厚但容易慌张，蹲蛋喜剧感强；非新增角色背景。",
+          "pros": [
+            "与A玩具街机一致；母鸡身份与蛋清晰"
+          ],
+          "cons": [
+            "密集状态时可能显笨重；需与黄鸭的帽/嘴/尾明显区分"
+          ],
+          "status": "unselected concept candidate"
+        },
+        {
+          "id": "b",
+          "title": "B 长颈扇尾",
+          "image": "r03/characters/chicken/b_display.png",
+          "display": "r03/characters/chicken/b_display.png",
+          "motion": "r03/characters/chicken/b_states.gif",
+          "description": "长颈、尖冠、展开三片尾羽和显眼双腿；更强调惊跑。 配色：奶油长颈与躯体、金黄颈部、珊瑚尖冠和扇尾、暖橙脚。 材质意向：薄片尾羽与修长软胶玩具意向；不是新增盔甲或武器。 表情：小眼向前、尖冠上扬、窄长颈显得更警觉。 候选性格感：机灵、急躁、跑跑停停；实际改向仍由现有技能决定。",
+          "palette": "奶油长颈与躯体、金黄颈部、珊瑚尖冠和扇尾、暖橙脚。",
+          "material": "薄片尾羽与修长软胶玩具意向；不是新增盔甲或武器。",
+          "expression": "小眼向前、尖冠上扬、窄长颈显得更警觉。",
+          "personality": "候选性格感：机灵、急躁、跑跑停停；实际改向仍由现有技能决定。",
+          "pros": [
+            "轮廓高挑，冲刺方向更容易读；与鸭形象差异大"
+          ],
+          "cons": [
+            "头尾占画布更大；腿摆动不能误导实际碰撞或步行规则"
+          ],
+          "status": "unselected concept candidate"
+        }
+      ],
+      "comparison": "r03/characters/chicken/comparison.png",
+      "animation": "r03/characters/chicken/motion_compare.gif",
+      "recommendation": "推荐A圆身红冠配斑点蛋：本体/蛋/蹲蛋语义直接。偏重喜剧惊跑可选B；均待确认。",
+      "questions": [
+        "母鸡造型选圆身红冠还是长颈扇尾？与已定鸭子保留不同冠、尾和身体比例。",
+        "蛋壳选A离散斑点还是B宽带纹？小蛋/大蛋都沿同一方案，并靠大小和已点燃引信区分，不能做手持炮弹。",
+        "惊跑更强调身体弹跳还是腿和尾的摆动？爆炸音色选A玩具蛋壳还是B厚壳闷爆，不能用落雷声冒充炸蛋。",
+        "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "待机",
+          "image": "r03/characters/chicken/states/a_0.png",
+          "alternative_image": "r03/characters/chicken/states/b_0.png",
+          "animation": "r03/characters/chicken/motion_compare.gif",
+          "event": "idle",
+          "description": "被动每1.7秒产小蛋，非普通碰撞伤害。"
+        },
+        {
+          "id": "run",
+          "title": "惊跑",
+          "image": "r03/characters/chicken/states/a_1.png",
+          "alternative_image": "r03/characters/chicken/states/b_1.png",
+          "animation": "r03/characters/chicken/motion_compare.gif",
+          "event": "run",
+          "description": "持续1模拟秒，每0.18秒随机改向；GIF只是姿态展示，不能定义路径。"
+        },
+        {
+          "id": "lay",
+          "title": "蹲蛋",
+          "image": "r03/characters/chicken/states/a_2.png",
+          "alternative_image": "r03/characters/chicken/states/b_2.png",
+          "animation": "r03/characters/chicken/motion_compare.gif",
+          "event": "lay",
+          "description": "实际蹲3秒后产大蛋，不能按GIF时长提前落蛋。"
+        },
+        {
+          "id": "big_egg",
+          "title": "大蛋落地",
+          "image": "r03/characters/chicken/states/a_3.png",
+          "alternative_image": "r03/characters/chicken/states/b_3.png",
+          "animation": "r03/characters/chicken/motion_compare.gif",
+          "event": "big_egg",
+          "description": "大蛋立即引信，不是等接触；爆炸发生时才按当时位置判定。"
+        },
+        {
+          "id": "hit_feedback",
+          "title": "受击反馈两方向",
+          "image": "r03/characters/chicken/states/hit_feedback.png",
+          "animation": "",
+          "event": "actual_HP_loss",
+          "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+        },
+        {
+          "id": "movement",
+          "title": "移动朝向示意",
+          "image": "r03/characters/chicken/states/movement_direction.png",
+          "animation": "",
+          "event": "existing_velocity_direction",
+          "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "name": "A斑点蛋",
+          "image": "r03/characters/chicken/objects/egg_a.png",
+          "description": "与B同尺寸概念比较，天然蛋壳/斑点造型，不增加机械武器。"
+        },
+        {
+          "name": "B宽带蛋",
+          "image": "r03/characters/chicken/objects/egg_b.png",
+          "description": "与A同尺寸比较；带纹是图案，不是新增属性。"
+        },
+        {
+          "name": "大小蛋关系",
+          "image": "r03/characters/chicken/objects/egg_patterns.png",
+          "description": "小/大蛋外观比例示意，不是爆炸范围刻度。"
+        },
+        {
+          "name": "大蛋引信示意",
+          "image": "r03/characters/chicken/objects/armed_big_egg.png",
+          "description": "大蛋落地即1.5秒引信；小蛋则敌触后0.8秒，不可混同。"
+        }
+      ],
+      "information": [
+        "需要小蛋/大蛋、armed/fuse和爆炸事件的不同表现。",
+        "鸡不是鸭，不复用雷云/避雷针；没有枪炮或新投掷技能。",
+        "自身爆炸只受20%伤害；爆炸图形不应额外扩大实际半径。"
+      ],
+      "source_facts": {
+        "document": "SETTING.md",
+        "repository": "Gankkiii/balls",
+        "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+      },
+      "audio_questions": {
+        "options": [
+          "玩具蛋壳",
+          "厚壳闷爆"
+        ],
+        "source": "../../audio/review.json",
+        "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+      },
+      "validation": {
+        "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+        "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+        "human_listening": "NOT_RUN",
+        "in_game": "NOT_RUN",
+        "device": "NOT_RUN"
+      },
+      "missing": [
+        "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+        "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+        "未做真实战斗、设备显示或扬声器听感验证。"
+      ],
+      "fact": {
+        "id": "chicken",
+        "name_zh": "炸弹母鸡",
+        "class_name": "Chicken",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/chicken.gd",
+          "scripts/egg.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "每1.7秒掉小蛋，初始egg_timer0.6；PANIC RUN持续1秒，每0.18秒随机改方向，速度1.8倍、CD5。",
+          "BIG EGG原地蹲3秒后产大蛋，CD10；小蛋半径11，非主人且存活/物理开启的Fighter接触后引信0.8秒。",
+          "小蛋爆炸半径70伤24；大蛋半径23，落地立即引信1.5秒、爆炸半径125伤62。自己爆炸只受20%伤。",
+          "爆炸按爆炸当时位置与目标半径判定；蛋最多32，22秒清理，爆炸显示0.3秒。"
+        ],
+        "objects": [
+          "小蛋BombEgg",
+          "大蛋BombEgg",
+          "引信环/爆炸；没有投掷枪炮"
+        ],
+        "state_data": [
+          "egg_timer",
+          "action: idle/run/lay",
+          "action_left",
+          "turn_timer",
+          "egg.large/armed/fuse/exploded/blast_left"
+        ],
+        "limits_and_conflicts": [
+          "大蛋不是接触才触发；不能把小蛋画成接触立即爆。",
+          "这是鸡不是鸭，不复用鸭雷云/避雷针设定。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/chicken.md",
+      "setting_url": "r03/characters/chicken/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 玩具蛋壳",
+          "file": "r03/audio/chicken_A.wav",
+          "event": "小蛋落地 → 惊跑脚步 → 已触发引信提示 → 真实蛋爆炸",
+          "description": "A便于密集物件分辨，B强调大小蛋重量；引信声不是新的伤害计时器。",
+          "events": [
+            {
+              "event": "小蛋落地",
+              "start_s": 0.0,
+              "duration_s": 0.14,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "惊跑脚步",
+              "start_s": 0.36,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "已触发引信提示",
+              "start_s": 0.82,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "真实蛋爆炸",
+              "start_s": 1.26,
+              "duration_s": 0.5,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.98,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "d013e005158197db975f0abb8f05d8427b438bab8b6a062b4118ccac9e30e272",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚壳闷爆",
+          "file": "r03/audio/chicken_B.wav",
+          "event": "小蛋落地 → 惊跑脚步 → 已触发引信提示 → 真实蛋爆炸",
+          "description": "A便于密集物件分辨，B强调大小蛋重量；引信声不是新的伤害计时器。",
+          "events": [
+            {
+              "event": "小蛋落地",
+              "start_s": 0.0,
+              "duration_s": 0.14,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "惊跑脚步",
+              "start_s": 0.36,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "已触发引信提示",
+              "start_s": 0.82,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "真实蛋爆炸",
+              "start_s": 1.26,
+              "duration_s": 0.5,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.98,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "5ad4749293a853f038052e0193e207c42890c189cd023c59895b5e5e0a472916",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A保留蛋壳/脚步分辨，爆炸可比较B低频方向；不靠更响表示新增伤害。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "motion_compare": "r03/characters/chicken/motion_compare.gif"
+    },
+    {
+      "id": "bubble_fish",
+      "name": "泡泡鱼",
+      "cycle": "R03",
+      "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 流线叉尾",
+          "image": "r03/characters/bubble_fish/a_display.png",
+          "display": "r03/characters/bubble_fish/a_display.png",
+          "motion": "r03/characters/bubble_fish/a_states.gif",
+          "description": "横向鱼身、背鳍、分叉尾与前端小口；用身体呼气而非武器射击。 配色：浅青蓝身体、浅薄荷高光、深蓝鳍面、珊瑚叉尾。 材质意向：柔软半光泽水玩具意向，实心色块高光；并非本体半透明泡泡。 表情：前侧小眼和轻开的吐泡口，视线清楚朝前。 候选性格感：灵动、轻松、爱吐泡；不新增主动操作或连招。",
+          "palette": "浅青蓝身体、浅薄荷高光、深蓝鳍面、珊瑚叉尾。",
+          "material": "柔软半光泽水玩具意向，实心色块高光；并非本体半透明泡泡。",
+          "expression": "前侧小眼和轻开的吐泡口，视线清楚朝前。",
+          "personality": "候选性格感：灵动、轻松、爱吐泡；不新增主动操作或连招。",
+          "pros": [
+            "方向清晰；与真实吐泡事件容易关联"
+          ],
+          "cons": [
+            "身体和八向泡泡都偏圆，需靠尾鳍/实心轮廓区分"
+          ],
+          "status": "unselected concept candidate"
+        },
+        {
+          "id": "b",
+          "title": "B 方身管口",
+          "image": "r03/characters/bubble_fish/b_display.png",
+          "display": "r03/characters/bubble_fish/b_display.png",
+          "motion": "r03/characters/bubble_fish/b_states.gif",
+          "description": "短方身、平直尾和突出嘴管，体表斑块；方形剪影与圆泡强区分。 配色：金黄方身、暖橙边面、珊瑚斑块和尾、浅青嘴管。 材质意向：圆角积木玩具的块面意向，不表示防御装甲；突出部分仍是生物嘴。 表情：小眼与平直嘴管显得专注、略木讷。 候选性格感：憨直、执着、稳稳吐泡；不是固定物种或背景设定。",
+          "palette": "金黄方身、暖橙边面、珊瑚斑块和尾、浅青嘴管。",
+          "material": "圆角积木玩具的块面意向，不表示防御装甲；突出部分仍是生物嘴。",
+          "expression": "小眼与平直嘴管显得专注、略木讷。",
+          "personality": "候选性格感：憨直、执着、稳稳吐泡；不是固定物种或背景设定。",
+          "pros": [
+            "小尺寸下与泡泡区别更强；轮廓有辨识度"
+          ],
+          "cons": [
+            "嘴管容易被误读成枪；必须作为生物嘴部，不新增射程/弹丸"
+          ],
+          "status": "unselected concept candidate"
+        }
+      ],
+      "comparison": "r03/characters/bubble_fish/comparison.png",
+      "animation": "r03/characters/bubble_fish/motion_compare.gif",
+      "recommendation": "推荐A流线叉尾，鱼身份更直接；若最重视鱼与泡泡区分可选B方身管口。造型、泡泡描边和音色可以独立组合。",
+      "questions": [
+        "本体选A流线叉尾还是B方身管口？B突出部分仅嘴，不是鱼枪。",
+        "融合泡泡选单层加粗边缘还是双层内部光纹？一级仍应轻薄，不能给一级画成造成伤害的爆炸。",
+        "八向泡泡更强调八个分离小泡，还是短促八向出现光点？音色选A清亮水泡还是B温润低泡，保持吸附和命中可区分。",
+        "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "待机",
+          "image": "r03/characters/bubble_fish/states/a_0.png",
+          "alternative_image": "r03/characters/bubble_fish/states/b_0.png",
+          "animation": "r03/characters/bubble_fish/motion_compare.gif",
+          "event": "idle",
+          "description": "独立鱼体，没有枪杖。"
+        },
+        {
+          "id": "level1",
+          "title": "1级吐泡",
+          "image": "r03/characters/bubble_fish/states/a_1.png",
+          "alternative_image": "r03/characters/bubble_fish/states/b_1.png",
+          "animation": "r03/characters/bubble_fish/motion_compare.gif",
+          "event": "level1",
+          "description": "每1.1秒产生1级；1级接触敌人消失但无伤害。"
+        },
+        {
+          "id": "fusion",
+          "title": "融合",
+          "image": "r03/characters/bubble_fish/states/a_2.png",
+          "alternative_image": "r03/characters/bubble_fish/states/b_2.png",
+          "animation": "r03/characters/bubble_fish/motion_compare.gif",
+          "event": "fusion",
+          "description": "同主泡泡等级相加，>=2才造成level×8伤害；合成示意不是额外生成两个命中。"
+        },
+        {
+          "id": "eight",
+          "title": "八向吐泡",
+          "image": "r03/characters/bubble_fish/states/a_3.png",
+          "alternative_image": "r03/characters/bubble_fish/states/b_3.png",
+          "animation": "r03/characters/bubble_fish/motion_compare.gif",
+          "event": "eight",
+          "description": "图内确有八个1级小泡；0.8秒后恢复慢漂，非爆炸AOE。"
+        },
+        {
+          "id": "vacuum",
+          "title": "吸附泡泡",
+          "image": "r03/characters/bubble_fish/states/vacuum.png",
+          "animation": "",
+          "event": "VACUUM_BUBBLE",
+          "description": "朝敌人当时方向发射的吸附泡泡；吸引自己的泡泡，持续2.5秒、105范围。仅静态语义示意，箭头和泡泡位置不是实际世界距离，四格GIF不含此独立图。"
+        },
+        {
+          "id": "hit_feedback",
+          "title": "受击反馈两方向",
+          "image": "r03/characters/bubble_fish/states/hit_feedback.png",
+          "animation": "",
+          "event": "actual_HP_loss",
+          "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+        },
+        {
+          "id": "movement",
+          "title": "移动朝向示意",
+          "image": "r03/characters/bubble_fish/states/movement_direction.png",
+          "animation": "",
+          "event": "existing_velocity_direction",
+          "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "name": "1级与融合泡泡",
+          "image": "r03/characters/bubble_fish/objects/bubble_levels.png",
+          "description": "左侧1级薄环，右侧融合双层纹理候选。数字等级无上限，封顶的是尺寸；这些图不是完整等级资产。"
+        }
+      ],
+      "information": [
+        "等级/是否融合比体积更重要；尺寸达到上限仍可继续增长等级。",
+        "吸附泡泡需要独立状态，目标是吸自己的泡泡；示意不改变105吸附范围或2.5秒。",
+        "GIF是四状态编排，不是从待机到融合必然执行的技能连招。"
+      ],
+      "source_facts": {
+        "document": "SETTING.md",
+        "repository": "Gankkiii/balls",
+        "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+      },
+      "audio_questions": {
+        "options": [
+          "清亮水泡",
+          "温润低泡"
+        ],
+        "source": "../../audio/review.json",
+        "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+      },
+      "validation": {
+        "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+        "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+        "human_listening": "NOT_RUN",
+        "in_game": "NOT_RUN",
+        "device": "NOT_RUN"
+      },
+      "missing": [
+        "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+        "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+        "未做真实战斗、设备显示或扬声器听感验证。"
+      ],
+      "fact": {
+        "id": "bubble_fish",
+        "name_zh": "泡泡鱼",
+        "class_name": "BubbleFish",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/bubble_fish.gd",
+          "scripts/bubble.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "每1.1秒吐1级泡泡，初始bubble_timer0.5；1级直接碰敌消失无伤害。",
+          "同主人泡泡接触融合，level相加；等级>=2命中伤害level×8，命中后消失。",
+          "VACUUM BUBBLE朝敌人当前方向170速度发射，飞行/吸附2.5秒，105范围吸引自己的泡泡，CD7。",
+          "EIGHT BUBBLES八方向各1级，150速度快飞0.8秒后恢复慢漂，CD9。",
+          "level无玩法上限；泡泡视觉/检测尺寸radius=min(54,9+sqrt(level)×3)，封顶的是尺寸不是等级。"
+        ],
+        "objects": [
+          "独立Bubble；普通/融合/吸附/八向小泡泡"
+        ],
+        "state_data": [
+          "bubble_timer",
+          "Bubble.level/velocity/launch_left/absorb_left/gone"
+        ],
+        "limits_and_conflicts": [
+          "不能给1级泡泡画成已造成伤害的爆炸。",
+          "气泡与充气角色的气量是不同机制；不要混为一种角色。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/bubble_fish.md",
+      "setting_url": "r03/characters/bubble_fish/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 清亮水泡",
+          "file": "r03/audio/bubble_fish_A.wav",
+          "event": "吐出1级泡泡 → 自身泡泡融合 → 吸附泡泡启动 → 融合泡泡有效命中",
+          "description": "A融合更清楚，B较柔和；1级消失与有伤命中必须用不同强度，不能伪造1级伤害。",
+          "events": [
+            {
+              "event": "吐出1级泡泡",
+              "start_s": 0.0,
+              "duration_s": 0.19,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "自身泡泡融合",
+              "start_s": 0.41,
+              "duration_s": 0.29,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "吸附泡泡启动",
+              "start_s": 0.92,
+              "duration_s": 0.44,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "融合泡泡有效命中",
+              "start_s": 1.58,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.08,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "e7bc35235f140fd166240f2193e04285d3c4132874bf1362725c47db5d8e5768",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 温润低泡",
+          "file": "r03/audio/bubble_fish_B.wav",
+          "event": "吐出1级泡泡 → 自身泡泡融合 → 吸附泡泡启动 → 融合泡泡有效命中",
+          "description": "A融合更清楚，B较柔和；1级消失与有伤命中必须用不同强度，不能伪造1级伤害。",
+          "events": [
+            {
+              "event": "吐出1级泡泡",
+              "start_s": 0.0,
+              "duration_s": 0.19,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "自身泡泡融合",
+              "start_s": 0.41,
+              "duration_s": 0.29,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "吸附泡泡启动",
+              "start_s": 0.92,
+              "duration_s": 0.44,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "融合泡泡有效命中",
+              "start_s": 1.58,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.08,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a51d9b5fc90bb80da0fe6720528aa51b1ba531acdc87ed8040c73b3078bbb1f6",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A水泡方向，与气球排气、电羊电流分开；B适合降低整体高频的组合。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "motion_compare": "r03/characters/bubble_fish/motion_compare.gif"
+    },
+    {
+      "id": "electric_sheep",
+      "name": "触电羊",
+      "cycle": "R03",
+      "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 圆团云绒",
+          "image": "r03/characters/electric_sheep/a_display.png",
+          "display": "r03/characters/electric_sheep/a_display.png",
+          "motion": "r03/characters/electric_sheep/a_states.gif",
+          "description": "大团簇羊毛、右侧深色脸、小耳与短蹄，脱落羊毛保持同一团簇语言。 配色：奶油大团羊毛、米色暗面、深紫灰脸、蓝灰蹄与轮廓。 材质意向：软绒团加哑光脸部的玩具意向；团簇不等于雷云或第二只羊。 表情：大白眼、细黑瞳与右侧圆脸，带一点发愣的表情。 候选性格感：温吞、蓬松、突然来电的反差；无新增性格玩法。",
+          "palette": "奶油大团羊毛、米色暗面、深紫灰脸、蓝灰蹄与轮廓。",
+          "material": "软绒团加哑光脸部的玩具意向；团簇不等于雷云或第二只羊。",
+          "expression": "大白眼、细黑瞳与右侧圆脸，带一点发愣的表情。",
+          "personality": "候选性格感：温吞、蓬松、突然来电的反差；无新增性格玩法。",
+          "pros": [
+            "羊身份清晰；暖绒毛与蓝金电效对比容易读"
+          ],
+          "cons": [
+            "与雷云都偏团状，羊毛点必须无脸无腿避免第二只羊误读"
+          ],
+          "status": "unselected concept candidate"
+        },
+        {
+          "id": "b",
+          "title": "B 叠卷块绒",
+          "image": "r03/characters/electric_sheep/b_display.png",
+          "display": "r03/characters/electric_sheep/b_display.png",
+          "motion": "r03/characters/electric_sheep/b_states.gif",
+          "description": "低平身体、叠卷毛锁、前伸脸和上挑耳；羊毛以折卷堆呈现。 配色：奶油折卷毛、灰米卷纹、深紫灰前伸脸、蓝灰轮廓。 材质意向：叠卷毛束的布绒玩具意向，避免画成机械电池盒。 表情：侧眼配前伸脸和上挑耳，显得谨慎且专注。 候选性格感：稳重、警觉、有收束感；不意味着更硬或更高防御。",
+          "palette": "奶油折卷毛、灰米卷纹、深紫灰前伸脸、蓝灰轮廓。",
+          "material": "叠卷毛束的布绒玩具意向，避免画成机械电池盒。",
+          "expression": "侧眼配前伸脸和上挑耳，显得谨慎且专注。",
+          "personality": "候选性格感：稳重、警觉、有收束感；不意味着更硬或更高防御。",
+          "pros": [
+            "低宽剪影与云团不同；毛的方向可强调脱落"
+          ],
+          "cons": [
+            "块状羊毛容易像地垫或机械装置，需保留自然纤维感"
+          ],
+          "status": "unselected concept candidate"
+        }
+      ],
+      "comparison": "r03/characters/electric_sheep/comparison.png",
+      "animation": "r03/characters/electric_sheep/motion_compare.gif",
+      "recommendation": "推荐A圆团云绒，羊与羊毛关系更直观；若想避开云团轮廓，可选B叠卷块绒。电效都应局部、只画单一实际路径。",
+      "questions": [
+        "羊体选A圆团云绒还是B叠卷块绒？两者都无枪杖、无新增角冲撞技能。",
+        "脱落羊毛选圆绒团还是折卷堆？必须无脸无腿，只有一个羊毛点，与本体共享电库。",
+        "持续电流更偏短促跳弧还是连贯细丝？音色选A干脆电跳还是B绒毛低嗡，不做本体和羊毛各一条双伤害光束。",
+        "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "无电",
+          "image": "r03/characters/electric_sheep/states/a_0.png",
+          "alternative_image": "r03/characters/electric_sheep/states/b_0.png",
+          "animation": "r03/characters/electric_sheep/motion_compare.gif",
+          "event": "idle",
+          "description": "无电不能因演出而持续造成伤害。"
+        },
+        {
+          "id": "wall",
+          "title": "撞墙补电",
+          "image": "r03/characters/electric_sheep/states/a_1.png",
+          "alternative_image": "r03/characters/electric_sheep/states/b_1.png",
+          "animation": "r03/characters/electric_sheep/motion_compare.gif",
+          "event": "wall",
+          "description": "实际撞墙每次+30，满库100；闪光是事件反馈，不是额外攻击。"
+        },
+        {
+          "id": "wool",
+          "title": "留羊毛",
+          "image": "r03/characters/electric_sheep/states/a_2.png",
+          "alternative_image": "r03/characters/electric_sheep/states/b_2.png",
+          "animation": "r03/characters/electric_sheep/motion_compare.gif",
+          "event": "wool",
+          "description": "只留下一个羊毛点，本体和羊毛共享charge。"
+        },
+        {
+          "id": "zap",
+          "title": "放电",
+          "image": "r03/characters/electric_sheep/states/a_3.png",
+          "alternative_image": "r03/characters/electric_sheep/states/b_3.png",
+          "animation": "r03/characters/electric_sheep/motion_compare.gif",
+          "event": "zap",
+          "description": "单一路径持续伤害；两处覆盖仍算一份消耗与攻击路径，不画双倍伤。"
+        },
+        {
+          "id": "hit_feedback",
+          "title": "受击反馈两方向",
+          "image": "r03/characters/electric_sheep/states/hit_feedback.png",
+          "animation": "",
+          "event": "actual_HP_loss",
+          "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+        },
+        {
+          "id": "movement",
+          "title": "移动朝向示意",
+          "image": "r03/characters/electric_sheep/states/movement_direction.png",
+          "animation": "",
+          "event": "existing_velocity_direction",
+          "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "name": "A圆绒团",
+          "image": "r03/characters/electric_sheep/objects/wool_patch.png",
+          "description": "单一脱落羊毛，无脸无腿，无独立电库。"
+        },
+        {
+          "name": "B折卷堆",
+          "image": "r03/characters/electric_sheep/objects/wool_folded.png",
+          "description": "结构不同的羊毛候选，新羊毛替换旧位置，不新增第二处持续点。"
+        }
+      ],
+      "information": [
+        "charge、wool_active/wool_position和zapping是必要状态，不只是装饰灯。",
+        "WALL TURN实际max(140,当前速度)，不承诺严格保持低速。",
+        "放电origin可能来自羊毛；真实first_target路径可被物件截住，不保证光束永远直达英雄。"
+      ],
+      "source_facts": {
+        "document": "SETTING.md",
+        "repository": "Gankkiii/balls",
+        "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+      },
+      "audio_questions": {
+        "options": [
+          "干脆电跳",
+          "绒毛低嗡"
+        ],
+        "source": "../../audio/review.json",
+        "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+      },
+      "validation": {
+        "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+        "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+        "human_listening": "NOT_RUN",
+        "in_game": "NOT_RUN",
+        "device": "NOT_RUN"
+      },
+      "missing": [
+        "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+        "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+        "未做真实战斗、设备显示或扬声器听感验证。"
+      ],
+      "fact": {
+        "id": "electric_sheep",
+        "name_zh": "触电羊",
+        "class_name": "ElectricSheep",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/electric_sheep.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "撞墙每次补30电，电库上限100；WALL TURN朝最近墙移动，CD5。",
+          "DROP WOOL留下羊毛，只有一个，新羊毛替换旧点位，CD7。",
+          "本体或羊毛110范围（代码加目标半径）有存活敌人且有电时持续放电，无周期攻击间隔。",
+          "每模拟秒耗25电、理论伤20；电不足按实际spent比例结算。两处覆盖仍只消耗一份电并算一次攻击路径；没有目标不耗电。",
+          "实际命中沿origin到敌人路径由first_target决定，敌对物件可截住；动画不能把场上两条线表现成双倍伤。"
+        ],
+        "objects": [
+          "脱落羊毛点wool_position",
+          "放电链/电量环；无枪杖"
+        ],
+        "state_data": [
+          "charge",
+          "wool_active/wool_position",
+          "zapping",
+          "cd_one/cd_two"
+        ],
+        "limits_and_conflicts": [
+          "不能把羊毛画成有独立电库或第二只攻击羊。",
+          "WALL TURN代码用max(140,当前速度)，低于140时会提至140；README旧描述“保持速度大小”需以实际代码为准，不能承诺严格不变速。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/electric_sheep.md",
+      "setting_url": "r03/characters/electric_sheep/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 干脆电跳",
+          "file": "r03/audio/electric_sheep_A.wav",
+          "event": "撞墙充电 → 落下一团羊毛 → 持续放电截段 → 电库耗尽",
+          "description": "A突出充电，B减少持续高频；放电截段仅音色试听，不意味着新增攻击间隔。",
+          "events": [
+            {
+              "event": "撞墙充电",
+              "start_s": 0.0,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "落下一团羊毛",
+              "start_s": 0.45,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "持续放电截段",
+              "start_s": 0.95,
+              "duration_s": 0.46,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "电库耗尽",
+              "start_s": 1.63,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.07,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "4910def0c7a1cd59c59336a95a4702544f51b7db03c13462bf09a3a96b100e1f",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 绒毛低嗡",
+          "file": "r03/audio/electric_sheep_B.wav",
+          "event": "撞墙充电 → 落下一团羊毛 → 持续放电截段 → 电库耗尽",
+          "description": "A突出充电，B减少持续高频；放电截段仅音色试听，不意味着新增攻击间隔。",
+          "events": [
+            {
+              "event": "撞墙充电",
+              "start_s": 0.0,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "落下一团羊毛",
+              "start_s": 0.45,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "持续放电截段",
+              "start_s": 0.95,
+              "duration_s": 0.46,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "电库耗尽",
+              "start_s": 1.63,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.07,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "56d8994905712a458ecbd07ee657e4cb66d8889d193a1f99b2ad9cb19dd3846a",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议比较B持续低嗡与A短充电提示的组合，连续放电不变成周期攻击。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "motion_compare": "r03/characters/electric_sheep/motion_compare.gif"
+    },
+    {
+      "id": "magnet_crab",
+      "name": "磁铁蟹",
+      "status": "R03 review candidates; none selected; not integration assets",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 横向马蹄钳",
+          "image": "r03/characters/magnet_crab/variant_a.png",
+          "source_image": "variant_a_sprite.png",
+          "source_svg": "variant_a_sprite.svg",
+          "description": "横宽珊瑚蟹身、双眼柄与马蹄形大钳，金属浅青钳端和壳面亮条区分玩具金属与光滑甲壳。小黑眼显机灵忙碌，这是候选气质；大钳不增加近战伤害或射程。",
+          "pros": [
+            "磁铁主题一眼可读",
+            "宽低身体适合贴地铁钉"
+          ],
+          "cons": [
+            "大钳不能暗示新增近战范围"
+          ]
+        },
+        {
+          "id": "b",
+          "title": "B 高背线圈蟹",
+          "image": "r03/characters/magnet_crab/variant_b.png",
+          "source_image": "variant_b_sprite.png",
+          "source_svg": "variant_b_sprite.svg",
+          "description": "高背线圈、较窄竖身和普通小钳形成另一种轮廓；珊瑚壳、浅金线圈和浅青横梁表达工具材质。前置双眼更专注朴拙，背部装置只作候选造型，不新增装甲或技能。",
+          "pros": [
+            "与其他圆身角色区分大",
+            "钳和磁力主题分层清楚"
+          ],
+          "cons": [
+            "背部装置较多，小尺寸需降细节"
+          ]
+        }
+      ],
+      "recommendation": "推荐A：马蹄轮廓比线圈更直接传达磁铁主题；仍待选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+      "questions": [
+        "选择马蹄钳还是高背线圈造型？",
+        "移动钉用局部状态环还是短暖色轨迹？静止钉始终不显示伤害反馈。",
+        "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "铁钉静止无害",
+          "image": "r03/characters/magnet_crab/state_idle.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "idle"
+        },
+        {
+          "id": "ready",
+          "title": "下一枚回钉弹飞准备",
+          "image": "r03/characters/magnet_crab/state_ready.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "ready"
+        },
+        {
+          "id": "moving",
+          "title": "移动钉才可伤敌",
+          "image": "r03/characters/magnet_crab/state_moving.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "moving"
+        },
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/magnet_crab/motion_1_cover.png",
+          "animation": "r03/characters/magnet_crab/motion_1.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/magnet_crab/motion_2_cover.png",
+          "animation": "r03/characters/magnet_crab/motion_2.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/magnet_crab/hurt_1_cover.png",
+          "animation": "r03/characters/magnet_crab/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/magnet_crab/hurt_2_cover.png",
+          "animation": "r03/characters/magnet_crab/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "mobility",
+          "title": "移动／站桩方向",
+          "image": "r03/characters/magnet_crab/state_idle.png",
+          "description": "蟹按原运动滑行；铁钉区分静止、向墙、回身、弹出，不另加近战钳攻击。",
+          "event": "existing_position_and_velocity"
+        }
+      ],
+      "motion": [
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/magnet_crab/motion_1_cover.png",
+          "animation": "r03/characters/magnet_crab/motion_1.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 10,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/magnet_crab/motion_2_cover.png",
+          "animation": "r03/characters/magnet_crab/motion_2.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 10,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/magnet_crab/hurt_1_cover.png",
+          "animation": "r03/characters/magnet_crab/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/magnet_crab/hurt_2_cover.png",
+          "animation": "r03/characters/magnet_crab/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "id": "nail_rest",
+          "name": "静止铁钉",
+          "image": "r03/characters/magnet_crab/object_nail_rest.png",
+          "source_svg": "object_nail_rest.svg",
+          "description": "rest为无害静止物，不能画成危险地刺。"
+        },
+        {
+          "id": "nail_moving",
+          "name": "移动铁钉",
+          "image": "r03/characters/magnet_crab/object_nail_moving.png",
+          "source_svg": "object_nail_moving.svg",
+          "description": "wall/return/out时只有实际移动才伤16，单钉命中间隔0.3秒。"
+        }
+      ],
+      "information": [
+        "每1秒落钉；静钉无踩踏伤害",
+        "随机磁化一墙，铁钉到墙后回身",
+        "准备态弹下一枚回钉，向敌当时位置外飞0.8秒后停"
+      ],
+      "validation": [
+        "已根据独立代码事实稿核对角色/物件语义",
+        "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+        "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+      ],
+      "missing": [
+        "磁墙/回收/弹飞完整事件绑定未实现",
+        "候选装置不代表可独立导入或扩大伤害范围",
+        "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+      ],
+      "source_facts": "../../facts/magnet_crab.md",
+      "setting_document": "SETTING.md",
+      "source_facts_sha256": "eade44c86cdf225a9fe96676853d8d6b4a0c6b7bde62f350396922d0a3e7fb38",
+      "source_code": "../../sources/build_last_four_review.py",
+      "technical": {
+        "native_size": [
+          96,
+          96
+        ],
+        "logical_grid": [
+          48,
+          48
+        ],
+        "sampling": "nearest",
+        "format": "RGBA PNG and editable SVG; review GIF",
+        "orientation": "candidate facing right; mirroring not game-validated",
+        "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+        "scope": "Review webpage only; no integration package/game changes"
+      },
+      "provenance": {
+        "new_original_creation": true,
+        "external_image_inputs": false,
+        "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+        "license_note": "Original task graphics for project review, not claim of exclusivity"
+      },
+      "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。",
+      "fact": {
+        "id": "magnet_crab",
+        "name_zh": "磁铁蟹",
+        "class_name": "MagnetCrab",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/magnet_crab.gd",
+          "scripts/iron_nail.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "每1秒掉铁钉，初始nail_timer0.5；静止铁钉没有踩踏伤害。",
+          "MAGNET WALL随机磁化一面墙，已有自己的铁钉先到墙边，再返回蟹位置，CD7。",
+          "RETURN REPEL准备弹下一枚回来的铁钉，向敌人当时位置方向飞0.8秒后落静止；准备态不反复刷新，CD6。",
+          "铁钉仅实际移动才伤敌，伤16、单枚命中间隔0.3秒，速度320；用轨迹线段检测。普通返身回收后消失。",
+          "铁钉遇敌稻草人会在其前方停住，mode转rest，不消失。"
+        ],
+        "objects": [
+          "IronNail铁钉",
+          "磁化墙提示；钳是角色肢体不是新增近战武器"
+        ],
+        "state_data": [
+          "nail_timer",
+          "repel_ready",
+          "magnetic_wall",
+          "wall_flash",
+          "IronNail.mode: rest/wall/return/out",
+          "outward_left/hit_left/gone"
+        ],
+        "limits_and_conflicts": [
+          "不能把静止钉画成危险地刺或自动伤害范围。",
+          "不能把弹飞解释为无限往返弹幕；画面箭头必须与真实mode/velocity对应。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/magnet_crab.md",
+      "setting_url": "r03/characters/magnet_crab/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 明亮小金属",
+          "file": "r03/audio/magnet_crab_A.wav",
+          "event": "铁钉落地 → 磁化启动 → 移动钉有效命中 → 返身弹钉",
+          "description": "A区分钉的阶段更鲜明，B磁化较低沉；静止钉不播放伤害声。",
+          "events": [
+            {
+              "event": "铁钉落地",
+              "start_s": 0.0,
+              "duration_s": 0.17,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "磁化启动",
+              "start_s": 0.39,
+              "duration_s": 0.3,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "移动钉有效命中",
+              "start_s": 0.91,
+              "duration_s": 0.26,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "返身弹钉",
+              "start_s": 1.39,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.81,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "9a75870d9933bb2f11804c74de3d8af9967788eb919c416716a31904c8289bb4",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚重磁铁",
+          "file": "r03/audio/magnet_crab_B.wav",
+          "event": "铁钉落地 → 磁化启动 → 移动钉有效命中 → 返身弹钉",
+          "description": "A区分钉的阶段更鲜明，B磁化较低沉；静止钉不播放伤害声。",
+          "events": [
+            {
+              "event": "铁钉落地",
+              "start_s": 0.0,
+              "duration_s": 0.17,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "磁化启动",
+              "start_s": 0.39,
+              "duration_s": 0.3,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "移动钉有效命中",
+              "start_s": 0.91,
+              "duration_s": 0.26,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "返身弹钉",
+              "start_s": 1.39,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.81,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "6d22776e2b864b43f9cc8872df76e06b7c52118af21f2e5c6a3e6e7af3e50abb",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A用于移动钉触碰，B可用于磁化启动；静止钉不加持续危险音。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "comparison": "r03/characters/magnet_crab/comparison.png"
+    },
+    {
+      "id": "cactus",
+      "name": "仙人掌",
+      "status": "R03 review candidates; none selected; not integration assets",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 高柱花冠",
+          "image": "r03/characters/cactus/variant_a.png",
+          "source_image": "variant_a_sprite.png",
+          "source_svg": "variant_a_sprite.svg",
+          "description": "高柱主干、不对称双臂和小花冠形成竖向轮廓；柔绿蜡皮、奶黄色刺与珊瑚花配深蓝灰描边。单眼平口偏沉着，候选气质稳重扎根，不增加背景设定或行走能力。",
+          "pros": [
+            "静止身份直观",
+            "高柱与刺点容易区分"
+          ],
+          "cons": [
+            "高柱需检查HUD遮挡"
+          ]
+        },
+        {
+          "id": "b",
+          "title": "B 圆掌丛簇",
+          "image": "r03/characters/cactus/variant_b.png",
+          "source_image": "variant_b_sprite.png",
+          "source_svg": "variant_b_sprite.svg",
+          "description": "宽低圆掌配两片高低侧掌，轮廓更像丛簇；浅绿蜡质高光、深绿边面和珊瑚小花保持A暖色。小黑眼和平口偏呆萌钝感，气质只是视觉意向，不代表新机制。",
+          "pros": [
+            "横向轮廓稳定",
+            "小尺寸下分枝更醒目"
+          ],
+          "cons": [
+            "低身容易与场上刺混淆，需清楚描边"
+          ]
+        }
+      ],
+      "recommendation": "推荐A：高柱双臂能更快读成固定本体，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+      "questions": [
+        "选择高柱花冠还是圆掌丛簇？",
+        "散刺反馈选局部根部符号还是短碎光？两者都不表示移动或回血。",
+        "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "固定本体",
+          "image": "r03/characters/cactus/state_idle.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "idle"
+        },
+        {
+          "id": "thorns",
+          "title": "附近散刺",
+          "image": "r03/characters/cactus/state_thorns.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "thorns"
+        },
+        {
+          "id": "regrow",
+          "title": "换位提示，不回血",
+          "image": "r03/characters/cactus/state_regrow.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "regrow"
+        },
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/cactus/motion_1_cover.png",
+          "animation": "r03/characters/cactus/motion_1.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/cactus/motion_2_cover.png",
+          "animation": "r03/characters/cactus/motion_2.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后6编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/cactus/hurt_1_cover.png",
+          "animation": "r03/characters/cactus/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/cactus/hurt_2_cover.png",
+          "animation": "r03/characters/cactus/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "mobility",
+          "title": "移动／站桩方向",
+          "image": "r03/characters/cactus/state_idle.png",
+          "description": "本体固定原位、不走路；REGROW仅合法位置瞬移，不回血。",
+          "event": "existing_position_and_velocity"
+        }
+      ],
+      "motion": [
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/cactus/motion_1_cover.png",
+          "animation": "r03/characters/cactus/motion_1.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 12,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/cactus/motion_2_cover.png",
+          "animation": "r03/characters/cactus/motion_2.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后6编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/cactus/hurt_1_cover.png",
+          "animation": "r03/characters/cactus/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/cactus/hurt_2_cover.png",
+          "animation": "r03/characters/cactus/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "id": "thorn",
+          "name": "独立刺点",
+          "image": "r03/characters/cactus/object_thorn.png",
+          "source_svg": "object_thorn.svg",
+          "description": "静止刺点在现有逻辑位置生成；不是手持武器，命中后移除。"
+        }
+      ],
+      "information": [
+        "本体静止、敌方碰撞受伤18",
+        "附近散5刺；刺命中伤12后消失",
+        "REGROW仅瞬移换位，不回血"
+      ],
+      "validation": [
+        "已根据独立代码事实稿核对角色/物件语义",
+        "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+        "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+      ],
+      "missing": [
+        "未制作可直接接入的完整角色动作与游戏事件接口",
+        "候选外形与动效尚未由用户选择",
+        "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+      ],
+      "source_facts": "../../facts/cactus.md",
+      "setting_document": "SETTING.md",
+      "source_facts_sha256": "cb425b5d5662e89802d820a585de373810120d40ddbe19e0bab77ce5ef73f47a",
+      "source_code": "../../sources/build_last_four_review.py",
+      "technical": {
+        "native_size": [
+          96,
+          96
+        ],
+        "logical_grid": [
+          48,
+          48
+        ],
+        "sampling": "nearest",
+        "format": "RGBA PNG and editable SVG; review GIF",
+        "orientation": "candidate facing right; mirroring not game-validated",
+        "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+        "scope": "Review webpage only; no integration package/game changes"
+      },
+      "provenance": {
+        "new_original_creation": true,
+        "external_image_inputs": false,
+        "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+        "license_note": "Original task graphics for project review, not claim of exclusivity"
+      },
+      "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。",
+      "fact": {
+        "id": "cactus",
+        "name_zh": "仙人掌",
+        "class_name": "Cactus",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/cactus.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "自身inverse_mass为0，advance始终velocity=0；敌对身体碰撞自己时对其造成18。",
+          "SCATTER THORNS在自己附近随机散5根刺（距离40..85、边界clamp），CD6。",
+          "刺点碰到敌对目标radius+6范围时伤12并消失；没有代码寿命，不应编“几秒消散”。",
+          "REGROW寻找可站位置后瞬移，CD9；不是治疗，不增加HP。"
+        ],
+        "objects": [
+          "thorns世界位置刺点",
+          "仙人掌枝臂/自身刺；无手持武器"
+        ],
+        "state_data": [
+          "thorns",
+          "position",
+          "cd_one/cd_two",
+          "velocity始终零"
+        ],
+        "limits_and_conflicts": [
+          "不能画成奔跑角色或让根伸长改变碰撞。",
+          "名称REGROW容易误读回血：代码仅换位置，评审文案不得写恢复生命/再生无敌。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/cactus.md",
+      "setting_url": "r03/characters/cactus/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 干燥轻刺",
+          "file": "r03/audio/cactus_A.wav",
+          "event": "散刺脱离 → 刺点有效命中 → 旧位置缩回示意 → 换位后出现",
+          "description": "A更利落、B更温和；换位不是回血，禁用治疗提示音。",
+          "events": [
+            {
+              "event": "散刺脱离",
+              "start_s": 0.0,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "刺点有效命中",
+              "start_s": 0.46,
+              "duration_s": 0.15,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "旧位置缩回示意",
+              "start_s": 0.83,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "换位后出现",
+              "start_s": 1.27,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.69,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a86257ded74074a2e583aad88cff567f42e358a9f8dbde3687c7bdc171215ea0",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 柔木根音",
+          "file": "r03/audio/cactus_B.wav",
+          "event": "散刺脱离 → 刺点有效命中 → 旧位置缩回示意 → 换位后出现",
+          "description": "A更利落、B更温和；换位不是回血，禁用治疗提示音。",
+          "events": [
+            {
+              "event": "散刺脱离",
+              "start_s": 0.0,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "刺点有效命中",
+              "start_s": 0.46,
+              "duration_s": 0.15,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "旧位置缩回示意",
+              "start_s": 0.83,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "换位后出现",
+              "start_s": 1.27,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.69,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "74cacf26d30353656482e1ef5ee29760544ef1ded286cf4a5fab0e07d9e929ec",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A保留干燥刺物质感，B可用于换位出现；两者都不用治疗音暗示回血。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "comparison": "r03/characters/cactus/comparison.png"
+    },
+    {
+      "id": "shell_turtle",
+      "name": "脱壳乌龟",
+      "status": "R03 review candidates; none selected; not integration assets",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 长颈短足＋圆拱壳",
+          "image": "r03/characters/shell_turtle/variant_a.png",
+          "source_image": "variant_a_sprite.png",
+          "source_svg": "variant_a_sprite.svg",
+          "description": "裸身为长颈短足、侧向小眼和平口，和独立圆拱壳并列展示；柔绿皮肤、浅绿高光与分片硬甲形成材质对照。意向是谨慎轻巧，壳不是一直穿在背上，气质不是已定故事设定。",
+          "pros": [
+            "脱壳后的身体易读",
+            "圆拱壳旋转形态直接"
+          ],
+          "cons": [
+            "本体小尺寸需保留头部对比"
+          ]
+        },
+        {
+          "id": "b",
+          "title": "B 低身宽足＋六角矮壳",
+          "image": "r03/characters/shell_turtle/variant_b.png",
+          "source_image": "variant_b_sprite.png",
+          "source_svg": "variant_b_sprite.svg",
+          "description": "低身宽足与短颈粗头搭配独立六角矮壳；柔绿皮肤、深绿甲片和浅金角片均是候选外观。直视黑眼与厚实轮廓偏稳健憨实，六角外观不改变圆形碰撞或壳规则。",
+          "pros": [
+            "身体与壳轮廓差异大",
+            "矮壳不遮挡附近角色"
+          ],
+          "cons": [
+            "六角外观不能被误认六边形碰撞"
+          ]
+        }
+      ],
+      "recommendation": "推荐A：身体和独立圆壳关系较直观，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+      "questions": [
+        "选择长颈短足与圆拱壳，还是低身宽足与六角矮壳？",
+        "旋壳用局部环形符号还是短边缘轨迹？都不增加冲刺。",
+        "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "本体与壳分离",
+          "image": "r03/characters/shell_turtle/state_idle.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "idle"
+        },
+        {
+          "id": "hidden",
+          "title": "入壳后本体不可见",
+          "image": "r03/characters/shell_turtle/state_hidden.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "hidden"
+        },
+        {
+          "id": "seek",
+          "title": "寻壳状态概念",
+          "image": "r03/characters/shell_turtle/state_seek.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "seek"
+        },
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/shell_turtle/motion_1_cover.png",
+          "animation": "r03/characters/shell_turtle/motion_1.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/shell_turtle/motion_2_cover.png",
+          "animation": "r03/characters/shell_turtle/motion_2.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/shell_turtle/hurt_1_cover.png",
+          "animation": "r03/characters/shell_turtle/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/shell_turtle/hurt_2_cover.png",
+          "animation": "r03/characters/shell_turtle/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "mobility",
+          "title": "移动／站桩方向",
+          "image": "r03/characters/shell_turtle/state_idle.png",
+          "description": "裸身可移动/寻壳；hidden不可见并跟壳；旋壳视觉是原地转，不增冲刺。",
+          "event": "existing_position_and_velocity"
+        }
+      ],
+      "motion": [
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/shell_turtle/motion_1_cover.png",
+          "animation": "r03/characters/shell_turtle/motion_1.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 12,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/shell_turtle/motion_2_cover.png",
+          "animation": "r03/characters/shell_turtle/motion_2.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 12,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/shell_turtle/hurt_1_cover.png",
+          "animation": "r03/characters/shell_turtle/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/shell_turtle/hurt_2_cover.png",
+          "animation": "r03/characters/shell_turtle/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "id": "shell",
+          "name": "独立龟壳",
+          "image": "r03/characters/shell_turtle/object_shell.png",
+          "source_svg": "object_shell.svg",
+          "description": "不可受伤的独立物体；spin开始速度置0，并非新增冲刺。"
+        },
+        {
+          "id": "shell_b",
+          "name": "B方向配套独立壳",
+          "image": "r03/characters/shell_turtle/object_shell_b.png",
+          "source_svg": "object_shell_b.svg",
+          "description": "B候选的物件轮廓，不改变实际物体规则。"
+        }
+      ],
+      "information": [
+        "本体未隐藏撞敌时自己扣12",
+        "寻壳接触后隐藏2.5秒；无合法位置可继续等待",
+        "独立壳碰撞伤18，旋转时27，原有冲量不改"
+      ],
+      "validation": [
+        "已根据独立代码事实稿核对角色/物件语义",
+        "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+        "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+      ],
+      "missing": [
+        "完整寻壳/出壳连续动画待用户选型后制作",
+        "隐藏/出壳与真实物理同步未验证",
+        "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+      ],
+      "source_facts": "../../facts/shell_turtle.md",
+      "setting_document": "SETTING.md",
+      "source_facts_sha256": "39f8c0dbcd9f4347a92225259659218022a239e2d1f3a0647074089dddd520e3",
+      "source_code": "../../sources/build_last_four_review.py",
+      "technical": {
+        "native_size": [
+          96,
+          96
+        ],
+        "logical_grid": [
+          48,
+          48
+        ],
+        "sampling": "nearest",
+        "format": "RGBA PNG and editable SVG; review GIF",
+        "orientation": "candidate facing right; mirroring not game-validated",
+        "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+        "scope": "Review webpage only; no integration package/game changes"
+      },
+      "provenance": {
+        "new_original_creation": true,
+        "external_image_inputs": false,
+        "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+        "license_note": "Original task graphics for project review, not claim of exclusivity"
+      },
+      "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。",
+      "fact": {
+        "id": "shell_turtle",
+        "name_zh": "脱壳龟",
+        "class_name": "ShellTurtle",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/shell_turtle.gd",
+          "scripts/turtle_shell.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "龟本体与独立壳是两个物理身体；本体未入壳碰到敌对Fighter时自身扣12，不是自己撞人伤12。",
+          "HIDE IN SHELL向壳寻路最多6秒，速度240；碰到壳后hidden2.5秒，本体physics_enabled=false/visible=false、免受伤害并跟随壳。成功出壳找可用位置，速度170；CD9。",
+          "SPIN SHELL壳spin2.5秒，CD8；start_spin将壳速度暂置0并保存，结束若仍近静止则恢复。不是“自动高速冲刺”。",
+          "壳radius22、不可受伤；撞敌伤18，spin时伤27并对可推动目标施加原有冲量100。",
+          "本体出壳若暂时无可用位置会继续隐藏等待；不把2.5秒结束画成必定出壳。"
+        ],
+        "objects": [
+          "TurtleShell独立龟壳",
+          "空壳/本体/入壳姿态"
+        ],
+        "state_data": [
+          "action: idle/seek/hidden",
+          "action_left",
+          "physics_enabled/visible",
+          "shell.position/velocity/spin_left/spin_restore"
+        ],
+        "limits_and_conflicts": [
+          "壳是实际独立物体，不是全程固定背甲；不能画“龟一直穿壳”掩盖脱壳机制。",
+          "spin的图像旋转不代表位置高速移动；不能新增冲刺/反弹规则。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/shell_turtle.md",
+      "setting_url": "r03/characters/shell_turtle/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 空心壳敲",
+          "file": "r03/audio/shell_turtle_A.wav",
+          "event": "本体进入壳 → 原地旋壳截段 → 壳有效碰撞 → 成功离壳",
+          "description": "A空壳易识别，B碰撞更厚；旋转声不表示高速冲刺或额外击退。",
+          "events": [
+            {
+              "event": "本体进入壳",
+              "start_s": 0.0,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "原地旋壳截段",
+              "start_s": 0.44,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "壳有效碰撞",
+              "start_s": 1.08,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功离壳",
+              "start_s": 1.55,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.97,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "c0778c455bd835719599e8cf7ccbc67b904340dbc78b6a6598ef8f2b1be68240",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚壳闷响",
+          "file": "r03/audio/shell_turtle_B.wav",
+          "event": "本体进入壳 → 原地旋壳截段 → 壳有效碰撞 → 成功离壳",
+          "description": "A空壳易识别，B碰撞更厚；旋转声不表示高速冲刺或额外击退。",
+          "events": [
+            {
+              "event": "本体进入壳",
+              "start_s": 0.0,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "原地旋壳截段",
+              "start_s": 0.44,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "壳有效碰撞",
+              "start_s": 1.08,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功离壳",
+              "start_s": 1.55,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.97,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "dfce85cb5943c1e0a2b1c30233e2443546fe2596053ca94d6aa7067469b08fff",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A区分空壳进入/离开，B比较壳碰撞重量；不能听成新增冲刺。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "comparison": "r03/characters/shell_turtle/comparison.png"
+    },
+    {
+      "id": "crow",
+      "name": "乌鸦",
+      "status": "R03 review candidates; none selected; not integration assets",
+      "variants": [
+        {
+          "id": "a",
+          "title": "A 瘦长折翼侧影",
+          "image": "r03/characters/crow/variant_a.png",
+          "source_image": "variant_a_sprite.png",
+          "source_svg": "variant_a_sprite.svg",
+          "description": "瘦长侧身、折翼和长金喙，淡紫身体配深紫哑光羽片、浅青羽缘与浅腹部。单侧黑眼和收拢姿态偏谨慎沉着；这是候选视觉气质，不编造角色身世或飞羽攻击。",
+          "pros": [
+            "乌鸦与稻草人对照清楚",
+            "储羽标记不易和武器混淆"
+          ],
+          "cons": [
+            "单翼侧影需检查左右翻转"
+          ]
+        },
+        {
+          "id": "b",
+          "title": "B 宽身披翼轮廓",
+          "image": "r03/characters/crow/variant_b.png",
+          "source_image": "variant_b_sprite.png",
+          "source_svg": "variant_b_sprite.svg",
+          "description": "宽身、两侧披翼和短粗金喙，深紫羽片包住淡紫胸腹，额顶小羽角强化体块；直视小黑眼更显机敏倔强。披翼只表达蓬松羽质与轮廓，不能被当成护盾或无敌状态。",
+          "pros": [
+            "大轮廓更适合小尺寸",
+            "拼布草人易显示受损/修复"
+          ],
+          "cons": [
+            "披翼需避免看成护盾/无敌状态"
+          ]
+        }
+      ],
+      "recommendation": "推荐A：瘦长侧影与木草人关系更清楚，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+      "questions": [
+        "选择瘦长折翼还是宽身披翼？",
+        "换位用两端局部环，还是不连线的短羽光？羽毛不得成为远程攻击。",
+        "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+      ],
+      "states": [
+        {
+          "id": "idle",
+          "title": "本体与受伤稻草人",
+          "image": "r03/characters/crow/state_idle.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "idle"
+        },
+        {
+          "id": "feather",
+          "title": "储羽准备",
+          "image": "r03/characters/crow/state_feather.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "feather"
+        },
+        {
+          "id": "repair",
+          "title": "近身修复概念",
+          "image": "r03/characters/crow/state_repair.png",
+          "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+          "event": "repair"
+        },
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/crow/motion_1_cover.png",
+          "animation": "r03/characters/crow/motion_1.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/crow/motion_2_cover.png",
+          "animation": "r03/characters/crow/motion_2.gif",
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+          "event": "concept_only"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/crow/hurt_1_cover.png",
+          "animation": "r03/characters/crow/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/crow/hurt_2_cover.png",
+          "animation": "r03/characters/crow/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+          "event": "actual_health_loss_only"
+        },
+        {
+          "id": "mobility",
+          "title": "移动／站桩方向",
+          "image": "r03/characters/crow/state_idle.png",
+          "description": "本体按原运动；换位是合法条件下瞬换，不画飞行法术或远程羽攻击。",
+          "event": "existing_position_and_velocity"
+        }
+      ],
+      "motion": [
+        {
+          "id": "motion_1",
+          "title": "方向1：局部符号反馈",
+          "image": "r03/characters/crow/motion_1_cover.png",
+          "animation": "r03/characters/crow/motion_1.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 12,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "motion_2",
+          "title": "方向2：短轨迹／碎光反馈",
+          "image": "r03/characters/crow/motion_2_cover.png",
+          "animation": "r03/characters/crow/motion_2.gif",
+          "logical_frames": 12,
+          "gif_encoded_frames": 12,
+          "loop_duration_ms": 1440,
+          "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+        },
+        {
+          "id": "hurt_1",
+          "title": "受击A：局部压低／眨眼",
+          "image": "r03/characters/crow/hurt_1_cover.png",
+          "animation": "r03/characters/crow/hurt_1.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 6,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        },
+        {
+          "id": "hurt_2",
+          "title": "受击B：局部碎光",
+          "image": "r03/characters/crow/hurt_2_cover.png",
+          "animation": "r03/characters/crow/hurt_2.gif",
+          "logical_frames": 8,
+          "gif_encoded_frames": 7,
+          "loop_duration_ms": 640,
+          "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+        }
+      ],
+      "weapons_objects": [
+        {
+          "id": "dummy",
+          "name": "独立稻草人",
+          "image": "r03/characters/crow/object_dummy.png",
+          "source_svg": "object_dummy.svg",
+          "description": "最多2个，固定60HP，承伤实际值反到敌方英雄，不主动攻击。"
+        },
+        {
+          "id": "dummy_damaged",
+          "name": "受伤稻草人",
+          "image": "r03/characters/crow/object_dummy_damaged.png",
+          "source_svg": "object_dummy_damaged.svg",
+          "description": "存活且受伤时才能由乌鸦碰触消耗羽毛补25HP。"
+        },
+        {
+          "id": "feather",
+          "name": "储存羽毛",
+          "image": "r03/characters/crow/object_feather.png",
+          "source_svg": "object_feather.svg",
+          "description": "状态道具；不是羽毛弹、法杖或远程伤害技能。"
+        },
+        {
+          "id": "dummy_b",
+          "name": "B方向配套稻草人",
+          "image": "r03/characters/crow/object_dummy_b.png",
+          "source_svg": "object_dummy_b.svg",
+          "description": "B候选的物件轮廓，不改变实际物体规则。"
+        }
+      ],
+      "information": [
+        "稻草人最多2个，固定站位",
+        "与首个稻草人换位置须两边合法",
+        "带羽碰自己受伤稻草人补25HP，消耗羽毛"
+      ],
+      "validation": [
+        "已根据独立代码事实稿核对角色/物件语义",
+        "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+        "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+      ],
+      "missing": [
+        "完整换位/受损/修复游戏动画尚未接入",
+        "新稻草人外形和储羽图标仍待用户选择",
+        "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+      ],
+      "source_facts": "../../facts/crow.md",
+      "setting_document": "SETTING.md",
+      "source_facts_sha256": "734340b4b134798135e949933cb6d813dd7557f2ac189312025d58de6e4165be",
+      "source_code": "../../sources/build_last_four_review.py",
+      "technical": {
+        "native_size": [
+          96,
+          96
+        ],
+        "logical_grid": [
+          48,
+          48
+        ],
+        "sampling": "nearest",
+        "format": "RGBA PNG and editable SVG; review GIF",
+        "orientation": "candidate facing right; mirroring not game-validated",
+        "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+        "scope": "Review webpage only; no integration package/game changes"
+      },
+      "provenance": {
+        "new_original_creation": true,
+        "external_image_inputs": false,
+        "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+        "license_note": "Original task graphics for project review, not claim of exclusivity"
+      },
+      "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。",
+      "fact": {
+        "id": "crow",
+        "name_zh": "乌鸦",
+        "class_name": "Crow",
+        "status": "code_fact_draft; visual candidates not approved",
+        "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+        "code_paths": [
+          "scripts/crow.gd",
+          "scripts/scarecrow.gd",
+          "scripts/battle_arena.gd",
+          "scripts/fighter.gd",
+          "scripts/ball.gd"
+        ],
+        "mechanics": [
+          "每次场上稻草人少于2时可放置，首次2秒、后续5秒；随机可用位置。",
+          "SWAP DUMMY与列表第一个稻草人换位置，双方站位都要合法才成功、释放旧接触，CD7。",
+          "STORE FEATHER储一根羽毛，尚未储存时准备、CD6；不是发射飞羽技能。",
+          "本体碰到自己存活且受伤的稻草人时消耗羽毛、恢复其25HP（不超上限）；满血稻草人不消耗。",
+          "Scarecrow有60HP、radius20、inverse_mass=0；承伤实际值不超过当前HP，等量反射到主人乌鸦的敌方英雄；无递归反射。死亡移除。"
+        ],
+        "objects": [
+          "Scarecrow稻草人最多2",
+          "储存羽毛状态；不是弓/法杖/羽毛弹"
+        ],
+        "state_data": [
+          "dummy_timer",
+          "feather",
+          "dummies",
+          "Scarecrow.health/max_health/owner_crow",
+          "position/cd_one/cd_two"
+        ],
+        "limits_and_conflicts": [
+          "不能把羽毛当远程伤害；不能给稻草人新增主动攻击/移动。",
+          "SWAP只交换位置，不承诺交换血量/速度/技能；反伤不等于乌鸦本体无敌。"
+        ],
+        "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+        "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+        "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+      },
+      "fact_url": "r03/facts/crow.md",
+      "setting_url": "r03/characters/crow/SETTING.md",
+      "audio": [
+        {
+          "id": "A",
+          "title": "A 草束轻拍",
+          "file": "r03/audio/crow_A.wav",
+          "event": "放置稻草人 → 成功交换位置 → 储存羽毛 → 碰触修复自家稻草人 → 稻草人真实承伤与反射",
+          "description": "A强调草人，B强调翅羽；没有飞羽远程攻击，修复只跟真实自家草人事件。",
+          "events": [
+            {
+              "event": "放置稻草人",
+              "start_s": 0.0,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功交换位置",
+              "start_s": 0.47,
+              "duration_s": 0.32,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "储存羽毛",
+              "start_s": 1.01,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "碰触修复自家稻草人",
+              "start_s": 1.45,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "稻草人真实承伤与反射",
+              "start_s": 1.91,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.35,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a31a54fcfcd45737a6f2c640d95e89548458fe5a4e58e8f469714a6c8961fb9d",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 羽翼低掠",
+          "file": "r03/audio/crow_B.wav",
+          "event": "放置稻草人 → 成功交换位置 → 储存羽毛 → 碰触修复自家稻草人 → 稻草人真实承伤与反射",
+          "description": "A强调草人，B强调翅羽；没有飞羽远程攻击，修复只跟真实自家草人事件。",
+          "events": [
+            {
+              "event": "放置稻草人",
+              "start_s": 0.0,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功交换位置",
+              "start_s": 0.47,
+              "duration_s": 0.32,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "储存羽毛",
+              "start_s": 1.01,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "碰触修复自家稻草人",
+              "start_s": 1.45,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "稻草人真实承伤与反射",
+              "start_s": 1.91,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.35,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "d129d5af4109c596a714705e000931c715fe084b16470d1fd2e79ba278073b79",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "audio_recommendation": "建议A强调草人承伤与修复，B比较换位羽响；羽毛不是远程武器。",
+      "audio_question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。",
+      "comparison": "r03/characters/crow/comparison.png"
+    }
+  ],
+  "ui": {
+    "version": "R03-UI-review-1",
+    "review_only": true,
+    "status": "candidates_not_selected",
+    "baseline": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "canvas": {
+      "game": [
+        1100,
+        780
+      ],
+      "image": [
+        1100,
+        828
+      ],
+      "outside_caption_height": 48
+    },
+    "shared_sample": {
+      "data": "data/shared_sample.json",
+      "source": "actual Godot fixed-step capture; pair deliberately fixed for fair UI comparison, not a randomized-roll screenshot",
+      "characters": [
+        "bubble_fish",
+        "electric_sheep"
+      ],
+      "seed": 3103,
+      "time": 5.25833333333338,
+      "health": [
+        110.0,
+        120.0
+      ],
+      "bubbles": 11,
+      "max_bubble_level": 3,
+      "sheep_charge": 17.5000000000001,
+      "charge_cap": 100,
+      "world_positions_unchanged_across_schemes": true
+    },
+    "stress_sample": {
+      "data": "data/stress_sample.json",
+      "characters": [
+        "shell_turtle",
+        "crow"
+      ],
+      "turtle_hidden": true,
+      "shell_separate": true,
+      "dummy_count": 2,
+      "time": 7.00833333333347
+    },
+    "schemes": [
+      {
+        "id": "A",
+        "title": "左右侧栏 · 原方向延续",
+        "summary": "状态固定在两侧，视线知道去哪找；延续已选左右侧栏，泡泡和独立物件不背额外文字。",
+        "advantages": [
+          "与已选鸭兔左右状态区一致，换随机角色只替换状态图标。",
+          "状态不跟着角色漂，密集物件中仍可定位HP与CD。",
+          "羊电量可用100上限细条；无上限泡泡等级只在泡泡上显示数字。"
+        ],
+        "tradeoffs": [
+          "两侧常驻面板占视觉宽度，空闲时仍有较大底板。",
+          "玩家要在角色和侧栏之间移动视线。"
+        ],
+        "questions": [
+          "随机角色战斗继续沿用左右侧栏，还是想选另两种更轻的布局？"
+        ],
+        "image": "r03/ui/images/a_primary.png",
+        "svg": "r03/ui/images/a_primary.svg",
+        "default_text": {
+          "strings": [
+            "3",
+            "110",
+            "11",
+            "3.8",
+            "7.8",
+            "120",
+            "17.5",
+            "1.8",
+            "4.8",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 31,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "3",
+              "position": [
+                513.829559326172,
+                596.04931640625
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "110",
+              "position": [
+                52,
+                212
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "11",
+              "position": [
+                64,
+                303
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "3.8",
+              "position": [
+                50.0,
+                495
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "7.8",
+              "position": [
+                126.0,
+                495
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "120",
+              "position": [
+                972,
+                212
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "17.5",
+              "position": [
+                984,
+                303
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "1.8",
+              "position": [
+                970.0,
+                495
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "4.8",
+              "position": [
+                1046.0,
+                495
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "1×",
+              "position": [
+                568.0,
+                748
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "2×",
+              "position": [
+                624.0,
+                748
+              ],
+              "element_id": "hud_10"
+            },
+            {
+              "value": "3×",
+              "position": [
+                680.0,
+                748
+              ],
+              "element_id": "hud_11"
+            }
+          ]
+        },
+        "stress_image": "r03/ui/images/a_stress.png",
+        "stress_svg": "images/a_stress.svg",
+        "stress_text": {
+          "strings": [
+            "120",
+            "0.5",
+            "5.0",
+            "6.0",
+            "120",
+            "2",
+            "4.0",
+            "2.0",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 28,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "120",
+              "position": [
+                52,
+                212
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "0.5",
+              "position": [
+                64,
+                303
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "5.0",
+              "position": [
+                50.0,
+                495
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "6.0",
+              "position": [
+                126.0,
+                495
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "120",
+              "position": [
+                972,
+                212
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "2",
+              "position": [
+                984,
+                303
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "4.0",
+              "position": [
+                970.0,
+                495
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "2.0",
+              "position": [
+                1046.0,
+                495
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "1×",
+              "position": [
+                568.0,
+                748
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "2×",
+              "position": [
+                624.0,
+                748
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "3×",
+              "position": [
+                680.0,
+                748
+              ],
+              "element_id": "hud_10"
+            }
+          ]
+        }
+      },
+      {
+        "id": "B",
+        "title": "上下窄条 · 两侧留白",
+        "summary": "HP与资源放顶端，四技能冷却靠底边；物理场地不变，两侧取消高面板。",
+        "advantages": [
+          "中央和侧边更透气，泡泡/铁钉等物件不被高侧栏包围。",
+          "HP始终固定，资源与CD分层清楚。"
+        ],
+        "tradeoffs": [
+          "HP/资源在上、CD在下，视线跨度更大。",
+          "底部自动技能与公共操作接近，需用样式区分，避免误认为点击施法。"
+        ],
+        "questions": [
+          "是否接受HP与冷却分上下两层，而不延续已选左右侧栏？"
+        ],
+        "image": "r03/ui/images/b_primary.png",
+        "svg": "r03/ui/images/b_primary.svg",
+        "default_text": {
+          "strings": [
+            "3",
+            "110",
+            "11",
+            "3.8",
+            "7.8",
+            "120",
+            "17.5",
+            "1.8",
+            "4.8",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 31,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "3",
+              "position": [
+                513.829559326172,
+                596.04931640625
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "110",
+              "position": [
+                114,
+                37
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "11",
+              "position": [
+                370,
+                46
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "3.8",
+              "position": [
+                53,
+                754
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "7.8",
+              "position": [
+                127,
+                754
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "120",
+              "position": [
+                672,
+                37
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "17.5",
+              "position": [
+                928,
+                46
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "1.8",
+              "position": [
+                973,
+                754
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "4.8",
+              "position": [
+                1047,
+                754
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "1×",
+              "position": [
+                394.0,
+                746
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "2×",
+              "position": [
+                446.0,
+                746
+              ],
+              "element_id": "hud_10"
+            },
+            {
+              "value": "3×",
+              "position": [
+                498.0,
+                746
+              ],
+              "element_id": "hud_11"
+            }
+          ]
+        },
+        "stress_image": "r03/ui/images/b_stress.png",
+        "stress_svg": "images/b_stress.svg",
+        "stress_text": {
+          "strings": [
+            "120",
+            "0.5",
+            "5.0",
+            "6.0",
+            "120",
+            "2",
+            "4.0",
+            "2.0",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 28,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "120",
+              "position": [
+                114,
+                37
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "0.5",
+              "position": [
+                370,
+                46
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "5.0",
+              "position": [
+                53,
+                754
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "6.0",
+              "position": [
+                127,
+                754
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "120",
+              "position": [
+                672,
+                37
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "2",
+              "position": [
+                928,
+                46
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "4.0",
+              "position": [
+                973,
+                754
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "2.0",
+              "position": [
+                1047,
+                754
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "1×",
+              "position": [
+                394.0,
+                746
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "2×",
+              "position": [
+                446.0,
+                746
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "3×",
+              "position": [
+                498.0,
+                746
+              ],
+              "element_id": "hud_10"
+            }
+          ]
+        }
+      },
+      {
+        "id": "C",
+        "title": "近身状态 · 边缘摘要",
+        "summary": "HP留在上角，资源和两技能CD靠近本体；独立壳/稻草人密集时需要自动避让。",
+        "advantages": [
+          "资源和动作接近，少看远处面板。",
+          "无高侧栏，常驻框体最轻。"
+        ],
+        "tradeoffs": [
+          "泡泡围身、乌鸦换位或龟隐藏时HUD容易挡路或跳动。",
+          "图中只选了静态不遮挡位置；实际需要避让/迟滞逻辑，尚未实现。",
+          "移动端小屏必须验证字体、跟随抖动与触控，不可仅凭静图称通过。"
+        ],
+        "questions": [
+          "愿意接受更高的动态避让实现和验证成本，换取近身读数吗？"
+        ],
+        "image": "r03/ui/images/c_primary.png",
+        "svg": "r03/ui/images/c_primary.svg",
+        "default_text": {
+          "strings": [
+            "3",
+            "110",
+            "120",
+            "11",
+            "3.8",
+            "7.8",
+            "17.5",
+            "1.8",
+            "4.8",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 31,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "3",
+              "position": [
+                513.829559326172,
+                596.04931640625
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "110",
+              "position": [
+                102,
+                37
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "120",
+              "position": [
+                970,
+                37
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "11",
+              "position": [
+                376,
+                446
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "3.8",
+              "position": [
+                372,
+                472
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "7.8",
+              "position": [
+                446,
+                472
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "17.5",
+              "position": [
+                714,
+                524
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "1.8",
+              "position": [
+                710,
+                550
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "4.8",
+              "position": [
+                784,
+                550
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "1×",
+              "position": [
+                568.0,
+                748
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "2×",
+              "position": [
+                624.0,
+                748
+              ],
+              "element_id": "hud_10"
+            },
+            {
+              "value": "3×",
+              "position": [
+                680.0,
+                748
+              ],
+              "element_id": "hud_11"
+            }
+          ]
+        },
+        "stress_image": "r03/ui/images/c_stress.png",
+        "stress_svg": "images/c_stress.svg",
+        "stress_text": {
+          "strings": [
+            "120",
+            "120",
+            "0.5",
+            "5.0",
+            "6.0",
+            "2",
+            "4.0",
+            "2.0",
+            "1×",
+            "2×",
+            "3×"
+          ],
+          "non_whitespace_characters": 28,
+          "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+          "elements": [
+            {
+              "value": "120",
+              "position": [
+                102,
+                37
+              ],
+              "element_id": "hud_0"
+            },
+            {
+              "value": "120",
+              "position": [
+                970,
+                37
+              ],
+              "element_id": "hud_1"
+            },
+            {
+              "value": "0.5",
+              "position": [
+                784,
+                192
+              ],
+              "element_id": "hud_2"
+            },
+            {
+              "value": "5.0",
+              "position": [
+                780,
+                218
+              ],
+              "element_id": "hud_3"
+            },
+            {
+              "value": "6.0",
+              "position": [
+                854,
+                218
+              ],
+              "element_id": "hud_4"
+            },
+            {
+              "value": "2",
+              "position": [
+                356,
+                310
+              ],
+              "element_id": "hud_5"
+            },
+            {
+              "value": "4.0",
+              "position": [
+                352,
+                336
+              ],
+              "element_id": "hud_6"
+            },
+            {
+              "value": "2.0",
+              "position": [
+                426,
+                336
+              ],
+              "element_id": "hud_7"
+            },
+            {
+              "value": "1×",
+              "position": [
+                568.0,
+                748
+              ],
+              "element_id": "hud_8"
+            },
+            {
+              "value": "2×",
+              "position": [
+                624.0,
+                748
+              ],
+              "element_id": "hud_9"
+            },
+            {
+              "value": "3×",
+              "position": [
+                680.0,
+                748
+              ],
+              "element_id": "hud_10"
+            }
+          ]
+        }
+      }
+    ],
+    "recommendation": {
+      "id": "A",
+      "reason": "先保留已选左右侧栏，八随机角色仅替换图标/状态读数，拥挤物件下读数稳定；B适合更重视空旷感时选择，C应等动态避让验证。",
+      "not_user_selection": true
+    },
+    "shared_rules": [
+      "A像素风、浅色场地、横屏和极简作为共同基线；A/B/C是本轮待选布局，不代表用户已放弃原左右侧栏。",
+      "所有方案同一角色候选A和相同实际模拟状态；角色造型A不是用户已选。",
+      "物理场地700×600、位置/伤害/CD/随机/结算不改；画面世界矩形均[200,90,700,600]。",
+      "每个角色两技能为自动状态，只显示冷却，不是点击施法按钮。",
+      "底部保留暂停、1×/2×/3×、重看同种子、新随机(10角色池)、声音、全部角色、信息；图标仅概念，未绑定游戏。",
+      "无上限泡泡level不画封顶条；羊charge是代码真实0..100，可画细条。",
+      "泡泡等级1仍是无伤害小泡泡；只有融合等级>=2显示等级数字，未画1级命中爆炸。",
+      "羊本体/羊毛共享一电库，仅画当前实际的一条放电路径，不暗示双倍伤。",
+      "龟hidden不画本体，只画独立壳；两个稻草人不是额外英雄，不加主动攻击。"
+    ],
+    "limits": [
+      "概念SVG/PNG不是实机截图、不是完整动态UI或接入素材包。",
+      "新8角色的造型、动作、音色仍待用户选择；本轮未重设计已交付鸭兔。",
+      "性能、真机安全区、触控、长数值和HUD动态避让尚未验证。",
+      "养成/挂机等未确定系统不加入战斗UI。"
+    ],
+    "sources": [
+      "../facts/bubble_fish.md",
+      "../facts/electric_sheep.md",
+      "../facts/shell_turtle.md",
+      "../facts/crow.md",
+      "data/asset_sources.json",
+      "source/capture_state.gd",
+      "source/build_ui_review.py"
+    ],
+    "eight_role_adapters": [
+      {
+        "id": "puffer",
+        "visible_state": "gas0..100；吸收仅活动时用免伤图标/剩余秒",
+        "meter": "只有气量可100上限；视觉膨胀不扩大物理圆"
+      },
+      {
+        "id": "chicken",
+        "visible_state": "存活蛋数量；仅已触发引信/大蛋落地时在对应蛋旁显示临爆提示",
+        "meter": "不把下蛋时间/蹲蛋做成必定命中条；小蛋接触引信0.8秒与大蛋落地1.5秒不同"
+      },
+      {
+        "id": "bubble_fish",
+        "visible_state": "本鱼泡泡数量；融合泡泡在物件上显示level；吸附仅激活时标记",
+        "meter": "level无上限，不画百分比满槽；尺寸54上限不是等级上限"
+      },
+      {
+        "id": "electric_sheep",
+        "visible_state": "charge数值/细条；一处羊毛图标与正在放电状态",
+        "meter": "charge有真实100上限；本体和羊毛共享这一条电量"
+      },
+      {
+        "id": "magnet_crab",
+        "visible_state": "铁钉数；repel_ready图标；当前磁墙仅激活时提示",
+        "meter": "静止铁钉无伤害、仅移动时危险；总钉数无已知上限，不画满槽"
+      },
+      {
+        "id": "cactus",
+        "visible_state": "场上刺数；移动不画速度/奔跑条",
+        "meter": "每次散5但存留数量可累积，不假设总量5封顶；REGROW是换位置不是回血"
+      },
+      {
+        "id": "shell_turtle",
+        "visible_state": "seek/hidden图标；hidden剩余时间；独立壳是否spin",
+        "meter": "hidden结束若无可站位置可继续等，不能承诺数字归零必出壳；壳不可伤不画假HP"
+      },
+      {
+        "id": "crow",
+        "visible_state": "两个稻草人数和实际HP小条；feather单根储存图标",
+        "meter": "稻草人各60HP、最多2；羽毛不是弹药条或远程飞羽武器"
+      }
+    ],
+    "current_code_routing": "main.gd调用arena.setup(match_seed)从10角色池不重复抽2；showcase.gd当前固定[5,6]鸭兔。这里是随机对战UI候选，未把任何候选接入或改写现默认入口。固定鱼羊与龟鸦是公平比较样例，不称seed已随机抽到它们。",
+    "world_view": {
+      "origin": [
+        200,
+        90
+      ],
+      "size": [
+        700,
+        600
+      ],
+      "scale": 1,
+      "same_across_all_schemes": true
+    }
+  },
+  "validation_summary": [
+    "所有本轮造型、动作表现、音色与横屏方案均为候选，等待用户选择；代码事实与候选外观分开。",
+    "实际生成的候选PNG、概念动图及试听文件按各角色展示；未完成项直接标明，不提供接入包。",
+    "试听声音已程序合成并测量PCM，未人工听审、未在游戏中验证；动作是概念循环，不是游戏录像。",
+    "本地／公开页面实际检查结果见本轮检查记录；浏览器模拟宽度不是真实手机安装或扬声器测试。"
+  ]
+}

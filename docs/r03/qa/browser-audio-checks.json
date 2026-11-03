@@ -1,0 +1,115 @@
+{
+  "checked_utc": "2026-11-03T14:57:27.801467+00:00",
+  "scope": "local R03 framework/audio functional check; character/UI artwork may still be incomplete at this check",
+  "browser": "installed system Chromium via Playwright, desktop1280x900; not physical device",
+  "audio_count": 16,
+  "audio_playback_currentTime_progress_passed": 16,
+  "mutual_exclusion_passed": true,
+  "global_stop_resets_all": true,
+  "crow_shape_radio_and_arrow_key_passed": true,
+  "draft_only_input_and_clear_passed": true,
+  "non_read_network_requests": [],
+  "page_errors": [],
+  "http_errors": [],
+  "plays": [
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/puffer_A.wav",
+      "time": 0.080378,
+      "duration": 2.21,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/puffer_B.wav",
+      "time": 0.067266,
+      "duration": 2.21,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/chicken_A.wav",
+      "time": 0.109296,
+      "duration": 1.98,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/chicken_B.wav",
+      "time": 0.077346,
+      "duration": 1.98,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/bubble_fish_A.wav",
+      "time": 0.099637,
+      "duration": 2.08,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/bubble_fish_B.wav",
+      "time": 0.100782,
+      "duration": 2.08,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/electric_sheep_A.wav",
+      "time": 0.076979,
+      "duration": 2.07,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/electric_sheep_B.wav",
+      "time": 0.088461,
+      "duration": 2.07,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/magnet_crab_A.wav",
+      "time": 0.077573,
+      "duration": 1.81,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/magnet_crab_B.wav",
+      "time": 0.089146,
+      "duration": 1.81,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/cactus_A.wav",
+      "time": 0.071438,
+      "duration": 1.69,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/cactus_B.wav",
+      "time": 0.071114,
+      "duration": 1.69,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/shell_turtle_A.wav",
+      "time": 0.080667,
+      "duration": 1.97,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/shell_turtle_B.wav",
+      "time": 0.084193,
+      "duration": 1.97,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/crow_A.wav",
+      "time": 0.075863,
+      "duration": 2.35,
+      "paused": false
+    },
+    {
+      "src": "http://127.0.0.1:8033/r03/audio/crow_B.wav",
+      "time": 0.07806,
+      "duration": 2.35,
+      "paused": false
+    }
+  ],
+  "app_js_sha256": "2af7fa25d5362415024530c65f55786f9135853a898e9894e0b0bbc1ad0d5e99",
+  "human_listening": "NOT_RUN",
+  "result": "PASS"
+}

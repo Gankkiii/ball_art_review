@@ -1,0 +1,203 @@
+{
+  "id": "cactus",
+  "name": "仙人掌",
+  "status": "R03 review candidates; none selected; not integration assets",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 高柱花冠",
+      "image": "variant_a.png",
+      "source_image": "variant_a_sprite.png",
+      "source_svg": "variant_a_sprite.svg",
+      "description": "高柱主干、不对称双臂和小花冠形成竖向轮廓；柔绿蜡皮、奶黄色刺与珊瑚花配深蓝灰描边。单眼平口偏沉着，候选气质稳重扎根，不增加背景设定或行走能力。",
+      "pros": [
+        "静止身份直观",
+        "高柱与刺点容易区分"
+      ],
+      "cons": [
+        "高柱需检查HUD遮挡"
+      ]
+    },
+    {
+      "id": "b",
+      "title": "B 圆掌丛簇",
+      "image": "variant_b.png",
+      "source_image": "variant_b_sprite.png",
+      "source_svg": "variant_b_sprite.svg",
+      "description": "宽低圆掌配两片高低侧掌，轮廓更像丛簇；浅绿蜡质高光、深绿边面和珊瑚小花保持A暖色。小黑眼和平口偏呆萌钝感，气质只是视觉意向，不代表新机制。",
+      "pros": [
+        "横向轮廓稳定",
+        "小尺寸下分枝更醒目"
+      ],
+      "cons": [
+        "低身容易与场上刺混淆，需清楚描边"
+      ]
+    }
+  ],
+  "recommendation": "推荐A：高柱双臂能更快读成固定本体，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+  "questions": [
+    "选择高柱花冠还是圆掌丛簇？",
+    "散刺反馈选局部根部符号还是短碎光？两者都不表示移动或回血。",
+    "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "固定本体",
+      "image": "state_idle.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "idle"
+    },
+    {
+      "id": "thorns",
+      "title": "附近散刺",
+      "image": "state_thorns.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "thorns"
+    },
+    {
+      "id": "regrow",
+      "title": "换位提示，不回血",
+      "image": "state_regrow.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "regrow"
+    },
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后6编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "mobility",
+      "title": "移动／站桩方向",
+      "image": "state_idle.png",
+      "description": "本体固定原位、不走路；REGROW仅合法位置瞬移，不回血。",
+      "event": "existing_position_and_velocity"
+    }
+  ],
+  "motion": [
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后6编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "id": "thorn",
+      "name": "独立刺点",
+      "image": "object_thorn.png",
+      "source_svg": "object_thorn.svg",
+      "description": "静止刺点在现有逻辑位置生成；不是手持武器，命中后移除。"
+    }
+  ],
+  "information": [
+    "本体静止、敌方碰撞受伤18",
+    "附近散5刺；刺命中伤12后消失",
+    "REGROW仅瞬移换位，不回血"
+  ],
+  "validation": [
+    "已根据独立代码事实稿核对角色/物件语义",
+    "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+    "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+  ],
+  "missing": [
+    "未制作可直接接入的完整角色动作与游戏事件接口",
+    "候选外形与动效尚未由用户选择",
+    "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+  ],
+  "source_facts": "../../facts/cactus.md",
+  "setting_document": "SETTING.md",
+  "source_facts_sha256": "cb425b5d5662e89802d820a585de373810120d40ddbe19e0bab77ce5ef73f47a",
+  "source_code": "../../sources/build_last_four_review.py",
+  "technical": {
+    "native_size": [
+      96,
+      96
+    ],
+    "logical_grid": [
+      48,
+      48
+    ],
+    "sampling": "nearest",
+    "format": "RGBA PNG and editable SVG; review GIF",
+    "orientation": "candidate facing right; mirroring not game-validated",
+    "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+    "scope": "Review webpage only; no integration package/game changes"
+  },
+  "provenance": {
+    "new_original_creation": true,
+    "external_image_inputs": false,
+    "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+    "license_note": "Original task graphics for project review, not claim of exclusivity"
+  },
+  "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。"
+}

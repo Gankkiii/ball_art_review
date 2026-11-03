@@ -1,0 +1,210 @@
+{
+  "id": "magnet_crab",
+  "name": "磁铁蟹",
+  "status": "R03 review candidates; none selected; not integration assets",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 横向马蹄钳",
+      "image": "variant_a.png",
+      "source_image": "variant_a_sprite.png",
+      "source_svg": "variant_a_sprite.svg",
+      "description": "横宽珊瑚蟹身、双眼柄与马蹄形大钳，金属浅青钳端和壳面亮条区分玩具金属与光滑甲壳。小黑眼显机灵忙碌，这是候选气质；大钳不增加近战伤害或射程。",
+      "pros": [
+        "磁铁主题一眼可读",
+        "宽低身体适合贴地铁钉"
+      ],
+      "cons": [
+        "大钳不能暗示新增近战范围"
+      ]
+    },
+    {
+      "id": "b",
+      "title": "B 高背线圈蟹",
+      "image": "variant_b.png",
+      "source_image": "variant_b_sprite.png",
+      "source_svg": "variant_b_sprite.svg",
+      "description": "高背线圈、较窄竖身和普通小钳形成另一种轮廓；珊瑚壳、浅金线圈和浅青横梁表达工具材质。前置双眼更专注朴拙，背部装置只作候选造型，不新增装甲或技能。",
+      "pros": [
+        "与其他圆身角色区分大",
+        "钳和磁力主题分层清楚"
+      ],
+      "cons": [
+        "背部装置较多，小尺寸需降细节"
+      ]
+    }
+  ],
+  "recommendation": "推荐A：马蹄轮廓比线圈更直接传达磁铁主题；仍待选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+  "questions": [
+    "选择马蹄钳还是高背线圈造型？",
+    "移动钉用局部状态环还是短暖色轨迹？静止钉始终不显示伤害反馈。",
+    "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "铁钉静止无害",
+      "image": "state_idle.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "idle"
+    },
+    {
+      "id": "ready",
+      "title": "下一枚回钉弹飞准备",
+      "image": "state_ready.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "ready"
+    },
+    {
+      "id": "moving",
+      "title": "移动钉才可伤敌",
+      "image": "state_moving.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "moving"
+    },
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "mobility",
+      "title": "移动／站桩方向",
+      "image": "state_idle.png",
+      "description": "蟹按原运动滑行；铁钉区分静止、向墙、回身、弹出，不另加近战钳攻击。",
+      "event": "existing_position_and_velocity"
+    }
+  ],
+  "motion": [
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 10,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 10,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后10编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "id": "nail_rest",
+      "name": "静止铁钉",
+      "image": "object_nail_rest.png",
+      "source_svg": "object_nail_rest.svg",
+      "description": "rest为无害静止物，不能画成危险地刺。"
+    },
+    {
+      "id": "nail_moving",
+      "name": "移动铁钉",
+      "image": "object_nail_moving.png",
+      "source_svg": "object_nail_moving.svg",
+      "description": "wall/return/out时只有实际移动才伤16，单钉命中间隔0.3秒。"
+    }
+  ],
+  "information": [
+    "每1秒落钉；静钉无踩踏伤害",
+    "随机磁化一墙，铁钉到墙后回身",
+    "准备态弹下一枚回钉，向敌当时位置外飞0.8秒后停"
+  ],
+  "validation": [
+    "已根据独立代码事实稿核对角色/物件语义",
+    "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+    "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+  ],
+  "missing": [
+    "磁墙/回收/弹飞完整事件绑定未实现",
+    "候选装置不代表可独立导入或扩大伤害范围",
+    "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+  ],
+  "source_facts": "../../facts/magnet_crab.md",
+  "setting_document": "SETTING.md",
+  "source_facts_sha256": "eade44c86cdf225a9fe96676853d8d6b4a0c6b7bde62f350396922d0a3e7fb38",
+  "source_code": "../../sources/build_last_four_review.py",
+  "technical": {
+    "native_size": [
+      96,
+      96
+    ],
+    "logical_grid": [
+      48,
+      48
+    ],
+    "sampling": "nearest",
+    "format": "RGBA PNG and editable SVG; review GIF",
+    "orientation": "candidate facing right; mirroring not game-validated",
+    "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+    "scope": "Review webpage only; no integration package/game changes"
+  },
+  "provenance": {
+    "new_original_creation": true,
+    "external_image_inputs": false,
+    "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+    "license_note": "Original task graphics for project review, not claim of exclusivity"
+  },
+  "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。"
+}

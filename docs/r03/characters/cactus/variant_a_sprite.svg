@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48" shape-rendering="crispEdges">
+<rect x="15" y="39" width="22" height="2" fill="#243746" opacity="0.137255"/>
+<polygon points="20,9 28,9 31,12 31,36 28,39 20,39 17,36 17,12" fill="#243746"/>
+<polygon points="21,11 27,11 29,13 29,35 27,37 21,37 19,35 19,13" fill="#83B77D"/>
+<rect x="20" y="14" width="2" height="20" fill="#B5D49A"/>
+<rect x="27" y="14" width="2" height="22" fill="#427863"/>
+<polygon points="10,17 15,17 15,26 19,26 19,32 9,32 7,30 7,20 10,20" fill="#243746"/>
+<polygon points="10,20 13,20 13,28 18,28 18,30 10,30" fill="#83B77D"/>
+<polygon points="31,23 35,23 35,14 39,14 41,17 41,29 38,32 30,32" fill="#243746"/>
+<polygon points="32,26 37,26 37,17 39,17 39,28 37,30 32,30" fill="#83B77D"/>
+<polyline points="17,15 15,13" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<polyline points="32,17 30,15" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<polyline points="8,22 6,20" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<polyline points="15,34 13,32" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<polyline points="30,33 28,31" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<polyline points="37,13 35,11" fill="none" stroke="#FFF3DA" stroke-width="1"/>
+<rect x="21" y="6" width="3" height="5" fill="#EA7E65"/>
+<rect x="18" y="8" width="9" height="2" fill="#EA7E65"/>
+<rect x="22" y="8" width="2" height="2" fill="#EFC65B"/>
+<rect x="24" y="21" width="3" height="4" fill="#243746"/>
+<rect x="24" y="21" width="1" height="1" fill="#FFF3DA"/>
+<rect x="25" y="28" width="3" height="1" fill="#243746"/>
+</svg>

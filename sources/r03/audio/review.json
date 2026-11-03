@@ -1,0 +1,781 @@
+{
+  "cycle": "R03",
+  "kind": "unapproved auditory direction montages",
+  "format": "PCM WAV 48000 Hz 16 bit mono",
+  "human_listening": "NOT_RUN",
+  "in_game": "NOT_RUN",
+  "characters": {
+    "puffer": {
+      "name": "充气球",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 轻弹乳胶",
+          "file": "puffer_A.wav",
+          "event": "气体充入 → 受击吸收 → 放气喷流 → 放气有效碰撞",
+          "description": "A更轻巧、B更饱满；都不用爆炸声冒充气体或新增气弹。",
+          "events": [
+            {
+              "event": "气体充入",
+              "start_s": 0.0,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "受击吸收",
+              "start_s": 0.64,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气喷流",
+              "start_s": 1.06,
+              "duration_s": 0.48,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气有效碰撞",
+              "start_s": 1.76,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.21,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a6aee842f27bde0c14d940e8f4d52b26a56073298cef122fec2efb08a39dbe32",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 低声气囊",
+          "file": "puffer_B.wav",
+          "event": "气体充入 → 受击吸收 → 放气喷流 → 放气有效碰撞",
+          "description": "A更轻巧、B更饱满；都不用爆炸声冒充气体或新增气弹。",
+          "events": [
+            {
+              "event": "气体充入",
+              "start_s": 0.0,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "受击吸收",
+              "start_s": 0.64,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气喷流",
+              "start_s": 1.06,
+              "duration_s": 0.48,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "放气有效碰撞",
+              "start_s": 1.76,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.21,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "e4505515984b849166258485650d27831d48965883878b7d32c512d50165aa7b",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议先试听A的弹性气体方向，B可用于更厚的吸收/放气；此为设计意图，听感待用户判断。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "chicken": {
+      "name": "炸弹母鸡",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 玩具蛋壳",
+          "file": "chicken_A.wav",
+          "event": "小蛋落地 → 惊跑脚步 → 已触发引信提示 → 真实蛋爆炸",
+          "description": "A便于密集物件分辨，B强调大小蛋重量；引信声不是新的伤害计时器。",
+          "events": [
+            {
+              "event": "小蛋落地",
+              "start_s": 0.0,
+              "duration_s": 0.14,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "惊跑脚步",
+              "start_s": 0.36,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "已触发引信提示",
+              "start_s": 0.82,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "真实蛋爆炸",
+              "start_s": 1.26,
+              "duration_s": 0.5,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.98,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "d013e005158197db975f0abb8f05d8427b438bab8b6a062b4118ccac9e30e272",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚壳闷爆",
+          "file": "chicken_B.wav",
+          "event": "小蛋落地 → 惊跑脚步 → 已触发引信提示 → 真实蛋爆炸",
+          "description": "A便于密集物件分辨，B强调大小蛋重量；引信声不是新的伤害计时器。",
+          "events": [
+            {
+              "event": "小蛋落地",
+              "start_s": 0.0,
+              "duration_s": 0.14,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "惊跑脚步",
+              "start_s": 0.36,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "已触发引信提示",
+              "start_s": 0.82,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "真实蛋爆炸",
+              "start_s": 1.26,
+              "duration_s": 0.5,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.98,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "5ad4749293a853f038052e0193e207c42890c189cd023c59895b5e5e0a472916",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A保留蛋壳/脚步分辨，爆炸可比较B低频方向；不靠更响表示新增伤害。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "bubble_fish": {
+      "name": "泡泡鱼",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 清亮水泡",
+          "file": "bubble_fish_A.wav",
+          "event": "吐出1级泡泡 → 自身泡泡融合 → 吸附泡泡启动 → 融合泡泡有效命中",
+          "description": "A融合更清楚，B较柔和；1级消失与有伤命中必须用不同强度，不能伪造1级伤害。",
+          "events": [
+            {
+              "event": "吐出1级泡泡",
+              "start_s": 0.0,
+              "duration_s": 0.19,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "自身泡泡融合",
+              "start_s": 0.41,
+              "duration_s": 0.29,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "吸附泡泡启动",
+              "start_s": 0.92,
+              "duration_s": 0.44,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "融合泡泡有效命中",
+              "start_s": 1.58,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.08,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "e7bc35235f140fd166240f2193e04285d3c4132874bf1362725c47db5d8e5768",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 温润低泡",
+          "file": "bubble_fish_B.wav",
+          "event": "吐出1级泡泡 → 自身泡泡融合 → 吸附泡泡启动 → 融合泡泡有效命中",
+          "description": "A融合更清楚，B较柔和；1级消失与有伤命中必须用不同强度，不能伪造1级伤害。",
+          "events": [
+            {
+              "event": "吐出1级泡泡",
+              "start_s": 0.0,
+              "duration_s": 0.19,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "自身泡泡融合",
+              "start_s": 0.41,
+              "duration_s": 0.29,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "吸附泡泡启动",
+              "start_s": 0.92,
+              "duration_s": 0.44,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "融合泡泡有效命中",
+              "start_s": 1.58,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.08,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a51d9b5fc90bb80da0fe6720528aa51b1ba531acdc87ed8040c73b3078bbb1f6",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A水泡方向，与气球排气、电羊电流分开；B适合降低整体高频的组合。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "electric_sheep": {
+      "name": "触电羊",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 干脆电跳",
+          "file": "electric_sheep_A.wav",
+          "event": "撞墙充电 → 落下一团羊毛 → 持续放电截段 → 电库耗尽",
+          "description": "A突出充电，B减少持续高频；放电截段仅音色试听，不意味着新增攻击间隔。",
+          "events": [
+            {
+              "event": "撞墙充电",
+              "start_s": 0.0,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "落下一团羊毛",
+              "start_s": 0.45,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "持续放电截段",
+              "start_s": 0.95,
+              "duration_s": 0.46,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "电库耗尽",
+              "start_s": 1.63,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.07,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "4910def0c7a1cd59c59336a95a4702544f51b7db03c13462bf09a3a96b100e1f",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 绒毛低嗡",
+          "file": "electric_sheep_B.wav",
+          "event": "撞墙充电 → 落下一团羊毛 → 持续放电截段 → 电库耗尽",
+          "description": "A突出充电，B减少持续高频；放电截段仅音色试听，不意味着新增攻击间隔。",
+          "events": [
+            {
+              "event": "撞墙充电",
+              "start_s": 0.0,
+              "duration_s": 0.23,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "落下一团羊毛",
+              "start_s": 0.45,
+              "duration_s": 0.28,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "持续放电截段",
+              "start_s": 0.95,
+              "duration_s": 0.46,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "电库耗尽",
+              "start_s": 1.63,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.07,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "56d8994905712a458ecbd07ee657e4cb66d8889d193a1f99b2ad9cb19dd3846a",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议比较B持续低嗡与A短充电提示的组合，连续放电不变成周期攻击。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "magnet_crab": {
+      "name": "磁铁蟹",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 明亮小金属",
+          "file": "magnet_crab_A.wav",
+          "event": "铁钉落地 → 磁化启动 → 移动钉有效命中 → 返身弹钉",
+          "description": "A区分钉的阶段更鲜明，B磁化较低沉；静止钉不播放伤害声。",
+          "events": [
+            {
+              "event": "铁钉落地",
+              "start_s": 0.0,
+              "duration_s": 0.17,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "磁化启动",
+              "start_s": 0.39,
+              "duration_s": 0.3,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "移动钉有效命中",
+              "start_s": 0.91,
+              "duration_s": 0.26,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "返身弹钉",
+              "start_s": 1.39,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.81,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "9a75870d9933bb2f11804c74de3d8af9967788eb919c416716a31904c8289bb4",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚重磁铁",
+          "file": "magnet_crab_B.wav",
+          "event": "铁钉落地 → 磁化启动 → 移动钉有效命中 → 返身弹钉",
+          "description": "A区分钉的阶段更鲜明，B磁化较低沉；静止钉不播放伤害声。",
+          "events": [
+            {
+              "event": "铁钉落地",
+              "start_s": 0.0,
+              "duration_s": 0.17,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "磁化启动",
+              "start_s": 0.39,
+              "duration_s": 0.3,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "移动钉有效命中",
+              "start_s": 0.91,
+              "duration_s": 0.26,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "返身弹钉",
+              "start_s": 1.39,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.81,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "6d22776e2b864b43f9cc8872df76e06b7c52118af21f2e5c6a3e6e7af3e50abb",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A用于移动钉触碰，B可用于磁化启动；静止钉不加持续危险音。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "cactus": {
+      "name": "仙人掌",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 干燥轻刺",
+          "file": "cactus_A.wav",
+          "event": "散刺脱离 → 刺点有效命中 → 旧位置缩回示意 → 换位后出现",
+          "description": "A更利落、B更温和；换位不是回血，禁用治疗提示音。",
+          "events": [
+            {
+              "event": "散刺脱离",
+              "start_s": 0.0,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "刺点有效命中",
+              "start_s": 0.46,
+              "duration_s": 0.15,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "旧位置缩回示意",
+              "start_s": 0.83,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "换位后出现",
+              "start_s": 1.27,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.69,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a86257ded74074a2e583aad88cff567f42e358a9f8dbde3687c7bdc171215ea0",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 柔木根音",
+          "file": "cactus_B.wav",
+          "event": "散刺脱离 → 刺点有效命中 → 旧位置缩回示意 → 换位后出现",
+          "description": "A更利落、B更温和；换位不是回血，禁用治疗提示音。",
+          "events": [
+            {
+              "event": "散刺脱离",
+              "start_s": 0.0,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "刺点有效命中",
+              "start_s": 0.46,
+              "duration_s": 0.15,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "旧位置缩回示意",
+              "start_s": 0.83,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "换位后出现",
+              "start_s": 1.27,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.69,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "74cacf26d30353656482e1ef5ee29760544ef1ded286cf4a5fab0e07d9e929ec",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A保留干燥刺物质感，B可用于换位出现；两者都不用治疗音暗示回血。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "shell_turtle": {
+      "name": "脱壳乌龟",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 空心壳敲",
+          "file": "shell_turtle_A.wav",
+          "event": "本体进入壳 → 原地旋壳截段 → 壳有效碰撞 → 成功离壳",
+          "description": "A空壳易识别，B碰撞更厚；旋转声不表示高速冲刺或额外击退。",
+          "events": [
+            {
+              "event": "本体进入壳",
+              "start_s": 0.0,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "原地旋壳截段",
+              "start_s": 0.44,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "壳有效碰撞",
+              "start_s": 1.08,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功离壳",
+              "start_s": 1.55,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.97,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "c0778c455bd835719599e8cf7ccbc67b904340dbc78b6a6598ef8f2b1be68240",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 厚壳闷响",
+          "file": "shell_turtle_B.wav",
+          "event": "本体进入壳 → 原地旋壳截段 → 壳有效碰撞 → 成功离壳",
+          "description": "A空壳易识别，B碰撞更厚；旋转声不表示高速冲刺或额外击退。",
+          "events": [
+            {
+              "event": "本体进入壳",
+              "start_s": 0.0,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "原地旋壳截段",
+              "start_s": 0.44,
+              "duration_s": 0.42,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "壳有效碰撞",
+              "start_s": 1.08,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功离壳",
+              "start_s": 1.55,
+              "duration_s": 0.2,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 1.97,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "dfce85cb5943c1e0a2b1c30233e2443546fe2596053ca94d6aa7067469b08fff",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A区分空壳进入/离开，B比较壳碰撞重量；不能听成新增冲刺。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    },
+    "crow": {
+      "name": "乌鸦",
+      "variants": [
+        {
+          "id": "A",
+          "title": "A 草束轻拍",
+          "file": "crow_A.wav",
+          "event": "放置稻草人 → 成功交换位置 → 储存羽毛 → 碰触修复自家稻草人 → 稻草人真实承伤与反射",
+          "description": "A强调草人，B强调翅羽；没有飞羽远程攻击，修复只跟真实自家草人事件。",
+          "events": [
+            {
+              "event": "放置稻草人",
+              "start_s": 0.0,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功交换位置",
+              "start_s": 0.47,
+              "duration_s": 0.32,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "储存羽毛",
+              "start_s": 1.01,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "碰触修复自家稻草人",
+              "start_s": 1.45,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "稻草人真实承伤与反射",
+              "start_s": 1.91,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.35,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "a31a54fcfcd45737a6f2c640d95e89548458fe5a4e58e8f469714a6c8961fb9d",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：较高的瞬态与较轻的材料声，便于比较事件起点。"
+          ],
+          "cons": [
+            "潜在风险：密集事件可能争抢高频；未做扬声器听审与混音验证。"
+          ]
+        },
+        {
+          "id": "B",
+          "title": "B 羽翼低掠",
+          "file": "crow_B.wav",
+          "event": "放置稻草人 → 成功交换位置 → 储存羽毛 → 碰触修复自家稻草人 → 稻草人真实承伤与反射",
+          "description": "A强调草人，B强调翅羽；没有飞羽远程攻击，修复只跟真实自家草人事件。",
+          "events": [
+            {
+              "event": "放置稻草人",
+              "start_s": 0.0,
+              "duration_s": 0.25,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "成功交换位置",
+              "start_s": 0.47,
+              "duration_s": 0.32,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "储存羽毛",
+              "start_s": 1.01,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "碰触修复自家稻草人",
+              "start_s": 1.45,
+              "duration_s": 0.24,
+              "note": "编排试听，非真实战斗时间"
+            },
+            {
+              "event": "稻草人真实承伤与反射",
+              "start_s": 1.91,
+              "duration_s": 0.22,
+              "note": "编排试听，非真实战斗时间"
+            }
+          ],
+          "duration_s": 2.35,
+          "peak_linear": 0.7000030518509476,
+          "clipped_samples": 0,
+          "sha256": "d129d5af4109c596a714705e000931c715fe084b16470d1fd2e79ba278073b79",
+          "status": "已制作合成试听段并检查PCM；未人工听审、未游戏验证",
+          "pros": [
+            "设计意图：降低基频、增加柔和低频厚度，与A作明显音色对比。"
+          ],
+          "cons": [
+            "潜在风险：手机扬声器可能丢低频，事件辨识需实际试听。"
+          ]
+        }
+      ],
+      "recommendation": "建议A强调草人承伤与修复，B比较换位羽响；羽毛不是远程武器。",
+      "question": "选择A或B音色方向，或逐事件组合；试听编排不改变实际技能时点。"
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "electric_sheep",
+  "name": "触电羊",
+  "cycle": "R03",
+  "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 圆团云绒",
+      "image": "variant_a.png",
+      "display": "a_display.png",
+      "motion": "a_states.gif",
+      "description": "大团簇羊毛、右侧深色脸、小耳与短蹄，脱落羊毛保持同一团簇语言。 配色：奶油大团羊毛、米色暗面、深紫灰脸、蓝灰蹄与轮廓。 材质意向：软绒团加哑光脸部的玩具意向；团簇不等于雷云或第二只羊。 表情：大白眼、细黑瞳与右侧圆脸，带一点发愣的表情。 候选性格感：温吞、蓬松、突然来电的反差；无新增性格玩法。",
+      "palette": "奶油大团羊毛、米色暗面、深紫灰脸、蓝灰蹄与轮廓。",
+      "material": "软绒团加哑光脸部的玩具意向；团簇不等于雷云或第二只羊。",
+      "expression": "大白眼、细黑瞳与右侧圆脸，带一点发愣的表情。",
+      "personality": "候选性格感：温吞、蓬松、突然来电的反差；无新增性格玩法。",
+      "pros": [
+        "羊身份清晰；暖绒毛与蓝金电效对比容易读"
+      ],
+      "cons": [
+        "与雷云都偏团状，羊毛点必须无脸无腿避免第二只羊误读"
+      ],
+      "status": "unselected concept candidate"
+    },
+    {
+      "id": "b",
+      "title": "B 叠卷块绒",
+      "image": "variant_b.png",
+      "display": "b_display.png",
+      "motion": "b_states.gif",
+      "description": "低平身体、叠卷毛锁、前伸脸和上挑耳；羊毛以折卷堆呈现。 配色：奶油折卷毛、灰米卷纹、深紫灰前伸脸、蓝灰轮廓。 材质意向：叠卷毛束的布绒玩具意向，避免画成机械电池盒。 表情：侧眼配前伸脸和上挑耳，显得谨慎且专注。 候选性格感：稳重、警觉、有收束感；不意味着更硬或更高防御。",
+      "palette": "奶油折卷毛、灰米卷纹、深紫灰前伸脸、蓝灰轮廓。",
+      "material": "叠卷毛束的布绒玩具意向，避免画成机械电池盒。",
+      "expression": "侧眼配前伸脸和上挑耳，显得谨慎且专注。",
+      "personality": "候选性格感：稳重、警觉、有收束感；不意味着更硬或更高防御。",
+      "pros": [
+        "低宽剪影与云团不同；毛的方向可强调脱落"
+      ],
+      "cons": [
+        "块状羊毛容易像地垫或机械装置，需保留自然纤维感"
+      ],
+      "status": "unselected concept candidate"
+    }
+  ],
+  "comparison": "comparison.png",
+  "animation": "motion_compare.gif",
+  "recommendation": "推荐A圆团云绒，羊与羊毛关系更直观；若想避开云团轮廓，可选B叠卷块绒。电效都应局部、只画单一实际路径。",
+  "questions": [
+    "羊体选A圆团云绒还是B叠卷块绒？两者都无枪杖、无新增角冲撞技能。",
+    "脱落羊毛选圆绒团还是折卷堆？必须无脸无腿，只有一个羊毛点，与本体共享电库。",
+    "持续电流更偏短促跳弧还是连贯细丝？音色选A干脆电跳还是B绒毛低嗡，不做本体和羊毛各一条双伤害光束。",
+    "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "无电",
+      "image": "states/a_0.png",
+      "alternative_image": "states/b_0.png",
+      "animation": "motion_compare.gif",
+      "event": "idle",
+      "description": "无电不能因演出而持续造成伤害。"
+    },
+    {
+      "id": "wall",
+      "title": "撞墙补电",
+      "image": "states/a_1.png",
+      "alternative_image": "states/b_1.png",
+      "animation": "motion_compare.gif",
+      "event": "wall",
+      "description": "实际撞墙每次+30，满库100；闪光是事件反馈，不是额外攻击。"
+    },
+    {
+      "id": "wool",
+      "title": "留羊毛",
+      "image": "states/a_2.png",
+      "alternative_image": "states/b_2.png",
+      "animation": "motion_compare.gif",
+      "event": "wool",
+      "description": "只留下一个羊毛点，本体和羊毛共享charge。"
+    },
+    {
+      "id": "zap",
+      "title": "放电",
+      "image": "states/a_3.png",
+      "alternative_image": "states/b_3.png",
+      "animation": "motion_compare.gif",
+      "event": "zap",
+      "description": "单一路径持续伤害；两处覆盖仍算一份消耗与攻击路径，不画双倍伤。"
+    },
+    {
+      "id": "hit_feedback",
+      "title": "受击反馈两方向",
+      "image": "states/hit_feedback.png",
+      "animation": "",
+      "event": "actual_HP_loss",
+      "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+    },
+    {
+      "id": "movement",
+      "title": "移动朝向示意",
+      "image": "states/movement_direction.png",
+      "animation": "",
+      "event": "existing_velocity_direction",
+      "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "name": "A圆绒团",
+      "image": "objects/wool_patch.png",
+      "description": "单一脱落羊毛，无脸无腿，无独立电库。"
+    },
+    {
+      "name": "B折卷堆",
+      "image": "objects/wool_folded.png",
+      "description": "结构不同的羊毛候选，新羊毛替换旧位置，不新增第二处持续点。"
+    }
+  ],
+  "information": [
+    "charge、wool_active/wool_position和zapping是必要状态，不只是装饰灯。",
+    "WALL TURN实际max(140,当前速度)，不承诺严格保持低速。",
+    "放电origin可能来自羊毛；真实first_target路径可被物件截住，不保证光束永远直达英雄。"
+  ],
+  "source_facts": {
+    "document": "SETTING.md",
+    "repository": "Gankkiii/balls",
+    "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+  },
+  "audio_questions": {
+    "options": [
+      "干脆电跳",
+      "绒毛低嗡"
+    ],
+    "source": "../../audio/review.json",
+    "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+  },
+  "validation": {
+    "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+    "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+    "human_listening": "NOT_RUN",
+    "in_game": "NOT_RUN",
+    "device": "NOT_RUN"
+  },
+  "missing": [
+    "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+    "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+    "未做真实战斗、设备显示或扬声器听感验证。"
+  ]
+}

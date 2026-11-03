@@ -1,0 +1,180 @@
+{
+  "scope": "four review-only character candidate directories",
+  "checks": [
+    {
+      "id": "cactus",
+      "png": 13,
+      "svg": 3,
+      "gif": [
+        {
+          "path": "hurt_1.gif",
+          "encoded_frames": 6,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_2.gif",
+          "encoded_frames": 6,
+          "duration_ms": 1440
+        },
+        {
+          "path": "hurt_2.gif",
+          "encoded_frames": 7,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_1.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        }
+      ],
+      "variants_different": true,
+      "facts_hash_matches": true,
+      "native_bboxes": {
+        "a": [
+          12,
+          12,
+          84,
+          82
+        ],
+        "b": [
+          10,
+          12,
+          90,
+          82
+        ]
+      }
+    },
+    {
+      "id": "shell_turtle",
+      "png": 14,
+      "svg": 4,
+      "gif": [
+        {
+          "path": "hurt_1.gif",
+          "encoded_frames": 6,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_2.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        },
+        {
+          "path": "hurt_2.gif",
+          "encoded_frames": 7,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_1.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        }
+      ],
+      "variants_different": true,
+      "facts_hash_matches": true,
+      "native_bboxes": {
+        "a": [
+          6,
+          24,
+          90,
+          80
+        ],
+        "b": [
+          8,
+          32,
+          90,
+          80
+        ]
+      }
+    },
+    {
+      "id": "magnet_crab",
+      "png": 14,
+      "svg": 4,
+      "gif": [
+        {
+          "path": "hurt_1.gif",
+          "encoded_frames": 6,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_2.gif",
+          "encoded_frames": 10,
+          "duration_ms": 1440
+        },
+        {
+          "path": "hurt_2.gif",
+          "encoded_frames": 7,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_1.gif",
+          "encoded_frames": 10,
+          "duration_ms": 1440
+        }
+      ],
+      "variants_different": true,
+      "facts_hash_matches": true,
+      "native_bboxes": {
+        "a": [
+          2,
+          22,
+          94,
+          82
+        ],
+        "b": [
+          2,
+          10,
+          94,
+          82
+        ]
+      }
+    },
+    {
+      "id": "crow",
+      "png": 16,
+      "svg": 6,
+      "gif": [
+        {
+          "path": "hurt_1.gif",
+          "encoded_frames": 6,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_2.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        },
+        {
+          "path": "hurt_2.gif",
+          "encoded_frames": 7,
+          "duration_ms": 640
+        },
+        {
+          "path": "motion_1.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        }
+      ],
+      "variants_different": true,
+      "facts_hash_matches": true,
+      "native_bboxes": {
+        "a": [
+          12,
+          18,
+          92,
+          82
+        ],
+        "b": [
+          10,
+          20,
+          86,
+          82
+        ]
+      }
+    }
+  ],
+  "issues": [],
+  "status": "PASS",
+  "source_sha256": "b7015160fdac61e7fd5d098fadbb5af45b4a190d0e54eb234deb16bfe0b8259f"
+}

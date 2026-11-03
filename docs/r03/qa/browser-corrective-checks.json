@@ -1,0 +1,624 @@
+{
+  "result": "PASS",
+  "checked_utc": "2026-11-03T15:10:16.335220+00:00",
+  "scope": "Targeted corrective verification after initial full browser runner reached and failed 360px expanded-details width assertion; core media checks preceding failure were not redundantly replayed",
+  "initial_failure": {
+    "viewport": 360,
+    "scrollWidth": 413,
+    "cause": "long event identifier in two-column state cards forced min-content expansion",
+    "fixed_by": "min-width:0,overflow-wrap:anywhere,minmax(0,1fr); no hidden clipping"
+  },
+  "final_characters": 8,
+  "final_shape_candidates": 16,
+  "final_audio_candidates": 16,
+  "final_ui_candidates": 3,
+  "viewports": [
+    {
+      "width": 360,
+      "height": 844,
+      "scrollWidth": 360,
+      "expanded_details": true,
+      "state_cards_overflow": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "scrollWidth": 390,
+      "expanded_details": true,
+      "state_cards_overflow": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "scrollWidth": 768,
+      "expanded_details": true,
+      "state_cards_overflow": 0
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "scrollWidth": 1280,
+      "expanded_details": true,
+      "state_cards_overflow": 0
+    }
+  ],
+  "internal_targets": [
+    {
+      "url": "http://127.0.0.1:8033/r03/PUBLIC_SCOPE.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/app.js",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/bubble_fish_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/bubble_fish_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/cactus_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/cactus_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/chicken_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/chicken_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/crow_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/crow_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/electric_sheep_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/electric_sheep_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/magnet_crab_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/magnet_crab_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/puffer_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/puffer_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/shell_turtle_A.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/audio/shell_turtle_B.wav",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/a_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/b_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/motion_compare.gif",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/objects/bubble_levels.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/a_0.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/a_1.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/a_2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/a_3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/hit_feedback.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/movement_direction.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/bubble_fish/states/vacuum.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/hurt_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/hurt_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/motion_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/motion_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/object_thorn.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/state_idle.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/state_regrow.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/state_thorns.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/variant_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/cactus/variant_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/a_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/b_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/motion_compare.gif",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/objects/armed_big_egg.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/objects/egg_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/objects/egg_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/objects/egg_patterns.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/a_0.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/a_1.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/a_2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/a_3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/hit_feedback.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/chicken/states/movement_direction.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/hurt_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/hurt_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/motion_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/motion_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/object_dummy.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/object_dummy_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/object_dummy_damaged.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/object_feather.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/state_feather.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/state_idle.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/state_repair.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/variant_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/crow/variant_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/a_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/b_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/motion_compare.gif",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/objects/wool_folded.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/objects/wool_patch.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/a_0.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/a_1.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/a_2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/a_3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/hit_feedback.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/electric_sheep/states/movement_direction.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/hurt_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/hurt_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/motion_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/motion_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/object_nail_moving.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/object_nail_rest.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/state_idle.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/state_moving.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/state_ready.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/variant_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/magnet_crab/variant_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/a_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/b_display.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/motion_compare.gif",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/objects/absorb_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/objects/absorb_and_burst.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/objects/absorb_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/a_0.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/a_1.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/a_2.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/a_3.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/hit_feedback.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/immune_absorb.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/puffer/states/movement_direction.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/SETTING.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/hurt_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/hurt_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/motion_1_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/motion_2_cover.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/object_shell.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/object_shell_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/state_hidden.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/state_idle.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/state_seek.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/variant_a.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/characters/shell_turtle/variant_b.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/bubble_fish.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/cactus.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/chicken.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/crow.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/electric_sheep.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/facts.json",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/magnet_crab.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/puffer.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/facts/shell_turtle.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/qa/REPORT.md",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/style.css",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/a_primary.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/a_stress.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/b_primary.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/b_stress.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/c_primary.png",
+      "status": 200
+    },
+    {
+      "url": "http://127.0.0.1:8033/r03/ui/images/c_stress.png",
+      "status": 200
+    }
+  ],
+  "character_setting_links": [
+    "http://127.0.0.1:8033/r03/characters/bubble_fish/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/cactus/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/chicken/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/crow/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/electric_sheep/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/magnet_crab/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/puffer/SETTING.md",
+    "http://127.0.0.1:8033/r03/characters/shell_turtle/SETTING.md"
+  ],
+  "last_four_A_control_variable_and_B_missing_note_visible": true,
+  "keyboard_radio_and_ui_choice": true,
+  "draft_copy_clear": true,
+  "javascript_errors": [],
+  "http_errors": [],
+  "non_read_network_requests": [],
+  "final_file_sha256": {
+    "index.html": "539c432c8ba260453c853cfe7494256275088d13021600349b8dc9f02fb04bb2",
+    "r03/app.js": "4c78f23507914370a03a8bfb8fe80c328b07c5cf9a72a790a5fe67a585e4549d",
+    "r03/style.css": "af4bb0e77da00238a51c4cc15d9ac36123008c6a79186a50d7785634d201a830",
+    "r03/review-data.json": "a39ec4fb749f6bed4d8a5a64d3c0d4712b0664277c1646cc9b6a7e7d6708a1dd"
+  },
+  "core_checks_completed_before_initial_width_failure": {
+    "shape_candidates_selected": 16,
+    "ui_candidates_selected": 3,
+    "unique_gifs_showed_browser_frame_changes": 28,
+    "audio_currentTime_progress_and_mutual_exclusion": 16,
+    "global_audio_stop": true,
+    "evidence": "browser_final_check.py progressed beyond these assertions and link fetches to its360px overflow assertion; initial runner exit1 is retained as corrected-failure history, not described as exit0"
+  },
+  "human_listening": "NOT_RUN",
+  "real_devices": "NOT_RUN",
+  "live_game_integration": "NOT_RUN"
+}

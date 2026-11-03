@@ -1,0 +1,159 @@
+{
+  "scope": "Review only:3 same-state layouts +3 real-state object-pressure concepts, not game integration/device QA",
+  "scheme_count": 3,
+  "primary_hud_non_whitespace_characters": [
+    31,
+    31,
+    31
+  ],
+  "same_world_mapping": true,
+  "sample_code_baseline": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "actual_headless_data_capture": "passed, see data/capture.log; not a screenshot",
+  "self_contained_svg_and_png": [
+    {
+      "file": "images/a_primary.png",
+      "bytes": 53660,
+      "sha256": "d9c923062daa7c884036370c58749178965017bf6643d6901500ed65db6f5e14"
+    },
+    {
+      "file": "images/a_primary.svg",
+      "bytes": 40642,
+      "sha256": "0ded01f013fbe300e7986b03ff4c9f83d7a6b369c55d8b7560dd780bba724ee4"
+    },
+    {
+      "file": "images/a_stress.png",
+      "bytes": 40943,
+      "sha256": "a3d2ecd4417077642edad46cd944db00fcdfee5c7626b78048605fc7aac5b2d1"
+    },
+    {
+      "file": "images/a_stress.svg",
+      "bytes": 40797,
+      "sha256": "87c0078bd9197ff5b4ce8d0f3e7aa0605819ebba5d57c1299ec58d1743761073"
+    },
+    {
+      "file": "images/b_primary.png",
+      "bytes": 49841,
+      "sha256": "b3077e0d0f2eec5349db9ed269e5544051e21eb094dcc7b3a9d00fe1f7d8cd2e"
+    },
+    {
+      "file": "images/b_primary.svg",
+      "bytes": 40249,
+      "sha256": "11fbe644325bbd7f1265281fd81537a7e3214f1a2ecf1b6e13825ad40761d290"
+    },
+    {
+      "file": "images/b_stress.png",
+      "bytes": 36424,
+      "sha256": "424b33092bff75a7998ca5f28c7ca074ba8057c9ed6c3dea53793390f0d98a1f"
+    },
+    {
+      "file": "images/b_stress.svg",
+      "bytes": 40179,
+      "sha256": "e7e3f41c2445faacab831dfd9566661639ce11e6e7b255792eae5527484c7efe"
+    },
+    {
+      "file": "images/c_primary.png",
+      "bytes": 52463,
+      "sha256": "da702e80774e030a9e3f8f54af9d933cecaab7a83031e48b7f4db8d442932ed8"
+    },
+    {
+      "file": "images/c_primary.svg",
+      "bytes": 39103,
+      "sha256": "1d455c43693d24274c2417ea0da31bfad0df4f38360b3a4c0132064a6507b57e"
+    },
+    {
+      "file": "images/c_stress.png",
+      "bytes": 39020,
+      "sha256": "11940109d775db6784c747c7a6290c9050fa8ef0d444080d1049369de4eecb8a"
+    },
+    {
+      "file": "images/c_stress.svg",
+      "bytes": 39038,
+      "sha256": "64941886a8bf43666b60da29cf512b38b3ddec182c82b3b6f06fe368e3285e80"
+    }
+  ],
+  "B_native_text_padding": [
+    {
+      "value": "3.8",
+      "native_bbox_including_caption": [
+        43.69,
+        791.556,
+        18.382,
+        10.626
+      ],
+      "bottom_clearance_before_inner_shadow_px": 7.817999999999984,
+      "passed": true
+    },
+    {
+      "value": "7.8",
+      "native_bbox_including_caption": [
+        117.97,
+        791.584,
+        18.102,
+        10.598
+      ],
+      "bottom_clearance_before_inner_shadow_px": 7.818000000000097,
+      "passed": true
+    },
+    {
+      "value": "1.8",
+      "native_bbox_including_caption": [
+        964.516,
+        791.584,
+        17.556,
+        10.598
+      ],
+      "bottom_clearance_before_inner_shadow_px": 7.818000000000097,
+      "passed": true
+    },
+    {
+      "value": "4.8",
+      "native_bbox_including_caption": [
+        1037.56,
+        791.584,
+        18.508,
+        10.598
+      ],
+      "bottom_clearance_before_inner_shadow_px": 7.818000000000097,
+      "passed": true
+    },
+    {
+      "value": "1×",
+      "native_bbox_including_caption": [
+        385.726,
+        785.204,
+        15.468,
+        8.796
+      ],
+      "bottom_clearance_before_inner_shadow_px": 3.0,
+      "passed": true
+    },
+    {
+      "value": "2×",
+      "native_bbox_including_caption": [
+        437.15,
+        785.048,
+        16.044,
+        8.952
+      ],
+      "bottom_clearance_before_inner_shadow_px": 3.0,
+      "passed": true
+    },
+    {
+      "value": "3×",
+      "native_bbox_including_caption": [
+        489.018,
+        785.048,
+        16.176,
+        9.108
+      ],
+      "bottom_clearance_before_inner_shadow_px": 2.844000000000051,
+      "passed": true
+    }
+  ],
+  "clean_directory_source_reproduction": "passed:all6PNG+6SVG bytes match",
+  "limitations": [
+    "C only has manually chosen static card positions; dynamic avoidance NOT IMPLEMENTED/NOT TESTED",
+    "performance,device safe area,touch,long values NOT RUN",
+    "not proof of complete8-role UI implementation"
+  ]
+}

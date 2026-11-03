@@ -1,0 +1,166 @@
+{
+  "id": "puffer",
+  "name": "充气球",
+  "cycle": "R03",
+  "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 软刺气团",
+      "image": "variant_a.png",
+      "display": "a_display.png",
+      "motion": "a_states.gif",
+      "description": "圆润气团、短软凸点与小圆口；充满时保持圆形体积变化。不是已经确定的河豚物种。 配色：薄荷绿主体、浅薄荷高光、深青阴影、蓝灰轮廓。 材质意向：软乳胶气团的玩具材质意向；短凸点为柔软轮廓，不代表毒刺。 表情：点状双眼与小张口，脸集中在圆体中央。 候选性格感：好奇、轻弹、略呆萌；不是已定背景或行为规则。",
+      "palette": "薄荷绿主体、浅薄荷高光、深青阴影、蓝灰轮廓。",
+      "material": "软乳胶气团的玩具材质意向；短凸点为柔软轮廓，不代表毒刺。",
+      "expression": "点状双眼与小张口，脸集中在圆体中央。",
+      "personality": "候选性格感：好奇、轻弹、略呆萌；不是已定背景或行为规则。",
+      "pros": [
+        "小尺寸识别快；充气前后对比直接",
+        "与鸭兔轮廓区分明显，无手持武器"
+      ],
+      "cons": [
+        "圆身在密集碰撞中容易与泡泡混淆，需保留实心身体和脸"
+      ],
+      "status": "unselected concept candidate"
+    },
+    {
+      "id": "b",
+      "title": "B 折瓣气囊",
+      "image": "variant_b.png",
+      "display": "b_display.png",
+      "motion": "b_states.gif",
+      "description": "高菱形、折瓣体块和纵向分区；膨胀表现为折瓣展开，而非只换色。 配色：金黄主体、珊瑚折瓣、奶油细高光、蓝灰轮廓。 材质意向：折叠气囊的玩具材质意向，用纵向分面表现撑开；不表示机械护甲。 表情：细点眼配较扁的横口，脸与折瓣形成紧绷对比。 候选性格感：紧张、憋气、倔强；不改变吸收或放气机制。",
+      "palette": "金黄主体、珊瑚折瓣、奶油细高光、蓝灰轮廓。",
+      "material": "折叠气囊的玩具材质意向，用纵向分面表现撑开；不表示机械护甲。",
+      "expression": "细点眼配较扁的横口，脸与折瓣形成紧绷对比。",
+      "personality": "候选性格感：紧张、憋气、倔强；不改变吸收或放气机制。",
+      "pros": [
+        "折瓣可表达气量变化；轮廓比圆泡更独特"
+      ],
+      "cons": [
+        "小尺寸下体块分区容易丢失；不能画成新护甲或新增蓄气器官规则"
+      ],
+      "status": "unselected concept candidate"
+    }
+  ],
+  "comparison": "comparison.png",
+  "animation": "motion_compare.gif",
+  "recommendation": "推荐A软刺气团：气量膨胀更直观。B适合希望与圆形泡泡强区分的方向；均未选定。",
+  "questions": [
+    "造型选A圆软气团还是B折瓣气囊？Puffer物种外观尚未确定，不默认它一定是河豚。",
+    "免伤表现选A完整细环还是B分段罩？二者都应可与放气状态叠加，不能表示碰撞体或新增护盾值。",
+    "放气动画更偏圆团挤压回弹还是折瓣逐段回缩？音色选A轻弹乳胶还是B低声气囊，可与造型独立组合。",
+    "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "原形",
+      "image": "states/a_0.png",
+      "alternative_image": "states/b_0.png",
+      "animation": "motion_compare.gif",
+      "event": "idle",
+      "description": "action idle；普通接触无额外伤害。"
+    },
+    {
+      "id": "inflate",
+      "title": "充气",
+      "image": "states/a_1.png",
+      "alternative_image": "states/b_1.png",
+      "animation": "motion_compare.gif",
+      "event": "inflate",
+      "description": "仅外观半径随gas变化，物理radius保持24。"
+    },
+    {
+      "id": "immune",
+      "title": "免伤吸收",
+      "image": "states/a_2.png",
+      "alternative_image": "states/b_2.png",
+      "animation": "motion_compare.gif",
+      "event": "immune",
+      "description": "只读immune_left；受击伤害×1.8转气，视觉不另加毒刺伤害。"
+    },
+    {
+      "id": "burst",
+      "title": "放气碰撞",
+      "image": "states/a_3.png",
+      "alternative_image": "states/b_3.png",
+      "animation": "motion_compare.gif",
+      "event": "burst",
+      "description": "真实burst状态才有36接触伤害；角色共享0.35计时器，不能按每目标重复结算。"
+    },
+    {
+      "id": "hit_feedback",
+      "title": "受击反馈两方向",
+      "image": "states/hit_feedback.png",
+      "animation": "",
+      "event": "actual_HP_loss",
+      "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+    },
+    {
+      "id": "movement",
+      "title": "移动朝向示意",
+      "image": "states/movement_direction.png",
+      "animation": "",
+      "event": "existing_velocity_direction",
+      "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+    },
+    {
+      "id": "immune_absorb",
+      "title": "免伤时的受击吸收",
+      "image": "states/immune_absorb.png",
+      "animation": "",
+      "event": "hit_while_immune_left_positive",
+      "description": "immune_left>0时用蓝色吸收反馈并转气，不播放普通HP下降反馈；即使action已转burst，免伤仍可能继续。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "name": "A免伤细环",
+      "image": "objects/absorb_a.png",
+      "description": "连续单环候选，不定义碰撞或伤害范围。"
+    },
+    {
+      "name": "B免伤分段罩",
+      "image": "objects/absorb_b.png",
+      "description": "结构分段而非新增护盾层数。"
+    },
+    {
+      "name": "免伤与放气共存",
+      "image": "objects/absorb_and_burst.png",
+      "description": "immune_left可在start_burst后仍>0；这幅是并存示例，不意味着所有burst都有免伤。"
+    }
+  ],
+  "information": [
+    "必须分清gas和immune_left；可以同时膨胀、放气、免伤。",
+    "视觉最大2倍不是攻击范围扩大；参考动作GIF没有真实碰撞数据。",
+    "无手持武器；气体、免伤环和尾迹是身体/状态表现，不是气弹。"
+  ],
+  "source_facts": {
+    "document": "SETTING.md",
+    "repository": "Gankkiii/balls",
+    "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+  },
+  "audio_questions": {
+    "options": [
+      "轻弹乳胶",
+      "低声气囊"
+    ],
+    "source": "../../audio/review.json",
+    "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+  },
+  "validation": {
+    "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+    "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+    "human_listening": "NOT_RUN",
+    "in_game": "NOT_RUN",
+    "device": "NOT_RUN"
+  },
+  "missing": [
+    "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+    "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+    "未做真实战斗、设备显示或扬声器听感验证。"
+  ]
+}

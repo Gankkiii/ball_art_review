@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "generated_files_compared": 94,
+  "source_sha256": "b7015160fdac61e7fd5d098fadbb5af45b4a190d0e54eb234deb16bfe0b8259f",
+  "scope": "art+review metadata generated from four fixed facts, excludes separately maintained SETTING.md",
+  "uses_external_images": false
+}

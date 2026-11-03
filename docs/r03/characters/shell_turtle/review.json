@@ -1,0 +1,210 @@
+{
+  "id": "shell_turtle",
+  "name": "脱壳龟",
+  "status": "R03 review candidates; none selected; not integration assets",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 长颈短足＋圆拱壳",
+      "image": "variant_a.png",
+      "source_image": "variant_a_sprite.png",
+      "source_svg": "variant_a_sprite.svg",
+      "description": "裸身为长颈短足、侧向小眼和平口，和独立圆拱壳并列展示；柔绿皮肤、浅绿高光与分片硬甲形成材质对照。意向是谨慎轻巧，壳不是一直穿在背上，气质不是已定故事设定。",
+      "pros": [
+        "脱壳后的身体易读",
+        "圆拱壳旋转形态直接"
+      ],
+      "cons": [
+        "本体小尺寸需保留头部对比"
+      ]
+    },
+    {
+      "id": "b",
+      "title": "B 低身宽足＋六角矮壳",
+      "image": "variant_b.png",
+      "source_image": "variant_b_sprite.png",
+      "source_svg": "variant_b_sprite.svg",
+      "description": "低身宽足与短颈粗头搭配独立六角矮壳；柔绿皮肤、深绿甲片和浅金角片均是候选外观。直视黑眼与厚实轮廓偏稳健憨实，六角外观不改变圆形碰撞或壳规则。",
+      "pros": [
+        "身体与壳轮廓差异大",
+        "矮壳不遮挡附近角色"
+      ],
+      "cons": [
+        "六角外观不能被误认六边形碰撞"
+      ]
+    }
+  ],
+  "recommendation": "推荐A：身体和独立圆壳关系较直观，仍待用户选择。 重点动效建议局部符号反馈，受击建议局部碎光以少改轮廓；均只是评审推荐，不代表已选。",
+  "questions": [
+    "选择长颈短足与圆拱壳，还是低身宽足与六角矮壳？",
+    "旋壳用局部环形符号还是短边缘轨迹？都不增加冲刺。",
+    "受击表现选择局部压低/眨眼还是局部碎光？两者都不新增击退、无敌或停顿。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "本体与壳分离",
+      "image": "state_idle.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "idle"
+    },
+    {
+      "id": "hidden",
+      "title": "入壳后本体不可见",
+      "image": "state_hidden.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "hidden"
+    },
+    {
+      "id": "seek",
+      "title": "寻壳状态概念",
+      "image": "state_seek.png",
+      "description": "按现有代码语义绘制的候选状态示意；未接入游戏。",
+      "event": "seek"
+    },
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。",
+      "event": "concept_only"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。",
+      "event": "actual_health_loss_only"
+    },
+    {
+      "id": "mobility",
+      "title": "移动／站桩方向",
+      "image": "state_idle.png",
+      "description": "裸身可移动/寻壳；hidden不可见并跟壳；旋壳视觉是原地转，不增冲刺。",
+      "event": "existing_position_and_velocity"
+    }
+  ],
+  "motion": [
+    {
+      "id": "motion_1",
+      "title": "方向1：局部符号反馈",
+      "image": "motion_1_cover.png",
+      "animation": "motion_1.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "motion_2",
+      "title": "方向2：短轨迹／碎光反馈",
+      "image": "motion_2_cover.png",
+      "animation": "motion_2.gif",
+      "logical_frames": 12,
+      "gif_encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "description": "本轮新制无声概念编排；12逻辑帧×120ms循环，GIF合并重复画面后12编码帧。仅比较反馈语法，不是技能时间或游戏录像。"
+    },
+    {
+      "id": "hurt_1",
+      "title": "受击A：局部压低／眨眼",
+      "image": "hurt_1_cover.png",
+      "animation": "hurt_1.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 6,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。"
+    },
+    {
+      "id": "hurt_2",
+      "title": "受击B：局部碎光",
+      "image": "hurt_2_cover.png",
+      "animation": "hurt_2.gif",
+      "logical_frames": 8,
+      "gif_encoded_frames": 7,
+      "loop_duration_ms": 640,
+      "description": "统一用A候选示意的纯表现对比；只有真实掉血才触发，不增加击退/无敌/hitstop，循环仅供评审。龟壳不可受伤，hidden不播受伤。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "id": "shell",
+      "name": "独立龟壳",
+      "image": "object_shell.png",
+      "source_svg": "object_shell.svg",
+      "description": "不可受伤的独立物体；spin开始速度置0，并非新增冲刺。"
+    },
+    {
+      "id": "shell_b",
+      "name": "B方向配套独立壳",
+      "image": "object_shell_b.png",
+      "source_svg": "object_shell_b.svg",
+      "description": "B候选的物件轮廓，不改变实际物体规则。"
+    }
+  ],
+  "information": [
+    "本体未隐藏撞敌时自己扣12",
+    "寻壳接触后隐藏2.5秒；无合法位置可继续等待",
+    "独立壳碰撞伤18，旋转时27，原有冲量不改"
+  ],
+  "validation": [
+    "已根据独立代码事实稿核对角色/物件语义",
+    "本轮原创程序几何绘图，RGBA/SVG新源，无截图或视频抽帧输入",
+    "PNG/GIF文件可读性由交付前检查；未完成Godot接入、真机、触控或人工听审"
+  ],
+  "missing": [
+    "完整寻壳/出壳连续动画待用户选型后制作",
+    "隐藏/出壳与真实物理同步未验证",
+    "B候选完整动作与移动连续帧未制作；当前仅关键状态/反馈语法评审，不称全套动画完成。"
+  ],
+  "source_facts": "../../facts/shell_turtle.md",
+  "setting_document": "SETTING.md",
+  "source_facts_sha256": "39f8c0dbcd9f4347a92225259659218022a239e2d1f3a0647074089dddd520e3",
+  "source_code": "../../sources/build_last_four_review.py",
+  "technical": {
+    "native_size": [
+      96,
+      96
+    ],
+    "logical_grid": [
+      48,
+      48
+    ],
+    "sampling": "nearest",
+    "format": "RGBA PNG and editable SVG; review GIF",
+    "orientation": "candidate facing right; mirroring not game-validated",
+    "anchor_note": "Review poses only, no approved gameplay anchor/hitbox",
+    "scope": "Review webpage only; no integration package/game changes"
+  },
+  "provenance": {
+    "new_original_creation": true,
+    "external_image_inputs": false,
+    "font": "system Noto Sans CJK SC (OFL1.1), rendered preview text only; font binary not redistributed",
+    "license_note": "Original task graphics for project review, not claim of exclusivity"
+  },
+  "review_scope_note": "为控制变量，状态与动效统一采用A候选示意；不代表A已选。B完整动作、实际移动动画及游戏事件绑定尚未制作/验证。"
+}

@@ -1,0 +1,866 @@
+{
+  "version": "R03-UI-review-1",
+  "review_only": true,
+  "status": "candidates_not_selected",
+  "baseline": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "canvas": {
+    "game": [
+      1100,
+      780
+    ],
+    "image": [
+      1100,
+      828
+    ],
+    "outside_caption_height": 48
+  },
+  "shared_sample": {
+    "data": "data/shared_sample.json",
+    "source": "actual Godot fixed-step capture; pair deliberately fixed for fair UI comparison, not a randomized-roll screenshot",
+    "characters": [
+      "bubble_fish",
+      "electric_sheep"
+    ],
+    "seed": 3103,
+    "time": 5.25833333333338,
+    "health": [
+      110.0,
+      120.0
+    ],
+    "bubbles": 11,
+    "max_bubble_level": 3,
+    "sheep_charge": 17.5000000000001,
+    "charge_cap": 100,
+    "world_positions_unchanged_across_schemes": true
+  },
+  "stress_sample": {
+    "data": "data/stress_sample.json",
+    "characters": [
+      "shell_turtle",
+      "crow"
+    ],
+    "turtle_hidden": true,
+    "shell_separate": true,
+    "dummy_count": 2,
+    "time": 7.00833333333347
+  },
+  "schemes": [
+    {
+      "id": "A",
+      "title": "左右侧栏 · 原方向延续",
+      "summary": "状态固定在两侧，视线知道去哪找；延续已选左右侧栏，泡泡和独立物件不背额外文字。",
+      "advantages": [
+        "与已选鸭兔左右状态区一致，换随机角色只替换状态图标。",
+        "状态不跟着角色漂，密集物件中仍可定位HP与CD。",
+        "羊电量可用100上限细条；无上限泡泡等级只在泡泡上显示数字。"
+      ],
+      "tradeoffs": [
+        "两侧常驻面板占视觉宽度，空闲时仍有较大底板。",
+        "玩家要在角色和侧栏之间移动视线。"
+      ],
+      "questions": [
+        "随机角色战斗继续沿用左右侧栏，还是想选另两种更轻的布局？"
+      ],
+      "image": "images/a_primary.png",
+      "svg": "images/a_primary.svg",
+      "default_text": {
+        "strings": [
+          "3",
+          "110",
+          "11",
+          "3.8",
+          "7.8",
+          "120",
+          "17.5",
+          "1.8",
+          "4.8",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 31,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "3",
+            "position": [
+              513.829559326172,
+              596.04931640625
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "110",
+            "position": [
+              52,
+              212
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "11",
+            "position": [
+              64,
+              303
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "3.8",
+            "position": [
+              50.0,
+              495
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "7.8",
+            "position": [
+              126.0,
+              495
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "120",
+            "position": [
+              972,
+              212
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "17.5",
+            "position": [
+              984,
+              303
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "1.8",
+            "position": [
+              970.0,
+              495
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "4.8",
+            "position": [
+              1046.0,
+              495
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "1×",
+            "position": [
+              568.0,
+              748
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "2×",
+            "position": [
+              624.0,
+              748
+            ],
+            "element_id": "hud_10"
+          },
+          {
+            "value": "3×",
+            "position": [
+              680.0,
+              748
+            ],
+            "element_id": "hud_11"
+          }
+        ]
+      },
+      "stress_image": "images/a_stress.png",
+      "stress_svg": "images/a_stress.svg",
+      "stress_text": {
+        "strings": [
+          "120",
+          "0.5",
+          "5.0",
+          "6.0",
+          "120",
+          "2",
+          "4.0",
+          "2.0",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 28,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "120",
+            "position": [
+              52,
+              212
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "0.5",
+            "position": [
+              64,
+              303
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "5.0",
+            "position": [
+              50.0,
+              495
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "6.0",
+            "position": [
+              126.0,
+              495
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "120",
+            "position": [
+              972,
+              212
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "2",
+            "position": [
+              984,
+              303
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "4.0",
+            "position": [
+              970.0,
+              495
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "2.0",
+            "position": [
+              1046.0,
+              495
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "1×",
+            "position": [
+              568.0,
+              748
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "2×",
+            "position": [
+              624.0,
+              748
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "3×",
+            "position": [
+              680.0,
+              748
+            ],
+            "element_id": "hud_10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "B",
+      "title": "上下窄条 · 两侧留白",
+      "summary": "HP与资源放顶端，四技能冷却靠底边；物理场地不变，两侧取消高面板。",
+      "advantages": [
+        "中央和侧边更透气，泡泡/铁钉等物件不被高侧栏包围。",
+        "HP始终固定，资源与CD分层清楚。"
+      ],
+      "tradeoffs": [
+        "HP/资源在上、CD在下，视线跨度更大。",
+        "底部自动技能与公共操作接近，需用样式区分，避免误认为点击施法。"
+      ],
+      "questions": [
+        "是否接受HP与冷却分上下两层，而不延续已选左右侧栏？"
+      ],
+      "image": "images/b_primary.png",
+      "svg": "images/b_primary.svg",
+      "default_text": {
+        "strings": [
+          "3",
+          "110",
+          "11",
+          "3.8",
+          "7.8",
+          "120",
+          "17.5",
+          "1.8",
+          "4.8",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 31,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "3",
+            "position": [
+              513.829559326172,
+              596.04931640625
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "110",
+            "position": [
+              114,
+              37
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "11",
+            "position": [
+              370,
+              46
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "3.8",
+            "position": [
+              53,
+              754
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "7.8",
+            "position": [
+              127,
+              754
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "120",
+            "position": [
+              672,
+              37
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "17.5",
+            "position": [
+              928,
+              46
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "1.8",
+            "position": [
+              973,
+              754
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "4.8",
+            "position": [
+              1047,
+              754
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "1×",
+            "position": [
+              394.0,
+              746
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "2×",
+            "position": [
+              446.0,
+              746
+            ],
+            "element_id": "hud_10"
+          },
+          {
+            "value": "3×",
+            "position": [
+              498.0,
+              746
+            ],
+            "element_id": "hud_11"
+          }
+        ]
+      },
+      "stress_image": "images/b_stress.png",
+      "stress_svg": "images/b_stress.svg",
+      "stress_text": {
+        "strings": [
+          "120",
+          "0.5",
+          "5.0",
+          "6.0",
+          "120",
+          "2",
+          "4.0",
+          "2.0",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 28,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "120",
+            "position": [
+              114,
+              37
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "0.5",
+            "position": [
+              370,
+              46
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "5.0",
+            "position": [
+              53,
+              754
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "6.0",
+            "position": [
+              127,
+              754
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "120",
+            "position": [
+              672,
+              37
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "2",
+            "position": [
+              928,
+              46
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "4.0",
+            "position": [
+              973,
+              754
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "2.0",
+            "position": [
+              1047,
+              754
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "1×",
+            "position": [
+              394.0,
+              746
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "2×",
+            "position": [
+              446.0,
+              746
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "3×",
+            "position": [
+              498.0,
+              746
+            ],
+            "element_id": "hud_10"
+          }
+        ]
+      }
+    },
+    {
+      "id": "C",
+      "title": "近身状态 · 边缘摘要",
+      "summary": "HP留在上角，资源和两技能CD靠近本体；独立壳/稻草人密集时需要自动避让。",
+      "advantages": [
+        "资源和动作接近，少看远处面板。",
+        "无高侧栏，常驻框体最轻。"
+      ],
+      "tradeoffs": [
+        "泡泡围身、乌鸦换位或龟隐藏时HUD容易挡路或跳动。",
+        "图中只选了静态不遮挡位置；实际需要避让/迟滞逻辑，尚未实现。",
+        "移动端小屏必须验证字体、跟随抖动与触控，不可仅凭静图称通过。"
+      ],
+      "questions": [
+        "愿意接受更高的动态避让实现和验证成本，换取近身读数吗？"
+      ],
+      "image": "images/c_primary.png",
+      "svg": "images/c_primary.svg",
+      "default_text": {
+        "strings": [
+          "3",
+          "110",
+          "120",
+          "11",
+          "3.8",
+          "7.8",
+          "17.5",
+          "1.8",
+          "4.8",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 31,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "3",
+            "position": [
+              513.829559326172,
+              596.04931640625
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "110",
+            "position": [
+              102,
+              37
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "120",
+            "position": [
+              970,
+              37
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "11",
+            "position": [
+              376,
+              446
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "3.8",
+            "position": [
+              372,
+              472
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "7.8",
+            "position": [
+              446,
+              472
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "17.5",
+            "position": [
+              714,
+              524
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "1.8",
+            "position": [
+              710,
+              550
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "4.8",
+            "position": [
+              784,
+              550
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "1×",
+            "position": [
+              568.0,
+              748
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "2×",
+            "position": [
+              624.0,
+              748
+            ],
+            "element_id": "hud_10"
+          },
+          {
+            "value": "3×",
+            "position": [
+              680.0,
+              748
+            ],
+            "element_id": "hud_11"
+          }
+        ]
+      },
+      "stress_image": "images/c_stress.png",
+      "stress_svg": "images/c_stress.svg",
+      "stress_text": {
+        "strings": [
+          "120",
+          "120",
+          "0.5",
+          "5.0",
+          "6.0",
+          "2",
+          "4.0",
+          "2.0",
+          "1×",
+          "2×",
+          "3×"
+        ],
+        "non_whitespace_characters": 28,
+        "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+        "elements": [
+          {
+            "value": "120",
+            "position": [
+              102,
+              37
+            ],
+            "element_id": "hud_0"
+          },
+          {
+            "value": "120",
+            "position": [
+              970,
+              37
+            ],
+            "element_id": "hud_1"
+          },
+          {
+            "value": "0.5",
+            "position": [
+              784,
+              192
+            ],
+            "element_id": "hud_2"
+          },
+          {
+            "value": "5.0",
+            "position": [
+              780,
+              218
+            ],
+            "element_id": "hud_3"
+          },
+          {
+            "value": "6.0",
+            "position": [
+              854,
+              218
+            ],
+            "element_id": "hud_4"
+          },
+          {
+            "value": "2",
+            "position": [
+              356,
+              310
+            ],
+            "element_id": "hud_5"
+          },
+          {
+            "value": "4.0",
+            "position": [
+              352,
+              336
+            ],
+            "element_id": "hud_6"
+          },
+          {
+            "value": "2.0",
+            "position": [
+              426,
+              336
+            ],
+            "element_id": "hud_7"
+          },
+          {
+            "value": "1×",
+            "position": [
+              568.0,
+              748
+            ],
+            "element_id": "hud_8"
+          },
+          {
+            "value": "2×",
+            "position": [
+              624.0,
+              748
+            ],
+            "element_id": "hud_9"
+          },
+          {
+            "value": "3×",
+            "position": [
+              680.0,
+              748
+            ],
+            "element_id": "hud_10"
+          }
+        ]
+      }
+    }
+  ],
+  "recommendation": {
+    "id": "A",
+    "reason": "先保留已选左右侧栏，八随机角色仅替换图标/状态读数，拥挤物件下读数稳定；B适合更重视空旷感时选择，C应等动态避让验证。",
+    "not_user_selection": true
+  },
+  "shared_rules": [
+    "A像素风、浅色场地、横屏和极简作为共同基线；A/B/C是本轮待选布局，不代表用户已放弃原左右侧栏。",
+    "所有方案同一角色候选A和相同实际模拟状态；角色造型A不是用户已选。",
+    "物理场地700×600、位置/伤害/CD/随机/结算不改；画面世界矩形均[200,90,700,600]。",
+    "每个角色两技能为自动状态，只显示冷却，不是点击施法按钮。",
+    "底部保留暂停、1×/2×/3×、重看同种子、新随机(10角色池)、声音、全部角色、信息；图标仅概念，未绑定游戏。",
+    "无上限泡泡level不画封顶条；羊charge是代码真实0..100，可画细条。",
+    "泡泡等级1仍是无伤害小泡泡；只有融合等级>=2显示等级数字，未画1级命中爆炸。",
+    "羊本体/羊毛共享一电库，仅画当前实际的一条放电路径，不暗示双倍伤。",
+    "龟hidden不画本体，只画独立壳；两个稻草人不是额外英雄，不加主动攻击。"
+  ],
+  "limits": [
+    "概念SVG/PNG不是实机截图、不是完整动态UI或接入素材包。",
+    "新8角色的造型、动作、音色仍待用户选择；本轮未重设计已交付鸭兔。",
+    "性能、真机安全区、触控、长数值和HUD动态避让尚未验证。",
+    "养成/挂机等未确定系统不加入战斗UI。"
+  ],
+  "sources": [
+    "../facts/bubble_fish.md",
+    "../facts/electric_sheep.md",
+    "../facts/shell_turtle.md",
+    "../facts/crow.md",
+    "data/asset_sources.json",
+    "source/capture_state.gd",
+    "source/build_ui_review.py"
+  ],
+  "eight_role_adapters": [
+    {
+      "id": "puffer",
+      "visible_state": "gas0..100；吸收仅活动时用免伤图标/剩余秒",
+      "meter": "只有气量可100上限；视觉膨胀不扩大物理圆"
+    },
+    {
+      "id": "chicken",
+      "visible_state": "存活蛋数量；仅已触发引信/大蛋落地时在对应蛋旁显示临爆提示",
+      "meter": "不把下蛋时间/蹲蛋做成必定命中条；小蛋接触引信0.8秒与大蛋落地1.5秒不同"
+    },
+    {
+      "id": "bubble_fish",
+      "visible_state": "本鱼泡泡数量；融合泡泡在物件上显示level；吸附仅激活时标记",
+      "meter": "level无上限，不画百分比满槽；尺寸54上限不是等级上限"
+    },
+    {
+      "id": "electric_sheep",
+      "visible_state": "charge数值/细条；一处羊毛图标与正在放电状态",
+      "meter": "charge有真实100上限；本体和羊毛共享这一条电量"
+    },
+    {
+      "id": "magnet_crab",
+      "visible_state": "铁钉数；repel_ready图标；当前磁墙仅激活时提示",
+      "meter": "静止铁钉无伤害、仅移动时危险；总钉数无已知上限，不画满槽"
+    },
+    {
+      "id": "cactus",
+      "visible_state": "场上刺数；移动不画速度/奔跑条",
+      "meter": "每次散5但存留数量可累积，不假设总量5封顶；REGROW是换位置不是回血"
+    },
+    {
+      "id": "shell_turtle",
+      "visible_state": "seek/hidden图标；hidden剩余时间；独立壳是否spin",
+      "meter": "hidden结束若无可站位置可继续等，不能承诺数字归零必出壳；壳不可伤不画假HP"
+    },
+    {
+      "id": "crow",
+      "visible_state": "两个稻草人数和实际HP小条；feather单根储存图标",
+      "meter": "稻草人各60HP、最多2；羽毛不是弹药条或远程飞羽武器"
+    }
+  ],
+  "current_code_routing": "main.gd调用arena.setup(match_seed)从10角色池不重复抽2；showcase.gd当前固定[5,6]鸭兔。这里是随机对战UI候选，未把任何候选接入或改写现默认入口。固定鱼羊与龟鸦是公平比较样例，不称seed已随机抽到它们。",
+  "world_view": {
+    "origin": [
+      200,
+      90
+    ],
+    "size": [
+      700,
+      600
+    ],
+    "scale": 1,
+    "same_across_all_schemes": true
+  }
+}

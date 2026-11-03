@@ -1,0 +1,162 @@
+{
+  "id": "chicken",
+  "name": "炸弹母鸡",
+  "cycle": "R03",
+  "status": "待用户逐项选择；仅概念评审，非游戏实录、非完整接入帧、非接入包",
+  "variants": [
+    {
+      "id": "a",
+      "title": "A 圆身红冠",
+      "image": "variant_a.png",
+      "display": "a_display.png",
+      "motion": "a_states.gif",
+      "description": "低重心圆身、短尾、圆冠、短脚；强调蹲蛋的压低体态。 配色：金黄圆身、奶油头胸、暖橙翼区、珊瑚圆冠。 材质意向：哑光搪胶与软羽块面的玩具意向；大色块便于像素尺寸读取。 表情：小眼前视、短喙、圆冠压低，脸与圆身连成低重心轮廓。 候选性格感：憨厚但容易慌张，蹲蛋喜剧感强；非新增角色背景。",
+      "palette": "金黄圆身、奶油头胸、暖橙翼区、珊瑚圆冠。",
+      "material": "哑光搪胶与软羽块面的玩具意向；大色块便于像素尺寸读取。",
+      "expression": "小眼前视、短喙、圆冠压低，脸与圆身连成低重心轮廓。",
+      "personality": "候选性格感：憨厚但容易慌张，蹲蛋喜剧感强；非新增角色背景。",
+      "pros": [
+        "与A玩具街机一致；母鸡身份与蛋清晰"
+      ],
+      "cons": [
+        "密集状态时可能显笨重；需与黄鸭的帽/嘴/尾明显区分"
+      ],
+      "status": "unselected concept candidate"
+    },
+    {
+      "id": "b",
+      "title": "B 长颈扇尾",
+      "image": "variant_b.png",
+      "display": "b_display.png",
+      "motion": "b_states.gif",
+      "description": "长颈、尖冠、展开三片尾羽和显眼双腿；更强调惊跑。 配色：奶油长颈与躯体、金黄颈部、珊瑚尖冠和扇尾、暖橙脚。 材质意向：薄片尾羽与修长软胶玩具意向；不是新增盔甲或武器。 表情：小眼向前、尖冠上扬、窄长颈显得更警觉。 候选性格感：机灵、急躁、跑跑停停；实际改向仍由现有技能决定。",
+      "palette": "奶油长颈与躯体、金黄颈部、珊瑚尖冠和扇尾、暖橙脚。",
+      "material": "薄片尾羽与修长软胶玩具意向；不是新增盔甲或武器。",
+      "expression": "小眼向前、尖冠上扬、窄长颈显得更警觉。",
+      "personality": "候选性格感：机灵、急躁、跑跑停停；实际改向仍由现有技能决定。",
+      "pros": [
+        "轮廓高挑，冲刺方向更容易读；与鸭形象差异大"
+      ],
+      "cons": [
+        "头尾占画布更大；腿摆动不能误导实际碰撞或步行规则"
+      ],
+      "status": "unselected concept candidate"
+    }
+  ],
+  "comparison": "comparison.png",
+  "animation": "motion_compare.gif",
+  "recommendation": "推荐A圆身红冠配斑点蛋：本体/蛋/蹲蛋语义直接。偏重喜剧惊跑可选B；均待确认。",
+  "questions": [
+    "母鸡造型选圆身红冠还是长颈扇尾？与已定鸭子保留不同冠、尾和身体比例。",
+    "蛋壳选A离散斑点还是B宽带纹？小蛋/大蛋都沿同一方案，并靠大小和已点燃引信区分，不能做手持炮弹。",
+    "惊跑更强调身体弹跳还是腿和尾的摆动？爆炸音色选A玩具蛋壳还是B厚壳闷爆，不能用落雷声冒充炸蛋。",
+    "普通受击反馈选眨眼反馈还是局部碎光？移动朝向箭头仅用于本评审说明，不是新增游戏常驻UI或运动规则。"
+  ],
+  "states": [
+    {
+      "id": "idle",
+      "title": "待机",
+      "image": "states/a_0.png",
+      "alternative_image": "states/b_0.png",
+      "animation": "motion_compare.gif",
+      "event": "idle",
+      "description": "被动每1.7秒产小蛋，非普通碰撞伤害。"
+    },
+    {
+      "id": "run",
+      "title": "惊跑",
+      "image": "states/a_1.png",
+      "alternative_image": "states/b_1.png",
+      "animation": "motion_compare.gif",
+      "event": "run",
+      "description": "持续1模拟秒，每0.18秒随机改向；GIF只是姿态展示，不能定义路径。"
+    },
+    {
+      "id": "lay",
+      "title": "蹲蛋",
+      "image": "states/a_2.png",
+      "alternative_image": "states/b_2.png",
+      "animation": "motion_compare.gif",
+      "event": "lay",
+      "description": "实际蹲3秒后产大蛋，不能按GIF时长提前落蛋。"
+    },
+    {
+      "id": "big_egg",
+      "title": "大蛋落地",
+      "image": "states/a_3.png",
+      "alternative_image": "states/b_3.png",
+      "animation": "motion_compare.gif",
+      "event": "big_egg",
+      "description": "大蛋立即引信，不是等接触；爆炸发生时才按当时位置判定。"
+    },
+    {
+      "id": "hit_feedback",
+      "title": "受击反馈两方向",
+      "image": "states/hit_feedback.png",
+      "animation": "",
+      "event": "actual_HP_loss",
+      "description": "同一A造型公平比较A眨眼反馈与B局部碎光。仅真实HP下降触发普通受击；不加击退、无敌、硬直或hitstop。Puffer在immune_left>0免伤时应改吸收反馈，不画假掉血。"
+    },
+    {
+      "id": "movement",
+      "title": "移动朝向示意",
+      "image": "states/movement_direction.png",
+      "animation": "",
+      "event": "existing_velocity_direction",
+      "description": "箭头只说明当前已有速度方向，轻摆/朝向可随之表现；不新增跑步、转向、加速或物理规则。母鸡惊跑仍是已有run技能，和普通移动区分。"
+    }
+  ],
+  "weapons_objects": [
+    {
+      "name": "A斑点蛋",
+      "image": "objects/egg_a.png",
+      "description": "与B同尺寸概念比较，天然蛋壳/斑点造型，不增加机械武器。"
+    },
+    {
+      "name": "B宽带蛋",
+      "image": "objects/egg_b.png",
+      "description": "与A同尺寸比较；带纹是图案，不是新增属性。"
+    },
+    {
+      "name": "大小蛋关系",
+      "image": "objects/egg_patterns.png",
+      "description": "小/大蛋外观比例示意，不是爆炸范围刻度。"
+    },
+    {
+      "name": "大蛋引信示意",
+      "image": "objects/armed_big_egg.png",
+      "description": "大蛋落地即1.5秒引信；小蛋则敌触后0.8秒，不可混同。"
+    }
+  ],
+  "information": [
+    "需要小蛋/大蛋、armed/fuse和爆炸事件的不同表现。",
+    "鸡不是鸭，不复用雷云/避雷针；没有枪炮或新投掷技能。",
+    "自身爆炸只受20%伤害；爆炸图形不应额外扩大实际半径。"
+  ],
+  "source_facts": {
+    "document": "SETTING.md",
+    "repository": "Gankkiii/balls",
+    "commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "scope": "代码事实不等于新造型已批准；不修改玩法、数值、物理或随机行为"
+  },
+  "audio_questions": {
+    "options": [
+      "玩具蛋壳",
+      "厚壳闷爆"
+    ],
+    "source": "../../audio/review.json",
+    "scope": "程序合成音色方向；编排试听不代表真实技能时序，未人工听审"
+  },
+  "validation": {
+    "png_svg": "本轮原创整数像素几何，透明96×96候选图；已检查可打开。",
+    "concept_animation": "4格、650ms/格、总2.6秒循环；独立状态展示，不是真实战斗时序或完整连续动作。",
+    "human_listening": "NOT_RUN",
+    "in_game": "NOT_RUN",
+    "device": "NOT_RUN"
+  },
+  "missing": [
+    "未制作正式接入用完整动作帧、Godot资源或接入清单；这是本轮范围限制，不将概念伪称完成。",
+    "候选造型、物件图案、重要动作和音色仍未由用户选定。",
+    "未做真实战斗、设备显示或扬声器听感验证。"
+  ]
+}

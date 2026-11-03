@@ -1,0 +1,320 @@
+{
+  "version": "R03-code-facts-1",
+  "baseline_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "scope": "eight candidate heroes; review only",
+  "shared_constraints": [
+    "不改玩法、物理、伤害、冷却、随机与真实结算时刻",
+    "每个角色默认health120、radius24，子类另有明确覆盖的物件按代码",
+    "动作/音效必须跟真实事件，不能为前摇延迟伤害",
+    "候选画面与声音不代表用户已选或游戏已接入"
+  ],
+  "characters": [
+    {
+      "id": "puffer",
+      "name_zh": "充气角色",
+      "class_name": "Puffer",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/puffer.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "气量0..100，充气速率40/模拟秒；满气进入放气，放气耗25/秒。",
+        "INFLATE原地站桩，CD6；ABSORB免伤2.5秒，受击伤害×1.8转气，CD9。两技能同时就绪优先ABSORB。",
+        "放气速度基于入段基础速率×2.5；放气碰撞敌对身体造成36，本体共享impact_cooldown接触伤害冷却0.35秒（跨多敌对物件共用，不是每目标独立计时）。普通身体碰撞不额外伤害。",
+        "视觉半径radius×(1+gas/100)，最大2倍；物理radius保持24。"
+      ],
+      "objects": [
+        "自身气体/吸收环/放气尾迹；无手持武器代码"
+      ],
+      "state_data": [
+        "gas",
+        "immune_left",
+        "impact_cooldown",
+        "action: idle/inflate/immune/burst",
+        "cd_one/cd_two"
+      ],
+      "limits_and_conflicts": [
+        "不能把视觉膨胀变成碰撞体扩大；不能新增毒刺/毒伤/气弹。",
+        "类名Puffer与刺状旧代码外观不等于用户已批准河豚物种；本轮造型仅候选。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "chicken",
+      "name_zh": "炸弹母鸡",
+      "class_name": "Chicken",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/chicken.gd",
+        "scripts/egg.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "每1.7秒掉小蛋，初始egg_timer0.6；PANIC RUN持续1秒，每0.18秒随机改方向，速度1.8倍、CD5。",
+        "BIG EGG原地蹲3秒后产大蛋，CD10；小蛋半径11，非主人且存活/物理开启的Fighter接触后引信0.8秒。",
+        "小蛋爆炸半径70伤24；大蛋半径23，落地立即引信1.5秒、爆炸半径125伤62。自己爆炸只受20%伤。",
+        "爆炸按爆炸当时位置与目标半径判定；蛋最多32，22秒清理，爆炸显示0.3秒。"
+      ],
+      "objects": [
+        "小蛋BombEgg",
+        "大蛋BombEgg",
+        "引信环/爆炸；没有投掷枪炮"
+      ],
+      "state_data": [
+        "egg_timer",
+        "action: idle/run/lay",
+        "action_left",
+        "turn_timer",
+        "egg.large/armed/fuse/exploded/blast_left"
+      ],
+      "limits_and_conflicts": [
+        "大蛋不是接触才触发；不能把小蛋画成接触立即爆。",
+        "这是鸡不是鸭，不复用鸭雷云/避雷针设定。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "bubble_fish",
+      "name_zh": "泡泡鱼",
+      "class_name": "BubbleFish",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/bubble_fish.gd",
+        "scripts/bubble.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "每1.1秒吐1级泡泡，初始bubble_timer0.5；1级直接碰敌消失无伤害。",
+        "同主人泡泡接触融合，level相加；等级>=2命中伤害level×8，命中后消失。",
+        "VACUUM BUBBLE朝敌人当前方向170速度发射，飞行/吸附2.5秒，105范围吸引自己的泡泡，CD7。",
+        "EIGHT BUBBLES八方向各1级，150速度快飞0.8秒后恢复慢漂，CD9。",
+        "level无玩法上限；泡泡视觉/检测尺寸radius=min(54,9+sqrt(level)×3)，封顶的是尺寸不是等级。"
+      ],
+      "objects": [
+        "独立Bubble；普通/融合/吸附/八向小泡泡"
+      ],
+      "state_data": [
+        "bubble_timer",
+        "Bubble.level/velocity/launch_left/absorb_left/gone"
+      ],
+      "limits_and_conflicts": [
+        "不能给1级泡泡画成已造成伤害的爆炸。",
+        "气泡与充气角色的气量是不同机制；不要混为一种角色。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "electric_sheep",
+      "name_zh": "触电羊",
+      "class_name": "ElectricSheep",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/electric_sheep.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "撞墙每次补30电，电库上限100；WALL TURN朝最近墙移动，CD5。",
+        "DROP WOOL留下羊毛，只有一个，新羊毛替换旧点位，CD7。",
+        "本体或羊毛110范围（代码加目标半径）有存活敌人且有电时持续放电，无周期攻击间隔。",
+        "每模拟秒耗25电、理论伤20；电不足按实际spent比例结算。两处覆盖仍只消耗一份电并算一次攻击路径；没有目标不耗电。",
+        "实际命中沿origin到敌人路径由first_target决定，敌对物件可截住；动画不能把场上两条线表现成双倍伤。"
+      ],
+      "objects": [
+        "脱落羊毛点wool_position",
+        "放电链/电量环；无枪杖"
+      ],
+      "state_data": [
+        "charge",
+        "wool_active/wool_position",
+        "zapping",
+        "cd_one/cd_two"
+      ],
+      "limits_and_conflicts": [
+        "不能把羊毛画成有独立电库或第二只攻击羊。",
+        "WALL TURN代码用max(140,当前速度)，低于140时会提至140；README旧描述“保持速度大小”需以实际代码为准，不能承诺严格不变速。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "magnet_crab",
+      "name_zh": "磁铁蟹",
+      "class_name": "MagnetCrab",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/magnet_crab.gd",
+        "scripts/iron_nail.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "每1秒掉铁钉，初始nail_timer0.5；静止铁钉没有踩踏伤害。",
+        "MAGNET WALL随机磁化一面墙，已有自己的铁钉先到墙边，再返回蟹位置，CD7。",
+        "RETURN REPEL准备弹下一枚回来的铁钉，向敌人当时位置方向飞0.8秒后落静止；准备态不反复刷新，CD6。",
+        "铁钉仅实际移动才伤敌，伤16、单枚命中间隔0.3秒，速度320；用轨迹线段检测。普通返身回收后消失。",
+        "铁钉遇敌稻草人会在其前方停住，mode转rest，不消失。"
+      ],
+      "objects": [
+        "IronNail铁钉",
+        "磁化墙提示；钳是角色肢体不是新增近战武器"
+      ],
+      "state_data": [
+        "nail_timer",
+        "repel_ready",
+        "magnetic_wall",
+        "wall_flash",
+        "IronNail.mode: rest/wall/return/out",
+        "outward_left/hit_left/gone"
+      ],
+      "limits_and_conflicts": [
+        "不能把静止钉画成危险地刺或自动伤害范围。",
+        "不能把弹飞解释为无限往返弹幕；画面箭头必须与真实mode/velocity对应。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "cactus",
+      "name_zh": "仙人掌",
+      "class_name": "Cactus",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/cactus.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "自身inverse_mass为0，advance始终velocity=0；敌对身体碰撞自己时对其造成18。",
+        "SCATTER THORNS在自己附近随机散5根刺（距离40..85、边界clamp），CD6。",
+        "刺点碰到敌对目标radius+6范围时伤12并消失；没有代码寿命，不应编“几秒消散”。",
+        "REGROW寻找可站位置后瞬移，CD9；不是治疗，不增加HP。"
+      ],
+      "objects": [
+        "thorns世界位置刺点",
+        "仙人掌枝臂/自身刺；无手持武器"
+      ],
+      "state_data": [
+        "thorns",
+        "position",
+        "cd_one/cd_two",
+        "velocity始终零"
+      ],
+      "limits_and_conflicts": [
+        "不能画成奔跑角色或让根伸长改变碰撞。",
+        "名称REGROW容易误读回血：代码仅换位置，评审文案不得写恢复生命/再生无敌。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "shell_turtle",
+      "name_zh": "脱壳龟",
+      "class_name": "ShellTurtle",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/shell_turtle.gd",
+        "scripts/turtle_shell.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "龟本体与独立壳是两个物理身体；本体未入壳碰到敌对Fighter时自身扣12，不是自己撞人伤12。",
+        "HIDE IN SHELL向壳寻路最多6秒，速度240；碰到壳后hidden2.5秒，本体physics_enabled=false/visible=false、免受伤害并跟随壳。成功出壳找可用位置，速度170；CD9。",
+        "SPIN SHELL壳spin2.5秒，CD8；start_spin将壳速度暂置0并保存，结束若仍近静止则恢复。不是“自动高速冲刺”。",
+        "壳radius22、不可受伤；撞敌伤18，spin时伤27并对可推动目标施加原有冲量100。",
+        "本体出壳若暂时无可用位置会继续隐藏等待；不把2.5秒结束画成必定出壳。"
+      ],
+      "objects": [
+        "TurtleShell独立龟壳",
+        "空壳/本体/入壳姿态"
+      ],
+      "state_data": [
+        "action: idle/seek/hidden",
+        "action_left",
+        "physics_enabled/visible",
+        "shell.position/velocity/spin_left/spin_restore"
+      ],
+      "limits_and_conflicts": [
+        "壳是实际独立物体，不是全程固定背甲；不能画“龟一直穿壳”掩盖脱壳机制。",
+        "spin的图像旋转不代表位置高速移动；不能新增冲刺/反弹规则。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    },
+    {
+      "id": "crow",
+      "name_zh": "乌鸦",
+      "class_name": "Crow",
+      "status": "code_fact_draft; visual candidates not approved",
+      "code_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+      "code_paths": [
+        "scripts/crow.gd",
+        "scripts/scarecrow.gd",
+        "scripts/battle_arena.gd",
+        "scripts/fighter.gd",
+        "scripts/ball.gd"
+      ],
+      "mechanics": [
+        "每次场上稻草人少于2时可放置，首次2秒、后续5秒；随机可用位置。",
+        "SWAP DUMMY与列表第一个稻草人换位置，双方站位都要合法才成功、释放旧接触，CD7。",
+        "STORE FEATHER储一根羽毛，尚未储存时准备、CD6；不是发射飞羽技能。",
+        "本体碰到自己存活且受伤的稻草人时消耗羽毛、恢复其25HP（不超上限）；满血稻草人不消耗。",
+        "Scarecrow有60HP、radius20、inverse_mass=0；承伤实际值不超过当前HP，等量反射到主人乌鸦的敌方英雄；无递归反射。死亡移除。"
+      ],
+      "objects": [
+        "Scarecrow稻草人最多2",
+        "储存羽毛状态；不是弓/法杖/羽毛弹"
+      ],
+      "state_data": [
+        "dummy_timer",
+        "feather",
+        "dummies",
+        "Scarecrow.health/max_health/owner_crow",
+        "position/cd_one/cd_two"
+      ],
+      "limits_and_conflicts": [
+        "不能把羽毛当远程伤害；不能给稻草人新增主动攻击/移动。",
+        "SWAP只交换位置，不承诺交换血量/速度/技能；反伤不等于乌鸦本体无敌。"
+      ],
+      "unconfirmed_visuals": "新轮廓/服饰/花纹/候选方向由用户评审选择，现_draw原型配色不等于造型定稿。",
+      "verification": "只读代码事实核对；未执行新增游戏行为或真机验收。",
+      "maintenance": "角色与物件美术岗确认并维护；新事实变更须有来源，玩法不得改。"
+    }
+  ],
+  "baseline_comparison": {
+    "from": "bc0fdd65177ca79589a4dd7e943d045a91bf4c16",
+    "to": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+    "eight_hero_and_related_scripts_changed": false,
+    "duck_rabbit_status": "showcase now loads assets/r02 visual textures and wide_hit; presentation signals added; actual rendering/device QA not checked by this facts role",
+    "stale_document": "R02_INTEGRATION.md old claims are superseded by current code"
+  }
+}
