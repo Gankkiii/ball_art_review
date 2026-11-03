@@ -1458,8 +1458,8 @@
     },
     {
       "path": "r03/qa/REPORT.md",
-      "bytes": 5840,
-      "sha256": "4bf4fcb97c62ed44b793a72207d87b60a861cc83372b04d4032540074839edb7"
+      "bytes": 3203,
+      "sha256": "fe1833d6aa1bfb5dfabd740eefc26bd5208d1e5fdd0cdb8254190f1b93f53524"
     },
     {
       "path": "r03/qa/audio-checks.json",
