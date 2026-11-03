@@ -1,0 +1,75 @@
+{
+  "id": "shell_turtle",
+  "name": "脱壳乌龟",
+  "image": "selected.png",
+  "animation": "shell_spin.gif",
+  "media": [
+    {
+      "id": "shell_spin",
+      "title": "壳纹旋转",
+      "image": "shell_spin.png",
+      "animation": "shell_spin.gif",
+      "logical_frames": 12,
+      "encoded_frames": 12,
+      "loop_duration_ms": 1440,
+      "note": "无声概念编排，非游戏时序"
+    },
+    {
+      "id": "hide_in_shell",
+      "title": "寻壳隐藏",
+      "image": "hide_in_shell.png",
+      "animation": "hide_in_shell.gif",
+      "logical_frames": 12,
+      "encoded_frames": 7,
+      "loop_duration_ms": 1440,
+      "note": "无声概念编排，非游戏时序"
+    },
+    {
+      "id": "hurt_blink",
+      "title": "受击眨眼",
+      "image": "hurt_blink.png",
+      "animation": "hurt_blink.gif",
+      "logical_frames": 8,
+      "encoded_frames": 5,
+      "loop_duration_ms": 720,
+      "note": "无声概念编排，非游戏时序"
+    }
+  ],
+  "confirmed": [
+    "长颈短足、独立圆拱壳",
+    "仅壳纹旋转，无弧光／自动冲刺",
+    "仅裸身掉血眨眼；壳与隐藏态不伤"
+  ],
+  "awaiting": [
+    "新版音效试听确认",
+    "本轮动图表现复核"
+  ],
+  "setting_path": "SETTING.md",
+  "status": "已确认方向 · 新音效待试听",
+  "details": {
+    "choices": {
+      "name": "脱壳乌龟",
+      "shape": "A long neck short feet plus separate rounded shell",
+      "spin": "A shell markings rotate, no extra glow or auto dash",
+      "audio": "new hollow shell/turtle body sound identity",
+      "hurt": "blink on vulnerable body only; shell/hidden not hurt"
+    },
+    "hurt": "仅实际HP减少，保持位置不变；保护/免伤分支不播放普通受击",
+    "native_source_size": [
+      96,
+      96
+    ],
+    "body_origin": [
+      48,
+      56
+    ],
+    "foot_anchor": [
+      48,
+      80
+    ],
+    "source": "../../sources/build_selected_last_four.py",
+    "geometry_source": "../../sources/pixel_base.py",
+    "validation": "PNG/SVG/GIF本轮导出自检；未游戏接入、真机或人工听审",
+    "source_image_inputs": false
+  }
+}

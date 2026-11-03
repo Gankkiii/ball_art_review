@@ -1,0 +1,787 @@
+{
+  "result": "PASS",
+  "utc": "2026-11-03T16:10:23.189652+00:00",
+  "viewports": [
+    {
+      "width": 360,
+      "height": 844,
+      "default": {
+        "method": "DOM rendered non-whitespace Unicode characters; per-character Range viewport intersection; excludes closed content,textarea,image-baked text; not OCR",
+        "width": 360,
+        "height": 844,
+        "default_document_characters": 563,
+        "first_viewport_characters": 125,
+        "first_viewport_strings": [
+          "balls",
+          "R04",
+          "按反馈更新",
+          "停声音",
+          "概念预览·未接入游戏",
+          "充气球",
+          "炸弹母鸡",
+          "泡泡鱼",
+          "触电羊",
+          "磁铁蟹",
+          "仙人掌",
+          "脱壳乌龟",
+          "乌鸦",
+          "充气球",
+          "已选方向",
+          "分段吸收罩，受击眨眼",
+          "暂停动画",
+          "原图",
+          "分段吸收",
+          "眨眼",
+          "新音效·待试听",
+          "充气",
+          "吸收",
+          "放气",
+          "碰撞",
+          "整段试听",
+          "设定与细节",
+          "炸弹母鸡",
+          "已选方向",
+          "长颈扇尾、斑点蛋、摆腿惊跑"
+        ],
+        "first_viewport_media": [
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/motion.gif",
+            "width": 310,
+            "height": 206.65625,
+            "top": 301.484375,
+            "bottom": 508.140625,
+            "visibleArea": 64063.4375
+          }
+        ],
+        "closed_details": 10,
+        "open_details": 0
+      },
+      "expanded_width": 360
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "default": {
+        "method": "DOM rendered non-whitespace Unicode characters; per-character Range viewport intersection; excludes closed content,textarea,image-baked text; not OCR",
+        "width": 390,
+        "height": 844,
+        "default_document_characters": 563,
+        "first_viewport_characters": 112,
+        "first_viewport_strings": [
+          "balls",
+          "R04",
+          "按反馈更新",
+          "停声音",
+          "概念预览·未接入游戏",
+          "充气球",
+          "炸弹母鸡",
+          "泡泡鱼",
+          "触电羊",
+          "磁铁蟹",
+          "仙人掌",
+          "脱壳乌龟",
+          "乌鸦",
+          "充气球",
+          "已选方向",
+          "分段吸收罩，受击眨眼",
+          "暂停动画",
+          "原图",
+          "分段吸收",
+          "眨眼",
+          "新音效·待试听",
+          "充气",
+          "吸收",
+          "放气",
+          "碰撞",
+          "整段试听",
+          "设定与细节",
+          "炸弹母鸡",
+          "已选方向"
+        ],
+        "first_viewport_media": [
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/motion.gif",
+            "width": 340,
+            "height": 226.65625,
+            "top": 301.484375,
+            "bottom": 528.140625,
+            "visibleArea": 77063.125
+          }
+        ],
+        "closed_details": 10,
+        "open_details": 0
+      },
+      "expanded_width": 390
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "default": {
+        "method": "DOM rendered non-whitespace Unicode characters; per-character Range viewport intersection; excludes closed content,textarea,image-baked text; not OCR",
+        "width": 768,
+        "height": 1024,
+        "default_document_characters": 563,
+        "first_viewport_characters": 125,
+        "first_viewport_strings": [
+          "balls",
+          "R04",
+          "按反馈更新",
+          "停声音",
+          "概念预览·未接入游戏",
+          "充气球",
+          "炸弹母鸡",
+          "泡泡鱼",
+          "触电羊",
+          "磁铁蟹",
+          "仙人掌",
+          "脱壳乌龟",
+          "乌鸦",
+          "充气球",
+          "已选方向",
+          "分段吸收罩，受击眨眼",
+          "暂停动画",
+          "原图",
+          "分段吸收",
+          "眨眼",
+          "新音效·待试听",
+          "充气",
+          "吸收",
+          "放气",
+          "碰撞",
+          "整段试听",
+          "设定与细节",
+          "炸弹母鸡",
+          "已选方向",
+          "长颈扇尾、斑点蛋、摆腿惊跑"
+        ],
+        "first_viewport_media": [
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/selected_display.png",
+            "width": 333,
+            "height": 222,
+            "top": 281.0625,
+            "bottom": 503.0625,
+            "visibleArea": 73926
+          },
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/motion.gif",
+            "width": 333,
+            "height": 222,
+            "top": 281.0625,
+            "bottom": 503.0625,
+            "visibleArea": 73926
+          },
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/chicken/selected_display.png",
+            "width": 333,
+            "height": 222,
+            "top": 822.984375,
+            "bottom": 1044.984375,
+            "visibleArea": 66938.203125
+          },
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/chicken/motion.gif",
+            "width": 333,
+            "height": 222,
+            "top": 822.984375,
+            "bottom": 1044.984375,
+            "visibleArea": 66938.203125
+          }
+        ],
+        "closed_details": 10,
+        "open_details": 0
+      },
+      "expanded_width": 768
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "default": {
+        "method": "DOM rendered non-whitespace Unicode characters; per-character Range viewport intersection; excludes closed content,textarea,image-baked text; not OCR",
+        "width": 1280,
+        "height": 900,
+        "default_document_characters": 563,
+        "first_viewport_characters": 125,
+        "first_viewport_strings": [
+          "balls",
+          "R04",
+          "按反馈更新",
+          "停声音",
+          "概念预览·未接入游戏",
+          "充气球",
+          "炸弹母鸡",
+          "泡泡鱼",
+          "触电羊",
+          "磁铁蟹",
+          "仙人掌",
+          "脱壳乌龟",
+          "乌鸦",
+          "充气球",
+          "已选方向",
+          "分段吸收罩，受击眨眼",
+          "暂停动画",
+          "原图",
+          "分段吸收",
+          "眨眼",
+          "新音效·待试听",
+          "充气",
+          "吸收",
+          "放气",
+          "碰撞",
+          "整段试听",
+          "设定与细节",
+          "炸弹母鸡",
+          "已选方向",
+          "长颈扇尾、斑点蛋、摆腿惊跑"
+        ],
+        "first_viewport_media": [
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/selected_display.png",
+            "width": 480,
+            "height": 320,
+            "top": 277.0625,
+            "bottom": 597.0625,
+            "visibleArea": 153600
+          },
+          {
+            "tag": "IMG",
+            "src": "http://127.0.0.1:8033/r04/characters/puffer/motion.gif",
+            "width": 480,
+            "height": 320,
+            "top": 277.0625,
+            "bottom": 597.0625,
+            "visibleArea": 153600
+          }
+        ],
+        "closed_details": 10,
+        "open_details": 0
+      },
+      "expanded_width": 1280
+    }
+  ],
+  "characters": 8,
+  "selected_direction_per_character": 1,
+  "new_events": 32,
+  "new_montages": 8,
+  "audio_playback_progress_and_single_player": [
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/puffer_inflate.wav",
+      "time": 0.017189,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/puffer_absorb.wav",
+      "time": 0.019316,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/puffer_release.wav",
+      "time": 0.018379,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/puffer_contact.wav",
+      "time": 0.0207,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/puffer_audition.wav",
+      "time": 0.016956,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/chicken_panic_cluck.wav",
+      "time": 0.019291,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/chicken_egg_drop.wav",
+      "time": 0.017726,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/chicken_fuse.wav",
+      "time": 0.021692,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/chicken_explosion.wav",
+      "time": 0.019531,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/chicken_audition.wav",
+      "time": 0.016351,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/bubble_fish_spit.wav",
+      "time": 0.015439,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/bubble_fish_merge.wav",
+      "time": 0.016341,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/bubble_fish_vacuum.wav",
+      "time": 0.018051,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/bubble_fish_hit.wav",
+      "time": 0.018256,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/bubble_fish_audition.wav",
+      "time": 0.015247,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/electric_sheep_bleat.wav",
+      "time": 0.020663,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/electric_sheep_charge.wav",
+      "time": 0.018924,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/electric_sheep_wool.wav",
+      "time": 0.020477,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/electric_sheep_discharge.wav",
+      "time": 0.020263,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/electric_sheep_audition.wav",
+      "time": 0.018821,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/magnet_crab_drop.wav",
+      "time": 0.017597,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/magnet_crab_magnet.wav",
+      "time": 0.015913,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/magnet_crab_moving_hit.wav",
+      "time": 0.015221,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/magnet_crab_repel.wav",
+      "time": 0.018562,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/magnet_crab_audition.wav",
+      "time": 0.017867,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/cactus_scatter.wav",
+      "time": 0.016797,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/cactus_land.wav",
+      "time": 0.020677,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/cactus_regrow.wav",
+      "time": 0.02057,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/cactus_flower.wav",
+      "time": 0.02126,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/cactus_audition.wav",
+      "time": 0.017104,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/shell_turtle_enter.wav",
+      "time": 0.016373,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/shell_turtle_spin.wav",
+      "time": 0.019548,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/shell_turtle_contact.wav",
+      "time": 0.017173,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/shell_turtle_exit.wav",
+      "time": 0.01937,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/shell_turtle_audition.wav",
+      "time": 0.016511,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/crow_caw.wav",
+      "time": 0.019246,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/crow_swap.wav",
+      "time": 0.016628,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/crow_repair.wav",
+      "time": 0.017501,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/crow_reflect.wav",
+      "time": 0.02063,
+      "paused": false,
+      "pressed": 1
+    },
+    {
+      "src": "http://127.0.0.1:8033/r04/audio/crow_audition.wav",
+      "time": 0.018058,
+      "paused": false,
+      "pressed": 1
+    }
+  ],
+  "gif_browser_frame_changes": [
+    {
+      "character": "puffer",
+      "url": "r04/characters/puffer/motion.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "puffer",
+      "url": "r04/characters/puffer/absorb.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "puffer",
+      "url": "r04/characters/puffer/hurt.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "chicken",
+      "url": "r04/characters/chicken/motion.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "chicken",
+      "url": "r04/characters/chicken/lay.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "chicken",
+      "url": "r04/characters/chicken/hurt.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "bubble_fish",
+      "url": "r04/characters/bubble_fish/motion.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "bubble_fish",
+      "url": "r04/characters/bubble_fish/grades.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "bubble_fish",
+      "url": "r04/characters/bubble_fish/hurt.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "electric_sheep",
+      "url": "r04/characters/electric_sheep/motion.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "electric_sheep",
+      "url": "r04/characters/electric_sheep/hurt.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "magnet_crab",
+      "url": "r04/characters/magnet_crab/moving_nails.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "magnet_crab",
+      "url": "r04/characters/magnet_crab/hurt_blink.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "cactus",
+      "url": "r04/characters/cactus/thorns_landing.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "cactus",
+      "url": "r04/characters/cactus/regrow_flower.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "cactus",
+      "url": "r04/characters/cactus/hurt_blink.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "shell_turtle",
+      "url": "r04/characters/shell_turtle/shell_spin.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "shell_turtle",
+      "url": "r04/characters/shell_turtle/hide_in_shell.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "shell_turtle",
+      "url": "r04/characters/shell_turtle/hurt_blink.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "crow",
+      "url": "r04/characters/crow/swap_feathers.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "crow",
+      "url": "r04/characters/crow/contact_repair.gif",
+      "browser_frames_different": 2
+    },
+    {
+      "character": "crow",
+      "url": "r04/characters/crow/hurt_blink.gif",
+      "browser_frames_different": 2
+    }
+  ],
+  "media_choices": [
+    [
+      "puffer",
+      "absorb"
+    ],
+    [
+      "puffer",
+      "hurt"
+    ],
+    [
+      "chicken",
+      "eggs"
+    ],
+    [
+      "chicken",
+      "lay"
+    ],
+    [
+      "chicken",
+      "hurt"
+    ],
+    [
+      "bubble_fish",
+      "grades"
+    ],
+    [
+      "bubble_fish",
+      "hurt"
+    ],
+    [
+      "electric_sheep",
+      "wool"
+    ],
+    [
+      "electric_sheep",
+      "hurt"
+    ],
+    [
+      "magnet_crab",
+      "moving_nails"
+    ],
+    [
+      "magnet_crab",
+      "hurt_blink"
+    ],
+    [
+      "cactus",
+      "thorns_landing"
+    ],
+    [
+      "cactus",
+      "regrow_flower"
+    ],
+    [
+      "cactus",
+      "hurt_blink"
+    ],
+    [
+      "shell_turtle",
+      "shell_spin"
+    ],
+    [
+      "shell_turtle",
+      "hide_in_shell"
+    ],
+    [
+      "shell_turtle",
+      "hurt_blink"
+    ],
+    [
+      "crow",
+      "swap_feathers"
+    ],
+    [
+      "crow",
+      "contact_repair"
+    ],
+    [
+      "crow",
+      "hurt_blink"
+    ]
+  ],
+  "all_stop_and_toggle_stop": true,
+  "reduced_motion_static": true,
+  "ui_animation_toggle": true,
+  "local_targets": [
+    "http://127.0.0.1:8033/r04/DECISIONS.md",
+    "http://127.0.0.1:8033/r04/PUBLIC_SCOPE.md",
+    "http://127.0.0.1:8033/r04/app.js",
+    "http://127.0.0.1:8033/r04/audio/puffer_inflate.wav",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/grades.gif",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/grades.png",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/hurt.gif",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/motion.gif",
+    "http://127.0.0.1:8033/r04/characters/bubble_fish/selected_display.png",
+    "http://127.0.0.1:8033/r04/characters/cactus/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/cactus/hurt_blink.gif",
+    "http://127.0.0.1:8033/r04/characters/cactus/hurt_blink.png",
+    "http://127.0.0.1:8033/r04/characters/cactus/regrow_flower.gif",
+    "http://127.0.0.1:8033/r04/characters/cactus/regrow_flower.png",
+    "http://127.0.0.1:8033/r04/characters/cactus/selected.png",
+    "http://127.0.0.1:8033/r04/characters/cactus/thorns_landing.gif",
+    "http://127.0.0.1:8033/r04/characters/cactus/thorns_landing.png",
+    "http://127.0.0.1:8033/r04/characters/chicken/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/chicken/eggs_display.png",
+    "http://127.0.0.1:8033/r04/characters/chicken/hurt.gif",
+    "http://127.0.0.1:8033/r04/characters/chicken/lay.gif",
+    "http://127.0.0.1:8033/r04/characters/chicken/motion.gif",
+    "http://127.0.0.1:8033/r04/characters/chicken/selected_display.png",
+    "http://127.0.0.1:8033/r04/characters/crow/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/crow/contact_repair.gif",
+    "http://127.0.0.1:8033/r04/characters/crow/contact_repair.png",
+    "http://127.0.0.1:8033/r04/characters/crow/hurt_blink.gif",
+    "http://127.0.0.1:8033/r04/characters/crow/hurt_blink.png",
+    "http://127.0.0.1:8033/r04/characters/crow/selected.png",
+    "http://127.0.0.1:8033/r04/characters/crow/swap_feathers.gif",
+    "http://127.0.0.1:8033/r04/characters/crow/swap_feathers.png",
+    "http://127.0.0.1:8033/r04/characters/electric_sheep/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/electric_sheep/hurt.gif",
+    "http://127.0.0.1:8033/r04/characters/electric_sheep/motion.gif",
+    "http://127.0.0.1:8033/r04/characters/electric_sheep/selected_display.png",
+    "http://127.0.0.1:8033/r04/characters/electric_sheep/wool_display.png",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/hurt_blink.gif",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/hurt_blink.png",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/moving_nails.gif",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/moving_nails.png",
+    "http://127.0.0.1:8033/r04/characters/magnet_crab/selected.png",
+    "http://127.0.0.1:8033/r04/characters/puffer/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/puffer/absorb.gif",
+    "http://127.0.0.1:8033/r04/characters/puffer/hurt.gif",
+    "http://127.0.0.1:8033/r04/characters/puffer/motion.gif",
+    "http://127.0.0.1:8033/r04/characters/puffer/selected_display.png",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/SETTING.md",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/hide_in_shell.gif",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/hide_in_shell.png",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/hurt_blink.gif",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/hurt_blink.png",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/selected.png",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/shell_spin.gif",
+    "http://127.0.0.1:8033/r04/characters/shell_turtle/shell_spin.png",
+    "http://127.0.0.1:8033/r04/qa/REPORT.md",
+    "http://127.0.0.1:8033/r04/style.css",
+    "http://127.0.0.1:8033/r04/ui/images/primary.png",
+    "http://127.0.0.1:8033/r04/ui/images/stress.png"
+  ],
+  "javascript_errors": [],
+  "http_errors": [],
+  "mutating_requests": [],
+  "file_sha256": {
+    "index.html": "bdbdd11cd0010599f45a28b36fb538a19ac5063107a0411d1328aae65daa1dff",
+    "r04/app.js": "27ffc517c892a6479cdfbda0d119ad0e2be06a97d12cb761be3d69cbacaa84f2",
+    "r04/style.css": "ce1db9bed9f19d084e4b51e2580ccb8ebed9900ad07a3fbcce2e70269054e9a0",
+    "r04/review-data.json": "0e25ca41e9d5cdb478bc45b237ada3324ae7906adfd858821632a435581aa925"
+  },
+  "human_listening": "NOT_RUN",
+  "real_device": "NOT_RUN",
+  "game_integration": "NOT_RUN",
+  "public_site": "NOT_RUN"
+}

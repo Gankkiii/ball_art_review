@@ -1,0 +1,1222 @@
+[
+  {
+    "character": "bubble_fish",
+    "images": [
+      {
+        "file": "bubble_fish/blink.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+      },
+      {
+        "file": "bubble_fish/grades.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 8,
+        "unique": 8,
+        "diff_from_first": [
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ],
+          [
+            144,
+            78,
+            342,
+            276
+          ]
+        ],
+        "sha256": "ace57bdbe09ab67cea0184d5c6dc54085d4a5e35dcb6023fcec42bf3b6ec0d82"
+      },
+      {
+        "file": "bubble_fish/grades.png",
+        "size": [
+          512,
+          432
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "18ea67b100599720022372b5a2c9a6e12831f9f7924616939a46a8c87b7b0d9c"
+      },
+      {
+        "file": "bubble_fish/hurt.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 3,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            282,
+            162,
+            300,
+            180
+          ],
+          null
+        ],
+        "sha256": "f4c1c2752de008046a71b39af7f157c4cf72921e26515a386d25480a3993ae0d"
+      },
+      {
+        "file": "bubble_fish/motion.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 4,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            114,
+            48,
+            372,
+            306
+          ],
+          null,
+          [
+            114,
+            48,
+            372,
+            306
+          ]
+        ],
+        "sha256": "2c296b50f793994e5f0e11e1cb826457efef7029f0c873445c8a10b5bb6bc58e"
+      },
+      {
+        "file": "bubble_fish/selected.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+      },
+      {
+        "file": "bubble_fish/selected_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "7b61c08f5e171ddea3d2cc26c973514002d19f8cec87232172742309467567cc"
+      }
+    ]
+  },
+  {
+    "character": "cactus",
+    "images": [
+      {
+        "file": "cactus/flower_lit_sprite.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "3bf3c0685cc8c3f22fee29ee0eb29859b3c4ca25803df04d028df99d822054bb"
+      },
+      {
+        "file": "cactus/hurt_blink.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            244,
+            132,
+            272,
+            144
+          ],
+          null,
+          [
+            244,
+            132,
+            272,
+            144
+          ],
+          null
+        ],
+        "sha256": "701084319b9d7f96bfe9d5f8bd71c49f9e5e10d8f8cb4954bb5f3815f6c7a7ba"
+      },
+      {
+        "file": "cactus/hurt_blink.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "a24a515ef5d956129bb74d78057b79f826e61b9e342d71c8f747c381cddb0ae5"
+      },
+      {
+        "file": "cactus/object_thorn.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "f4cf6ca03ad2b67adb045a757fd8fbd90e8914997c7d3a2d4249eb079963c935"
+      },
+      {
+        "file": "cactus/regrow_flower.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 3,
+        "unique": 3,
+        "diff_from_first": [
+          [
+            64,
+            96,
+            450,
+            236
+          ],
+          [
+            64,
+            96,
+            450,
+            236
+          ]
+        ],
+        "sha256": "2bd289ce56a3b7461098dabe639538b34843b66a21431be99297976aee41f6a3"
+      },
+      {
+        "file": "cactus/regrow_flower.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "2906b66fe8bfe4f05370d5c35ed4d07011fdd1eebec9a389ea52924906e2ef14"
+      },
+      {
+        "file": "cactus/selected.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "68c380a286f6dc5de31b8dedf6c993540d8520f30d42b40b863999fd00f98b55"
+      },
+      {
+        "file": "cactus/selected_sprite.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "33088f2705e8fe1e3e7b11606a8161fbcd2ff186f8f0ed47aa71ceb8ed795e34"
+      },
+      {
+        "file": "cactus/thorns_landing.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            76,
+            82,
+            438,
+            256
+          ],
+          [
+            76,
+            82,
+            438,
+            256
+          ],
+          [
+            76,
+            82,
+            438,
+            256
+          ],
+          [
+            83,
+            82,
+            432,
+            252
+          ]
+        ],
+        "sha256": "ee28e2c04795042b71253539eee1286a18e2c85f325487eaf3de9d54a0fc9c8d"
+      },
+      {
+        "file": "cactus/thorns_landing.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "1afa2602a4b4958bc07353eb3c48dc40d3cc819415694593627c67168b9d64ca"
+      }
+    ]
+  },
+  {
+    "character": "chicken",
+    "images": [
+      {
+        "file": "chicken/blink.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "3205c725bda7fa1349f811e7ef0542f7270b9eacb45f1cbc75945716df96e87e"
+      },
+      {
+        "file": "chicken/eggs_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "16196c290794fab4600c9187ac77940009a8a1df6d9d73b30e5ed74b9c12fe0b"
+      },
+      {
+        "file": "chicken/hurt.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 3,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            282,
+            102,
+            300,
+            120
+          ],
+          null
+        ],
+        "sha256": "ca0b5b4bd72c6e77cc42bb53dd7bf097dee123d094bcf81b7d3b9e5327ab2347"
+      },
+      {
+        "file": "chicken/lay.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 3,
+        "unique": 3,
+        "diff_from_first": [
+          [
+            120,
+            168,
+            222,
+            294
+          ],
+          [
+            102,
+            150,
+            252,
+            312
+          ]
+        ],
+        "sha256": "79db34f9d4f52126dfef0e4fabd4d2499ddcc50589855e266b58db857b8ca0f9"
+      },
+      {
+        "file": "chicken/motion.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 4,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            132,
+            84,
+            270,
+            294
+          ],
+          [
+            132,
+            84,
+            282,
+            288
+          ],
+          [
+            132,
+            84,
+            270,
+            294
+          ]
+        ],
+        "sha256": "6690eba23ea9715e295ff0f9437a91d344fa0859d8656dfe78cae78265bcf023"
+      },
+      {
+        "file": "chicken/selected.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "88b5566cb8a47442ffb2b04412b7797f185e96ee123f36b36ae756d17d457a53"
+      },
+      {
+        "file": "chicken/selected_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "79423cf3c4c1d7814ce4f2e61201614cd147d7fb4251ccb7e2f3f94085e1f058"
+      },
+      {
+        "file": "chicken/spotted_eggs.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "ab39069aa3394129a6752e227860d767bc6bcd3715b3aa83b4d82fb0527e41da"
+      }
+    ]
+  },
+  {
+    "character": "crow",
+    "images": [
+      {
+        "file": "crow/contact_repair.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 5,
+        "diff_from_first": [
+          [
+            90,
+            112,
+            196,
+            190
+          ],
+          [
+            90,
+            112,
+            226,
+            190
+          ],
+          [
+            90,
+            112,
+            262,
+            190
+          ],
+          [
+            90,
+            112,
+            292,
+            190
+          ]
+        ],
+        "sha256": "39f441a5a2019391951e9b6b577cb014ec14c084ad21b6d09fe1f496753cd854"
+      },
+      {
+        "file": "crow/contact_repair.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "df516a055aae3e2b63152252f73683157612abd402a428531f86277a32f3f53e"
+      },
+      {
+        "file": "crow/hurt_blink.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            272,
+            112,
+            284,
+            128
+          ],
+          null,
+          [
+            272,
+            112,
+            284,
+            128
+          ],
+          null
+        ],
+        "sha256": "be7b78d2cc613113da34757fbcd9e73c007bbb662ba74ff11d8e462824e8bc35"
+      },
+      {
+        "file": "crow/hurt_blink.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "6c77156a2f5b8793c9e6cb2d75e2404fbe101ed7179dad7ef770076e253cb0fa"
+      },
+      {
+        "file": "crow/object_dummy.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "ddd9f452c3496f0c953686943ff23cd85b78ccd3fcd94a44634e41bde338e3de"
+      },
+      {
+        "file": "crow/object_dummy_damaged.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "b7eb9cf37389d3491087490254304b8f44030f7ac7803179a7a5d5e7e9e6d0cc"
+      },
+      {
+        "file": "crow/object_feather.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "0c88cb7366f034c99733b8cee552c98ac376e57d09cc2443e65fdabc7f26adbf"
+      },
+      {
+        "file": "crow/selected.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "d8f094e662c4ea83e121e2208797344a3ef421a3239749bbeecb4c99dff822a4"
+      },
+      {
+        "file": "crow/selected_sprite.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "21a2ef82ab7e38dc01d19c4328482e07cc9d9d2356969e6d9e0fff1c0173fa16"
+      },
+      {
+        "file": "crow/swap_feathers.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 4,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            60,
+            129,
+            436,
+            209
+          ],
+          [
+            60,
+            129,
+            436,
+            209
+          ],
+          [
+            60,
+            129,
+            436,
+            209
+          ]
+        ],
+        "sha256": "4670fc1d376bbd46054a17714b9c1bf15597c974f249a9799ac5543ec0ed6fb7"
+      },
+      {
+        "file": "crow/swap_feathers.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "c191fa24cd6f4d80165ce0e8b497d36b2c37820063bf807a1b6d5b75be0b7106"
+      }
+    ]
+  },
+  {
+    "character": "electric_sheep",
+    "images": [
+      {
+        "file": "electric_sheep/blink.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "fdb7da7f95a30a8aeca1af24826468bd2ae014069dc40cd4a6026e7ddcdfcd4d"
+      },
+      {
+        "file": "electric_sheep/hurt.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 3,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            288,
+            174,
+            306,
+            192
+          ],
+          null
+        ],
+        "sha256": "bfb02848860581e091813836b000bd28c7a9bb63f21ab339798760566076f679"
+      },
+      {
+        "file": "electric_sheep/motion.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 4,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            15,
+            13,
+            104,
+            271
+          ],
+          [
+            14,
+            13,
+            133,
+            271
+          ],
+          [
+            14,
+            13,
+            408,
+            271
+          ]
+        ],
+        "sha256": "17e24502164b54f8ed8c750040e5e8268ae368aaf25d64e783e8a462c05cdbd9"
+      },
+      {
+        "file": "electric_sheep/selected.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+      },
+      {
+        "file": "electric_sheep/selected_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "4dae1d4842dd8e24a6a991d5a36cd1ed10ad345c31a091da81f0028c3fb99f37"
+      },
+      {
+        "file": "electric_sheep/wool.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "de80cb95123a00e708ba72e54ec50933609cd3bb0d40fa724432a4073c33b358"
+      },
+      {
+        "file": "electric_sheep/wool_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "b6dea6120494790550272b9dca1b431411704f7ff88cd92351ba51da4b459f32"
+      }
+    ]
+  },
+  {
+    "character": "magnet_crab",
+    "images": [
+      {
+        "file": "magnet_crab/hurt_blink.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            220,
+            108,
+            292,
+            128
+          ],
+          null,
+          [
+            220,
+            108,
+            292,
+            128
+          ],
+          null
+        ],
+        "sha256": "b51fe43ca025c62f6da0cd6a54fd34cefbb83a0f2436e0fdea02009b8885fa47"
+      },
+      {
+        "file": "magnet_crab/hurt_blink.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "f579260cabf51b2aaafb955e6fabfa62a35a039f9b7c702b04d1c5bf104dd855"
+      },
+      {
+        "file": "magnet_crab/moving_nails.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 10,
+        "unique": 10,
+        "diff_from_first": [
+          [
+            16,
+            36,
+            496,
+            275
+          ],
+          [
+            16,
+            36,
+            496,
+            275
+          ],
+          [
+            86,
+            218,
+            466,
+            248
+          ],
+          [
+            86,
+            211,
+            412,
+            248
+          ],
+          [
+            16,
+            36,
+            496,
+            275
+          ],
+          [
+            16,
+            36,
+            496,
+            275
+          ],
+          [
+            16,
+            36,
+            496,
+            275
+          ],
+          [
+            86,
+            150,
+            438,
+            248
+          ],
+          [
+            86,
+            150,
+            438,
+            248
+          ]
+        ],
+        "sha256": "ad085f7fc6eb0cdd78215e1ce1ce8fc661f751148cb44ad4c89fdae12f15a9e0"
+      },
+      {
+        "file": "magnet_crab/moving_nails.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "b190f7c9836b9056ca267aa19ee9e1b60eabdb1caf0cac12784d466b28609b7e"
+      },
+      {
+        "file": "magnet_crab/nail_moving.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "c5a2a1e6472ecea56d2ca87753b6065f6a4d7a1712ac99d30a179e809295d261"
+      },
+      {
+        "file": "magnet_crab/nail_rest.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "3274faa67c3faffc257f4995eecc85c466f909384b89aa666292e82cc025b2bb"
+      },
+      {
+        "file": "magnet_crab/selected.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "d57a1573b83087dd1a267f440ac607e7aca5785b450d5f70eea5fb01a65ab0db"
+      },
+      {
+        "file": "magnet_crab/selected_sprite.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "3db728b98a4425548a867ec89941cad5614fffe3412beee1b66e504653ea99a5"
+      }
+    ]
+  },
+  {
+    "character": "puffer",
+    "images": [
+      {
+        "file": "puffer/absorb.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 4,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            132,
+            66,
+            354,
+            294
+          ],
+          [
+            138,
+            72,
+            348,
+            282
+          ],
+          [
+            108,
+            42,
+            378,
+            312
+          ]
+        ],
+        "sha256": "e61c04b8aa1a2bfbd8d40fcebc07108ac484680ac5e366c82cd22a64652f7551"
+      },
+      {
+        "file": "puffer/blink.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "451f09015d568539b450e6608a448350df1f5cda9a9a8b2709af0aaa5931fb5b"
+      },
+      {
+        "file": "puffer/hurt.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 3,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            210,
+            156,
+            282,
+            174
+          ],
+          null
+        ],
+        "sha256": "fadf4f8baac9c76daa53dcbae1412d56c47d8ec44204d908b8ac9eed3d9d8ef4"
+      },
+      {
+        "file": "puffer/motion.gif",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 4,
+        "unique": 4,
+        "diff_from_first": [
+          [
+            14,
+            13,
+            342,
+            276
+          ],
+          [
+            14,
+            13,
+            348,
+            282
+          ],
+          [
+            14,
+            13,
+            378,
+            312
+          ]
+        ],
+        "sha256": "6f8bb8b9459f89b3c911667a45e0a600b891a48e6cd5302dd2c4944056a524f6"
+      },
+      {
+        "file": "puffer/selected.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+      },
+      {
+        "file": "puffer/selected_display.png",
+        "size": [
+          480,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "eeac806be43e4f2902d4cfc79a7c91cbd71aad0cdd990166c8d67dde1395757c"
+      }
+    ]
+  },
+  {
+    "character": "shell_turtle",
+    "images": [
+      {
+        "file": "shell_turtle/hide_in_shell.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 7,
+        "unique": 7,
+        "diff_from_first": [
+          [
+            26,
+            128,
+            155,
+            184
+          ],
+          [
+            26,
+            128,
+            200,
+            184
+          ],
+          [
+            26,
+            128,
+            245,
+            184
+          ],
+          [
+            26,
+            128,
+            290,
+            184
+          ],
+          [
+            26,
+            128,
+            326,
+            184
+          ],
+          [
+            26,
+            128,
+            110,
+            184
+          ]
+        ],
+        "sha256": "550a1772623a912b60cf5cd6189c450a953dcb4d8c2cf34c4c3040a140a4af5a"
+      },
+      {
+        "file": "shell_turtle/hide_in_shell.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "38bb40bed6c68dbadc21b5bae7e45ef576f83545f1cc818bc5ebdde4721bf8af"
+      },
+      {
+        "file": "shell_turtle/hurt_blink.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 5,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            320,
+            112,
+            332,
+            128
+          ],
+          null,
+          [
+            320,
+            112,
+            332,
+            128
+          ],
+          null
+        ],
+        "sha256": "219ec447b711b62ef8a0bfef07a6307b28efea00e163d0a932a7e3f8c46d1910"
+      },
+      {
+        "file": "shell_turtle/hurt_blink.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "0f6260c286fdd7033d40496c3a40f8785556ed7f2f4e6d701967b1eb2979ef0d"
+      },
+      {
+        "file": "shell_turtle/object_shell.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "55464c8c5cd374b396e547efbeea9d495e6585d4948eb27ddb3052e2279171f0"
+      },
+      {
+        "file": "shell_turtle/selected.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "23127cc2dfff674f1c1718c7ba019cefaed741eedf5496d8f499da65e523aa18"
+      },
+      {
+        "file": "shell_turtle/selected_sprite.png",
+        "size": [
+          96,
+          96
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "cd1304b21975c8d5f795d1d94a983f7a81797b58f02c9874720e8ebc6d520186"
+      },
+      {
+        "file": "shell_turtle/shell_spin.gif",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 12,
+        "unique": 2,
+        "diff_from_first": [
+          [
+            288,
+            128,
+            388,
+            196
+          ],
+          null,
+          [
+            288,
+            128,
+            388,
+            196
+          ],
+          null,
+          [
+            288,
+            128,
+            388,
+            196
+          ],
+          null,
+          [
+            288,
+            128,
+            388,
+            196
+          ],
+          null,
+          [
+            288,
+            128,
+            388,
+            196
+          ],
+          null,
+          [
+            288,
+            128,
+            388,
+            196
+          ]
+        ],
+        "sha256": "b5799940e42722f00811871f4f8b4c66011b3365a380f4c323c64443d34aed2c"
+      },
+      {
+        "file": "shell_turtle/shell_spin.png",
+        "size": [
+          512,
+          320
+        ],
+        "frames": 1,
+        "unique": 1,
+        "diff_from_first": [],
+        "sha256": "98620eb5ca3dd2fa79dd36f28ae9091f65bf5b3fb479f8aed3251206fbe1de7e"
+      }
+    ]
+  }
+]

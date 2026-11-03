@@ -1,0 +1,64 @@
+{
+  "scope": "R04 selected layout concept only;not live game QA or integration assets",
+  "one_selected_layout": true,
+  "images": [
+    {
+      "file": "images/primary.png",
+      "sha256": "d8ab8f906bfad2cecdb15fb3572bb149c04d2f23a27595fa82718a3575428a1f",
+      "bytes": 37999
+    },
+    {
+      "file": "images/primary.svg",
+      "sha256": "95ae33b66d511cb0a99c42d32bc0bea5ef80add1b17efcc790f2a3c17b6e8261",
+      "bytes": 42479
+    },
+    {
+      "file": "images/stress.png",
+      "sha256": "c1c2abac020d0f170387e2c191580e696462e3a143769f82231137d656e483b4",
+      "bytes": 27039
+    },
+    {
+      "file": "images/stress.svg",
+      "sha256": "cb853aaa04ce2378a7704d696694ce1351f78bc53e5b29a2090e7e856217c87e",
+      "bytes": 40527
+    },
+    {
+      "file": "images/primary_blink.png",
+      "sha256": "5870ebc3ab660cf5d0b75267b37a06ec18c288ef5aaeac201fe39e3d8f8c0d9a",
+      "bytes": 37990
+    },
+    {
+      "file": "images/primary_blink.svg",
+      "sha256": "a0ef0fb3d39d2feb83969fe601dfcd885a7335796255352ac4915f14539ca9b8",
+      "bytes": 42463
+    }
+  ],
+  "shared_palette_with_front_role": true,
+  "all_bubble_level_numbers_retained": true,
+  "default_hud_non_whitespace_characters": 41,
+  "source_input_original_pngs_no_cropped_boards": true,
+  "blink_actual_hp_decrease": [
+    110.166666666666,
+    110.0
+  ],
+  "blink_diff_bbox_including24px_caption": [
+    566,
+    463,
+    572,
+    469
+  ],
+  "gif": {
+    "encoded_frames": 3,
+    "unique_images": 2,
+    "loop_ms": 840,
+    "note": "repeat of one ordinary-damage feedback concept, not repeated simulated damage"
+  },
+  "clean_source_reproduction": "passed:3SVG+3PNG+GIF byte-for-byte",
+  "not_run": [
+    "dynamic game integration",
+    "device/safe-area/touch",
+    "performance",
+    "human listening"
+  ],
+  "old_ui_and_game_files_modified": false
+}

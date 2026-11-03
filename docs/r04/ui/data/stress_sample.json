@@ -1,0 +1,64 @@
+{
+	"baseline_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+	"crow": {
+		"action": "idle",
+		"cd_one": 3.99999999999985,
+		"cd_two": 1.99999999999991,
+		"class": "Node2D",
+		"health": 120.0,
+		"max_health": 120.0,
+		"position": [
+			331.711364746094,
+			224.936431884766
+		],
+		"title": "CROW",
+		"visible": true
+	},
+	"dummies": [
+		{
+			"health": 60.0,
+			"max_health": 60.0,
+			"position": [
+				67.6759338378906,
+				384.058532714844
+			]
+		},
+		{
+			"health": 60.0,
+			"max_health": 60.0,
+			"position": [
+				152.673522949219,
+				46.6550483703613
+			]
+		}
+	],
+	"feather": true,
+	"roster": [
+		8,
+		9
+	],
+	"seed": 3108,
+	"shell_position": [
+		487.014892578125,
+		107.170852661133
+	],
+	"shell_spin_left": 0.48333333333334,
+	"simulation_time": 7.00833333333347,
+	"source": "actual headless fixed-step simulation stress sample, not live gameplay screenshot",
+	"turtle": {
+		"action": "hidden",
+		"cd_one": 4.99999999999991,
+		"cd_two": 5.99166666666657,
+		"class": "Node2D",
+		"health": 120.0,
+		"max_health": 120.0,
+		"position": [
+			487.014892578125,
+			107.170852661133
+		],
+		"title": "SHELL TURTLE",
+		"visible": false
+	},
+	"turtle_action_left": 0.425000000000007,
+	"turtle_hidden": true
+}

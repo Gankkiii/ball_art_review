@@ -1,13 +1,13 @@
-# balls 八角色候选评审 · R03
+# balls · 按反馈更新 R04
 
-固定入口：https://gankkiii.github.io/ball_art_review/
+固定评审地址：https://gankkiii.github.io/ball_art_review/
 
-本轮只做方案评审：八角色候选造型、物件/动作示意、可试听音色方向与横屏极简界面比较。A像素风、横屏及兔宽刀继续沿用，新的候选方案等待用户逐项选择。
+当前首页只展示本轮选定方向与反馈修订：单角色大图、可播放概念动作、全新事件声音。新声音仍待用户试听确认，不将造型选择等同音频成品批准。
 
-- 网页：`docs/index.html`、`docs/r03/`
-- 独立角色事实：`docs/r03/facts/`
-- 制作源：`sources/r03/`（不是给点点的接入包）
-- 来源与边界：`docs/r03/PUBLIC_SCOPE.md`
-- 实际检查：`docs/r03/qa/REPORT.md`
+- 网页：`docs/index.html`、`docs/r04/`
+- 本轮反馈：`docs/r04/DECISIONS.md`
+- 独立角色设定：`docs/r04/characters/*/SETTING.md`
+- 可用制作源：`sources/r04/`
+- 检查记录：`docs/r04/qa/REPORT.md`
 
-本轮不修改游戏或养成规则，不制作接入压缩包。旧docs资源仅保留用于来源与历史追溯，不出现在本轮导航或当前数据中；当前首页仅展示R03，不删除既有文件或提交历史。
+本轮只更新评审网页，不修改游戏或受保护团队配置，不制作接入包。旧文件与历史保留，但旧R03试听不出现在当前页面或当前数据中，不代表仍被选用。

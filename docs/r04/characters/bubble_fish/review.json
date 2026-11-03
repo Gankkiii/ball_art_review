@@ -1,0 +1,40 @@
+{
+  "id": "bubble_fish",
+  "name": "泡泡鱼",
+  "cycle": "R04",
+  "image": "selected_display.png",
+  "source_image": "selected.png",
+  "animation": "motion.gif",
+  "media": [
+    {
+      "id": "grades",
+      "title": "等级色深",
+      "image": "grades.png",
+      "animation": "grades.gif"
+    },
+    {
+      "id": "hurt",
+      "title": "眨眼",
+      "animation": "hurt.gif"
+    }
+  ],
+  "confirmed": [
+    "A流线叉尾",
+    "单层加粗边",
+    "等级浅→深且数字保留",
+    "八个分离小泡",
+    "受击眨眼"
+  ],
+  "awaiting": [
+    "本轮全新声音待试听；旧R03音色全部作废。"
+  ],
+  "setting_path": "SETTING.md",
+  "status": "已确认视觉方向的概念复核；网页ONLY，非游戏录像/完整接入动画/接入包",
+  "details": {
+    "canvas": "96×96透明原图；展示图由原图nearest放大",
+    "timing": "GIF仅演示已选表现，播放速度不是技能CD或战斗时序",
+    "audio": "不复制、复用或链接R03试听文件；声音由本轮音效岗重做",
+    "game": "没有修改任何游戏代码/玩法/物理/团队配置",
+    "grade_color": "以exp(-0.19*log2(level))在浅青(158,205,214)与深蓝(10,44,61)间渐近映射；1/2/4/8/16/32/64/128每档加深，非在16或128截断。更高等级继续保留数字，最终仅显示色域/8bit量化限制可见色差，不限制level。"
+  }
+}

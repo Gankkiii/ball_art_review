@@ -1,0 +1,75 @@
+{
+  "cycle": "R04",
+  "source": "User explicit choices in this conversation; latest feedback overrides earlier sound picks",
+  "scope": "Review website only; no game/physics/config changes; no integration package",
+  "global": {
+    "style": "A pixel style",
+    "ordinary_hurt": "blink only when actual HP decreases; absorption/protection remain separate",
+    "ui": "A left/right sidebars,light arena,minimal text",
+    "audio": "All R03 audition audio rejected; entirely redesign eight-character sounds; fresh sounds remain awaiting audition approval",
+    "web": "Media-first: key images,animation,audio; minimal labels; details collapsed"
+  },
+  "characters": {
+    "puffer": {
+      "name": "充气球",
+      "shape": "A round mint soft-spiked gas body",
+      "absorb": "B segmented shield, no extra shield layers",
+      "hurt": "blink",
+      "audio": "new elastic rubber/air release, old light-latex sample not reused"
+    },
+    "chicken": {
+      "name": "炸弹母鸡",
+      "shape": "B long neck fan tail",
+      "egg": "A spotted eggs",
+      "run_motion": "B legs/tail sway",
+      "run_audio": "A rapid panicked cluck-cluck-cluck, not rooster crow",
+      "hurt": "blink",
+      "audio": "new chicken/eggshell material identity, all old auditions rejected"
+    },
+    "bubble_fish": {
+      "name": "泡泡鱼",
+      "shape": "A streamlined fork tail",
+      "bubble": "A single thickened rim, color becomes deeper as level rises; numbers retained, no level cap",
+      "eight_way": "A eight separate small bubbles",
+      "audio": "B cartoon pff/pop bubble, entirely new",
+      "hurt": "blink"
+    },
+    "electric_sheep": {
+      "name": "触电羊",
+      "shape": "A round cloud fleece with TWO clearly visible short legs",
+      "wool": "A round wool clump, no face or legs; shares one charge pool",
+      "audio": "new sheep/soft fleece/static-electric character identity",
+      "hurt": "blink"
+    },
+    "magnet_crab": {
+      "name": "磁铁蟹",
+      "shape": "A sideways horseshoe magnet claws",
+      "feedback": "B short trails on actually moving nails; resting nails harmless",
+      "audio": "new magnet attraction/metal nails, no generic bird tone",
+      "hurt": "blink"
+    },
+    "cactus": {
+      "name": "仙人掌",
+      "shape": "A tall column flower crown with TWO eyes",
+      "thorns": "A brief glow on thorn landing",
+      "regrow": "flower briefly lights on actual reposition only, no healing",
+      "audio": "new dry thorn/plant texture, no healing cue",
+      "hurt": "blink"
+    },
+    "shell_turtle": {
+      "name": "脱壳乌龟",
+      "shape": "A long neck short feet plus separate rounded shell",
+      "spin": "A shell markings rotate, no extra glow or auto dash",
+      "audio": "new hollow shell/turtle body sound identity",
+      "hurt": "blink on vulnerable body only; shell/hidden not hurt"
+    },
+    "crow": {
+      "name": "乌鸦",
+      "shape": "B wide body cloak wings",
+      "dummy": "B patchwork scarecrow",
+      "swap": "B short feather glints at both ends, no projectile trail",
+      "audio": "new crow call/wing/straw identity",
+      "hurt": "blink"
+    }
+  }
+}

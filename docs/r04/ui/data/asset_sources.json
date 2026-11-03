@@ -1,0 +1,105 @@
+[
+  {
+    "file": "assets/arena_floor.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "9d74c35390008ca72504ac70efaaab41f5bb4a7dea72116ae638b66c3ca05083"
+  },
+  {
+    "file": "assets/arena_wood_frame.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "78c38e792d4f93bb8a698a55caf490982cfbb072be6045ad76b826d7dbb29023"
+  },
+  {
+    "file": "assets/screen_surround.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "c26b48661469acca1d40381c5e5387b3f487a5f843987858ed525b068d35703b"
+  },
+  {
+    "file": "assets/icon_pause.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "dbacb0bbd98c9934fc0a90feea124230e74762e42ab74b83fd6b67efeae15fb3"
+  },
+  {
+    "file": "assets/icon_speed.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "150145dca3d9cdaaf1769dd9a0ae7be1c21f93bf3006f8f082b0c3032e1dce3d"
+  },
+  {
+    "file": "assets/icon_replay.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "f800720391c8609bac633833331ce9d18d33500e8ca9529d8d59e198aeb43bfd"
+  },
+  {
+    "file": "assets/icon_new_seed.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "8f4c17ca963e3fc170aa0230a9fa1eb04f8081f61035e6c51b08707d4d64ed5f"
+  },
+  {
+    "file": "assets/icon_sound_on.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "a08a0249856965de329500da8f4ebe476f3807b20849454542cb7f951c1688a2"
+  },
+  {
+    "file": "assets/icon_roster.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "72d399ec4db214d1ac8688509e7f8ddcf935164b633cc82e4ad9d4e61e534603"
+  },
+  {
+    "file": "assets/icon_info.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "a2645f92cec19aebae52ab855c6d073f83f49029bb5dda9b8e7abd4b18ef9608"
+  },
+  {
+    "file": "assets/icon_heart.png",
+    "source": "Previously delivered R02 A-style backdrop or control glyph; reused without old UI modification",
+    "sha256": "78bf22369e00964047e2f4eaecbe51fc6286e4adf8c1d95bbb7ed74a2b922614"
+  },
+  {
+    "file": "assets/bubble_fish_selected.png",
+    "source": "R04 selected visual review image bubble_fish/selected.png",
+    "not_recovered_old_R02": true,
+    "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+  },
+  {
+    "file": "assets/bubble_fish_blink.png",
+    "source": "R04 selected visual review image bubble_fish/blink.png",
+    "not_recovered_old_R02": true,
+    "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+  },
+  {
+    "file": "assets/electric_sheep_selected.png",
+    "source": "R04 selected visual review image electric_sheep/selected.png",
+    "not_recovered_old_R02": true,
+    "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+  },
+  {
+    "file": "assets/object_wool.png",
+    "source": "R04 selected visual review image electric_sheep/wool.png",
+    "not_recovered_old_R02": true,
+    "sha256": "de80cb95123a00e708ba72e54ec50933609cd3bb0d40fa724432a4073c33b358"
+  },
+  {
+    "file": "assets/shell_turtle_selected.png",
+    "source": "R04 selected visual review image shell_turtle/selected_sprite.png",
+    "not_recovered_old_R02": true,
+    "sha256": "cd1304b21975c8d5f795d1d94a983f7a81797b58f02c9874720e8ebc6d520186"
+  },
+  {
+    "file": "assets/object_shell.png",
+    "source": "R04 selected visual review image shell_turtle/object_shell.png",
+    "not_recovered_old_R02": true,
+    "sha256": "55464c8c5cd374b396e547efbeea9d495e6585d4948eb27ddb3052e2279171f0"
+  },
+  {
+    "file": "assets/crow_selected.png",
+    "source": "R04 selected visual review image crow/selected_sprite.png",
+    "not_recovered_old_R02": true,
+    "sha256": "21a2ef82ab7e38dc01d19c4328482e07cc9d9d2356969e6d9e0fff1c0173fa16"
+  },
+  {
+    "file": "assets/object_dummy.png",
+    "source": "R04 selected visual review image crow/object_dummy.png",
+    "not_recovered_old_R02": true,
+    "sha256": "ddd9f452c3496f0c953686943ff23cd85b78ccd3fcd94a44634e41bde338e3de"
+  }
+]

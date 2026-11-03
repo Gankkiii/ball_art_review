@@ -1,0 +1,393 @@
+{
+  "cycle": "R04",
+  "version": "R04-selected-ui-1",
+  "selected": true,
+  "layout": "A_left_right_light_minimal",
+  "label": "随机对战",
+  "status": "已选布局的概念复核；非游戏实录/接入包",
+  "image": "images/primary.png",
+  "animation": "images/primary_feedback.gif",
+  "primary": {
+    "image": "images/primary.png",
+    "svg": "images/primary.svg",
+    "default_text": {
+      "strings": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "3",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "110",
+        "11",
+        "3.8",
+        "7.8",
+        "120",
+        "17.5",
+        "1.8",
+        "4.8",
+        "1×",
+        "2×",
+        "3×"
+      ],
+      "non_whitespace_characters": 41,
+      "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+      "elements": [
+        {
+          "value": "1",
+          "position": [
+            386.92790222168003,
+            408.034790039062
+          ],
+          "element_id": "hud_0"
+        },
+        {
+          "value": "1",
+          "position": [
+            492.533020019531,
+            214.863296508789
+          ],
+          "element_id": "hud_1"
+        },
+        {
+          "value": "1",
+          "position": [
+            858.943664550781,
+            292.232971191406
+          ],
+          "element_id": "hud_2"
+        },
+        {
+          "value": "1",
+          "position": [
+            487.533233642578,
+            356.006164550781
+          ],
+          "element_id": "hud_3"
+        },
+        {
+          "value": "3",
+          "position": [
+            513.829559326172,
+            596.04931640625
+          ],
+          "element_id": "hud_4"
+        },
+        {
+          "value": "1",
+          "position": [
+            679.743133544922,
+            626.907592773438
+          ],
+          "element_id": "hud_5"
+        },
+        {
+          "value": "1",
+          "position": [
+            620.10400390625,
+            632.93408203125
+          ],
+          "element_id": "hud_6"
+        },
+        {
+          "value": "1",
+          "position": [
+            399.05184936523403,
+            643.40185546875
+          ],
+          "element_id": "hud_7"
+        },
+        {
+          "value": "1",
+          "position": [
+            348.437713623047,
+            607.72216796875
+          ],
+          "element_id": "hud_8"
+        },
+        {
+          "value": "1",
+          "position": [
+            393.865753173828,
+            510.154327392578
+          ],
+          "element_id": "hud_9"
+        },
+        {
+          "value": "1",
+          "position": [
+            537.697235107422,
+            539.9024353027339
+          ],
+          "element_id": "hud_10"
+        },
+        {
+          "value": "110",
+          "position": [
+            52,
+            212
+          ],
+          "element_id": "hud_11"
+        },
+        {
+          "value": "11",
+          "position": [
+            64,
+            303
+          ],
+          "element_id": "hud_12"
+        },
+        {
+          "value": "3.8",
+          "position": [
+            50.0,
+            495
+          ],
+          "element_id": "hud_13"
+        },
+        {
+          "value": "7.8",
+          "position": [
+            126.0,
+            495
+          ],
+          "element_id": "hud_14"
+        },
+        {
+          "value": "120",
+          "position": [
+            972,
+            212
+          ],
+          "element_id": "hud_15"
+        },
+        {
+          "value": "17.5",
+          "position": [
+            984,
+            303
+          ],
+          "element_id": "hud_16"
+        },
+        {
+          "value": "1.8",
+          "position": [
+            970.0,
+            495
+          ],
+          "element_id": "hud_17"
+        },
+        {
+          "value": "4.8",
+          "position": [
+            1046.0,
+            495
+          ],
+          "element_id": "hud_18"
+        },
+        {
+          "value": "1×",
+          "position": [
+            568.0,
+            748
+          ],
+          "element_id": "hud_19"
+        },
+        {
+          "value": "2×",
+          "position": [
+            624.0,
+            748
+          ],
+          "element_id": "hud_20"
+        },
+        {
+          "value": "3×",
+          "position": [
+            680.0,
+            748
+          ],
+          "element_id": "hud_21"
+        }
+      ]
+    }
+  },
+  "stress": {
+    "image": "images/stress.png",
+    "svg": "images/stress.svg",
+    "default_text": {
+      "strings": [
+        "120",
+        "0.5",
+        "5.0",
+        "6.0",
+        "120",
+        "2",
+        "4.0",
+        "2.0",
+        "1×",
+        "2×",
+        "3×"
+      ],
+      "non_whitespace_characters": 28,
+      "count_method": "Exact rendered HUD strings in source, including numeric object levels; outside concept caption excluded; not OCR.",
+      "elements": [
+        {
+          "value": "120",
+          "position": [
+            52,
+            212
+          ],
+          "element_id": "hud_0"
+        },
+        {
+          "value": "0.5",
+          "position": [
+            64,
+            303
+          ],
+          "element_id": "hud_1"
+        },
+        {
+          "value": "5.0",
+          "position": [
+            50.0,
+            495
+          ],
+          "element_id": "hud_2"
+        },
+        {
+          "value": "6.0",
+          "position": [
+            126.0,
+            495
+          ],
+          "element_id": "hud_3"
+        },
+        {
+          "value": "120",
+          "position": [
+            972,
+            212
+          ],
+          "element_id": "hud_4"
+        },
+        {
+          "value": "2",
+          "position": [
+            984,
+            303
+          ],
+          "element_id": "hud_5"
+        },
+        {
+          "value": "4.0",
+          "position": [
+            970.0,
+            495
+          ],
+          "element_id": "hud_6"
+        },
+        {
+          "value": "2.0",
+          "position": [
+            1046.0,
+            495
+          ],
+          "element_id": "hud_7"
+        },
+        {
+          "value": "1×",
+          "position": [
+            568.0,
+            748
+          ],
+          "element_id": "hud_8"
+        },
+        {
+          "value": "2×",
+          "position": [
+            624.0,
+            748
+          ],
+          "element_id": "hud_9"
+        },
+        {
+          "value": "3×",
+          "position": [
+            680.0,
+            748
+          ],
+          "element_id": "hud_10"
+        }
+      ]
+    }
+  },
+  "media": [
+    {
+      "id": "primary",
+      "title": "随机对战",
+      "image": "images/primary.png",
+      "animation": "images/primary_feedback.gif"
+    },
+    {
+      "id": "stress",
+      "title": "多物件",
+      "image": "images/stress.png"
+    }
+  ],
+  "details": {
+    "game_canvas": [
+      1100,
+      780
+    ],
+    "review_image": [
+      1100,
+      804
+    ],
+    "outside_caption_height": 24,
+    "caption_only": "概念预览",
+    "world_rect": [
+      200,
+      90,
+      700,
+      600
+    ],
+    "physics_changed": false,
+    "old_ui_changed": false,
+    "primary_state": "同一真实样例：seed3103指定合法鱼羊组合，5.258秒；鱼110HP、羊120HP、11泡泡/最大3级、17.5电/一羊毛/实际放电。非声称此seed随机抽到这对。",
+    "stress_state": "seed3108指定龟鸦组合，7.008秒；龟hidden仅显独立A壳、2个B拼布草人、乌鸦有储羽。无壳外发光圈。",
+    "shape": "仅R04已选：鱼A，羊A且两短腿，龟A，乌鸦B。前4取selected.png，后4取selected_sprite.png，不裁展示图。",
+    "palette": "与R04角色岗完全同一映射：t=exp(-0.19*log2(level))；浅RGB(158,205,214)至深RGB(10,44,61)逐通道round渐近；不在特定level截断。",
+    "numbers": "保留所有泡泡等级数字，包括1；每泡泡1级浅色2px单圈、融合等级4px单圈；随level加深、没有等级封顶。故主图41个非空白字符，其中大量是必要等级数字，无长说明。",
+    "hurt": "动图只演示本次实际HP下降110.1667→110之后的普通受击眨眼。循环是这一次反馈的概念回放，不增加伤害、不表示角色自行持续眨眼。吸收/隐藏/保护不套普通伤害眨眼。",
+    "position_assumption": "96图用(48,56)作概念挂位假设，不是8角色已验Godot接入锚点。",
+    "retained_controls": "暂停、1×2×3×、重看、新随机、声音、全部角色、信息。每人2技能仅自动状态CD，非点击施法。main有10角色随机池；当前showcase固定鸭兔，未被本轮改动。",
+    "limits": "无游戏改动/接入包；动态事件绑定、真机、性能与听感未由此静态图证明。声音另行重做待试听；本UI动图无声，不引用旧R03音频。"
+  },
+  "source_state": [
+    "data/shared_sample.json",
+    "data/stress_sample.json",
+    "data/capture.log"
+  ],
+  "sources": [
+    "source/build_selected_ui.py",
+    "source/capture_state.gd",
+    "data/asset_sources.json"
+  ],
+  "baseline_commit": "3134f2b8dd0fe250b01e1e7d3c829da5c54aaa47",
+  "default_hud_characters": 41,
+  "awaiting": [
+    "本轮动图表现复核；新音频在各角色页试听确认"
+  ],
+  "not_reopened": [
+    "左右布局",
+    "浅色场地",
+    "鸭兔既有设计"
+  ]
+}

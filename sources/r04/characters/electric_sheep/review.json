@@ -1,0 +1,37 @@
+{
+  "id": "electric_sheep",
+  "name": "触电羊",
+  "cycle": "R04",
+  "image": "selected_display.png",
+  "source_image": "selected.png",
+  "animation": "motion.gif",
+  "media": [
+    {
+      "id": "wool",
+      "title": "圆团羊毛",
+      "image": "wool_display.png"
+    },
+    {
+      "id": "hurt",
+      "title": "眨眼",
+      "animation": "hurt.gif"
+    }
+  ],
+  "confirmed": [
+    "A圆团云绒",
+    "两条可见小短腿",
+    "A圆团无脸腿羊毛",
+    "受击眨眼"
+  ],
+  "awaiting": [
+    "本轮全新声音待试听；旧R03音色全部作废。"
+  ],
+  "setting_path": "SETTING.md",
+  "status": "已确认视觉方向的概念复核；网页ONLY，非游戏录像/完整接入动画/接入包",
+  "details": {
+    "canvas": "96×96透明原图；展示图由原图nearest放大",
+    "timing": "GIF仅演示已选表现，播放速度不是技能CD或战斗时序",
+    "audio": "不复制、复用或链接R03试听文件；声音由本轮音效岗重做",
+    "game": "没有修改任何游戏代码/玩法/物理/团队配置"
+  }
+}

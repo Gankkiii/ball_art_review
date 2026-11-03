@@ -1,0 +1,76 @@
+{
+  "id": "cactus",
+  "name": "仙人掌",
+  "image": "selected.png",
+  "animation": "thorns_landing.gif",
+  "media": [
+    {
+      "id": "thorns_landing",
+      "title": "落刺短亮",
+      "image": "thorns_landing.png",
+      "animation": "thorns_landing.gif",
+      "logical_frames": 12,
+      "encoded_frames": 5,
+      "loop_duration_ms": 1440,
+      "note": "无声概念编排，非游戏时序"
+    },
+    {
+      "id": "regrow_flower",
+      "title": "换位花亮",
+      "image": "regrow_flower.png",
+      "animation": "regrow_flower.gif",
+      "logical_frames": 12,
+      "encoded_frames": 3,
+      "loop_duration_ms": 1440,
+      "note": "无声概念编排，非游戏时序"
+    },
+    {
+      "id": "hurt_blink",
+      "title": "受击眨眼",
+      "image": "hurt_blink.png",
+      "animation": "hurt_blink.gif",
+      "logical_frames": 8,
+      "encoded_frames": 5,
+      "loop_duration_ms": 720,
+      "note": "无声概念编排，非游戏时序"
+    }
+  ],
+  "confirmed": [
+    "高柱花冠、两个眼睛",
+    "落刺短亮；真实换位仅花冠亮",
+    "不回血；普通受击眨眼"
+  ],
+  "awaiting": [
+    "新版音效试听确认",
+    "本轮动图表现复核"
+  ],
+  "setting_path": "SETTING.md",
+  "status": "已确认方向 · 新音效待试听",
+  "details": {
+    "choices": {
+      "name": "仙人掌",
+      "shape": "A tall column flower crown with TWO eyes",
+      "thorns": "A brief glow on thorn landing",
+      "regrow": "flower briefly lights on actual reposition only, no healing",
+      "audio": "new dry thorn/plant texture, no healing cue",
+      "hurt": "blink"
+    },
+    "hurt": "仅实际HP减少，保持位置不变；保护/免伤分支不播放普通受击",
+    "native_source_size": [
+      96,
+      96
+    ],
+    "body_origin": [
+      48,
+      56
+    ],
+    "foot_anchor": [
+      48,
+      80
+    ],
+    "source": "../../sources/build_selected_last_four.py",
+    "geometry_source": "../../sources/pixel_base.py",
+    "validation": "PNG/SVG/GIF本轮导出自检；未游戏接入、真机或人工听审",
+    "source_image_inputs": false
+  }
+}

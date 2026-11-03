@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96" viewBox="0 0 48 48" shape-rendering="crispEdges">
+<rect x="11" y="39" width="27" height="2" fill="#243746" opacity="0.117647"/>
+<rect x="19" y="34" width="2" height="6" fill="#243746"/>
+<rect x="17" y="39" width="6" height="1" fill="#EFC65B"/>
+<rect x="30" y="34" width="2" height="6" fill="#243746"/>
+<rect x="28" y="39" width="6" height="1" fill="#EFC65B"/>
+<polygon points="15,14 34,14 37,17 37,34 34,37 15,37 12,34 12,17" fill="#243746"/>
+<polygon points="17,16 32,16 35,19 35,32 32,35 17,35 14,32 14,19" fill="#B89ACF"/>
+<polygon points="13,21 5,27 9,36 21,31 24,22" fill="#5B587D"/>
+<polygon points="30,22 41,27 39,35 27,31" fill="#5B587D"/>
+<polyline points="9,29 12,30" fill="none" stroke="#B1D2D3" stroke-width="1"/>
+<polyline points="12,32 15,33" fill="none" stroke="#B1D2D3" stroke-width="1"/>
+<polyline points="34,30 37,31" fill="none" stroke="#B1D2D3" stroke-width="1"/>
+<polygon points="31,15 42,18 41,22 32,25" fill="#243746"/>
+<polygon points="33,17 39,19 33,22" fill="#EFC65B"/>
+<rect x="19" y="10" width="4" height="6" fill="#243746"/>
+<rect x="24" y="11" width="4" height="5" fill="#243746"/>
+<rect x="28" y="16" width="3" height="4" fill="#243746"/>
+<rect x="28" y="16" width="1" height="1" fill="#FFF3DA"/>
+<rect x="20" y="32" width="9" height="2" fill="#D8C8DC"/>
+</svg>

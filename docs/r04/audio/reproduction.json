@@ -1,0 +1,9 @@
+{
+  "source": "source/build_character_audio.py",
+  "source_sha256": "1519463aba91e141c860c68c63073f33443eb83affe7872022e67df811e22e3d",
+  "regenerated_files": 41,
+  "byte_identical": 41,
+  "different": 0,
+  "output_scope": "new external temporary directory",
+  "old_audio_inputs": false
+}

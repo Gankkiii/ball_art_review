@@ -1,0 +1,695 @@
+{
+  "scope": "R04 webpage selected concepts; NOT integration manifest",
+  "files": [
+    {
+      "path": "characters/puffer/SETTING.md",
+      "bytes": 2803,
+      "sha256": "e448dec763f6e0f709d77a852023defb5f20a5175bf2a592a55e0f25f5392876"
+    },
+    {
+      "path": "characters/puffer/absorb.gif",
+      "bytes": 17977,
+      "sha256": "e61c04b8aa1a2bfbd8d40fcebc07108ac484680ac5e366c82cd22a64652f7551"
+    },
+    {
+      "path": "characters/puffer/blink.png",
+      "bytes": 489,
+      "sha256": "451f09015d568539b450e6608a448350df1f5cda9a9a8b2709af0aaa5931fb5b"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_0.png",
+      "bytes": 615,
+      "sha256": "625942896f83569fb3747cd85ec60472ecae8dadefc2f2ce3f26c041f7ba507c"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_0.svg",
+      "bytes": 7929,
+      "sha256": "3d1850e3ada4010194ade967c9a3c76e622c5e44b6849fd2614a66276d30da1d"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_1.png",
+      "bytes": 697,
+      "sha256": "580ac8d571a88e4c28668ef4a2136481eaac10beeb88d81e92a68e6d694012d1"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_1.svg",
+      "bytes": 9983,
+      "sha256": "f8ba3d6acbf40cdd665896bb68176a8e5cf4e01c1f0e7d283ada34dd66af6cdc"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_2.png",
+      "bytes": 733,
+      "sha256": "d4d92987f27c362459633fb725e0e8da6a7fa38eab39638278b141131d05afd0"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_2.svg",
+      "bytes": 10541,
+      "sha256": "f9b7edd9fe7ffc53ca72cbfd90eb77ec75d8b98e70005f17b0a9b3282ac6f7d3"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_3.png",
+      "bytes": 885,
+      "sha256": "108d3cd5635ea857dcab78535255660e85c2327ab8faef2017607ba3bfab49a4"
+    },
+    {
+      "path": "characters/puffer/frames/absorb_3.svg",
+      "bytes": 14297,
+      "sha256": "651d13371692417018449a9b4f52dc9ccb80dec8d62f30f3001827fd821cd333"
+    },
+    {
+      "path": "characters/puffer/frames/blink_0.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "characters/puffer/frames/blink_0.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "characters/puffer/frames/blink_1.png",
+      "bytes": 489,
+      "sha256": "451f09015d568539b450e6608a448350df1f5cda9a9a8b2709af0aaa5931fb5b"
+    },
+    {
+      "path": "characters/puffer/frames/blink_1.svg",
+      "bytes": 5548,
+      "sha256": "70cff777422ab69d2d3714fa493870f205d610a4710febc8c6ad53749cce89a2"
+    },
+    {
+      "path": "characters/puffer/frames/blink_2.png",
+      "bytes": 489,
+      "sha256": "451f09015d568539b450e6608a448350df1f5cda9a9a8b2709af0aaa5931fb5b"
+    },
+    {
+      "path": "characters/puffer/frames/blink_2.svg",
+      "bytes": 5548,
+      "sha256": "70cff777422ab69d2d3714fa493870f205d610a4710febc8c6ad53749cce89a2"
+    },
+    {
+      "path": "characters/puffer/frames/blink_3.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "characters/puffer/frames/blink_3.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "characters/puffer/frames/gas_0.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "characters/puffer/frames/gas_0.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "characters/puffer/frames/gas_1.png",
+      "bytes": 584,
+      "sha256": "430ee5b8c66521606b6a6b0db8b8d0d3cc1e1df7abf07377532a8efd028ce8a2"
+    },
+    {
+      "path": "characters/puffer/frames/gas_1.svg",
+      "bytes": 8170,
+      "sha256": "0a7a55243a639a8d7879cf31fae1b3ce2e64ffa397e844f71715c5a9ee0b16a3"
+    },
+    {
+      "path": "characters/puffer/frames/gas_2.png",
+      "bytes": 603,
+      "sha256": "df657a26b8e54adac93b58477959e89172f6784c61e84461b4442a37ccb1eeac"
+    },
+    {
+      "path": "characters/puffer/frames/gas_2.svg",
+      "bytes": 8614,
+      "sha256": "99c9e1e604cc4199597043534aeda250c74ceb366f0421e9135c65f7e3c97f86"
+    },
+    {
+      "path": "characters/puffer/frames/gas_3.png",
+      "bytes": 755,
+      "sha256": "8d2a266860bd48b8fe6e06ded3fa1c93480b433b4f3848d4bda655583f9484e5"
+    },
+    {
+      "path": "characters/puffer/frames/gas_3.svg",
+      "bytes": 11416,
+      "sha256": "dd7966cd848b5cd4152ff08038ac27ff8cbae2bfa4c7912834e738c8b7d54a75"
+    },
+    {
+      "path": "characters/puffer/hurt.gif",
+      "bytes": 8048,
+      "sha256": "fadf4f8baac9c76daa53dcbae1412d56c47d8ec44204d908b8ac9eed3d9d8ef4"
+    },
+    {
+      "path": "characters/puffer/motion.gif",
+      "bytes": 13213,
+      "sha256": "6f8bb8b9459f89b3c911667a45e0a600b891a48e6cd5302dd2c4944056a524f6"
+    },
+    {
+      "path": "characters/puffer/review.json",
+      "bytes": 1018,
+      "sha256": "ef4172f10c2c2f0026864ec81dd023c6f6256f5eb834274d2fe3870e46f402ba"
+    },
+    {
+      "path": "characters/puffer/selected.png",
+      "bytes": 511,
+      "sha256": "1b3d621f0ff6230a53556eb13eb311b9b50fbe2d254ebb2df7e6aa2cbe26f23d"
+    },
+    {
+      "path": "characters/puffer/selected.svg",
+      "bytes": 6116,
+      "sha256": "5e0f84fee9401c48aae9148db153d8ef3676757a103c2d8fdce4be6e7e4adace"
+    },
+    {
+      "path": "characters/puffer/selected_display.png",
+      "bytes": 3437,
+      "sha256": "eeac806be43e4f2902d4cfc79a7c91cbd71aad0cdd990166c8d67dde1395757c"
+    },
+    {
+      "path": "characters/chicken/SETTING.md",
+      "bytes": 2561,
+      "sha256": "9db4e8544dca30e8635122cf8cc830ab2f72e81ad59129ba9789c57056b45bd5"
+    },
+    {
+      "path": "characters/chicken/blink.png",
+      "bytes": 749,
+      "sha256": "3205c725bda7fa1349f811e7ef0542f7270b9eacb45f1cbc75945716df96e87e"
+    },
+    {
+      "path": "characters/chicken/eggs_display.png",
+      "bytes": 3388,
+      "sha256": "16196c290794fab4600c9187ac77940009a8a1df6d9d73b30e5ed74b9c12fe0b"
+    },
+    {
+      "path": "characters/chicken/frames/blink_0.png",
+      "bytes": 755,
+      "sha256": "88b5566cb8a47442ffb2b04412b7797f185e96ee123f36b36ae756d17d457a53"
+    },
+    {
+      "path": "characters/chicken/frames/blink_0.svg",
+      "bytes": 9690,
+      "sha256": "ab1f25c8dfb6bc5d51b2a479130296b968f038ecc19b445a964a5b7924ef4212"
+    },
+    {
+      "path": "characters/chicken/frames/blink_1.png",
+      "bytes": 749,
+      "sha256": "3205c725bda7fa1349f811e7ef0542f7270b9eacb45f1cbc75945716df96e87e"
+    },
+    {
+      "path": "characters/chicken/frames/blink_1.svg",
+      "bytes": 9464,
+      "sha256": "a38154f8d606f78a63a67262c1e3f7528bc829fcb42befe721cc884bde37231f"
+    },
+    {
+      "path": "characters/chicken/frames/blink_2.png",
+      "bytes": 749,
+      "sha256": "3205c725bda7fa1349f811e7ef0542f7270b9eacb45f1cbc75945716df96e87e"
+    },
+    {
+      "path": "characters/chicken/frames/blink_2.svg",
+      "bytes": 9464,
+      "sha256": "a38154f8d606f78a63a67262c1e3f7528bc829fcb42befe721cc884bde37231f"
+    },
+    {
+      "path": "characters/chicken/frames/blink_3.png",
+      "bytes": 755,
+      "sha256": "88b5566cb8a47442ffb2b04412b7797f185e96ee123f36b36ae756d17d457a53"
+    },
+    {
+      "path": "characters/chicken/frames/blink_3.svg",
+      "bytes": 9690,
+      "sha256": "ab1f25c8dfb6bc5d51b2a479130296b968f038ecc19b445a964a5b7924ef4212"
+    },
+    {
+      "path": "characters/chicken/frames/lay_0.png",
+      "bytes": 706,
+      "sha256": "ac384d3beeea60d8ef648f82ced791c6b7be72805ac16e5cc1963220e2f4b649"
+    },
+    {
+      "path": "characters/chicken/frames/lay_0.svg",
+      "bytes": 9128,
+      "sha256": "d28e5f9100c9c2cb16896b5cb6fb1ee72e787c2b2c1c5449f52ab64171aa07cf"
+    },
+    {
+      "path": "characters/chicken/frames/lay_1.png",
+      "bytes": 706,
+      "sha256": "ac384d3beeea60d8ef648f82ced791c6b7be72805ac16e5cc1963220e2f4b649"
+    },
+    {
+      "path": "characters/chicken/frames/lay_1.svg",
+      "bytes": 9128,
+      "sha256": "d28e5f9100c9c2cb16896b5cb6fb1ee72e787c2b2c1c5449f52ab64171aa07cf"
+    },
+    {
+      "path": "characters/chicken/frames/lay_2.png",
+      "bytes": 764,
+      "sha256": "220c3fe59303084ae609c0e04b06e69d522b184c8e3d31fb661e527f2a969d95"
+    },
+    {
+      "path": "characters/chicken/frames/lay_2.svg",
+      "bytes": 11315,
+      "sha256": "5558d03841df01cca8edcb352a2043ab03356e1f84a124618c5fa67b943efc3f"
+    },
+    {
+      "path": "characters/chicken/frames/lay_3.png",
+      "bytes": 839,
+      "sha256": "7c39fb9f8d9b186db361deaddacd3a2d1fa6a0e3845e51d4de98d48535582a0f"
+    },
+    {
+      "path": "characters/chicken/frames/lay_3.svg",
+      "bytes": 12560,
+      "sha256": "4cdcc655f153e6e9e0f88de905f875f0bdd6902cceac84c7fd5c71a05a0c8e62"
+    },
+    {
+      "path": "characters/chicken/frames/run_0.png",
+      "bytes": 779,
+      "sha256": "a211ab643ab22c92b7b2730aadf947f28d291a7436de63a1968981f83f366e0c"
+    },
+    {
+      "path": "characters/chicken/frames/run_0.svg",
+      "bytes": 9971,
+      "sha256": "702bc0cd21ea579209237b0331c371f57f0f55ba385b76866d6df96baa35f3c4"
+    },
+    {
+      "path": "characters/chicken/frames/run_1.png",
+      "bytes": 768,
+      "sha256": "a29a15eabb7b31888a5862f84f89d76cb2a1ae30c2025e3e9e08f8553b09b7c5"
+    },
+    {
+      "path": "characters/chicken/frames/run_1.svg",
+      "bytes": 9690,
+      "sha256": "32e8f8ad30f488e977bda6176dd35ee5c4be3617ee116f5320aa8a06252d558b"
+    },
+    {
+      "path": "characters/chicken/frames/run_2.png",
+      "bytes": 748,
+      "sha256": "fb583f43bb69c17ee0e1775ac0fc108784f60b3cf985fd1a44248cfaad24c500"
+    },
+    {
+      "path": "characters/chicken/frames/run_2.svg",
+      "bytes": 9578,
+      "sha256": "ac020aac6b6a7a5e50b89227f1cc85736ec48b83fb8c63230739d61e4556aa45"
+    },
+    {
+      "path": "characters/chicken/frames/run_3.png",
+      "bytes": 769,
+      "sha256": "298aac8fcc608d478fffa5166a29131c088c9804d8fc6a18fc79ccaa6c48b7b0"
+    },
+    {
+      "path": "characters/chicken/frames/run_3.svg",
+      "bytes": 9690,
+      "sha256": "e65d1df1d5bc70d0dbb2987f38e6fb4bf32b6c4a5e0f061db821270e07d5abef"
+    },
+    {
+      "path": "characters/chicken/hurt.gif",
+      "bytes": 10911,
+      "sha256": "ca0b5b4bd72c6e77cc42bb53dd7bf097dee123d094bcf81b7d3b9e5327ab2347"
+    },
+    {
+      "path": "characters/chicken/lay.gif",
+      "bytes": 12438,
+      "sha256": "79db34f9d4f52126dfef0e4fabd4d2499ddcc50589855e266b58db857b8ca0f9"
+    },
+    {
+      "path": "characters/chicken/motion.gif",
+      "bytes": 19419,
+      "sha256": "6690eba23ea9715e295ff0f9437a91d344fa0859d8656dfe78cae78265bcf023"
+    },
+    {
+      "path": "characters/chicken/review.json",
+      "bytes": 1122,
+      "sha256": "551136a347324ff62930131844f4a4f122c26acb553669bfa242d4d58b24bd0e"
+    },
+    {
+      "path": "characters/chicken/selected.png",
+      "bytes": 755,
+      "sha256": "88b5566cb8a47442ffb2b04412b7797f185e96ee123f36b36ae756d17d457a53"
+    },
+    {
+      "path": "characters/chicken/selected.svg",
+      "bytes": 9690,
+      "sha256": "ab1f25c8dfb6bc5d51b2a479130296b968f038ecc19b445a964a5b7924ef4212"
+    },
+    {
+      "path": "characters/chicken/selected_display.png",
+      "bytes": 4325,
+      "sha256": "79423cf3c4c1d7814ce4f2e61201614cd147d7fb4251ccb7e2f3f94085e1f058"
+    },
+    {
+      "path": "characters/chicken/spotted_eggs.png",
+      "bytes": 436,
+      "sha256": "ab39069aa3394129a6752e227860d767bc6bcd3715b3aa83b4d82fb0527e41da"
+    },
+    {
+      "path": "characters/chicken/spotted_eggs.svg",
+      "bytes": 6264,
+      "sha256": "21fdcd97a415294874d257eb366bc89ebb000e430a6cc05f840fe405ba2e2143"
+    },
+    {
+      "path": "characters/bubble_fish/SETTING.md",
+      "bytes": 2894,
+      "sha256": "b38e4af18cdaac63bdee8c3eeac09d246db45b316c30d740eb81f93fa13087af"
+    },
+    {
+      "path": "characters/bubble_fish/blink.png",
+      "bytes": 627,
+      "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_0.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_0.svg",
+      "bytes": 7174,
+      "sha256": "f119e9f543216e8b5283c1bf18475f8ebc3706a60efae11662e842db57b80062"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_1.png",
+      "bytes": 627,
+      "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_1.svg",
+      "bytes": 6890,
+      "sha256": "1c3619e238a959fc75d0629ea0f10c9ef765f6f2d4106439b3bb3c0a2e4bde10"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_2.png",
+      "bytes": 627,
+      "sha256": "c64205fa0e56ac7d4806037f9a1abef62e1c3c3956811c86df2c6586cb7501c4"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_2.svg",
+      "bytes": 6890,
+      "sha256": "1c3619e238a959fc75d0629ea0f10c9ef765f6f2d4106439b3bb3c0a2e4bde10"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_3.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "characters/bubble_fish/frames/blink_3.svg",
+      "bytes": 7174,
+      "sha256": "f119e9f543216e8b5283c1bf18475f8ebc3706a60efae11662e842db57b80062"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_0.png",
+      "bytes": 938,
+      "sha256": "893ef8aa425a8a7f71d32bfd4a362dc00b91f674ad91ae679ceb3afbca561378"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_0.svg",
+      "bytes": 10854,
+      "sha256": "a2c7a63a84642293d0f316d91c6110bc2365049a916c16d42674c91886154a3c"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_1.png",
+      "bytes": 930,
+      "sha256": "0a1d14b4a78b99d4a20232774150afc2212b6ac980e140368adcc4739c4a9022"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_1.svg",
+      "bytes": 10628,
+      "sha256": "94ea67276fa435c2c3d9f9954c1346d581d70a00d625d26b5882699c2f91b747"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_2.png",
+      "bytes": 938,
+      "sha256": "893ef8aa425a8a7f71d32bfd4a362dc00b91f674ad91ae679ceb3afbca561378"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_2.svg",
+      "bytes": 10854,
+      "sha256": "a2c7a63a84642293d0f316d91c6110bc2365049a916c16d42674c91886154a3c"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_3.png",
+      "bytes": 930,
+      "sha256": "0a1d14b4a78b99d4a20232774150afc2212b6ac980e140368adcc4739c4a9022"
+    },
+    {
+      "path": "characters/bubble_fish/frames/eight_3.svg",
+      "bytes": 10628,
+      "sha256": "94ea67276fa435c2c3d9f9954c1346d581d70a00d625d26b5882699c2f91b747"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_1.png",
+      "bytes": 375,
+      "sha256": "91293a863fcb1499067c6866b0c94e698107e35abfd1e729f4d007ab677b28fe"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_1.svg",
+      "bytes": 3582,
+      "sha256": "95fd39f2e26bb51f3fb68ab92d9d5b982966290d30326d38ce3dbeece219679c"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_128.png",
+      "bytes": 484,
+      "sha256": "7ea87dc916ec7db813879917b0e2e3ee3b810ec6aad029087ead8e28dd39c328"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_128.svg",
+      "bytes": 3699,
+      "sha256": "a2afa4446bd2443383a31ecc5ef7e6d8e1eef8eab9619c1e6a314793d9cfed4f"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_16.png",
+      "bytes": 484,
+      "sha256": "c2c7c732b867759a6b73be90fab208c1ec9e368ef9fa1741cdf30b4d1a8335db"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_16.svg",
+      "bytes": 3699,
+      "sha256": "2750074f76ec930e51454b4cbfb6e9b6283125bb00b6170586907d8f07bcb72b"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_2.png",
+      "bytes": 484,
+      "sha256": "a0fae144583a74be63b384e9c0db561c4073aa831872c633bee8a8b176188247"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_2.svg",
+      "bytes": 3699,
+      "sha256": "4ae2fbbf3290fd126ef50afa1a1aacd9cb9ef46d3bb5a91e312140009d6ac401"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_32.png",
+      "bytes": 485,
+      "sha256": "319b2f676d31cfa97cd8222d37717debf4847ae9cfe98f8ad51ab3a1d69f4b3f"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_32.svg",
+      "bytes": 3699,
+      "sha256": "d56a0d42459c71a3dc813ab3c53f4556bc120b7e51cf7a74bd8090f3bd370262"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_4.png",
+      "bytes": 484,
+      "sha256": "ed331b078eaa913f393fc284aea940fa4dcb35c433701c8d7d0026ea565f5d17"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_4.svg",
+      "bytes": 3699,
+      "sha256": "0372f4661f2f16d73dd054e9c503f59865d0484afa942392dc988a96f1cabc0c"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_64.png",
+      "bytes": 485,
+      "sha256": "2a412922b7ab7c3b2769dd0d6ec8a5f45ef83e7a414b65028a251f07abeae0af"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_64.svg",
+      "bytes": 3699,
+      "sha256": "41b18704b7e547a7b0f4fe901c3418b1feef11c99dbbd38b2ea370844afa557a"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_8.png",
+      "bytes": 485,
+      "sha256": "4a61db97ec7ffd98f57b1bcf503711a7185d219b1eca4756a6137a0045bf49cb"
+    },
+    {
+      "path": "characters/bubble_fish/grades/level_8.svg",
+      "bytes": 3699,
+      "sha256": "e3d9b385ebdead581c19f8806fccdacbfa9f449952161ee2961fcc3ee4a0ed64"
+    },
+    {
+      "path": "characters/bubble_fish/grades.gif",
+      "bytes": 17860,
+      "sha256": "ace57bdbe09ab67cea0184d5c6dc54085d4a5e35dcb6023fcec42bf3b6ec0d82"
+    },
+    {
+      "path": "characters/bubble_fish/grades.png",
+      "bytes": 8282,
+      "sha256": "18ea67b100599720022372b5a2c9a6e12831f9f7924616939a46a8c87b7b0d9c"
+    },
+    {
+      "path": "characters/bubble_fish/hurt.gif",
+      "bytes": 9114,
+      "sha256": "f4c1c2752de008046a71b39af7f157c4cf72921e26515a386d25480a3993ae0d"
+    },
+    {
+      "path": "characters/bubble_fish/motion.gif",
+      "bytes": 19967,
+      "sha256": "2c296b50f793994e5f0e11e1cb826457efef7029f0c873445c8a10b5bb6bc58e"
+    },
+    {
+      "path": "characters/bubble_fish/review.json",
+      "bytes": 1383,
+      "sha256": "d7d9f3719f352717654cc923d0fd2c10811e62268a7b618e9a3d6e7af3b509ae"
+    },
+    {
+      "path": "characters/bubble_fish/selected.png",
+      "bytes": 637,
+      "sha256": "cce6d3a057426be51c262a15c40a306930fb3d9e6df46777865984f5bbcdd870"
+    },
+    {
+      "path": "characters/bubble_fish/selected.svg",
+      "bytes": 7174,
+      "sha256": "f119e9f543216e8b5283c1bf18475f8ebc3706a60efae11662e842db57b80062"
+    },
+    {
+      "path": "characters/bubble_fish/selected_display.png",
+      "bytes": 3000,
+      "sha256": "7b61c08f5e171ddea3d2cc26c973514002d19f8cec87232172742309467567cc"
+    },
+    {
+      "path": "characters/electric_sheep/SETTING.md",
+      "bytes": 2761,
+      "sha256": "fab3747a662aba286431f724ecf235dd7baca755cc3d44d9f269202f9f3b4648"
+    },
+    {
+      "path": "characters/electric_sheep/blink.png",
+      "bytes": 679,
+      "sha256": "fdb7da7f95a30a8aeca1af24826468bd2ae014069dc40cd4a6026e7ddcdfcd4d"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_0.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_0.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_1.png",
+      "bytes": 679,
+      "sha256": "fdb7da7f95a30a8aeca1af24826468bd2ae014069dc40cd4a6026e7ddcdfcd4d"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_1.svg",
+      "bytes": 9219,
+      "sha256": "d027a7dd850345a8809bfc40a1b792dd35d12fe5e63857be264163ecd52ee67a"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_2.png",
+      "bytes": 679,
+      "sha256": "fdb7da7f95a30a8aeca1af24826468bd2ae014069dc40cd4a6026e7ddcdfcd4d"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_2.svg",
+      "bytes": 9219,
+      "sha256": "d027a7dd850345a8809bfc40a1b792dd35d12fe5e63857be264163ecd52ee67a"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_3.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/blink_3.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_0.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_0.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_1.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_1.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_2.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_2.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_3.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/frames/legs_3.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/hurt.gif",
+      "bytes": 10314,
+      "sha256": "bfb02848860581e091813836b000bd28c7a9bb63f21ab339798760566076f679"
+    },
+    {
+      "path": "characters/electric_sheep/motion.gif",
+      "bytes": 17994,
+      "sha256": "17e24502164b54f8ed8c750040e5e8268ae368aaf25d64e783e8a462c05cdbd9"
+    },
+    {
+      "path": "characters/electric_sheep/review.json",
+      "bytes": 1061,
+      "sha256": "f72561a2a97662f76e0c9948394855a8ca7bf9eb9ff36df8816ff9f4c43a999b"
+    },
+    {
+      "path": "characters/electric_sheep/selected.png",
+      "bytes": 690,
+      "sha256": "c8586c95074497a46e3ff85fcf125b12a390844c1aecc6b6a08a3de8b7a23676"
+    },
+    {
+      "path": "characters/electric_sheep/selected.svg",
+      "bytes": 9616,
+      "sha256": "985e9f36b20f5b609394647d97e86ca6c5ad13b951d2bfda03a695d0f84ec3fe"
+    },
+    {
+      "path": "characters/electric_sheep/selected_display.png",
+      "bytes": 3295,
+      "sha256": "4dae1d4842dd8e24a6a991d5a36cd1ed10ad345c31a091da81f0028c3fb99f37"
+    },
+    {
+      "path": "characters/electric_sheep/wool.png",
+      "bytes": 469,
+      "sha256": "de80cb95123a00e708ba72e54ec50933609cd3bb0d40fa724432a4073c33b358"
+    },
+    {
+      "path": "characters/electric_sheep/wool.svg",
+      "bytes": 5938,
+      "sha256": "a27d35f0a8ebef5e9dcab16de46ca45d473cfbbb1f4c25b3a254147f73a7006e"
+    },
+    {
+      "path": "characters/electric_sheep/wool_display.png",
+      "bytes": 3348,
+      "sha256": "b6dea6120494790550272b9dca1b431411704f7ff88cd92351ba51da4b459f32"
+    }
+  ]
+}

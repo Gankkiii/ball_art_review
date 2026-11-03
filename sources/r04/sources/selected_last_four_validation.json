@@ -1,0 +1,143 @@
+{
+  "cycle": "R04",
+  "scope": "four selected review characters",
+  "characters": [
+    {
+      "id": "magnet_crab",
+      "png": 6,
+      "svg": 3,
+      "gif": [
+        {
+          "path": "hurt_blink.gif",
+          "encoded_frames": 5,
+          "duration_ms": 720
+        },
+        {
+          "path": "moving_nails.gif",
+          "encoded_frames": 10,
+          "duration_ms": 1440
+        }
+      ],
+      "blink_eye_diff_bbox": [
+        30,
+        30,
+        66,
+        40
+      ]
+    },
+    {
+      "id": "cactus",
+      "png": 7,
+      "svg": 3,
+      "gif": [
+        {
+          "path": "hurt_blink.gif",
+          "encoded_frames": 5,
+          "duration_ms": 720
+        },
+        {
+          "path": "thorns_landing.gif",
+          "encoded_frames": 5,
+          "duration_ms": 1440
+        },
+        {
+          "path": "regrow_flower.gif",
+          "encoded_frames": 3,
+          "duration_ms": 1440
+        }
+      ],
+      "blink_eye_diff_bbox": [
+        42,
+        42,
+        56,
+        48
+      ]
+    },
+    {
+      "id": "shell_turtle",
+      "png": 6,
+      "svg": 2,
+      "gif": [
+        {
+          "path": "hurt_blink.gif",
+          "encoded_frames": 5,
+          "duration_ms": 720
+        },
+        {
+          "path": "shell_spin.gif",
+          "encoded_frames": 12,
+          "duration_ms": 1440
+        },
+        {
+          "path": "hide_in_shell.gif",
+          "encoded_frames": 7,
+          "duration_ms": 1440
+        }
+      ],
+      "blink_eye_diff_bbox": [
+        80,
+        32,
+        86,
+        40
+      ]
+    },
+    {
+      "id": "crow",
+      "png": 8,
+      "svg": 4,
+      "gif": [
+        {
+          "path": "hurt_blink.gif",
+          "encoded_frames": 5,
+          "duration_ms": 720
+        },
+        {
+          "path": "contact_repair.gif",
+          "encoded_frames": 5,
+          "duration_ms": 1440
+        },
+        {
+          "path": "swap_feathers.gif",
+          "encoded_frames": 4,
+          "duration_ms": 1440
+        }
+      ],
+      "blink_eye_diff_bbox": [
+        56,
+        32,
+        62,
+        40
+      ]
+    }
+  ],
+  "semantic_checks": {
+    "regrow_flower_only_diff_bbox": [
+      36,
+      12,
+      54,
+      22
+    ],
+    "double_eye_blink_diff_bbox": [
+      42,
+      42,
+      56,
+      48
+    ],
+    "shell_outer_alpha_and_position_constant": true,
+    "rest_nail_no_gold_trail": true,
+    "cactus_both_eyes_open_close": {
+      "left": {
+        "open_dark_pixels": 20,
+        "closed_dark_pixels": 8
+      },
+      "right": {
+        "open_dark_pixels": 20,
+        "closed_dark_pixels": 8
+      }
+    }
+  },
+  "issues": [],
+  "reproduction_generated_files": 54,
+  "source_sha256": "dd23eff036b56d0ca0295d6cc4f493870cd31041ef41eff6fd6baca29c6c718a",
+  "status": "PASS"
+}
