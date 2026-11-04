@@ -1,0 +1,106 @@
+{
+  "version": "R06",
+  "status": "selected_directions_interaction_demo",
+  "pages": [
+    {
+      "id": "arena",
+      "name": "竞技场",
+      "prototype": "r06/arena/prototype.html",
+      "image": "r06/arena/main.png",
+      "media": [
+        {
+          "image": "r06/arena/info.png",
+          "title": "信息展开与关闭"
+        }
+      ],
+      "review": "r06/arena/review.json"
+    },
+    {
+      "id": "storage",
+      "name": "仓库",
+      "prototype": "r06/storage/source.html",
+      "image": "r06/storage/main.png",
+      "media": [
+        {
+          "image": "r06/storage/info.png",
+          "title": "属性说明"
+        },
+        {
+          "image": "r06/storage/individual.png",
+          "title": "切换个体"
+        },
+        {
+          "image": "r06/storage/demo_child.png",
+          "title": "演示后代 · 仅内存"
+        }
+      ],
+      "review": "r06/storage/review.json"
+    },
+    {
+      "id": "hatch",
+      "name": "孵蛋",
+      "prototype": "r06/hatch/prototype.html",
+      "image": "r06/hatch/main.png",
+      "media": [
+        {
+          "image": "r06/hatch/screens/pick-mother.png",
+          "title": "选择母亲"
+        },
+        {
+          "image": "r06/hatch/screens/pick-father.png",
+          "title": "选择父亲"
+        },
+        {
+          "image": "r06/hatch/screens/detail-mother.png",
+          "title": "母亲完整详情"
+        },
+        {
+          "image": "r06/hatch/screens/detail-father.png",
+          "title": "父亲完整详情"
+        },
+        {
+          "image": "r06/hatch/screens/rules.png",
+          "title": "临时规则说明"
+        },
+        {
+          "image": "r06/hatch/screens/preview.png",
+          "title": "后代预览"
+        },
+        {
+          "image": "r06/hatch/screens/confirm.png",
+          "title": "执行确认"
+        },
+        {
+          "image": "r06/hatch/screens/success.png",
+          "title": "人工成功结果"
+        },
+        {
+          "image": "r06/hatch/screens/failure.png",
+          "title": "失败状态"
+        },
+        {
+          "image": "r06/hatch/screens/missing.png",
+          "title": "缺少亲本"
+        },
+        {
+          "image": "r06/hatch/screens/non-tie.png",
+          "title": "非并列技能自动只读"
+        }
+      ],
+      "review": "r06/hatch/review.json"
+    },
+    {
+      "id": "story",
+      "name": "主线",
+      "prototype": "r06/story/prototype.html",
+      "image": "r06/story/main.png",
+      "media": [
+        {
+          "image": "r06/story/detail.png",
+          "title": "档案详情与返回"
+        }
+      ],
+      "review": "r06/story/review.json"
+    }
+  ]
+}
