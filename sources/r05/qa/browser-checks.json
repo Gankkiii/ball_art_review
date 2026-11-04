@@ -1,0 +1,740 @@
+{
+  "result": "PASS",
+  "utc": "2026-11-04T05:23:08.619582+00:00",
+  "pages": 4,
+  "candidates": 16,
+  "schemes_browsed_and_chosen": [
+    [
+      "arena",
+      "a"
+    ],
+    [
+      "arena",
+      "b"
+    ],
+    [
+      "arena",
+      "c"
+    ],
+    [
+      "arena",
+      "d"
+    ],
+    [
+      "storage",
+      "a"
+    ],
+    [
+      "storage",
+      "b"
+    ],
+    [
+      "storage",
+      "c"
+    ],
+    [
+      "storage",
+      "d"
+    ],
+    [
+      "hatch",
+      "a"
+    ],
+    [
+      "hatch",
+      "b"
+    ],
+    [
+      "hatch",
+      "c"
+    ],
+    [
+      "hatch",
+      "d"
+    ],
+    [
+      "story",
+      "a"
+    ],
+    [
+      "story",
+      "b"
+    ],
+    [
+      "story",
+      "c"
+    ],
+    [
+      "story",
+      "d"
+    ]
+  ],
+  "media_loaded": [
+    {
+      "page": "arena",
+      "scheme": "a",
+      "url": "r05/arena/a/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "a",
+      "url": "r05/arena/a/info.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "b",
+      "url": "r05/arena/b/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "b",
+      "url": "r05/arena/b/info.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "b",
+      "url": "r05/arena/b/phone.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "c",
+      "url": "r05/arena/c/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "c",
+      "url": "r05/arena/c/info.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "d",
+      "url": "r05/arena/d/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "arena",
+      "scheme": "d",
+      "url": "r05/arena/d/info.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "a",
+      "url": "r05/storage/a/screen.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/screen.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/individual_selection.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/phone.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/phone_skills.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/phone_traits.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "b",
+      "url": "r05/storage/b/phone_detail.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "c",
+      "url": "r05/storage/c/screen.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "d",
+      "url": "r05/storage/d/screen.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "storage",
+      "scheme": "d",
+      "url": "r05/storage/d/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/parents.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/father_details.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/execute.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/result.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/empty_rules.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "a",
+      "url": "r05/hatch/a/phone.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/parents.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/father_details.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/execute.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/result.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "b",
+      "url": "r05/hatch/b/empty_rules.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/parents.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/father_details.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/execute.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/result.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "c",
+      "url": "r05/hatch/c/empty_rules.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/main.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/parents.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/father_details.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/execute.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/result.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "hatch",
+      "scheme": "d",
+      "url": "r05/hatch/d/empty_rules.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "a",
+      "url": "r05/story/a/page.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "a",
+      "url": "r05/story/a/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "b",
+      "url": "r05/story/b/page.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "b",
+      "url": "r05/story/b/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "c",
+      "url": "r05/story/c/page.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "c",
+      "url": "r05/story/c/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "c",
+      "url": "r05/story/c/phone.png",
+      "natural_size": [
+        844,
+        390
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "d",
+      "url": "r05/story/d/page.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    },
+    {
+      "page": "story",
+      "scheme": "d",
+      "url": "r05/story/d/detail.png",
+      "natural_size": [
+        1600,
+        900
+      ],
+      "display_aspect_correct": true
+    }
+  ],
+  "independent_choices_notes_reload": true,
+  "manual_template_not_overwritten": true,
+  "explicit_generate_appends": true,
+  "clipboard_write_and_read_equal": true,
+  "denied_clipboard_select_fallback": true,
+  "keyboard_tabs": true,
+  "phone_native_zoom": {
+    "cw": 344,
+    "ch": 641,
+    "sw": 1600,
+    "sh": 900,
+    "iw": 1600,
+    "ih": 900
+  },
+  "escape_returns_focus": true,
+  "viewports": [
+    {
+      "width": 360,
+      "height": 844,
+      "expanded": true,
+      "doc": 360,
+      "body": 360
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "expanded": true,
+      "doc": 390,
+      "body": 390
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "expanded": true,
+      "doc": 768,
+      "body": 768
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "expanded": true,
+      "doc": 1280,
+      "body": 1280
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "expanded": true,
+      "doc": 844,
+      "body": 844
+    }
+  ],
+  "static_targets": [
+    "http://127.0.0.1:8033/r05/FACTS.md",
+    "http://127.0.0.1:8033/r05/PUBLIC_SCOPE.md",
+    "http://127.0.0.1:8033/r05/app.js",
+    "http://127.0.0.1:8033/r05/arena/a/info.png",
+    "http://127.0.0.1:8033/r05/arena/a/main.png",
+    "http://127.0.0.1:8033/r05/arena/b/info.png",
+    "http://127.0.0.1:8033/r05/arena/b/main.png",
+    "http://127.0.0.1:8033/r05/arena/b/phone.png",
+    "http://127.0.0.1:8033/r05/arena/c/info.png",
+    "http://127.0.0.1:8033/r05/arena/c/main.png",
+    "http://127.0.0.1:8033/r05/arena/d/info.png",
+    "http://127.0.0.1:8033/r05/arena/d/main.png",
+    "http://127.0.0.1:8033/r05/hatch/a/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/a/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/a/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/a/main.png",
+    "http://127.0.0.1:8033/r05/hatch/a/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/a/phone.png",
+    "http://127.0.0.1:8033/r05/hatch/a/result.png",
+    "http://127.0.0.1:8033/r05/hatch/b/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/b/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/b/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/b/main.png",
+    "http://127.0.0.1:8033/r05/hatch/b/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/b/result.png",
+    "http://127.0.0.1:8033/r05/hatch/c/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/c/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/c/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/c/main.png",
+    "http://127.0.0.1:8033/r05/hatch/c/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/c/result.png",
+    "http://127.0.0.1:8033/r05/hatch/d/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/d/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/d/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/d/main.png",
+    "http://127.0.0.1:8033/r05/hatch/d/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/d/result.png",
+    "http://127.0.0.1:8033/r05/qa/REPORT.md",
+    "http://127.0.0.1:8033/r05/sample.json",
+    "http://127.0.0.1:8033/r05/storage/a/screen.png",
+    "http://127.0.0.1:8033/r05/storage/b/detail.png",
+    "http://127.0.0.1:8033/r05/storage/b/individual_selection.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_detail.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_skills.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_traits.png",
+    "http://127.0.0.1:8033/r05/storage/b/screen.png",
+    "http://127.0.0.1:8033/r05/storage/c/screen.png",
+    "http://127.0.0.1:8033/r05/storage/d/detail.png",
+    "http://127.0.0.1:8033/r05/storage/d/screen.png",
+    "http://127.0.0.1:8033/r05/story/a/detail.png",
+    "http://127.0.0.1:8033/r05/story/a/page.png",
+    "http://127.0.0.1:8033/r05/story/b/detail.png",
+    "http://127.0.0.1:8033/r05/story/b/page.png",
+    "http://127.0.0.1:8033/r05/story/c/detail.png",
+    "http://127.0.0.1:8033/r05/story/c/page.png",
+    "http://127.0.0.1:8033/r05/story/c/phone.png",
+    "http://127.0.0.1:8033/r05/story/d/detail.png",
+    "http://127.0.0.1:8033/r05/story/d/page.png",
+    "http://127.0.0.1:8033/r05/style.css"
+  ],
+  "javascript_errors": [],
+  "http_errors": [],
+  "mutating_requests": [],
+  "hashes": {
+    "index.html": "f863f28f31f6f09c6b371479f5cd8bda4bd28039d4b402484a41c38b05aac12e",
+    "r05/app.js": "d031797f7b051ed05cb17896859aeed7b72c879f7cae8b91786a52f2d0395dc0",
+    "r05/style.css": "a79bce6d2cfb0ba1c4b97f38ece8577e77cc51b112becd4294f3a82096c50a37",
+    "r05/review-data.json": "d39c0504966ca6012bd67855da857bae881e9b5c35f4554a896a852694f69deb"
+  },
+  "real_device": "NOT_RUN",
+  "game_binding": "NOT_RUN",
+  "public_site": "NOT_RUN"
+}

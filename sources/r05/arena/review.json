@@ -1,0 +1,300 @@
+{
+  "page": "arena",
+  "status": "candidate_not_selected",
+  "canvas": [
+    1600,
+    900
+  ],
+  "baseline": "3dd29e8",
+  "kind": "效果图，未接入；统一示例数据，非游戏实录",
+  "sample": {
+    "hp": [
+      110,
+      120
+    ],
+    "max_hp": [
+      120,
+      120
+    ],
+    "cd": [
+      [
+        3.8,
+        7.8
+      ],
+      [
+        1.8,
+        4.8
+      ]
+    ],
+    "charge": 17.5,
+    "bubble_count": 11,
+    "bubble_levels": [
+      1,
+      1,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "schemes": [
+    {
+      "page": "arena",
+      "id": "a",
+      "title": "转播席",
+      "image": "a/main.png",
+      "source": "a/main.svg",
+      "difference": "全部角色状态集中顶部横条，底部只留观战操作。",
+      "strength": "场边无状态卡，完整横向计分条便于连续扫读。",
+      "limit": "顶部信息较集中，注意力需在战斗与顶栏切换。",
+      "detail_images": [
+        {
+          "image": "a/info.png",
+          "title": "信息展开示意",
+          "source": "a/info.svg"
+        }
+      ],
+      "world_rect": [
+        450,
+        220,
+        700,
+        600
+      ],
+      "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+      "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+    },
+    {
+      "page": "arena",
+      "id": "b",
+      "title": "双边卡片",
+      "image": "b/main.png",
+      "source": "b/main.svg",
+      "difference": "左右独立角色卡，技能和资源跟随对应一方。",
+      "strength": "延续已选左右方向，归属最清楚。",
+      "limit": "两侧留白较多，双方信息需要横向扫视。",
+      "detail_images": [
+        {
+          "image": "b/info.png",
+          "title": "信息展开示意",
+          "source": "b/info.svg"
+        },
+        {
+          "image": "b/phone.png",
+          "source": "b/phone.svg",
+          "title": "横屏手机布局示意"
+        }
+      ],
+      "world_rect": [
+        450,
+        180,
+        700,
+        600
+      ],
+      "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+      "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+    },
+    {
+      "page": "arena",
+      "id": "c",
+      "title": "单侧控制塔",
+      "image": "c/main.png",
+      "source": "c/main.svg",
+      "difference": "世界靠左，双方状态与纵向操作汇入右塔。",
+      "strength": "单手右侧操作，状态可连续扫读。",
+      "limit": "右侧信息较密，战斗中心偏左。",
+      "detail_images": [
+        {
+          "image": "c/info.png",
+          "title": "信息展开示意",
+          "source": "c/info.svg"
+        }
+      ],
+      "world_rect": [
+        200,
+        180,
+        700,
+        600
+      ],
+      "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+      "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+    },
+    {
+      "page": "arena",
+      "id": "d",
+      "title": "英雄控制坞",
+      "image": "d/main.png",
+      "source": "d/main.svg",
+      "difference": "角色状态下沉为双卡，顶部仅保留页面导航。",
+      "strength": "技能资源集中在底部，画面顶部轻。",
+      "limit": "底部占用明显，需要上下关注技能与战斗。",
+      "detail_images": [
+        {
+          "image": "d/info.png",
+          "title": "信息展开示意",
+          "source": "d/info.svg"
+        }
+      ],
+      "world_rect": [
+        450,
+        110,
+        700,
+        600
+      ],
+      "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+      "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+    }
+  ],
+  "limits": [
+    "实际设备触控、密集物件遮挡、动态状态变化未验证。",
+    "所有world均700×600且比例1:1，无碰撞/规则改动。",
+    "孵蛋/仓库仅导航入口，本组不新增养成机制。"
+  ],
+  "recommendation": "优先比较B延续性和A观战层级；本轮由用户选布局。",
+  "phone_demo": {
+    "scheme": "b",
+    "viewport_css": [
+      844,
+      390
+    ],
+    "world_rect": [
+      247,
+      44,
+      350,
+      300
+    ],
+    "world_scale": 0.5,
+    "navigation_targets": [
+      [
+        6,
+        0,
+        98,
+        44
+      ],
+      [
+        108,
+        0,
+        98,
+        44
+      ],
+      [
+        210,
+        0,
+        98,
+        44
+      ],
+      [
+        312,
+        0,
+        98,
+        44
+      ]
+    ],
+    "control_targets": [
+      {
+        "id": "pause",
+        "rect": [
+          224,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "1×",
+        "rect": [
+          274,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "2×",
+        "rect": [
+          324,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "3×",
+        "rect": [
+          374,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "replay",
+        "rect": [
+          424,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "new_seed",
+        "rect": [
+          474,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "sound_on",
+        "rect": [
+          524,
+          346,
+          44,
+          44
+        ]
+      },
+      {
+        "id": "info",
+        "rect": [
+          574,
+          346,
+          44,
+          44
+        ]
+      }
+    ],
+    "auto_skill_rects": [
+      [
+        38,
+        217,
+        44,
+        44
+      ],
+      [
+        138,
+        217,
+        44,
+        44
+      ],
+      [
+        646,
+        217,
+        44,
+        44
+      ],
+      [
+        746,
+        217,
+        44,
+        44
+      ]
+    ],
+    "minimum_critical_numeric_font_px": 14,
+    "limitations": "仅本图重排示范；真实手机/安全区/手指操作NOT RUN。技能槽只读自动CD，不是点击施放。"
+  }
+}

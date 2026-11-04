@@ -1,0 +1,177 @@
+{
+  "page": "story",
+  "title": "主线",
+  "options": [
+    {
+      "page": "story",
+      "id": "a",
+      "title": "世界地图 + 章节抽屉",
+      "image": "a/page.png",
+      "source": "a/page.svg",
+      "difference": "空间总览 → 点选虚线节点 → 右抽屉 → 结构详情",
+      "strength": "地图保留全局位置，右侧预览不打断浏览",
+      "limit": "地图与命名均为占位；横屏小屏点位需控制密度",
+      "detail_images": [
+        {
+          "image": "a/detail.png",
+          "source": "a/detail.svg",
+          "title": "结构详情与返回"
+        }
+      ],
+      "status": "candidate_concept_not_game_capture",
+      "resolution": [
+        1600,
+        900
+      ],
+      "gameplay_status": "结构占位 / 玩法待定",
+      "navigation": [
+        "竞技场",
+        "主线",
+        "仓库",
+        "孵蛋"
+      ],
+      "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+      "assets": {
+        "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+        "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+      },
+      "validation": {
+        "game_integration": "NOT_RUN",
+        "mobile_device": "NOT_RUN",
+        "real_navigation": "concept_static_only"
+      }
+    },
+    {
+      "page": "story",
+      "id": "b",
+      "title": "旅程画册 + 翻页",
+      "image": "b/page.png",
+      "source": "b/page.svg",
+      "difference": "横向翻页 → 页签定位 → 展开跨页 → 返回画册",
+      "strength": "一次聚焦一个地点，图画叙事与低文字最自然",
+      "limit": "不适合一次比较大量条目；章节与内容尚未确定",
+      "detail_images": [
+        {
+          "image": "b/detail.png",
+          "source": "b/detail.svg",
+          "title": "结构详情与返回"
+        }
+      ],
+      "status": "candidate_concept_not_game_capture",
+      "resolution": [
+        1600,
+        900
+      ],
+      "gameplay_status": "结构占位 / 玩法待定",
+      "navigation": [
+        "竞技场",
+        "主线",
+        "仓库",
+        "孵蛋"
+      ],
+      "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+      "assets": {
+        "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+        "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+      },
+      "validation": {
+        "game_integration": "NOT_RUN",
+        "mobile_device": "NOT_RUN",
+        "real_navigation": "concept_static_only"
+      }
+    },
+    {
+      "page": "story",
+      "id": "c",
+      "title": "聚落空间 + 地点入口",
+      "image": "c/page.png",
+      "source": "c/page.svg",
+      "difference": "点选场景建筑 → 地点浮层 → 查看结构 → 关闭回聚落",
+      "strength": "入口嵌在场景中，最有角色生活空间感",
+      "limit": "建筑不是既定功能；需额外提示可点击区域",
+      "detail_images": [
+        {
+          "image": "c/detail.png",
+          "source": "c/detail.svg",
+          "title": "结构详情与返回"
+        },
+        {
+          "image": "c/phone.png",
+          "title": "844×390小屏重排 · 非实机",
+          "source": "c/phone.svg"
+        }
+      ],
+      "status": "candidate_concept_not_game_capture",
+      "resolution": [
+        1600,
+        900
+      ],
+      "gameplay_status": "结构占位 / 玩法待定",
+      "navigation": [
+        "竞技场",
+        "主线",
+        "仓库",
+        "孵蛋"
+      ],
+      "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+      "assets": {
+        "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+        "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+      },
+      "validation": {
+        "game_integration": "NOT_RUN",
+        "mobile_device": "NOT_RUN",
+        "real_navigation": "concept_static_only"
+      },
+      "phone_layout": {
+        "resolution": [
+          844,
+          390
+        ],
+        "not_desktop_scaled": true,
+        "minimum_text_px": 14,
+        "minimum_touch_target_px": 44,
+        "status": "static_concept_not_device_capture"
+      }
+    },
+    {
+      "page": "story",
+      "id": "d",
+      "title": "档案时间轴 + 章节舞台",
+      "image": "d/page.png",
+      "source": "d/page.svg",
+      "difference": "列表/搜索定位 → 大图预览 → 档案详情 → 返回列表",
+      "strength": "目录检索快，可容纳后续大量内容",
+      "limit": "顺序仅信息组织，不是剧情或关卡进度；更偏工具感",
+      "detail_images": [
+        {
+          "image": "d/detail.png",
+          "source": "d/detail.svg",
+          "title": "结构详情与返回"
+        }
+      ],
+      "status": "candidate_concept_not_game_capture",
+      "resolution": [
+        1600,
+        900
+      ],
+      "gameplay_status": "结构占位 / 玩法待定",
+      "navigation": [
+        "竞技场",
+        "主线",
+        "仓库",
+        "孵蛋"
+      ],
+      "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+      "assets": {
+        "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+        "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+      },
+      "validation": {
+        "game_integration": "NOT_RUN",
+        "mobile_device": "NOT_RUN",
+        "real_navigation": "concept_static_only"
+      }
+    }
+  ]
+}

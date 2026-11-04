@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "game_commit": "3dd29e881d43b0be53170696633a6c118cd7d077",
+  "png_count": 29,
+  "svg_count": 29,
+  "html_count": 29,
+  "json_count": 5,
+  "png_dimensions": {
+    "28": [
+      1600,
+      900
+    ],
+    "a/phone.png": [
+      844,
+      390
+    ]
+  },
+  "phone_min_font_px": 14,
+  "phone_primary_touch_height_px": 44,
+  "detail_image_paths": "29/29 main and details exist",
+  "reproduction": {
+    "files_compared": 92,
+    "byte_identical": true
+  },
+  "source_sha256": "f7b6c27c73d969445d6ad2b0f94ad180cfab7ada4512608620114f3d9371bb20",
+  "manual_inspection": "4 main layouts, both complete parent details, confirm, result and empty/rules visually inspected; separate 844x390 A phone and 4 distinct complete artificial success-result pages visually inspected",
+  "not_run": [
+    "Godot execution",
+    "real hatch save",
+    "device/touch QA",
+    "game regression (no game code changed)"
+  ],
+  "images": [
+    "a/main.png",
+    "a/parents.png",
+    "a/father_details.png",
+    "a/execute.png",
+    "a/result.png",
+    "a/success.png",
+    "a/empty_rules.png",
+    "a/phone.png",
+    "b/main.png",
+    "b/parents.png",
+    "b/father_details.png",
+    "b/execute.png",
+    "b/result.png",
+    "b/success.png",
+    "b/empty_rules.png",
+    "c/main.png",
+    "c/parents.png",
+    "c/father_details.png",
+    "c/execute.png",
+    "c/result.png",
+    "c/success.png",
+    "c/empty_rules.png",
+    "d/main.png",
+    "d/parents.png",
+    "d/father_details.png",
+    "d/execute.png",
+    "d/result.png",
+    "d/success.png",
+    "d/empty_rules.png"
+  ]
+}

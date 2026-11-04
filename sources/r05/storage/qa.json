@@ -1,0 +1,65 @@
+{
+  "status": "browser layout/data smoke passed; manual visual review done, game/device not run",
+  "checks": [
+    {
+      "id": "a",
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "table_bounds": {
+        "top": 454,
+        "bottom": 784
+      },
+      "data_check": "6 rows × 4 source columns present on main(A/C) or full detail(B/D); placeholders present",
+      "main_matrix_count": 1,
+      "source_sha256": "f377488c5c98b84c97c3605ba9d5ab52f71a2273c5e934573ec397001de7680b",
+      "png_sha256": "98f3681e076663d3f622363420c5703e54d9b353946f585b71c830ca99ba351c"
+    },
+    {
+      "id": "b",
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "table_bounds": {
+        "top": 312,
+        "bottom": 732
+      },
+      "data_check": "6 rows × 4 source columns present on main(A/C) or full detail(B/D); placeholders present",
+      "main_matrix_count": 0,
+      "source_sha256": "4fe5ded8fd9efa67c8d94632a63757ba6d703c28daee9feb31198f940e3ee29e",
+      "png_sha256": "ee374ea013ab7ef5a7b44dbf82fac98eea8a3e11fe71f3f6e422257b553a2b3b"
+    },
+    {
+      "id": "c",
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "table_bounds": {
+        "top": 440,
+        "bottom": 770
+      },
+      "data_check": "6 rows × 4 source columns present on main(A/C) or full detail(B/D); placeholders present",
+      "main_matrix_count": 1,
+      "source_sha256": "338b9d5cef28f3fc85fe63db503d24714c004d1085daa0ac6e97cf11da74d0a9",
+      "png_sha256": "9c05a20926bbb94ca8d1743cd04eb78c61ae57b86e36301c0f9b92b8c9cd6388"
+    },
+    {
+      "id": "d",
+      "image_dimensions": [
+        1600,
+        900
+      ],
+      "table_bounds": {
+        "top": 566,
+        "bottom": 840
+      },
+      "data_check": "6 rows × 4 source columns present on main(A/C) or full detail(B/D); placeholders present",
+      "main_matrix_count": 0,
+      "source_sha256": "92ffc06a6d2226ce8a1bb4b91a21a7614d6ac95f9cb33faf38b88179285f0ff5",
+      "png_sha256": "00cf14b0146e79e8b7c98fa2c0969e878d035f031d6b9f5c81234833f601bae6"
+    }
+  ]
+}

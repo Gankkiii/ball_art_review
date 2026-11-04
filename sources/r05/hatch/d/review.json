@@ -1,0 +1,49 @@
+{
+  "page": "hatch",
+  "id": "d",
+  "title": "母亲档案与确认票据",
+  "image": "main.png",
+  "difference": "母亲大卡为起点，父亲为附选卡，右侧继承清单和执行票据。",
+  "strength": "突出母亲决定种族与特性，确认路径清晰。",
+  "limit": "父亲属性不常驻；需要详情抽屉才可完整对照。",
+  "detail_images": [
+    {
+      "title": "亲本选择与母亲详情",
+      "image": "parents.png"
+    },
+    {
+      "title": "父亲完整详情",
+      "image": "father_details.png"
+    },
+    {
+      "title": "执行前确认",
+      "image": "execute.png"
+    },
+    {
+      "title": "成功 / 失败状态对照",
+      "image": "result.png"
+    },
+    {
+      "title": "完整结果页 · 人工例",
+      "image": "success.png"
+    },
+    {
+      "title": "缺亲本与临时规则",
+      "image": "empty_rules.png"
+    }
+  ],
+  "status": "候选概念UI · 人工样例，未接入/未实际孵化",
+  "dimensions": [
+    1600,
+    900
+  ],
+  "source": "main.svg / main.html；生成器 ../sources/build_hatch.py",
+  "sample": "../../sample.json",
+  "notes": [
+    "主图展示母亲技能+3/+3并列，玩家选择吸附泡泡；只有并列才出现二选一。",
+    "精灵恒Lv.0；+3是技能阶级，临时概率不代表精灵升级。",
+    "技能2来自母种族剩余4项，3项尚待设计；不假定抽到具体项。",
+    "种族与特性随母，先天按父母对应维度范围随机，后天0。",
+    "SVG/HTML为原始设计源码，PNG为该源码渲染的概念稿，不是游戏实录。"
+  ]
+}

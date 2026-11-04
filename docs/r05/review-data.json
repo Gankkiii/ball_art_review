@@ -1,0 +1,913 @@
+{
+  "version": "R05",
+  "status": "candidates_not_selected",
+  "pages": [
+    {
+      "id": "arena",
+      "name": "竞技场",
+      "schemes": [
+        {
+          "page": "arena",
+          "id": "a",
+          "title": "转播席",
+          "image": "r05/arena/a/main.png",
+          "source": "a/main.svg",
+          "difference": "全部角色状态集中顶部横条，底部只留观战操作。",
+          "strength": "场边无状态卡，完整横向计分条便于连续扫读。",
+          "limit": "顶部信息较集中，注意力需在战斗与顶栏切换。",
+          "detail_images": [
+            {
+              "image": "r05/arena/a/info.png",
+              "title": "信息展开示意",
+              "source": "a/info.svg",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "world_rect": [
+            450,
+            220,
+            700,
+            600
+          ],
+          "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+          "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+        },
+        {
+          "page": "arena",
+          "id": "b",
+          "title": "双边卡片",
+          "image": "r05/arena/b/main.png",
+          "source": "b/main.svg",
+          "difference": "左右独立角色卡，技能和资源跟随对应一方。",
+          "strength": "延续已选左右方向，归属最清楚。",
+          "limit": "两侧留白较多，双方信息需要横向扫视。",
+          "detail_images": [
+            {
+              "image": "r05/arena/b/info.png",
+              "title": "信息展开示意",
+              "source": "b/info.svg",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "image": "r05/arena/b/phone.png",
+              "source": "b/phone.svg",
+              "title": "横屏手机布局示意",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            }
+          ],
+          "world_rect": [
+            450,
+            180,
+            700,
+            600
+          ],
+          "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+          "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+        },
+        {
+          "page": "arena",
+          "id": "c",
+          "title": "单侧控制塔",
+          "image": "r05/arena/c/main.png",
+          "source": "c/main.svg",
+          "difference": "世界靠左，双方状态与纵向操作汇入右塔。",
+          "strength": "单手右侧操作，状态可连续扫读。",
+          "limit": "右侧信息较密，战斗中心偏左。",
+          "detail_images": [
+            {
+              "image": "r05/arena/c/info.png",
+              "title": "信息展开示意",
+              "source": "c/info.svg",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "world_rect": [
+            200,
+            180,
+            700,
+            600
+          ],
+          "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+          "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+        },
+        {
+          "page": "arena",
+          "id": "d",
+          "title": "英雄控制坞",
+          "image": "r05/arena/d/main.png",
+          "source": "d/main.svg",
+          "difference": "角色状态下沉为双卡，顶部仅保留页面导航。",
+          "strength": "技能资源集中在底部，画面顶部轻。",
+          "limit": "底部占用明显，需要上下关注技能与战斗。",
+          "detail_images": [
+            {
+              "image": "r05/arena/d/info.png",
+              "title": "信息展开示意",
+              "source": "d/info.svg",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "world_rect": [
+            450,
+            110,
+            700,
+            600
+          ],
+          "hidden_info": "ⓘ展开种子、时间、技能说明与资源含义；概念交互待接入。",
+          "interaction": "暂停/倍率/重看/新局/音量/信息保持原功能；技能仅自动CD展示。"
+        }
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "仓库",
+      "schemes": [
+        {
+          "id": "a",
+          "title": "A · 左选右详情",
+          "image": "r05/storage/a/screen.png",
+          "difference": "左侧纵向选择，右侧固定双栏详情；浏览位置不丢失。",
+          "strength": "选择、形象与全部数据同时可见，最接近已偏好操作。",
+          "limit": "左侧需要纵向滚动；主形象空间中等。",
+          "detail_images": [],
+          "status": "横屏布局候选，未接入游戏",
+          "canvas": [
+            1600,
+            900
+          ],
+          "sample": {
+            "species": "bubble_fish",
+            "sex": "female",
+            "level": 0,
+            "skills": [
+              {
+                "name": "吸附泡泡",
+                "rank": 3
+              },
+              {
+                "name": "八方泡泡",
+                "rank": 3
+              }
+            ],
+            "innate": [
+              34,
+              41,
+              48,
+              12,
+              19,
+              26
+            ],
+            "training": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "base": "待定",
+            "final": "待定"
+          },
+          "source": "source.html",
+          "notes": [
+            "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+            "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+          ]
+        },
+        {
+          "id": "b",
+          "title": "B · 大图陈列与侧抽屉",
+          "image": "r05/storage/b/screen.png",
+          "difference": "大图网格优先辨认；右抽屉只先天摘要，全部来源打开大幅详情。",
+          "strength": "适合按外形快速找角色，抽屉关闭后可扩展陈列。",
+          "limit": "详情抽屉占用网格宽度，更多精灵需要滚动。",
+          "detail_images": [
+            {
+              "image": "r05/storage/b/detail.png",
+              "title": "全部属性来源",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "image": "r05/storage/b/individual_selection.png",
+              "title": "同种个体选择",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "image": "r05/storage/b/phone.png",
+              "title": "手机横屏概览",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            },
+            {
+              "image": "r05/storage/b/phone_skills.png",
+              "title": "手机技能页签",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            },
+            {
+              "image": "r05/storage/b/phone_traits.png",
+              "title": "手机特性页签",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            },
+            {
+              "image": "r05/storage/b/phone_detail.png",
+              "title": "手机完整属性",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            }
+          ],
+          "status": "横屏布局候选，未接入游戏",
+          "canvas": [
+            1600,
+            900
+          ],
+          "sample": {
+            "species": "bubble_fish",
+            "sex": "female",
+            "level": 0,
+            "skills": [
+              {
+                "name": "吸附泡泡",
+                "rank": 3
+              },
+              {
+                "name": "八方泡泡",
+                "rank": 3
+              }
+            ],
+            "innate": [
+              34,
+              41,
+              48,
+              12,
+              19,
+              26
+            ],
+            "training": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "base": "待定",
+            "final": "待定"
+          },
+          "source": "source.html",
+          "notes": [
+            "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+            "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+          ],
+          "phone_note": "844×390横屏手机布局示意，重排非缩图；页签查看技能/特性，种类区内部滚动；浏览器viewport模拟，非真机。"
+        },
+        {
+          "id": "c",
+          "title": "C · 双页图鉴",
+          "image": "r05/storage/c/screen.png",
+          "difference": "左侧缩略索引、书页分层资料；左页形象技能，右页特性属性。",
+          "strength": "阅读顺序完整，资料与说明可分页组织。",
+          "limit": "快速跨精灵对比需要多点按；拟物分栏占空间。",
+          "detail_images": [],
+          "status": "横屏布局候选，未接入游戏",
+          "canvas": [
+            1600,
+            900
+          ],
+          "sample": {
+            "species": "bubble_fish",
+            "sex": "female",
+            "level": 0,
+            "skills": [
+              {
+                "name": "吸附泡泡",
+                "rank": 3
+              },
+              {
+                "name": "八方泡泡",
+                "rank": 3
+              }
+            ],
+            "innate": [
+              34,
+              41,
+              48,
+              12,
+              19,
+              26
+            ],
+            "training": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "base": "待定",
+            "final": "待定"
+          },
+          "source": "source.html",
+          "notes": [
+            "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+            "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+          ]
+        },
+        {
+          "id": "d",
+          "title": "D · 横向画廊与下抽屉",
+          "image": "r05/storage/d/screen.png",
+          "difference": "横向角色画廊优先看形象和技能；底部属性摘要可展开完整来源。",
+          "strength": "主角轮廓突出，单手横滑与底部触控集中。",
+          "limit": "远端精灵需连续横滑，整库概览弱于网格。",
+          "detail_images": [
+            {
+              "image": "r05/storage/d/detail.png",
+              "title": "副状态 1",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "横屏布局候选，未接入游戏",
+          "canvas": [
+            1600,
+            900
+          ],
+          "sample": {
+            "species": "bubble_fish",
+            "sex": "female",
+            "level": 0,
+            "skills": [
+              {
+                "name": "吸附泡泡",
+                "rank": 3
+              },
+              {
+                "name": "八方泡泡",
+                "rank": 3
+              }
+            ],
+            "innate": [
+              34,
+              41,
+              48,
+              12,
+              19,
+              26
+            ],
+            "training": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "base": "待定",
+            "final": "待定"
+          },
+          "source": "source.html",
+          "notes": [
+            "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+            "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hatch",
+      "name": "孵蛋",
+      "schemes": [
+        {
+          "page": "hatch",
+          "id": "a",
+          "title": "四步向导",
+          "image": "r05/hatch/a/main.png",
+          "difference": "按亲本→继承→确认→结果串行推进，摘要栏保留父母信息。",
+          "strength": "第一次操作容易理解，每步只有一个主要决定。",
+          "limit": "查看另一亲本需返回一步，信息对比速度较慢。",
+          "detail_images": [
+            {
+              "title": "亲本选择与母亲详情",
+              "image": "r05/hatch/a/parents.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "父亲完整详情",
+              "image": "r05/hatch/a/father_details.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "执行前确认",
+              "image": "r05/hatch/a/execute.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "成功 / 失败状态对照",
+              "image": "r05/hatch/a/result.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "完整结果页 · 人工例",
+              "image": "r05/hatch/a/success.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "缺亲本与临时规则",
+              "image": "r05/hatch/a/empty_rules.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "844×390横屏手机布局",
+              "image": "r05/hatch/a/phone.png",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            }
+          ],
+          "status": "候选概念UI · 人工样例，未接入/未实际孵化",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "source": "main.svg / main.html；生成器 ../sources/build_hatch.py",
+          "sample": "../../sample.json",
+          "notes": [
+            "主图展示母亲技能+3/+3并列，玩家选择吸附泡泡；只有并列才出现二选一。",
+            "精灵恒Lv.0；+3是技能阶级，临时概率不代表精灵升级。",
+            "技能2来自母种族剩余4项，3项尚待设计；不假定抽到具体项。",
+            "种族与特性随母，先天按父母对应维度范围随机，后天0。",
+            "SVG/HTML为原始设计源码，PNG为该源码渲染的概念稿，不是游戏实录。"
+          ]
+        },
+        {
+          "page": "hatch",
+          "id": "b",
+          "title": "遗传工作台",
+          "image": "r05/hatch/b/main.png",
+          "difference": "父母分列两侧，中央固定继承选择，底部直接执行。",
+          "strength": "同时比对亲本与后代，修改最快。",
+          "limit": "信息密度最高；小屏需缩放或进一步收起规则。",
+          "detail_images": [
+            {
+              "title": "亲本选择与母亲详情",
+              "image": "r05/hatch/b/parents.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "父亲完整详情",
+              "image": "r05/hatch/b/father_details.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "执行前确认",
+              "image": "r05/hatch/b/execute.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "成功 / 失败状态对照",
+              "image": "r05/hatch/b/result.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "完整结果页 · 人工例",
+              "image": "r05/hatch/b/success.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "缺亲本与临时规则",
+              "image": "r05/hatch/b/empty_rules.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "候选概念UI · 人工样例，未接入/未实际孵化",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "source": "main.svg / main.html；生成器 ../sources/build_hatch.py",
+          "sample": "../../sample.json",
+          "notes": [
+            "主图展示母亲技能+3/+3并列，玩家选择吸附泡泡；只有并列才出现二选一。",
+            "精灵恒Lv.0；+3是技能阶级，临时概率不代表精灵升级。",
+            "技能2来自母种族剩余4项，3项尚待设计；不假定抽到具体项。",
+            "种族与特性随母，先天按父母对应维度范围随机，后天0。",
+            "SVG/HTML为原始设计源码，PNG为该源码渲染的概念稿，不是游戏实录。"
+          ]
+        },
+        {
+          "page": "hatch",
+          "id": "c",
+          "title": "亲本连图",
+          "image": "r05/hatch/c/main.png",
+          "difference": "父母通过静态关联线汇向中央蛋，继承选择位于下方。",
+          "strength": "种族与先天来源关系直观，中心视觉最强。",
+          "limit": "下方规则空间较少，需要详情页承接完整范围。",
+          "detail_images": [
+            {
+              "title": "亲本选择与母亲详情",
+              "image": "r05/hatch/c/parents.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "父亲完整详情",
+              "image": "r05/hatch/c/father_details.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "执行前确认",
+              "image": "r05/hatch/c/execute.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "成功 / 失败状态对照",
+              "image": "r05/hatch/c/result.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "完整结果页 · 人工例",
+              "image": "r05/hatch/c/success.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "缺亲本与临时规则",
+              "image": "r05/hatch/c/empty_rules.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "候选概念UI · 人工样例，未接入/未实际孵化",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "source": "main.svg / main.html；生成器 ../sources/build_hatch.py",
+          "sample": "../../sample.json",
+          "notes": [
+            "主图展示母亲技能+3/+3并列，玩家选择吸附泡泡；只有并列才出现二选一。",
+            "精灵恒Lv.0；+3是技能阶级，临时概率不代表精灵升级。",
+            "技能2来自母种族剩余4项，3项尚待设计；不假定抽到具体项。",
+            "种族与特性随母，先天按父母对应维度范围随机，后天0。",
+            "SVG/HTML为原始设计源码，PNG为该源码渲染的概念稿，不是游戏实录。"
+          ]
+        },
+        {
+          "page": "hatch",
+          "id": "d",
+          "title": "母亲档案与确认票据",
+          "image": "r05/hatch/d/main.png",
+          "difference": "母亲大卡为起点，父亲为附选卡，右侧继承清单和执行票据。",
+          "strength": "突出母亲决定种族与特性，确认路径清晰。",
+          "limit": "父亲属性不常驻；需要详情抽屉才可完整对照。",
+          "detail_images": [
+            {
+              "title": "亲本选择与母亲详情",
+              "image": "r05/hatch/d/parents.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "父亲完整详情",
+              "image": "r05/hatch/d/father_details.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "执行前确认",
+              "image": "r05/hatch/d/execute.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "成功 / 失败状态对照",
+              "image": "r05/hatch/d/result.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "完整结果页 · 人工例",
+              "image": "r05/hatch/d/success.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "title": "缺亲本与临时规则",
+              "image": "r05/hatch/d/empty_rules.png",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "候选概念UI · 人工样例，未接入/未实际孵化",
+          "dimensions": [
+            1600,
+            900
+          ],
+          "source": "main.svg / main.html；生成器 ../sources/build_hatch.py",
+          "sample": "../../sample.json",
+          "notes": [
+            "主图展示母亲技能+3/+3并列，玩家选择吸附泡泡；只有并列才出现二选一。",
+            "精灵恒Lv.0；+3是技能阶级，临时概率不代表精灵升级。",
+            "技能2来自母种族剩余4项，3项尚待设计；不假定抽到具体项。",
+            "种族与特性随母，先天按父母对应维度范围随机，后天0。",
+            "SVG/HTML为原始设计源码，PNG为该源码渲染的概念稿，不是游戏实录。"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "story",
+      "name": "主线",
+      "schemes": [
+        {
+          "page": "story",
+          "id": "a",
+          "title": "世界地图 + 章节抽屉",
+          "image": "r05/story/a/page.png",
+          "source": "a/page.svg",
+          "difference": "空间总览 → 点选虚线节点 → 右抽屉 → 结构详情",
+          "strength": "地图保留全局位置，右侧预览不打断浏览",
+          "limit": "地图与命名均为占位；横屏小屏点位需控制密度",
+          "detail_images": [
+            {
+              "image": "r05/story/a/detail.png",
+              "source": "a/detail.svg",
+              "title": "结构详情与返回",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "candidate_concept_not_game_capture",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gameplay_status": "结构占位 / 玩法待定",
+          "navigation": [
+            "竞技场",
+            "主线",
+            "仓库",
+            "孵蛋"
+          ],
+          "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+          "assets": {
+            "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+            "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+          },
+          "validation": {
+            "game_integration": "NOT_RUN",
+            "mobile_device": "NOT_RUN",
+            "real_navigation": "concept_static_only"
+          }
+        },
+        {
+          "page": "story",
+          "id": "b",
+          "title": "旅程画册 + 翻页",
+          "image": "r05/story/b/page.png",
+          "source": "b/page.svg",
+          "difference": "横向翻页 → 页签定位 → 展开跨页 → 返回画册",
+          "strength": "一次聚焦一个地点，图画叙事与低文字最自然",
+          "limit": "不适合一次比较大量条目；章节与内容尚未确定",
+          "detail_images": [
+            {
+              "image": "r05/story/b/detail.png",
+              "source": "b/detail.svg",
+              "title": "结构详情与返回",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "candidate_concept_not_game_capture",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gameplay_status": "结构占位 / 玩法待定",
+          "navigation": [
+            "竞技场",
+            "主线",
+            "仓库",
+            "孵蛋"
+          ],
+          "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+          "assets": {
+            "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+            "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+          },
+          "validation": {
+            "game_integration": "NOT_RUN",
+            "mobile_device": "NOT_RUN",
+            "real_navigation": "concept_static_only"
+          }
+        },
+        {
+          "page": "story",
+          "id": "c",
+          "title": "聚落空间 + 地点入口",
+          "image": "r05/story/c/page.png",
+          "source": "c/page.svg",
+          "difference": "点选场景建筑 → 地点浮层 → 查看结构 → 关闭回聚落",
+          "strength": "入口嵌在场景中，最有角色生活空间感",
+          "limit": "建筑不是既定功能；需额外提示可点击区域",
+          "detail_images": [
+            {
+              "image": "r05/story/c/detail.png",
+              "source": "c/detail.svg",
+              "title": "结构详情与返回",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            },
+            {
+              "image": "r05/story/c/phone.png",
+              "title": "844×390小屏重排 · 非实机",
+              "source": "c/phone.svg",
+              "dimensions": {
+                "width": 844,
+                "height": 390
+              }
+            }
+          ],
+          "status": "candidate_concept_not_game_capture",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gameplay_status": "结构占位 / 玩法待定",
+          "navigation": [
+            "竞技场",
+            "主线",
+            "仓库",
+            "孵蛋"
+          ],
+          "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+          "assets": {
+            "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+            "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+          },
+          "validation": {
+            "game_integration": "NOT_RUN",
+            "mobile_device": "NOT_RUN",
+            "real_navigation": "concept_static_only"
+          },
+          "phone_layout": {
+            "resolution": [
+              844,
+              390
+            ],
+            "not_desktop_scaled": true,
+            "minimum_text_px": 14,
+            "minimum_touch_target_px": 44,
+            "status": "static_concept_not_device_capture"
+          }
+        },
+        {
+          "page": "story",
+          "id": "d",
+          "title": "档案时间轴 + 章节舞台",
+          "image": "r05/story/d/page.png",
+          "source": "d/page.svg",
+          "difference": "列表/搜索定位 → 大图预览 → 档案详情 → 返回列表",
+          "strength": "目录检索快，可容纳后续大量内容",
+          "limit": "顺序仅信息组织，不是剧情或关卡进度；更偏工具感",
+          "detail_images": [
+            {
+              "image": "r05/story/d/detail.png",
+              "source": "d/detail.svg",
+              "title": "结构详情与返回",
+              "dimensions": {
+                "width": 1600,
+                "height": 900
+              }
+            }
+          ],
+          "status": "candidate_concept_not_game_capture",
+          "resolution": [
+            1600,
+            900
+          ],
+          "gameplay_status": "结构占位 / 玩法待定",
+          "navigation": [
+            "竞技场",
+            "主线",
+            "仓库",
+            "孵蛋"
+          ],
+          "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+          "assets": {
+            "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+            "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+          },
+          "validation": {
+            "game_integration": "NOT_RUN",
+            "mobile_device": "NOT_RUN",
+            "real_navigation": "concept_static_only"
+          }
+        }
+      ]
+    }
+  ]
+}

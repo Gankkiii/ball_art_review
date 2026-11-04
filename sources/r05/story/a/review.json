@@ -1,0 +1,39 @@
+{
+  "page": "story",
+  "id": "a",
+  "title": "世界地图 + 章节抽屉",
+  "image": "page.png",
+  "source": "page.svg",
+  "difference": "空间总览 → 点选虚线节点 → 右抽屉 → 结构详情",
+  "strength": "地图保留全局位置，右侧预览不打断浏览",
+  "limit": "地图与命名均为占位；横屏小屏点位需控制密度",
+  "detail_images": [
+    {
+      "image": "detail.png",
+      "title": "结构详情与返回",
+      "source": "detail.svg"
+    }
+  ],
+  "status": "candidate_concept_not_game_capture",
+  "resolution": [
+    1600,
+    900
+  ],
+  "gameplay_status": "结构占位 / 玩法待定",
+  "navigation": [
+    "竞技场",
+    "主线",
+    "仓库",
+    "孵蛋"
+  ],
+  "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+  "assets": {
+    "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+    "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+  },
+  "validation": {
+    "game_integration": "NOT_RUN",
+    "mobile_device": "NOT_RUN",
+    "real_navigation": "concept_static_only"
+  }
+}

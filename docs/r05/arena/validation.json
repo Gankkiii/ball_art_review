@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "source_only_reproduction_exact": true,
+  "compared_files": 20,
+  "canvas": [
+    1600,
+    900
+  ],
+  "world_sizes_equal": true,
+  "world_size": [
+    700,
+    600
+  ],
+  "formal_game_modified": false,
+  "not_run": [
+    "Godot integration",
+    "device touch",
+    "dynamic occlusion",
+    "performance"
+  ],
+  "reproduction_dir": "/tmp/r05-arena-phone14-y13xxdc8/arena",
+  "hp": [
+    110,
+    120
+  ],
+  "max_hp": [
+    120,
+    120
+  ],
+  "a_topbar_revision": "All role HP/resources/automatic cooldowns in top horizontal cards; no lateral role cards",
+  "a_world_rect": [
+    450,
+    220,
+    700,
+    600
+  ],
+  "phone": {
+    "native_size": [
+      844,
+      390
+    ],
+    "world": [
+      247,
+      44,
+      350,
+      300
+    ],
+    "interactive_targets_minimum_css": [
+      44,
+      44
+    ],
+    "min_key_numeric_font": 14,
+    "main_schemes_geometry_changed": false,
+    "real_device": "NOT RUN",
+    "min_visible_font": 14,
+    "corner_label_font": 14
+  }
+}

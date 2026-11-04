@@ -1,0 +1,39 @@
+{
+  "page": "story",
+  "id": "d",
+  "title": "档案时间轴 + 章节舞台",
+  "image": "page.png",
+  "source": "page.svg",
+  "difference": "列表/搜索定位 → 大图预览 → 档案详情 → 返回列表",
+  "strength": "目录检索快，可容纳后续大量内容",
+  "limit": "顺序仅信息组织，不是剧情或关卡进度；更偏工具感",
+  "detail_images": [
+    {
+      "image": "detail.png",
+      "title": "结构详情与返回",
+      "source": "detail.svg"
+    }
+  ],
+  "status": "candidate_concept_not_game_capture",
+  "resolution": [
+    1600,
+    900
+  ],
+  "gameplay_status": "结构占位 / 玩法待定",
+  "navigation": [
+    "竞技场",
+    "主线",
+    "仓库",
+    "孵蛋"
+  ],
+  "touch_targets": "主要按钮84px、底栏84px；按844px横屏等比约44px，真实手机触控未验证",
+  "assets": {
+    "characters": "原创R04现有idle.png；已读取泡泡鱼/触电羊独立设定，不改造型",
+    "scenery": "本轮原创SVG像素块场景，不使用外部图片"
+  },
+  "validation": {
+    "game_integration": "NOT_RUN",
+    "mobile_device": "NOT_RUN",
+    "real_navigation": "concept_static_only"
+  }
+}

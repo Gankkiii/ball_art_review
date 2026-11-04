@@ -1,0 +1,54 @@
+{
+  "id": "d",
+  "title": "D · 横向画廊与下抽屉",
+  "image": "screen.png",
+  "difference": "横向角色画廊优先看形象和技能；底部属性摘要可展开完整来源。",
+  "strength": "主角轮廓突出，单手横滑与底部触控集中。",
+  "limit": "远端精灵需连续横滑，整库概览弱于网格。",
+  "detail_images": [
+    "detail.png"
+  ],
+  "status": "横屏布局候选，未接入游戏",
+  "canvas": [
+    1600,
+    900
+  ],
+  "sample": {
+    "species": "bubble_fish",
+    "sex": "female",
+    "level": 0,
+    "skills": [
+      {
+        "name": "吸附泡泡",
+        "rank": 3
+      },
+      {
+        "name": "八方泡泡",
+        "rank": 3
+      }
+    ],
+    "innate": [
+      34,
+      41,
+      48,
+      12,
+      19,
+      26
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "base": "待定",
+    "final": "待定"
+  },
+  "source": "source.html",
+  "notes": [
+    "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+    "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+  ]
+}

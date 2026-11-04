@@ -1,0 +1,18 @@
+{
+  "resolution": [
+    844,
+    390
+  ],
+  "touch_target_count": 10,
+  "all_targets_at_least_44px": true,
+  "minimum_text_px": 14,
+  "selected_location": "A",
+  "same_map_relative_landmarks": "A left / C north-center / B right",
+  "source": "source/build_story_phone.py",
+  "no_main_images_rewritten": true,
+  "device_validation": "NOT_RUN",
+  "game_integration": "NOT_RUN",
+  "main_image_sha256_unchanged": true,
+  "png_decode": "PASS",
+  "svg_parse": "PASS"
+}

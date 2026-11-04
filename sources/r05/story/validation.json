@@ -1,0 +1,76 @@
+{
+  "files": [
+    {
+      "file": "a/page.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "c7ecb64730666077b690e43d5d3ee6e065c5eeb1b59c4608f7476378ffc879f0"
+    },
+    {
+      "file": "a/detail.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "94e0ff836dd84fe583d88617c33d6244f3c4d0b9101334c10a1839e97621d040"
+    },
+    {
+      "file": "b/page.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "dd53ec30799ccb61db7e1d7a7e8ced60768f7951807333b2f4f818aefb5e798c"
+    },
+    {
+      "file": "b/detail.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "1f0fe3f3813762bc2e7ae2f4cc9b79ef7be173472218aff5b3a825e4d4af84f9"
+    },
+    {
+      "file": "c/page.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "02aabdf14945aeb5026558525784bd483ce0f0565e952cbfb82105211afc85de"
+    },
+    {
+      "file": "c/detail.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "7c1f2a3c20a2f33336890aaec052461ec708d6fe4237e83188c2e0ca8bcbd979"
+    },
+    {
+      "file": "d/page.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "11aeebd6e54ca28b6ccd96756f5c6516b5511313d6e2c45eb90bf6c7db7157d2"
+    },
+    {
+      "file": "d/detail.png",
+      "resolution": [
+        1600,
+        900
+      ],
+      "sha256": "85edb31551a14f67799beb01b7f24156183529dcbf8eef7c0d434b8137259872"
+    }
+  ],
+  "png_verified": 8,
+  "svg_parsed": 8,
+  "metadata_paths": "PASS",
+  "visual_check": "four full-page images and one common modal inspected",
+  "game_execution": "NOT_RUN",
+  "device_touch": "NOT_RUN",
+  "touch_layout": "84px major buttons and nav at1600px; ~44px at844px landscape; device NOT_RUN",
+  "code_baseline": "3dd29e881d43b0be53170696633a6c118cd7d077"
+}

@@ -1,0 +1,124 @@
+{
+  "result": "PASS",
+  "utc": "2026-11-04T05:29:28.529317+00:00",
+  "method": "Targeted new-media verification after completed54-media full browser suite; unchanged frontend code verified by hashes. Existing interaction tests not rerun.",
+  "new_success_images": [
+    {
+      "scheme": "a",
+      "url": "r05/hatch/a/success.png",
+      "status": 200,
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "0fe2f076dddfcc9a10660db44cc09f1b2688904671573a81ef921bef2468df1c"
+    },
+    {
+      "scheme": "b",
+      "url": "r05/hatch/b/success.png",
+      "status": 200,
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "d2cd5d3a0f38abd34c92432e0076f0e00fe30007631a73ff5bae118b7359d1a5"
+    },
+    {
+      "scheme": "c",
+      "url": "r05/hatch/c/success.png",
+      "status": 200,
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "b4abdfcbcef7a9dfdf87d030b4d538469cd2c9404b457a86e6489bdc5145ad8d"
+    },
+    {
+      "scheme": "d",
+      "url": "r05/hatch/d/success.png",
+      "status": 200,
+      "size": [
+        1600,
+        900
+      ],
+      "sha256": "4ad49ce17a247a7bc183c5bccf56b8b7bfe9820cd47b33265f747462929bac38"
+    }
+  ],
+  "final_total_media": 58,
+  "current_static_targets_rechecked": [
+    "http://127.0.0.1:8033/r05/FACTS.md",
+    "http://127.0.0.1:8033/r05/PUBLIC_SCOPE.md",
+    "http://127.0.0.1:8033/r05/app.js",
+    "http://127.0.0.1:8033/r05/arena/a/info.png",
+    "http://127.0.0.1:8033/r05/arena/a/main.png",
+    "http://127.0.0.1:8033/r05/arena/b/info.png",
+    "http://127.0.0.1:8033/r05/arena/b/main.png",
+    "http://127.0.0.1:8033/r05/arena/b/phone.png",
+    "http://127.0.0.1:8033/r05/arena/c/info.png",
+    "http://127.0.0.1:8033/r05/arena/c/main.png",
+    "http://127.0.0.1:8033/r05/arena/d/info.png",
+    "http://127.0.0.1:8033/r05/arena/d/main.png",
+    "http://127.0.0.1:8033/r05/hatch/a/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/a/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/a/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/a/main.png",
+    "http://127.0.0.1:8033/r05/hatch/a/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/a/phone.png",
+    "http://127.0.0.1:8033/r05/hatch/a/result.png",
+    "http://127.0.0.1:8033/r05/hatch/a/success.png",
+    "http://127.0.0.1:8033/r05/hatch/b/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/b/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/b/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/b/main.png",
+    "http://127.0.0.1:8033/r05/hatch/b/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/b/result.png",
+    "http://127.0.0.1:8033/r05/hatch/b/success.png",
+    "http://127.0.0.1:8033/r05/hatch/c/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/c/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/c/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/c/main.png",
+    "http://127.0.0.1:8033/r05/hatch/c/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/c/result.png",
+    "http://127.0.0.1:8033/r05/hatch/c/success.png",
+    "http://127.0.0.1:8033/r05/hatch/d/empty_rules.png",
+    "http://127.0.0.1:8033/r05/hatch/d/execute.png",
+    "http://127.0.0.1:8033/r05/hatch/d/father_details.png",
+    "http://127.0.0.1:8033/r05/hatch/d/main.png",
+    "http://127.0.0.1:8033/r05/hatch/d/parents.png",
+    "http://127.0.0.1:8033/r05/hatch/d/result.png",
+    "http://127.0.0.1:8033/r05/hatch/d/success.png",
+    "http://127.0.0.1:8033/r05/qa/REPORT.md",
+    "http://127.0.0.1:8033/r05/sample.json",
+    "http://127.0.0.1:8033/r05/storage/a/screen.png",
+    "http://127.0.0.1:8033/r05/storage/b/detail.png",
+    "http://127.0.0.1:8033/r05/storage/b/individual_selection.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_detail.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_skills.png",
+    "http://127.0.0.1:8033/r05/storage/b/phone_traits.png",
+    "http://127.0.0.1:8033/r05/storage/b/screen.png",
+    "http://127.0.0.1:8033/r05/storage/c/screen.png",
+    "http://127.0.0.1:8033/r05/storage/d/detail.png",
+    "http://127.0.0.1:8033/r05/storage/d/screen.png",
+    "http://127.0.0.1:8033/r05/story/a/detail.png",
+    "http://127.0.0.1:8033/r05/story/a/page.png",
+    "http://127.0.0.1:8033/r05/story/b/detail.png",
+    "http://127.0.0.1:8033/r05/story/b/page.png",
+    "http://127.0.0.1:8033/r05/story/c/detail.png",
+    "http://127.0.0.1:8033/r05/story/c/page.png",
+    "http://127.0.0.1:8033/r05/story/c/phone.png",
+    "http://127.0.0.1:8033/r05/story/d/detail.png",
+    "http://127.0.0.1:8033/r05/story/d/page.png",
+    "http://127.0.0.1:8033/r05/style.css"
+  ],
+  "final_hashes": {
+    "index.html": "f863f28f31f6f09c6b371479f5cd8bda4bd28039d4b402484a41c38b05aac12e",
+    "r05/app.js": "d031797f7b051ed05cb17896859aeed7b72c879f7cae8b91786a52f2d0395dc0",
+    "r05/style.css": "a79bce6d2cfb0ba1c4b97f38ece8577e77cc51b112becd4294f3a82096c50a37",
+    "r05/review-data.json": "1aa40b33a4b7fc12b9066d515936521e15a467ec03249d9fb8debe8db33c62d2"
+  },
+  "javascript_errors": [],
+  "http_errors": [],
+  "real_device": "NOT_RUN",
+  "game_binding": "NOT_RUN"
+}

@@ -1,0 +1,246 @@
+{
+  "schema": "R05-ui-review-example-v1",
+  "game_commit": "3dd29e881d43b0be53170696633a6c118cd7d077",
+  "status": "人工UI示例配置，非游戏实时捕获；先天按make_samples公式，技能rank人工统一3/3；base/final未设计",
+  "stats": [
+    "生命",
+    "攻击",
+    "防御",
+    "速度",
+    "重量",
+    "大小"
+  ],
+  "stat_columns": [
+    "种族基础",
+    "先天",
+    "后天",
+    "最终"
+  ],
+  "base": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "final": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "mother": {
+    "species": 2,
+    "sex": 0,
+    "level": 0,
+    "trait": "特性一（待设计）",
+    "skills": [
+      0,
+      1
+    ],
+    "innate": [
+      34,
+      41,
+      48,
+      12,
+      19,
+      26
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ranks": [
+      3,
+      3
+    ]
+  },
+  "father": {
+    "species": 3,
+    "sex": 1,
+    "level": 0,
+    "trait": "特性一（待设计）",
+    "skills": [
+      0,
+      1
+    ],
+    "innate": [
+      23,
+      30,
+      37,
+      44,
+      8,
+      15
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "ranks": [
+      3,
+      3
+    ]
+  },
+  "actual_make_samples_ranks": {
+    "mother": [
+      3,
+      5
+    ],
+    "father": [
+      5,
+      3
+    ]
+  },
+  "selected_storage": "mother",
+  "tie_choice": 0,
+  "parent_innate_ranges": [
+    [
+      23,
+      34
+    ],
+    [
+      30,
+      41
+    ],
+    [
+      37,
+      48
+    ],
+    [
+      12,
+      44
+    ],
+    [
+      8,
+      19
+    ],
+    [
+      15,
+      26
+    ]
+  ],
+  "hatch_preview": {
+    "species": 2,
+    "level": 0,
+    "trait_from": "mother",
+    "skill_one_id": 0,
+    "skill_one_rank_probabilities": {
+      "3": 0.99,
+      "4": 0.01
+    },
+    "skill_two_candidates": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "skill_two_rank_weights": [
+      9,
+      8,
+      7,
+      6,
+      5,
+      4,
+      3,
+      2,
+      1
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "sex_weights": [
+      1,
+      1
+    ],
+    "child_not_generated": true
+  },
+  "arena": {
+    "status": "明确人工示例状态，非当前实录",
+    "seed": 3103,
+    "seed_status": "展示标签，不保证这些状态由该seed产生",
+    "simulation_time": 5.3,
+    "rate": 1,
+    "paused": false,
+    "fighters": [
+      {
+        "id": "bubble_fish",
+        "health": 110,
+        "max_health": 120,
+        "cooldowns": [
+          3.8,
+          7.8
+        ]
+      },
+      {
+        "id": "electric_sheep",
+        "health": 120,
+        "max_health": 120,
+        "cooldowns": [
+          1.8,
+          4.8
+        ],
+        "charge": 17.5
+      }
+    ],
+    "world_rect": [
+      200,
+      90,
+      700,
+      600
+    ],
+    "viewport": [
+      1100,
+      780
+    ]
+  },
+  "hatch_result_example": {
+    "status": "人工UI结果示例，仅用于查看结果页面排版；不是实际孵化/保存记录，不保证随机结果",
+    "number": 21,
+    "species": 2,
+    "sex": 0,
+    "level": 0,
+    "trait": "特性一（待设计）",
+    "skills": [
+      0,
+      1
+    ],
+    "ranks": [
+      3,
+      2
+    ],
+    "innate": [
+      23,
+      30,
+      37,
+      12,
+      8,
+      15
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "base": null,
+    "final": null
+  }
+}

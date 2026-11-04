@@ -1,0 +1,78 @@
+{
+  "id": "b",
+  "title": "B · 大图陈列与侧抽屉",
+  "image": "screen.png",
+  "difference": "大图网格优先辨认；右抽屉只先天摘要，全部来源打开大幅详情。",
+  "strength": "适合按外形快速找角色，抽屉关闭后可扩展陈列。",
+  "limit": "详情抽屉占用网格宽度，更多精灵需要滚动。",
+  "detail_images": [
+    {
+      "image": "detail.png",
+      "title": "全部属性来源"
+    },
+    {
+      "image": "individual_selection.png",
+      "title": "同种个体选择"
+    },
+    {
+      "image": "phone.png",
+      "title": "手机横屏概览"
+    },
+    {
+      "image": "phone_skills.png",
+      "title": "手机技能页签"
+    },
+    {
+      "image": "phone_traits.png",
+      "title": "手机特性页签"
+    },
+    {
+      "image": "phone_detail.png",
+      "title": "手机完整属性"
+    }
+  ],
+  "status": "横屏布局候选，未接入游戏",
+  "canvas": [
+    1600,
+    900
+  ],
+  "sample": {
+    "species": "bubble_fish",
+    "sex": "female",
+    "level": 0,
+    "skills": [
+      {
+        "name": "吸附泡泡",
+        "rank": 3
+      },
+      {
+        "name": "八方泡泡",
+        "rank": 3
+      }
+    ],
+    "innate": [
+      34,
+      41,
+      48,
+      12,
+      19,
+      26
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "base": "待定",
+    "final": "待定"
+  },
+  "source": "source.html",
+  "notes": [
+    "搜索/筛选/抽屉/翻页仅候选交互；不是当前游戏已实现API",
+    "20个固定示例（10种类×两性）与本机实际孵出个体同仓库；图中为示例种类陈列，未捏造后代"
+  ],
+  "phone_note": "844×390横屏手机布局示意，重排非缩图；页签查看技能/特性，种类区内部滚动；浏览器viewport模拟，非真机。"
+}

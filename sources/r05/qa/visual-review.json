@@ -1,0 +1,52 @@
+{
+  "result": "PASS_WITH_RECORDED_LIMITS",
+  "method": "Read current code and setting documents; visually inspected all 16 main compositions and representative detailed states; checked corrections with source and final images. Differences assessed by information structure and navigation, not only file hashes.",
+  "page_differences": {
+    "arena": [
+      "A top horizontal status broadcast cards",
+      "B left/right character cards",
+      "C world left, shared right status/control tower",
+      "D bottom dual character docks with top controls"
+    ],
+    "storage": [
+      "A individual list with in-place details",
+      "B species grid plus individual selector and attribute drawer",
+      "C two-page field guide with individual index",
+      "D horizontal individual gallery with bottom attribute drawer"
+    ],
+    "hatch": [
+      "A sequential four-step wizard",
+      "B parallel parent/offspring workbench",
+      "C parent relationship graph around offspring preview",
+      "D mother dossier with inheritance checklist and confirmation ticket"
+    ],
+    "story": [
+      "A map with side drawer",
+      "B two-page book and page tabs",
+      "C settlement spatial navigation",
+      "D archive list and scene preview"
+    ]
+  },
+  "coverage": {
+    "storage": "20 fixed example individuals plus local hatchlings distinguished; gender and individual selection retained; six attributes by four data columns, current/other traits and selected/remaining skills covered in main/detail states. No deployment or training actions added.",
+    "hatch": "Mother and father readable full details; missing-parent state without hatch action; offspring Lv0 separate from skill rank; only tied mother maximum allows identity choice; inclusive parent-highest rank range and conditional 1% breakthrough; second identity excludes first, rank weights9..1; local save success/failure distinction; pre-hatch preview has no fabricated random output; four added result pages use an explicitly labelled artificial child example, not a real hatch or save.",
+    "story": "Layout/navigation suggestions remain placeholders, no approved chapters, rewards, energy, progress or gameplay rules.",
+    "arena": "Read-only automatic skills; existing controls retained; fixed sample HP110/120 and120/120, CD3.8/7.8 and1.8/4.8, sheep charge17.5; world700x600 at equal aspect; sample not captured gameplay."
+  },
+  "corrected_during_review": [
+    "Fish max HP corrected from110 to120 with matching bars",
+    "Storage260 visual concatenation replaced by readable detail table",
+    "Storage10-species-only implication corrected to20+ individuals and same-species gender selection",
+    "Hatch readable temporary-rules/missing-parent state and full father detail added",
+    "Native1:1 scrolling image zoom added",
+    "Arena phone example label increased12px to14px"
+  ],
+  "uncertain_gameplay_not_decided_by_UI": "Puffer old setting shared contact cooldown versus current code per-target cooldown remains awaiting user confirmation; no rule edit made.",
+  "limits": [
+    "Only selected phone demonstrators reflowed at844x390, not all16 desktop compositions",
+    "Static candidate interactions are proposals, not current game APIs",
+    "No real-device touch or safe-area validation",
+    "No R05 game integration"
+  ],
+  "added_success_pages": "Four complete, structurally corresponding result screens independently viewed; all child fields present and six innates within inclusive parent ranges. See success-field-checks.json."
+}

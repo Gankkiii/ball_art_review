@@ -1,0 +1,152 @@
+{
+  "result": "PASS",
+  "pages": {
+    "arena": {
+      "svg": [
+        844,
+        390
+      ],
+      "min_explicit_text_font_px": 14.0,
+      "rectangles_at_least44x44": 37,
+      "scope": "Rect count includes decorative rectangles, not a count of interactive buttons; declared button regions also visually checked. Static SVG concept.",
+      "declared_nav_and_control_rects_exact_svg_match": 12
+    },
+    "hatch": {
+      "svg": [
+        844,
+        390
+      ],
+      "min_explicit_text_font_px": 14.0,
+      "rectangles_at_least44x44": 14,
+      "scope": "Rect count includes decorative rectangles, not a count of interactive buttons; declared button regions also visually checked. Static SVG concept.",
+      "source_nav_choice_and_control_rects_exact_svg_match": 10
+    },
+    "story": {
+      "svg": [
+        844,
+        390
+      ],
+      "min_explicit_text_font_px": 14.0,
+      "rectangles_at_least44x44": 18,
+      "scope": "Rect count includes decorative rectangles, not a count of interactive buttons; declared button regions also visually checked. Static SVG concept.",
+      "declared_control_rects_exact_svg_match": 10
+    },
+    "storage": {
+      "viewport": [
+        844,
+        390
+      ],
+      "min_visible_text_font_px": 14,
+      "visible_html_buttons": [
+        {
+          "text": "竞技场",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "text": "主线",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "text": "仓库",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "text": "孵蛋",
+          "width": 78,
+          "height": 44
+        },
+        {
+          "text": "种类 ▾",
+          "width": 60.171875,
+          "height": 44
+        },
+        {
+          "text": "充气球\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 116
+        },
+        {
+          "text": "炸弹母鸡\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 116
+        },
+        {
+          "text": "泡泡鱼\n♀♂ · 2示例",
+          "width": 95.34375,
+          "height": 116
+        },
+        {
+          "text": "触电羊\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 114
+        },
+        {
+          "text": "磁铁蟹\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 114
+        },
+        {
+          "text": "倒霉鸭\n♀♂ · 2示例",
+          "width": 95.34375,
+          "height": 114
+        },
+        {
+          "text": "锻造兔\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 114
+        },
+        {
+          "text": "仙人掌\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 114
+        },
+        {
+          "text": "脱壳乌龟\n♀♂ · 2示例",
+          "width": 95.34375,
+          "height": 114
+        },
+        {
+          "text": "乌鸦\n♀♂ · 2示例",
+          "width": 95.328125,
+          "height": 114
+        },
+        {
+          "text": "♀",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "♂",
+          "width": 44,
+          "height": 44
+        },
+        {
+          "text": "属性",
+          "width": 153.328125,
+          "height": 44
+        },
+        {
+          "text": "技能 2 / 5",
+          "width": 153.34375,
+          "height": 44
+        },
+        {
+          "text": "特性 1 / 3",
+          "width": 153.328125,
+          "height": 44
+        },
+        {
+          "text": "全部属性来源 ↗",
+          "width": 150,
+          "height": 44
+        }
+      ],
+      "no_horizontal_overflow": true,
+      "scope": "Independent local HTML concept-prototype check; not game or real device"
+    }
+  },
+  "real_device": "NOT_RUN"
+}

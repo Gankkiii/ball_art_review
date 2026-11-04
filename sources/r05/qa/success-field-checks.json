@@ -1,0 +1,62 @@
+{
+  "result": "PASS",
+  "mock_child": {
+    "status": "人工UI结果示例，仅用于查看结果页面排版；不是实际孵化/保存记录，不保证随机结果",
+    "number": 21,
+    "species": 2,
+    "sex": 0,
+    "level": 0,
+    "trait": "特性一（待设计）",
+    "skills": [
+      0,
+      1
+    ],
+    "ranks": [
+      3,
+      2
+    ],
+    "innate": [
+      23,
+      30,
+      37,
+      12,
+      8,
+      15
+    ],
+    "training": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "base": null,
+    "final": null
+  },
+  "inclusive_parent_ranges_valid": true,
+  "is_real_hatch_or_save": false,
+  "all_four_visually_inspected": true,
+  "rows": [
+    {
+      "scheme": "a",
+      "png_sha256": "0fe2f076dddfcc9a10660db44cc09f1b2688904671573a81ef921bef2468df1c",
+      "all_child_fields_present": true
+    },
+    {
+      "scheme": "b",
+      "png_sha256": "d2cd5d3a0f38abd34c92432e0076f0e00fe30007631a73ff5bae118b7359d1a5",
+      "all_child_fields_present": true
+    },
+    {
+      "scheme": "c",
+      "png_sha256": "b4abdfcbcef7a9dfdf87d030b4d538469cd2c9404b457a86e6489bdc5145ad8d",
+      "all_child_fields_present": true
+    },
+    {
+      "scheme": "d",
+      "png_sha256": "4ad49ce17a247a7bc183c5bccf56b8b7bfe9820cd47b33265f747462929bac38",
+      "all_child_fields_present": true
+    }
+  ]
+}
